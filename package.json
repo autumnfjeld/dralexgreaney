@@ -1,0 +1,31 @@
+{
+  "name": "dralexgreaney.com",
+  "version": "1.0.0",
+  "description": "Dr. Greaney's Research Group Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "watch-pug": "pug -O src/data.js src/index.pug --out public --watch --pretty",
+    "watch-pug-dev": "pug -O src/data.js src/index.pug --watch --pretty"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autumnfjeld/dralexgreaney.git"
+  },
+  "keywords": [
+    "Alex Greaney",
+    "Computational Materials Science"
+  ],
+  "author": "Autumn Fjeld",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/autumnfjeld/dralexgreaney/issues"
+  },
+  "homepage": "https://github.com/autumnfjeld/dralexgreaney#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.0.1",
+    "cssmin": "^0.4.3",
+    "pug": "^2.0.0-rc.1",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
