@@ -1,0 +1,36 @@
+section#about
+    .container
+        .row
+            .col-md-4.col-sm-8
+                .about-image-thumb
+                    img.wow.fadeInUp.img-responsive(src='https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/seal_big_340px.gif', data-wow-delay='0.2s', alt='about image')
+                .wow.fadeInUp.about-profile-thumb(data-wow-delay='0.4s')
+                    p
+                        span Birthday -
+                        |  December 14, 1993
+                    p
+                        span Location -
+                        |  New Street 75, New York, USA
+                    p
+                        span Phone -
+                        |  001 024 7823 8402
+                    p
+                        span Email -
+                        |  contact@youremail.com
+            .col-md-8.col-sm-12
+                .about-thumb
+                    .wow.fadeInUp.section-title(data-wow-delay='0.6s')
+                        h2 Computational Materials Science Research
+                        p
+                            strong Research Overview
+                    .wow.fadeInUp(data-wow-delay='0.8s')
+                        for paragraph in app.about.summary
+                            p= paragraph
+
+                            //| Check my works there
+                            //a(href='#') Dribbble
+                            //| ,
+                            //a(href='#') Behance
+                            //|  and
+                            //a(href='#') Twitter
+                            //|  dolor sit amet consectetur.

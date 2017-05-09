@@ -1,0 +1,33 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        title Alex Greaney
+        meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+        meta(name='description', content='Computational Materials Site')
+        //TODO:  KEYWORDS
+        meta(name='keywords', content='Alex Greaney Minimal Resume HTML Template, Freelancer')
+        meta(name='author', content='peng lam')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        link(rel='stylesheet', href='css/bootstrap.min.css')
+        link(rel='stylesheet', href='css/animate.css')
+        link(rel='stylesheet', href='css/magnific-popup.css')
+        link(rel='stylesheet', href='css/font-awesome.min.css')
+        link(rel='stylesheet', href='css/style.css')
+    body(data-spy='scroll', data-target='.navbar-collapse', data-offset='50')
+        .preloader
+            .spinner
+                span.spinner-rotate
+
+        include nav.pug
+        include home.pug
+        include about.pug
+
+        script(src='vendor/jquery.js')
+        script(src='vendor/bootstrap.min.js')
+        script(src='vendor/jquery.backstretch.min.js')
+        script(src='vendor/smoothscroll.js')
+        script(src='vendor/jquery.magnific-popup.min.js')
+        script(src='vendor/magnific-popup-options.js')
+        script(src='vendor/wow.min.js')
+        script(src='custom.js')
