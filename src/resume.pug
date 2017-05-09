@@ -1,0 +1,21 @@
+section#resume
+    .container
+        .row
+            .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+                h2 Research Projects
+                p Lorem ipsum dolor sit amet, come back to work on this layout
+        .row.between-lg
+            each project, index in app.researchProjects
+                .col-md-6.col-sm-6.wow.fadeInUp(data-wow-delay='0.4s')
+                    .resume-thumb
+                        h4
+                            i.fa.fa-cubes
+                            span= project.title
+                        strong
+                            | Jane, Bob, Lisa
+                            span /
+                            |  May, 2014 - August 2015
+                        div
+                            img(src= project.imageUrl, style="float:right;max-height:160px;border-radius:4px;border:1px solid light-grey;margin:6px 14px 6px 12px;")
+                            p= project.text[0]
+                        a read more (TODO)

@@ -351,10 +351,12 @@ a:hover, a:active, a:focus {
 /*---------------------------------------
     8 Resume section              
 -----------------------------------------*/
-
+#resume {
+  background: #F9F9FF;
+}
 #resume .resume-thumb {
   margin-top: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 40px;
 }
 
 #resume .resume-thumb .fa {
