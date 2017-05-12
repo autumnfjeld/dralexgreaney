@@ -221,20 +221,20 @@ a:hover, a:active, a:focus {
     4 Navigation section              
 -----------------------------------------*/
 
-.navbar-default {
+.navbar {
   border: none;
   margin-bottom: 0;
   background-color: #ffffff;
-  padding: 12px 0;
+  padding: 14px 0;
 }
 
-.navbar-default .navbar-brand {
+.navbar .navbar-brand {
   color: #444;
   font-weight: normal;
   font-size: 20px;
 }
 
-.navbar-default .navbar-nav li a {
+ul.navbar-nav li a {
   font-size: 12px;
   font-weight: bold;
   color: #858585;
@@ -242,39 +242,39 @@ a:hover, a:active, a:focus {
   text-transform: uppercase;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
-  padding: 0 12px;
+  /*padding: 0 6px;*/
   margin: 15px 8px;
 }
 
-.navbar-default .navbar-nav > li a:hover {
-  background-color: #e7e7e7;
-  color: #656565 !important;
-}
+/*.navbar-default .navbar-nav > li a:hover {*/
+  /*background-color: #e7e7e7;*/
+  /*color: #656565 !important;*/
+/*}*/
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #858585;
-}
+/*.navbar-default .navbar-nav > li > a:hover,*/
+/*.navbar-default .navbar-nav > li > a:focus {*/
+  /*color: #858585;*/
+/*}*/
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #656565;
-}
+/*.navbar-default .navbar-nav > .active > a,*/
+/*.navbar-default .navbar-nav > .active > a:hover,*/
+/*.navbar-default .navbar-nav > .active > a:focus {*/
+  /*color: #656565;*/
+/*}*/
 
-.navbar-default .navbar-toggle {
-  border: none;
-  padding-top: 10px;
-}
+/*.navbar-default .navbar-toggle {*/
+  /*border: none;*/
+  /*padding-top: 10px;*/
+/*}*/
 
-.navbar-default .navbar-toggle {
-  background-color: transparent;
-}
+/*.navbar-default .navbar-toggle {*/
+  /*background-color: transparent;*/
+/*}*/
 
-.navbar-default .navbar-toggle .icon-bar {
-  background: #000000;
-  border-color: transparent;
-}
+/*.navbar-default .navbar-toggle .icon-bar {*/
+  /*background: #000000;*/
+  /*border-color: transparent;*/
+/*}*/
 
 
 
@@ -401,14 +401,14 @@ a:hover, a:active, a:focus {
   opacity: 0;
   width: 100%;
   height: 100%;
-  padding: 62px 32px;
+  padding: 40px 32px;
   margin: 32px;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
 
 #work .work-thumb:hover .work-thumb-overlay {
-  opacity: 1;
+  opacity: .8;
 }
 
 

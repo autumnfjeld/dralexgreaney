@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
+    "scss": "node-sass --output-style compact -o src/css-temp src/scss",
     "watch-pug": "pug -O src/data.js src/index.pug --out public --watch --pretty",
-    "watch-pug-dev": "pug -O src/data.js src/index.pug --watch --pretty"
+    "watch-pug-dev": "pug -O src/data.js src/index.pug --out src --watch --pretty"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "autoprefixer": "^7.0.1",
     "cssmin": "^0.4.3",
+    "node-sass": "^4.5.2",
     "pug": "^2.0.0-rc.1",
     "pug-cli": "^1.0.0-alpha6"
   }

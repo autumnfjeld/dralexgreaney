@@ -1,26 +1,4 @@
 
-
-
-.flex-grid {
-  display: flex;
-}
-
-.flex-row {
-  display: flex;
-  display: -webkit-flex;
-  //flex-wrap: wrap;
-  align-items: flex-end;
-}
-
-.flex-row-space-between {
-  .flex-row();
-  justify-content: space-between;
-}
-
-.col {
-  flex: 1;
-}
-
 #group {
   .group-thumb {
     padding: 20px 20px 20px 0;
@@ -42,8 +20,6 @@
   p {
     margin: 2px;
   }
-
-
 }
 
 .card-image-temp {
@@ -56,5 +32,13 @@
   }
   .card-text {
     height: 200px;
+  }
+}
+
+#work {
+  .img-responsive {
+    //style="min-width:200px;min-height:200px;max-width:200px;max-height:200px;")
+      height: 250px;
+      width: 250px;
   }
 }
