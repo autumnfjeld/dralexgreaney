@@ -1,21 +1,28 @@
-section#service
+section#service.research-big-card
     .container
         .row
             .wow.fadeInUp.section-title(data-wow-delay='0.2s')
                 h2 Research Projects
-                p Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.
-        .row
+                p Cool stuff we do.  Big image with text
+        .row.justify-content-around
             each project in app.researchProjects
-                .col-md-6.col-sm-6.wow.fadeInUp(data-wow-delay='0.4s')
-                    h4= project.title
-                    img(src= project.imageUrl, title= project.imageTitle, style="width:400px;border-radius:4px;border:1px solid lightgrey;margin:6px 14px 6px 12px;")
-                    p= project.text[0]
-                //.col-md-4.col-sm-4.wow.fadeInUp(data-wow-delay='0.6s')
-                //    i.fa.fa-html5
-                //    h4 HTML5 &amp; CSS3
-                //    p Lorem ipsum dolor sit amet, consectetur adipiscing morbi venenatis et tortor.
-                //.col-md-4.col-sm-4.wow.fadeInUp(data-wow-delay='0.8s')
-                //    i.fa.fa-paper-plane
-                //    h4 Branding Design
-                //    p Lorem ipsum dolor sit amet, consectetur adipiscing venenatis tortor.
+                //.col-md-6.col-sm-6.wow.fadeInUp(data-wow-delay='0.4s')
+                //    h4= project.title
+                //    img(src= project.imageUrl, title= project.imageTitle, style="width:400px;border-radius:4px;border:1px solid lightgrey;margin:6px 14px 6px 12px;")
+                //    p= project.text[0]
+                .col-sm
+                    .card(style='width: 30rem;margin-bottom: 50px;')
+                        div
+                            img.card-img-top.card-image-temp(src= project.imageUrl, alt='Card image cap')
+                        .card-block
+                            h4.card-title= project.title
+                            p.card-text= project.text[0]
+                        ul.list-group.list-group-flush
+                            li.list-group-item Researchers:  Jane, Sally, Guenevive
+                            //li.list-group-item Dapibus ac facilisis in
+                            //li.list-group-item Vestibulum at eros
+                        .card-block
+                            a.card-link(href='#') Read more
+                            a.card-link(href='#') Another link
+
 

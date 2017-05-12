@@ -14,7 +14,7 @@ var about = {
 var researchProjects = [
     {
         title : "Engineering thermal properties in MOFs",
-        imageUrl: "http://research.engr.oregonstate.edu/greaney/sites/research.engr.oregonstate.edu.greaney/files/images/irmof-3-struct.thumbnail.png",
+        imageUrl: "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/irmof-3-struct.thumbnail.png",
         imageTitle: "",
         text: [
             "Metal-organic-frameworks (MOFs) are astounding new materials with open molecular-trellis structures. Because these materials are structurally so different from traditional  monolithic crystalline solids, they abound with opportunities for engineering thermal properties. By discovering the mechanisms of heat transport in these materials we aim to create new materials with exciting new thermal properties.",
@@ -48,11 +48,97 @@ var researchProjects = [
             "Carbon nanotubes (CNTs) are long and slender, lightweight, and incredibly stiff. This would make them ideal for nanoscale mechanical resonators (like tiny guitar strings) that resonate with exceedingly high frequency. Resonators such as this have many current and potential applications ranging from being able to weigh single atoms, to being used as emitters, receivers, and waveguides for wireless communication. "
         ]
     },
+    {
+    title : "Some cool science thing",
+    imageUrl: "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/allrules2.png",
+    imageTitle: "Wave packet in Carbon Nano Tubes",
+    text: [
+        "Blah blah blah blah nanotubes dissipate vibrations in surprising and unusual ways. The larger the excitation in a nanotube, the quicker it dissipates. We are keen to discover the cause of this strange dissipation and to find ways to make use to it.",
+        "Carbon nanotubes (CNTs) are long and slender, lightweight, and incredibly stiff. This would make them ideal for nanoscale mechanical resonators (like tiny guitar strings) that resonate with exceedingly high frequency. Resonators such as this have many current and potential applications ranging from being able to weigh single atoms, to being used as emitters, receivers, and waveguides for wireless communication. "
+    ]
+    }
 
 
 ];
 
+
+var groupMembers = [
+    {
+        name: "Laura de Sousa Oliveira ",
+        role: "PhD Student ",
+        email: "laura.rita.oliveira@gmail.com ",
+        gitHub: "",
+        linkedIn: "",
+        researchGate: "",
+        personWebSite: "",
+        funFacts: " Laura was born in Loulé, Portgal. When she is not working, Laura enjoys thinking about life, the universe and everything. She has Bachelor of Science degrees in Physics and Mathematics, with minors in Hispanic Studies and Electrical Engineering, from the New Mexico Institute of Mining and Technology.",
+        researchInterests: "Applying computational methods to physical problems ",
+        imageUrl: "http://research.engr.oregonstate.edu/greaney/sites/research.engr.oregonstate.edu.greaney/files/imagecache/160x160-scale-crop/_mg_0561_0.jpg ",
+
+    },
+    {
+        name: "Henri ",
+        role: "Mouser ",
+        email: "henri@ucr.edu ",
+        gitHub: "https://github.com/henrithecat",
+        linkedIn: "www.linkedin.com/in/henrithecat",
+        researchGate: "https://www.researchgate.net/profile/Henri_The_Cat",
+        personWebSite: "www.henrigetsthemouse.com",
+        funFacts: "Grew up in the Bay Area. Informal science training in the backyard sheds. A 13 yr old veteran mouser and transcontinental traveler, Henri has lived with Dr. Greaney since his days in Berkeley, CA. Henri works from home, and can usually be found napping on Dr. Greaney's desk. ",
+        researchInterests: "Thermal resistance of recumbent-feline guard-hairs, keyboard ergonomics",
+        imageUrl: "http://research.engr.oregonstate.edu/greaney/sites/research.engr.oregonstate.edu.greaney/files/imagecache/160x160-scale-crop/henri-newyear-2012-crop.jpg "
+    },
+    {
+        name: "Bart ",
+        role: "PostDoc ",
+        email: "email@email ",
+        gitHub: "",
+        linkedIn: "",
+        researchGate: "",
+        personWebSite: "",
+        funFacts: "Studies fracture of skateboards.  Wreks havoc.",
+        researchInterests: " Rebelling",
+        imageUrl: "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/bartsimpson.jpg "
+    },
+    {
+        name: "Toonces ",
+        role: "PostCat ",
+        email: "email@email ",
+        gitHub: "",
+        linkedIn: "",
+        researchGate: "",
+        personWebSite: "",
+        funFacts: "Star researcher. Loves driving.",
+        researchInterests: " Test failure resistance of automobiles",
+        imageUrl: "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/toonces.png"
+    },
+];
+
+var courses = [
+    {
+        number: "",
+        name: " ",
+        url: " ",
+        description: " ",
+        preReqs: " ",
+        state: " upcoming"
+
+    },
+    {
+        number: "",
+        name: " ",
+        url: " ",
+        description: " ",
+        preReqs: " ",
+        state: " previous"
+
+    },
+
+]
+
 module.exports.app = {
     about: about,
-    researchProjects: researchProjects
+    researchProjects: researchProjects,
+    groupMembers: groupMembers,
+    courses: courses
 };

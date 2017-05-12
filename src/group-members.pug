@@ -1,0 +1,54 @@
+section#group
+    .container
+        .row
+            .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+                h2 Group Members
+                p Prof. Greaney's office hours:
+                p Office:
+        .row.justify-content-around
+            each person in app.groupMembers
+                .col-sm-4
+                    .card
+                        .d-flex.justify-content-center
+                            img.card-img-top(src= person.imageUrl, alt='Card image cap')
+                        .card-block
+                            h4.card-title= person.name
+                            p.card-text
+                                small.text-muted= person.role
+                            p.card-text
+                                small.text-muted= person.email
+                            p.card-text= person.funFacts
+                            p.card-text
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    .container
+        .row
+            .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+                h2 Group Members #3
+
+        .row.justify-content-around
+            each person in app.groupMembers
+                                    .col-md-6.col-sm-6.wow.fadeInUp(data-wow-delay='0.4s')
+                                        .group-thumb
+                                            .row
+                                                .col-5
+                                                    img.img-person(src= person.imageUrl)
+                                                .col
+                                                    <br>
+                                                    <br>
+                                                    h4= person.name
+                                                    p= person.role
+                                                    p= person.email
+                                                    .icons
+                                                        i.fa.fa-github
+                                                        i.fa.fa-flask
+                                                        i.fa.fa-linkedin
+                                            <br>
+                                            .row
+                                                .col-md-11
+                                                    strong Research Interests
+                                                    span.text= person.researchInterests
+                                                    p= person.funFacts
+

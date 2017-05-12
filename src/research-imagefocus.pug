@@ -1,0 +1,19 @@
+section#work
+    .container
+        .row
+            .col-md-12.col-sm-12
+                .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+                    h2 Research Projects
+                    p Focus on images ipsum dolor sit amet, consectetur venenatis tincidunt.
+        .row
+            each project in app.researchProjects
+                .wow.fadeInUp.col-md-4.col-sm-6(data-wow-delay='0.4s')
+                    .work-thumb
+                        a.image-popup(href= project.imageUrl)
+                            .work-thumb-overlay
+                                small= project.title
+                                h4 Branding Design
+                            |
+                            img.img-responsive(src= project.imageUrl,
+                                alt= project.imageTitle,
+                                style="min-width:400px;min-height:400px;max-width:400px;max-height:400px;")
