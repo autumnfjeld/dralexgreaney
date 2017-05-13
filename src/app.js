@@ -17,7 +17,8 @@
         // jquery backstretch slideshow
         $("#home").backstretch([
           "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/bubble1.jpg",
-          "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/bubble3.jpg"
+          "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/bubble3.jpg",
+          "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/bath-pouf.png"
           ], {duration: 2000, fade: 750});
         
 

@@ -11,8 +11,8 @@ section#work
                     .work-thumb
                         a.image-popup(href= project.imageUrl)
                             .work-thumb-overlay
-                                small= project.title
-                                h4 Branding Design
+                                h4= project.title
+                                small= project.teaser
                             |
                             img.img-responsive(src= project.imageUrl,
                                 alt= project.imageTitle,
