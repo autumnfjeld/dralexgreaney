@@ -9,7 +9,7 @@ html(lang='en')
         meta(name='author', content='peng lam')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
         link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
-        link(rel='stylesheet', href='css-temp/main.css')
+        link(rel='stylesheet', href='css/main.css')
     body(data-spy='scroll', data-target='.navbar-collapse', data-offset='50')
         .preloader
             .spinner
@@ -29,13 +29,5 @@ html(lang='en')
         <hr>
         include teaching.pug
 
-        script(src='vendor/jquery.js')
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-
-        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js", integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn", crossorigin="anonymous")
-        script(src='vendor/jquery.backstretch.min.js')
-        script(src='vendor/smoothscroll.js')
-        script(src='vendor/jquery.magnific-popup.min.js')
-        script(src='vendor/magnific-popup-options.js')
-        script(src='vendor/wow.min.js')
-        script(src='app.js')
+        // minified vendor and app javascript
+        script(src='build.js')

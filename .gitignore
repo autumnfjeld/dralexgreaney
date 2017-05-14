@@ -1,4 +1,6 @@
 public/*
 src/index.html
 node_modules
+ignore
 *.iml
+*.log
