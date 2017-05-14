@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "scss": "node-sass --output-style compact -o public/css src/scss",
+    "scss": "node-sass --output-style compact -o public/css src/scss/main.scss",
     "autoprefixer": "postcss -u autoprefixer -r public/css/*",
     "watch-pug": "pug -O src/data.js src/index.pug --out public --watch --pretty",
     "uglify": "uglifyjs src/vendor/jquery.js src/vendor/tether.js src/vendor/*.js src/app.js -m -o public/build.js",
+    "watch:css": "onchange 'src/scss/*.scss' -v -- npm run scss",
     "build:css": "npm run scss && npm run autoprefixer",
     "build:js": "npm run lint &amp;&amp; npm run uglify",
     "build-all": "npm run build:css && npm run build:js"
@@ -31,6 +32,7 @@
     "autoprefixer": "^7.0.1",
     "cssmin": "^0.4.3",
     "node-sass": "^4.5.2",
+    "onchange": "^3.2.1",
     "postcss-cli": "^4.0.0",
     "pug": "^2.0.0-rc.1",
     "pug-cli": "^1.0.0-alpha6",
