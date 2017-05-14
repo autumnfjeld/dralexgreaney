@@ -1,4 +1,4 @@
-
+$imgDiam1: 210px;
 #group {
   .group-thumb {
     padding: 20px 20px 20px 0;
@@ -32,6 +32,42 @@
   }
   .card-text {
     height: 200px;
+  }
+}
+
+$imgDiam2: 250px;
+#group-vertical {
+  background: $gray-lightest;
+  .card-img-block {
+
+  }
+  .img-person, .card-img-top {
+    height: $imgDiam2;
+    width: $imgDiam2;
+    border-radius: $imgDiam2/2;
+    border: 5px solid #f4f4f4;
+    //margin-top: -30px;
+  }
+  .card {
+    border: none;
+    //background-color: unset;
+    //margin-bottom: 60px;
+  }
+  .card-block {
+    //background-color: white;
+  }
+  .research-interests {
+    min-height: 100px;
+    .card-text {
+      font-size: .9em;
+      line-height: 1.4em;
+    }
+  }
+  .ri-text {
+    min-height: 100px;
+  }
+  i.fa {
+    padding: 10px;
   }
 }
 

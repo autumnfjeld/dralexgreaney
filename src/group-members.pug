@@ -3,30 +3,6 @@ section#group
         .row
             .wow.fadeInUp.section-title(data-wow-delay='0.2s')
                 h2 Group Members
-                p Prof. Greaney's office hours:
-                p Office:
-        .row.justify-content-around
-            each person in app.groupMembers
-                .col-sm-4
-                    .card
-                        .d-flex.justify-content-center
-                            img.card-img-top(src= person.imageUrl, alt='Card image cap')
-                        .card-block
-                            h4.card-title= person.name
-                            p.card-text
-                                small.text-muted= person.role
-                            p.card-text
-                                small.text-muted= person.email
-                            p.card-text= person.funFacts
-                            p.card-text
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    .container
-        .row
-            .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-                h2 Group Members #3
 
         .row.justify-content-around
             each person in app.groupMembers

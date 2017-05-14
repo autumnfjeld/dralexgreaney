@@ -156,6 +156,7 @@ a:hover, a:active, a:focus {
 
 #about,
 #service, #resume, #work,
+#publications,
 #contact, footer {
   position: relative;
   padding-top: 80px;

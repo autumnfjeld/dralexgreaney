@@ -105,16 +105,16 @@ var groupMembers = [
         imageUrl: "http://research.engr.oregonstate.edu/greaney/sites/research.engr.oregonstate.edu.greaney/files/imagecache/160x160-scale-crop/henri-newyear-2012-crop.jpg "
     },
     {
-        name: "Bart ",
+        name: "Mystery Member  ",
         role: "PostDoc ",
         email: "email@email ",
         gitHub: "",
         linkedIn: "",
         researchGate: "",
         personWebSite: "",
-        funFacts: "Studies fracture of skateboards.  Wreks havoc.",
-        researchInterests: " Rebelling",
-        imageUrl: "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/bartsimpson.jpg "
+        funFacts: "You play the flute in a heavy metal band, you make the world’s best lobster thermidor, you once played table tennis with the Dalai Lama... something that shows that there is more to you than science.",
+        researchInterests: " Loves to think about tiny things, really nano things.",
+        imageUrl: "https://s3-us-west-2.amazonaws.com/alexgreaney.com/group-members/dude1_300px.JPG"
     },
     {
         name: "Toonces ",

@@ -19,15 +19,22 @@ html(lang='en')
         include home.pug
         include about.pug
         include research-imagefocus.pug
-        <hr>
-        include resume.pug
-        <hr>
-        include service.pug
-        <hr>
         include group-members.pug
-        include members.pug
-        <hr>
+        //include publications.pug
         include teaching.pug
-
+        // Other ideas
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+        .h1 End of Site
+        .h4 Other ideas for presentation of research
+        include research-textfocus
+        include research-imageandtextfocus
+        .h4 Other ideas for presentation of group members
+        include members-imagefoucs.pug
+        include group-verticalcard.pug
         // minified vendor and app javascript
         script(src='build.js')
