@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='keywords', content='Alex Greaney, Materials Science, Computational Modeling, Henri')
         meta(name='author', content='peng lam')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
+        //link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
         link(rel='stylesheet', href='css/main.css')
     body(data-spy='scroll', data-target='.navbar-collapse', data-offset='50')
         .preloader
@@ -20,21 +20,20 @@ html(lang='en')
         include about.pug
         include research-imagefocus.pug
         include group-members.pug
-        //include publications.pug
+        include publications.pug
         include teaching.pug
-        // Other ideas
+
 <br>
-<br>
-<br>
-<hr>
-<br>
-<br>
-        .h1 End of Site
-        .h4 Other ideas for presentation of research
-        include research-textfocus
-        include research-imageandtextfocus
-        .h4 Other ideas for presentation of group members
-        include members-imagefoucs.pug
-        include group-verticalcard.pug
-        // minified vendor and app javascript
-        script(src='build.js')
+        include style-guide.pug
+        //.h1.mt-5 End of Site
+        //hr
+        //.h4.mt-5 Other ideas for presentation of research
+        //include research-textfocus
+        //include research-imageandtextfocus
+        //.h4 Other ideas for presentation of group members
+        //include members-imagefoucs.pug
+        //include group-verticalcard.pug
+        //script.
+        //    console.log('Check Stuff', '!{JSON.stringify(app.publications[0].EntryType)}', !{JSON.stringify(app.publications)});
+
+script(src='build.js')
