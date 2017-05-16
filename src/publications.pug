@@ -1,18 +1,19 @@
 section#publications
-.container
-    .row
-        .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-            h2 Publications coming soon
+    .container
+        .row
+            .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+                h2 Publications
 
-    .row
-        each pub in app.publications
-            p
-                span.font-bold=  pub.Fields.author
-                span.title= "'" + pub.Fields.title + "'"
-                span.font-italic= pub.Fields.title + ', '
-                span= 'vol. ' + pub.Fields.volume + ', '
-                span= 'pp. ' + pub.Fields.pages + ', '
-                if pub.Fields.month
-                    span= 'pp. ' + pub.Fields.month + '.'
-                else
-                    span= 'pp. ' + pub.Fields.year + '.'
+        .row
+            each pub in app.publications
+                blockquote.blockquote.animatedhover
+                    span.text-primary=  pub.Fields.author + ', '
+                    span.title= "'" + pub.Fields.title + "', "
+                    span.font-italic= pub.Fields.journal + ', '
+                    span= 'vol. ' + pub.Fields.volume + ', '
+                    if pub.Fields.pages
+                        span= 'pp. ' + pub.Fields.pages + ', '
+                    if pub.Fields.month
+                        span= pub.Fields.month + '.'
+                    else
+                        span= pub.Fields.year + '.'
