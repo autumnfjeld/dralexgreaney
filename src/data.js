@@ -1,3 +1,7 @@
+var publications = require('./publications.js');
+
+console.log('publications', publications[0].Fields);
+// console.log('publications', publications);
 
 var about = {
 
@@ -150,11 +154,12 @@ var courses = [
 
     },
 
-]
+];
 
 module.exports.app = {
     about: about,
     researchProjects: researchProjects,
     groupMembers: groupMembers,
-    courses: courses
+    courses: courses,
+    publications: publications
 };
