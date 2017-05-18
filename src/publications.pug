@@ -17,3 +17,7 @@ section#publications
                         span= pub.Fields.month + '.'
                     else
                         span= pub.Fields.year + '.'
+                    if pub.Fields.doi
+                        div
+                        a.d-inline-block(href= 'dx.doi.org/' + pub.Fields.doi, target='_blank')
+                            span= 'doi link ' + pub.Fields.doi
