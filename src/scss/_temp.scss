@@ -1,26 +1,4 @@
-$imgDiam1: 210px;
-#group {
-  .group-thumb {
-    padding: 20px 20px 20px 0;
-    margin-bottom: 30px;
-  }
-  .img-person, .card-img-top {
-      height: 210px;
-      width: 210px;
-      border-radius: 110px;
-      border: 5px solid #f4f4f4;
-  }
-  i.fa {
-    padding-right: 10px;
-  }
-  .text {
-    font-weight: normal;
-    padding-left: 6px;
-  }
-  p {
-    margin: 2px;
-  }
-}
+
 
 .card-image-temp {
   width: 100%;
@@ -68,13 +46,5 @@ $imgDiam2: 250px;
   }
   i.fa {
     padding: 10px;
-  }
-}
-
-#work {
-  .img-responsive {
-    //style="min-width:200px;min-height:200px;max-width:200px;max-height:200px;")
-      height: 250px;
-      width: 250px;
   }
 }

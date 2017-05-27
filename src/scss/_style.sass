@@ -89,6 +89,8 @@ p
 /*---------------------------------------
  *    Colors
  *-----------------------------------------*/
+
+// Text colors
 .gray-dark
     color: $gray-dark
 .text-gray
@@ -99,6 +101,19 @@ p
     color: $gray-lighter
 .text-gray-lightest
     color: $gray-lightest
+
+// UCR Colors
+$ucr-blue:  #2D6CC0
+$ucr-gold:  #F1AB00
+$ucr-gray:  #7A6E67         //which really looks brown!!!
+
+$usr-brown:   #905A33         // redwoodish
+$ucr-orange:  #CD5806
+$ucr-mustard: #BB8900
+$ucr-green:   #6F8135
+$ucr-purple:  #624A7E
+$ucr-navy:    #003066
+
 
 /*---------------------------------------
  *    1 Buttons
@@ -128,7 +143,7 @@ html
   -webkit-font-smoothing: antialiased
 
 a
-  color: #757557
+  color: #2668b2                // This is UCR Link color
   -webkit-transition: 0.5s
   transition: 0.5s
   text-decoration: none !important
@@ -145,13 +160,22 @@ a
   margin: 0
   padding-bottom: 32px
 
-#about, #service, #resume, #work, #publications, #contact, footer
+#about, #service, #resume, #work, #research-frame, #group-members, #publications, #contact, footer
   position: relative
   padding-top: 80px
   padding-bottom: 80px
 
-#service, #work
+#service, #work, #group-members
   background: #f9f9f9
+
+
+/*---------------------------------------
+ *   Transitions & Animations
+ *-----------------------------------------*/
+.grow
+    transition: all .2s ease-in-out
+    &:hover
+        transform: scale(1.1)
 
 /*---------------------------------------
  *    3 Pre loader section
@@ -297,27 +321,59 @@ ul.navbar-nav li a
  *    9 Work section
  *-----------------------------------------*/
 
-#work
-  .work-thumb
-    margin: 22px 0 12px 0
-    padding: 0
-    overflow: hidden
-    position: relative
-    small
-      font-size: 16px
-  .work-thumb-overlay
-    position: absolute
-    background: #ffffff
-    cursor: crosshair
-    opacity: 0
-    width: 100%
-    height: 100%
-    padding: 40px 32px
-    margin: 32px
-    -webkit-transition: all ease-in-out 0.4s
-    transition: all ease-in-out 0.4s
-  .work-thumb:hover .work-thumb-overlay
-    opacity: .8
+#work, #research-frame
+    .work-thumb
+        margin: 22px 0 12px 0
+        padding: 0
+        overflow: hidden
+        position: relative
+        small
+          font-size: 16px
+        .img-responsive
+            max-width: 100%
+    .work-thumb-overlay
+        position: absolute
+        background: #ffffff
+        cursor: crosshair
+        opacity: 0
+        width: 100%
+        height: 100%
+        padding: 40px 32px
+        margin: 32px
+        -webkit-transition: all ease-in-out 0.4s
+        transition: all ease-in-out 0.4s
+    .work-thumb:hover .work-thumb-overlay
+        opacity: .8
+
+#research-frame
+  .img-responsive
+      max-width: 100%
+      padding: .5rem
+      background-color: $gray-lightest
+
+/*---------------------------------------
+ *    Group Members
+ *-----------------------------------------*/
+
+$imgDiam1: 210px
+
+#group-members
+    .group-thumb
+        padding: 20px 20px 20px 0
+        margin-bottom: 30px
+    .img-person, .card-img-top
+        height: 210px
+        width: 210px
+        border-radius: 110px
+        border: 5px solid #f4f4f4
+    i.fa
+        padding-right: 10px
+    .text
+        font-weight: normal
+        padding-left: 6px
+    p
+        margin: 2px
+
 
 /*---------------------------------------
  *     Publications section
@@ -325,19 +381,20 @@ ul.navbar-nav li a
 
 #publications
     .blockquote
-        padding: 0.25rem .5rem
-        margin: 0 8rem .5rem 5rem
+        padding: 0 .5rem
+        margin: 1rem 8rem .5rem 5rem
         font-size: .9rem
-        border-left: 0.25rem solid #eceeef
-        &:hover
-            -webkit-animation: bounce
-            animation: bounce 1s
+        border-left: 0.1rem solid $ucr-gold
+        //&:hover
+        //    -webkit-animation: bounce
+        //    animation: bounce 1s
     //.animatedhover
     //    animation-play-state: paused
     //    &:hover
     //        animation-play-state: running
 
     .author
+        color: $ucr-blue
         font-weight: bold
         font-size: 12px
     //.title

@@ -7,17 +7,18 @@ section#publications
         .row
             each pub in app.publications
                 blockquote.blockquote.animatedhover
-                    span.text-primary=  pub.Fields.author + ', '
-                    span.title= "'" + pub.Fields.title + "', "
-                    span.font-italic= pub.Fields.journal + ', '
-                    span= 'vol. ' + pub.Fields.volume + ', '
-                    if pub.Fields.pages
-                        span= 'pp. ' + pub.Fields.pages + ', '
-                    if pub.Fields.month
-                        span= pub.Fields.month + '.'
-                    else
-                        span= pub.Fields.year + '.'
+                    div=  pub.Fields.author + ', '
+                    div.title= "'" + pub.Fields.title + "', "
+                    div
+                        span.font-italic= pub.Fields.journal + ', '
+                        span= 'vol. ' + pub.Fields.volume + ', '
+                        if pub.Fields.pages
+                            span= 'pp. ' + pub.Fields.pages + ', '
+                        if pub.Fields.month
+                            span.font-weight-bold= pub.Fields.month + '.'
+                        else
+                            span.font-weight-bold= pub.Fields.year + '.'
                     if pub.Fields.doi
                         div
-                        a.d-inline-block(href= 'dx.doi.org/' + pub.Fields.doi, target='_blank')
+                        a.d-inline-block(href= 'https://dx.doi.org/' + pub.Fields.doi, target='_blank')
                             span= 'doi link ' + pub.Fields.doi

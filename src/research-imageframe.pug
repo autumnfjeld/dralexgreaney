@@ -1,0 +1,20 @@
+section#research-frame
+    .container
+        .row
+            .col-md-12.col-sm-12
+                // SECTION TITLE
+                .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+                    h2 Research Projects Image frame
+                    p Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.
+
+        .row
+            each project in app.researchProjects
+                .wow.fadeInUp.col-md-4.col-sm-6(data-wow-delay='0.4s')
+                    .work-thumb
+                        a.image-popup(href= project.imageUrl)
+                            .work-thumb-overlay
+                                small= project.title
+                                h4= project.teaser
+                            img.img-responsive(src= project.imageUrl, alt= project.imageTitle,)
+
+
