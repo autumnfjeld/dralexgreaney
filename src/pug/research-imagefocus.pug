@@ -1,0 +1,24 @@
+section#research
+    .container
+        .row
+            .col-md-12.col-sm-12
+                .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+                    h2 Research Projects
+                    p Focus on images ipsum dolor sit amet, consectetur venenatis tincidunt.
+        #expanded-research.row.hidden
+            Hi
+        .row
+            each project in app.researchProjects
+                .wow.fadeInUp.col-md-6.col-sm-6(data-wow-delay='0.4s')
+                    .work-thumb
+                        .work-thumb-overlay.research-click(data-project= project.href)
+                            h4= project.title
+                            small= project.teaser
+                        |
+                        img.img-responsive(src= project.imageUrl, alt= project.imageTitle)
+                        //a.image-popup(href= project.imageUrl)
+                        //    .work-thumb-overlay
+                        //        h4= project.title
+                        //        small= project.teaser
+                        //    |
+                        //    img.img-responsive(src= project.imageUrl, alt= project.imageTitle)
