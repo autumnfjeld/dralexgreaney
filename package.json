@@ -7,15 +7,16 @@
     "test": "test",
     "scss": "node-sass --output-style compact -o public/css src/scss/main.sass",
     "autoprefixer": "postcss -u autoprefixer -r public/css/*",
-    "watch:pug": "pug -O src/data.js src/index.pug --out public --watch --pretty",
+    "watch:pug": "pug -O src/data.js src/pug/index.pug --out public --watch --pretty",
+    "pug-to-js": "pug --obj src/research-pages/research-page-options.json src/research-pages/research-project-page.pug --client --pretty",
     "build-html": "onchange 'src/data.js' -- npm run watch-pug",
-    "uglify": "uglifyjs src/vendor/jquery.js src/vendor/tether.js src/vendor/*.js src/app.js -m -o public/build.js",
+    "uglify": "uglifyjs src/vendor/jquery.js src/vendor/tether.js src/vendor/*.js src/pugTemplateFunctions.js src/app.js -m -o public/build.js --beautify",
     "watch:css": "onchange 'src/scss/*.sass' -i -v -- npm run scss",
-    "watch:js" : "onchange 'src/*.js' -- npm run uglify",
+    "watch:js" : "onchange 'src/*.js' -i -v -- npm run uglify",
     "watch:all": "npm run watch:pug && npm run watch:css && npm run watch:js",
     "build:css": "npm run scss && npm run autoprefixer",
     "build:js": "npm run lint && npm run uglify",
-    "build-all": "npm run build:css && npm run build:js"
+    "build:all": "npm run build:css && npm run build:js"
   },
   "repository": {
     "type": "git",
