@@ -35,7 +35,11 @@
                 },
                 {
                     width: 1920, url: 'https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/banner-images/HardCarbon_Sized_1920x1280.png',
-                    width: 960, url:       'https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/banner-images/HardCarbon_Sized_960x640.png',
+                    width: 960, url:  'https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/banner-images/HardCarbon_Sized_960x640.png',
+                },
+                {
+                    width: 1920, url: 'media/hard-carbon-stormtroopers_1920x1080.png',
+                    width: 960, url:  'media/hard-carbon-stormtroopers_960x540.png'
                 }
 
             ], {duration: 2000, fade: 750});
