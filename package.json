@@ -1,6 +1,6 @@
 {
   "name": "dralexgreaney.com",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Dr. Greaney's Research Group Site",
   "main": "index.js",
   "scripts": {
@@ -10,13 +10,14 @@
     "watch:pug": "pug -O src/data.js src/pug/index.pug --out public --watch --pretty",
     "pug-to-js": "pug --obj src/research-pages/research-page-options.json src/research-pages/research-project-page.pug --client --pretty",
     "build-html": "onchange 'src/data.js' -- npm run watch-pug",
+    "lint": "eslint src/app.js || true",
     "uglify": "uglifyjs src/vendor/jquery.js src/vendor/tether.js src/vendor/*.js src/pugTemplateFunctions.js src/app.js -m -o public/build.js --beautify",
     "watch:css": "onchange 'src/scss/*.sass' -i -v -- npm run scss",
-    "watch:js" : "onchange 'src/*.js' -i -v -- npm run uglify",
-    "watch:all": "npm run watch:pug && npm run watch:css && npm run watch:js",
-    "build:css": "npm run scss && npm run autoprefixer",
-    "build:js": "npm run lint && npm run uglify",
-    "build:all": "npm run build:css && npm run build:js"
+    "watch:js": "onchange 'src/*.js' 'src/app.js' -i -v -- npm run uglify",
+    "watch:all": "npm run watch:pug & npm run watch:css & npm run watch:js",
+    "build:css": "npm run scss & npm run autoprefixer",
+    "build:js": "npm run lint & npm run uglify",
+    "build:all": "npm run build:css & npm run build:js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,8 @@
     "autoprefixer": "^7.0.1",
     "bib2json": "0.0.1",
     "cssmin": "^0.4.3",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1",
     "node-sass": "^4.5.2",
     "onchange": "^3.2.1",
     "postcss-cli": "^4.0.0",
