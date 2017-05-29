@@ -1,11 +1,18 @@
-
-h1 #{title}
-p #{teaser}
-div(style="height:300px;background-color:red")
-
-#{title}
-#{href}
-#{imageUrl}
-#{imageTitle}
-#{teaser}
-#{text}
+#extended-research
+    .container.white-popup
+        .row
+            .col-md-3
+                figure.figure
+                    img.figure-img.img-fluid.rounded(src=imageUrl alt=imageTitle)
+                    figcamption.figure-caption  #{imageTitle}
+                .card
+                    ul.list-group.list-group-flush
+                        li.list-group-item Lisa JOnes PhD
+                        li.list-group-item Big fundings
+                        li.list-group-item published in blah
+            .col-md-9
+                h1 #{title}
+                h4 #{teaser}
+                .row
+                    each paragraph in expandedText
+                        p= paragraph

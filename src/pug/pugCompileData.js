@@ -1,4 +1,6 @@
 var publications = require('./publications.js');
+///Ah ha.  Should break up each part into own js file, then have a build for assembling to feed into pug.  THen
+// data can have one source and be delivered to client as needed.
 
 console.log('publications', publications[0].Fields);
 // console.log('publications', publications);

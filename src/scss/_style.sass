@@ -227,11 +227,13 @@ a
   border: none
   margin-bottom: 0
   background-color: #ffffff
-  padding: 14px 0
+  padding: 0
   .navbar-brand
     color: #444
     font-weight: normal
     font-size: 20px
+    .matsci-tet-img
+        height: 38px
 
 ul.navbar-nav li a
   font-size: 12px
@@ -383,7 +385,7 @@ $imgDiam1: 210px
     .blockquote
         padding: 0 .5rem
         margin: 1rem 8rem .5rem 5rem
-        font-size: .9rem
+        font-size: .8rem
         border-left: 0.1rem solid $ucr-gold
         //&:hover
         //    -webkit-animation: bounce
@@ -520,5 +522,27 @@ footer
     background: #FFF
     padding: 20px
     width: auto
-    max-width: 500px
+    max-width: 80%
     margin: 20px auto
+
+    //must style button different color
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content
+    opacity: 0
+
+    -webkit-transition: all 0.15s ease-out
+    -moz-transition: all 0.15s ease-out
+    transition: all 0.15s ease-out
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+    opacity: 1
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+    opacity: 0
+
+
+
+

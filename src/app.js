@@ -1,8 +1,16 @@
 /* global jQuery */
-jQuery(function($) {
+// jQuery(function($) {
+(function(){
     'use strict';
 
-    var App = {
+    // Expose jQuery to the global object
+    window.jQuery = window.$ = jQuery;
+
+    App = {
+
+        // Come back to this
+        researchPagePugFunc: app.pugCompile.researchPagePugFunc,
+        researchData: app.rawData,
 
         init: function() {
             this.setView();
@@ -15,19 +23,21 @@ jQuery(function($) {
          **/
         setView: function() {
             // On page load fade out spinner
-            // $(document).ready(function) {
             $(window).on('load', function() {
-                console.log('doc ready');
                 $('.spinner-box').fadeOut(1000); // set duration in brackets
             });
 
             // jquery backstretch slideshow
             $('#home').backstretch([
-                'https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/banner-images/Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg',
-                'https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/banner-images/HardCarbon_Sized_1920x1280.png'
-                // "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/bubble1.jpg",
-                // "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/bubble3.jpg",
-                // "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/bubble6.jpg"
+                {
+                    width: 1920, url: 'media/banner-images/Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg',
+                    width: 960, url: 'media/banner-images/Si_Al2O3_Ar_rotated_zoomed_in_1920x640.jpg',
+                },
+                {
+                    width: 1920, url: 'https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/banner-images/HardCarbon_Sized_1920x1280.png',
+                    width: 960, url:       'https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/banner-images/HardCarbon_Sized_960x640.png',
+                }
+
             ], {duration: 2000, fade: 750});
 
             // WOW Animation js
@@ -58,13 +68,13 @@ jQuery(function($) {
                 $('.navbar-collapse').collapse('hide');
             });
 
-            // Handle research section clicks
+            // Handle research section clicks - this will go away
             $('#research').on('click', '.research-click', function(ev) {
                 console.log('ev', ev);
                 console.log('ev', ev.target['data-project']);
                 var path = $(this).attr('data-project');
                 console.log('path', path);
-                var html = window.app.pugCompile.researchPagePugFunc({title: 'Fucking YES', teaser: 'Lots of text'});
+                var html = window.app.pugCompile.researchPagePugFunc(window.app.rawData);
                 // $('#main-page').hide();
                 // $('#research-page').append(html);
                 $('#expanded-research').append(html);
@@ -72,57 +82,40 @@ jQuery(function($) {
                 // $('#expanded-research').animate({
                 // opacity: 0.25,
                 // height: toggl
-
-                // compile pug function and display in new page
             });
         },
 
         /**
-         * Move elsewhere?
+         * Move elsewhere?  Maybe have a research controller
          * Popup slide show to display reasearch extended content
          */
         initResearchPopup: function() {
+            var stuff = this;
             $('.research-popup').magnificPopup({
                 type: 'inline',
-                // gallery: true,
-                inline: {
-                    // Define markup. Class names should match key names.
-                    markup: '<div class="white-popup">' +
-
-                    '</div>',
-                },
+                mainClass: 'mfp-fade',
+                closeOnBgClick: true
                 gallery: {
                     enabled: true,
                 },
 
                 callbacks: {
-                    open: function() {
-                        console.log('open  this', this);
-                    },
-                    //     // markupParse: function(template, values, item) {
-                    //     //     // optionally apply your own logic - modify "template" element based on data in "values"
-                    //     //     // console.log('Parsing:', template, values, item);
-                    //     // },
-                    //     //gets the source element
                     elementParse: function(item) {
                         console.log('elementParse', item);
                         var project = $(item.el).attr('data-project');
                         console.log($(item.el).attr('data-project'));
-                        item.src = '<div class="white-popup">' +
-                            '<h1> Hi Aut </h1>' +
-                            '<h1>' + project + ' </h1>' +
-                            '</div>';
-                    },
-                    //     change: function() {
-                    //         console.log('Content changed');
-                    //         console.log(this.content); // Direct reference to your popup element
-                    //     }
-                },
+                        // item.src = '<div class="white-popup">' +
+                        //     '<h1> Hi Aut </h1>' +
+                        //     '<h1>' + project + ' </h1>' +
+                        //     '</div>';
+                        console.log('rawData', stuff.rawData)
+                        item.src = stuff.researchPagePugFunc(window.app.rawData);
+                    }
+                }
             });
-        },
-
-
+        }
     };
 
     App.init();
-});
+
+})(window);
