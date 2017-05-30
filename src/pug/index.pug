@@ -9,7 +9,7 @@ html(lang='en')
         meta(name='author', content='peng lam')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
         //link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
-        link(rel='stylesheet', href='css/main.css')
+        link(rel='stylesheet', href='css/main.css?v0.1.2')
     body(data-spy='scroll', data-target='.navbar-collapse', data-offset='50')
         .spinner-box
             .spinner
@@ -19,7 +19,6 @@ html(lang='en')
         #main-page
             include main-page.pug
         #research-page
-
 
         <br>
         //include style-guide.pug
@@ -33,4 +32,4 @@ html(lang='en')
         //include group-verticalcard.pug
         //script.
         //    console.log('Check Stuff', '!{JSON.stringify(app.publications[0].EntryType)}', !{JSON.stringify(app.publications)});
-    script(src="build.js?v=0.1.2")
+    script(src="build.js?v0.1.2")
