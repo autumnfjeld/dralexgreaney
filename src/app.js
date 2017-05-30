@@ -1,12 +1,11 @@
-/* global jQuery */
-// jQuery(function($) {
+
 (function(){
     'use strict';
 
     // Expose jQuery to the global object
     window.jQuery = window.$ = jQuery;
 
-    App = {
+    var App = {
 
         // Come back to this
         researchPagePugFunc: app.pugCompile.researchPagePugFunc,
@@ -27,22 +26,22 @@
                 $('.spinner-box').fadeOut(1000); // set duration in brackets
             });
 
-            // jquery backstretch slideshow
+            // jQuery backstretch slideshow, will pick appropriate image for div size
             $('#home').backstretch([
-                {
-                    width: 1920, url: 'media/banner-images/Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg',
-                    width: 960, url: 'media/banner-images/Si_Al2O3_Ar_rotated_zoomed_in_1920x640.jpg',
-                },
-                {
-                    width: 1920, url: 'https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/banner-images/HardCarbon_Sized_1920x1280.png',
-                    width: 960, url:  'https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/banner-images/HardCarbon_Sized_960x640.png',
-                },
-                {
-                    width: 1920, url: 'media/hard-carbon-stormtroopers_1920x1080.png',
-                    width: 960, url:  'media/hard-carbon-stormtroopers_960x540.png'
-                }
-
-            ], {duration: 2000, fade: 750});
+                [
+                    {'width': 1920, 'url': 'media/Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'},
+                    {'width': 960, 'url': 'media/Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'}
+                ],
+                [
+                    {'width': 1920, 'url': 'media/HardCarbon_Sized_1920x1280.png'},
+                    {'width': 960, 'url':  'media/HardCarbon_Sized_960x640.png'}
+                ],
+                [
+                    {'width': 1920, 'url': 'media/hard-carbon-stormtroopers_1920x1080.png'},
+                    {'width': 960,  'url':  'media/hard-carbon-stormtroopers_960x540.png'}
+                ]
+            ]
+            , {duration: 2000, fade: 750});
 
             // WOW Animation js
             new WOW({mobile: true}).init();
@@ -98,17 +97,16 @@
             $('.research-popup').magnificPopup({
                 type: 'inline',
                 mainClass: 'mfp-fade',
-                closeOnBgClick: true
+                closeOnBgClick: true,
                 gallery: {
-                    enabled: true,
+                    enabled: true
                 },
-
                 callbacks: {
                     elementParse: function(item) {
                         console.log('elementParse', item);
                         var project = $(item.el).attr('data-project');
                         console.log($(item.el).attr('data-project'));
-                        // item.src = '<div class="white-popup">' +
+                        // item.src = '<div class='"white-popup">' +
                         //     '<h1> Hi Aut </h1>' +
                         //     '<h1>' + project + ' </h1>' +
                         //     '</div>';

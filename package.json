@@ -1,52 +1,54 @@
 {
-    "name": "dralexgreaney.com",
-    "version": "0.1.2",
-    "description": "Dr. Greaney's Research Group Site",
-    "main": "index.js",
-    "scripts": {
-        "test": "test",
-        "scss":         "node-sass --output-style compact -o public/css src/scss/main.sass",
-        "autoprefixer": "postcss -u autoprefixer -r public/css/*",
-        "//":           "compile & interpolate pug templates into index.html",
-        "watch:pug":    "pug -O src/pug/pugCompileData.js src/pug/index.pug --out public --watch --pretty",
-        "//":           "run script to compile pug templates for clientside use into js function ",
-        "pugFn":        "node build-scripts/compile-pug.js",
-        "watch:pugFn":  "onchange 'src/research-pages/*.pug' -- npm run pugFun",
-        "build-html":   "onchange 'src/pug/pugCompileData.js' -- npm run watch-pug",
-        "lint":         "eslint src/app.js || true",
-        "uglify":       "uglifyjs src/vendor/jquery.js src/vendor/tether.js src/vendor/*.js src/pugTemplateFunctions.js src/*.js -m -o public/build.js --beautify",
-        "watch:css":    "onchange 'src/scss/*.sass' -i -v -- npm run scss",
-        "watch:js":     "onchange 'src/*.js' 'src/app.js' -i -v -- npm run uglify",
-        "watch:all":    "npm run watch:pug & npm run watch:css & npm run watch:js",
-        "build:css":    "npm run scss & npm run autoprefixer",
-        "build:js":     "npm run lint & npm run uglify",
-        "build:all":    "npm run build:css & npm run build:js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/autumnfjeld/dralexgreaney.git"
-    },
-    "keywords": [
-        "Alex Greaney",
-        "Computational Materials Science"
-    ],
-    "author": "Autumn Fjeld",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/autumnfjeld/dralexgreaney/issues"
-    },
-    "homepage": "https://github.com/autumnfjeld/dralexgreaney#readme",
-    "devDependencies": {
-        "autoprefixer": "^7.0.1",
-        "bib2json": "0.0.1",
-        "cssmin": "^0.4.3",
-        "eslint": "^3.19.0",
-        "eslint-config-google": "^0.7.1",
-        "node-sass": "^4.5.2",
-        "onchange": "^3.2.1",
-        "postcss-cli": "^4.0.0",
-        "pug": "^2.0.0-rc.1",
-        "pug-cli": "^1.0.0-alpha6",
-        "uglify-js": "^3.0.4"
-    }
+  "name": "dralexgreaney.com",
+  "version": "0.1.2",
+  "description": "Dr. Greaney's Research Group Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "scss": "node-sass --output-style compact -o public/css src/scss/main.sass",
+    "autoprefixer": "postcss -u autoprefixer -r public/css/*",
+    "//": "run script to compile pug templates for clientside use into js function ",
+    "watch:pug": "pug -O src/pug/pugCompileData.js src/pug/index.pug --out public --watch --pretty",
+    "pugFn": "node build-scripts/compile-pug.js",
+    "watch:pugFn": "onchange 'src/research-pages/*.pug' -- npm run pugFun",
+    "build-html": "onchange 'src/pug/pugCompileData.js' -- npm run watch-pug",
+    "lint": "eslint src/app.js || true",
+    "uglify": "uglifyjs src/vendor/jquery.js node_modules/jquery-backstretch/jquery.backstretch.min.js src/vendor/tether.js src/vendor/*.js src/pugTemplateFunctions.js src/*.js -m -o public/build.js --beautify",
+    "watch:css": "onchange 'src/scss/*.sass' -i -v -- npm run scss",
+    "watch:js": "onchange 'src/*.js' 'src/app.js' -i -v -- npm run uglify",
+    "watch:all": "npm run watch:pug & npm run watch:css & npm run watch:js",
+    "build:css": "npm run scss & npm run autoprefixer",
+    "build:js": "npm run lint & npm run uglify",
+    "build:all": "npm run build:css & npm run build:js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autumnfjeld/dralexgreaney.git"
+  },
+  "keywords": [
+    "Alex Greaney",
+    "Computational Materials Science"
+  ],
+  "author": "Autumn Fjeld",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/autumnfjeld/dralexgreaney/issues"
+  },
+  "homepage": "https://github.com/autumnfjeld/dralexgreaney#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.0.1",
+    "bib2json": "0.0.1",
+    "cssmin": "^0.4.3",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1",
+    "node-sass": "^4.5.2",
+    "onchange": "^3.2.1",
+    "postcss-cli": "^4.0.0",
+    "pug": "^2.0.0-rc.1",
+    "pug-cli": "^1.0.0-alpha6",
+    "uglify-js": "^3.0.4"
+  },
+  "dependencies": {
+    "jquery-backstretch": "^2.1.15"
+  }
 }
