@@ -1,30 +1,36 @@
 section#group-members
     .container
         .row
-            .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-                h2 Group Members
+            .col-12
+                .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+                    h2 Group Members
 
         .row.justify-content-around
-            each person in app.groupMembers
-                                    .col-md-6.col-sm-6.wow.fadeInUp(data-wow-delay='0.4s')
+            each person, index in app.groupMembers
+                                    .col-sm-6.col-xs-12.wow.fadeInUp.mr-0(data-wow-delay='0.4s')
                                         .group-thumb
-                                            .row
+                                            .row.mb-2
                                                 .col-5
                                                     img.img-person(src= person.imageUrl)
-                                                .col
-                                                    <br>
-                                                    <br>
-                                                    h4= person.name
-                                                    p= person.role
-                                                    p= person.email
-                                                    .icons
-                                                        i.fa.fa-github
-                                                        i.fa.fa-flask
-                                                        i.fa.fa-linkedin
-                                            <br>
+                                                .col.d-flex.flex-column.justify-content-center.ml-0.pl-0
+                                                        h5= person.name
+                                                        p= person.role
+                                                        p= person.email
+                                                        .icons
+                                                            i.fa.fa-github
+                                                            i.fa.fa-flask
+                                                            i.fa.fa-linkedin
                                             .row
-                                                .col-md-11
+                                                .col-md-12
                                                     strong Research Interests
                                                     span.text= person.researchInterests
-                                                    p= person.funFacts
+                                                    //p= person.funFacts
+                                                    p.text-right.member-more
+                                                        a.btn.more-link(data-toggle='collapse', href='#more'+index, aria-expanded='false', aria-controls='collapseExample')
+                                                            i.fa.fa-chevron-circle-down
+                                                    .collapse(id= 'more'+index)
+                                                        .card.card-block
+                                                            p= person.funFacts
+
+
 

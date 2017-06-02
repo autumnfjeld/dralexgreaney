@@ -1,13 +1,15 @@
 nav.navbar.fixed-top.navbar-toggleable-md.navbar-light.bg-white
-    button.navbar-toggler.navbar-toggler-right(
+    button.navbar-toggler.navbar-toggler-left(
             type='button', data-toggle='collapse',
             data-target='#navbarNavAltMarkup',
             aria-controls='navbarNavAltMarkup',
             aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
+            //i.fa.fa-ellipsis-v
+            //i.fa.fa-chevron-down
     a.navbar-brand(href='#')
-        img.d-inline-block.align-top.mr-2.matsci-tet-img(src="media/matsci-tet_50x60.png", alt="MatSci Tetrahedron")
-        .d-inline.hidden-md-down Computational Materials Group
+        img.d-inline-block.align-top.mr-2.matsci-tet-img.hidden-md-down(src="media/matsci-tet_50x60.png", alt="MatSci Tetrahedron")
+        .d-inline Computational Materials Group
     #navbarNavAltMarkup.collapse.navbar-collapse.justify-content-end
         ul.navbar-nav.navbar-right
             li.nav-item

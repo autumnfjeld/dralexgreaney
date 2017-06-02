@@ -99,6 +99,8 @@ p
         font-size: 2rem
     h2
         font-size: 1.5rem
+    h4
+        font-size: 1rem
 
 
 .spaced
@@ -177,13 +179,17 @@ a
     box-sizing: border-box
 
 .section-title
-  margin: 0
-  padding-bottom: 32px
+    margin: 0
+    padding-bottom: 32px
+    @include media-breakpoint-down(xl)
+      //margin-left: 1rem
+
 
 #about, #service, #resume, #work, #research, #research-frame, #group-members, #publications, #contact, footer
-  position: relative
-  padding-top: 80px
-  padding-bottom: 80px
+    position: relative
+    padding: 80px 0
+    @include media-breakpoint-down(md)
+        padding: 20px 0
 
 #service, #work, #research, #group-members
   background: #f9f9f9
@@ -244,16 +250,28 @@ a
  *-----------------------------------------*/
 
 .navbar
-  border: none
-  margin-bottom: 0
-  background-color: #ffffff
-  //padding: 0
-  .navbar-brand
-    color: #444
-    font-weight: normal
-    font-size: 20px
-    .matsci-tet-img
-        height: 38px
+    border: none
+    margin-bottom: 0
+    background-color: #ffffff
+    //padding: 0
+    .navbar-toggler
+        border: none
+        cursor: pointer
+        .navbar-toggler-icon
+            background-image: url('../media/matsci-tet_50x60.png')
+    .navbar-brand
+        color: #444
+        font-weight: normal
+        font-size: 1.25em
+        .matsci-tet-img
+            height: 38px
+        // hamburger is 56px wide so brand must be after that
+        @include media-breakpoint-down(md)  //to match nav breakpoint
+            text-align: right
+            //font-size: 14px
+
+
+
 
 ul.navbar-nav li a
   font-size: 12px
@@ -437,8 +455,9 @@ $imgDiam1: 210px
         padding: 20px 20px 20px 0
         margin-bottom: 30px
     .img-person, .card-img-top
-        height: 210px
-        width: 210px
+        //height: 210px
+        max-width: 100%
+        min-width: 100%
         border-radius: 110px
         border: 5px solid #f4f4f4
     i.fa
@@ -448,6 +467,16 @@ $imgDiam1: 210px
         padding-left: 6px
     p
         margin: 2px
+    .member-more
+        margin: 0
+        .more-link
+            color: $gray-light
+        .btn
+            padding: 0
+        //    // get rid of blue browser outline
+        //    &:focus, &:selected
+        //        border: none
+        //        outline: none
 
 
 /*---------------------------------------
@@ -457,7 +486,7 @@ $imgDiam1: 210px
 #publications
     .blockquote
         padding: 0 .5rem
-        margin: 1rem 8rem .5rem 5rem
+        //margin: 1rem 8rem .5rem 5rem
         font-size: .8rem
         border-left: 0.1rem solid $ucr-gold
         //&:hover

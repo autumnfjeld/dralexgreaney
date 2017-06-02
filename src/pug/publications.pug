@@ -4,7 +4,7 @@ section#publications
             .wow.fadeInUp.section-title(data-wow-delay='0.2s')
                 h2 Publications
 
-        .row
+        div
             each pub in app.publications
                 blockquote.blockquote.animatedhover
                     div=  pub.Fields.author + ', '

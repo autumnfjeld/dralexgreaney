@@ -11,6 +11,7 @@ section#research
             each project in app.researchProjects
                 .wow.fadeInUp.col-md-4.col-sm-6(data-wow-delay='0.4s')
                     .work-thumb
+                        h6.text-truncate= project.title
                         .work-thumb-overlay.research-click(data-project= project.href)
                             h4= project.title
                             small= project.teaser
