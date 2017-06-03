@@ -26,8 +26,7 @@
                 $('.spinner-box').fadeOut(1000); // set duration in brackets
             });
 
-            // jQuery backstretch slideshow, will pick appropriate image for div size
-            $('#home').backstretch([
+            $('.home-backstretch').backstretch([
                 [
                     {'width': 1920, 'url': 'media/Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'},
                     {'width': 960, 'url': 'media/Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'}

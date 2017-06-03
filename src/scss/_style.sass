@@ -107,34 +107,6 @@ p
   letter-spacing: 6px
   text-transform: uppercase
 
-/*---------------------------------------
- *    Colors
- *-----------------------------------------*/
-
-// Text colors
-.gray-dark
-    color: $gray-dark
-.text-gray
-    color: $gray
-.text-gray-light
-    color: $gray-light
-.text-gray-lighter
-    color: $gray-lighter
-.text-gray-lightest
-    color: $gray-lightest
-.text-white
-
-// UCR Colors
-$ucr-blue:  #2D6CC0
-$ucr-gold:  #F1AB00
-$ucr-gray:  #7A6E67         //which really looks brown!!!
-
-$usr-brown:   #905A33         // redwoodish
-$ucr-orange:  #CD5806
-$ucr-mustard: #BB8900
-$ucr-green:   #6F8135
-$ucr-purple:  #624A7E
-$ucr-navy:    #003066
 
 
 /*---------------------------------------
@@ -146,7 +118,7 @@ $ucr-navy:    #003066
   border: none
   border-radius: 0
   color: #ffffff
-  font-size: 13px
+  //font-size: 13px
   font-weight: bold
   letter-spacing: 1.6px
   padding: 12px 32px 16px 32px
@@ -252,8 +224,10 @@ a
 .navbar
     border: none
     margin-bottom: 0
-    background-color: #ffffff
+    //background-color: #ffffff
     //padding: 0
+    &.bg-inverse
+        background-color: $gray-light !important
     .navbar-toggler
         border: none
         cursor: pointer
@@ -289,51 +263,50 @@ ul.navbar-nav li a
  *-----------------------------------------*/
 
 #home
-    background-size: cover
-    display: -webkit-box
-    display: -webkit-flex
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
-    align-items: center
-    height: 100vh
-    position: relative
+    .home-backstretch
+        background-size: cover
+        display: flex
+        height: 100vh
+        position: relative
     .home-thumb
         position: absolute
         bottom: 0
         left: 0
         max-width: 100%
-        //margin: 2rem
         background-color: $gray
         opacity: .7
-        .home-thumb-box
-            opacity: 1
-            padding: 1rem
-        .ucr-img
-            height: 35px
-            @include media-breakpoint-up(sm)  //up from 576px?
-              height: 58px
+    .ucr-img, section-btn
+        height: 58px
+    .section-btn
+        width: 11em
+        background-color: $gray-lightest
+        color: black
+        white-space: normal
+
+    // Tablet
+    @include media-breakpoint-only(md)
+        .home-backstretch
+            height: 80vh
+        .home-thumb
+            position: relative
+            height: 20vh
+            padding: 2rem 5rem !important
+
+    // Phone
+    @include media-breakpoint-down(sm)
+        .ucr-img, .section-btn
+            height: 40px
         .section-btn
-            width: 11em
-            background-color: $gray-lightest
-            color: black
-            white-space: normal
+            width: 8em
+            font-size: 16px
+            letter-spacing: normal
 
 
 
-
-
-@media (max-width: 980px)
-    #home
-        height: 55vh
 
 @media (max-width: 768px)
     .navbar-default .navbar-nav li a
         display: inline-block
-    #home
-        height: 85vh
 
 @media (max-width: 767px)
     #resume .resume-thumb-sec
@@ -349,9 +322,6 @@ ul.navbar-nav li a
     #contact .contact-info
         margin-top: 45px
 
-@media (max-width: 320px)
-    #home
-        height: 125vh
 
 
 
@@ -452,7 +422,7 @@ $imgDiam1: 210px
 
 #group-members
     .group-thumb
-        padding: 20px 20px 20px 0
+        //padding: 20px 20px 20px 0
         margin-bottom: 30px
     .img-person, .card-img-top
         //height: 210px
