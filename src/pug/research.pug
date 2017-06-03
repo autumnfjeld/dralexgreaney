@@ -1,22 +1,25 @@
-section#research-frame
+section#research
     .container
         .row
             .col-md-12.col-sm-12
                 // SECTION TITLE
                 .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-                    h2 Research Projects Image frame
+                    h2 Research Projects
                     p Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.
+                    p Click the images for research summaries.
 
         .row
-            each project in app.researchProjects
+            each project in researchProjects
                 .wow.fadeInUp.col-md-4.col-sm-6(data-wow-delay='0.4s')
-                    .work-thumb
+                    .work-thumb.p-1
+                        //h5.text-truncate= project.title
                         //a.research-popup(href= project.imageUrl)
                         a.research-popup(data-project= project.href)
                             .work-thumb-overlay
-                                small= project.title
-                                h4= project.teaser
-                            img.img-responsive(src= project.imageUrl, alt= project.imageTitle,)
+                                h5= project.title
+                                p= project.teaser
+                                p click to read more
+                            img.img-responsive.one-edge-shadow(src= project.imageUrl, alt= project.imageTitle,)
 
 
 

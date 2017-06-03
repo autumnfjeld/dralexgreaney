@@ -1,4 +1,4 @@
-module.exports = [
+ [
     {
         "ObjectType": "entry",
         "EntryType": "article",
@@ -314,4 +314,5 @@ module.exports = [
             "doi": "10.1557/PROC-578-161",
             "author": "P. Alex Greaney and D. C. Chrzan"
         }
-    }];
+    }
+ ]

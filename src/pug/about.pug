@@ -11,7 +11,7 @@ section#about
                         |  blah  blah
                     p
                         span Location -
-                        |  Riverside Room 666
+                        |  #{about.location} Building something
                     p
                         span Phone -
                         |  001 024 7823 8402
@@ -31,7 +31,7 @@ section#about
                             strong Research Overview
                         h4.text-success v0.1.2 Work In Progress!!!  Prototyping only!  But welcome general/broad feedback :) This text should be green
                     .wow.fadeInUp(data-wow-delay='0.8s')
-                        for paragraph in app.about.summary
+                        for paragraph in about.summary
                             p= paragraph
 
 

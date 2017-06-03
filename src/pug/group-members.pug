@@ -1,12 +1,12 @@
 section#group-members
-    .container
+    .container-fluid
         .row
             .col-12
                 .wow.fadeInUp.section-title(data-wow-delay='0.2s')
                     h2 Group Members
 
         .row.justify-content-around
-            each person, index in app.groupMembers
+            each person, index in groupMembers
                                     .col-sm-6.col-xs-12.wow.fadeInUp.mr-0(data-wow-delay='0.4s')
                                         .group-thumb
                                             .row.mb-2

@@ -5,7 +5,7 @@ section#publications
                 h2 Publications
 
         div
-            each pub in app.publications
+            each pub in publications
                 blockquote.blockquote.animatedhover
                     div=  pub.Fields.author + ', '
                     div.title= "'" + pub.Fields.title + "', "

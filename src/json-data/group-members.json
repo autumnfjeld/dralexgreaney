@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Laura de Sousa Oliveira ",
+        "role": "PhD Student ",
+        "email": "laura.rita.oliveira@gmail.com ",
+        "gitHub": "",
+        "linkedIn": "",
+        "researchGate": "",
+        "personWebSite": "",
+        "funFacts": " Laura was born in Loulé, Portgal. When she is not working, Laura enjoys thinking about life, the universe and everything. She has Bachelor of Science degrees in Physics and Mathematics, with minors in Hispanic Studies and Electrical Engineering, from the New Mexico Institute of Mining and Technology.",
+        "researchInterests": "Applying computational methods to physical problems ",
+        "imageUrl": "http://research.engr.oregonstate.edu/greaney/sites/research.engr.oregonstate.edu.greaney/files/imagecache/160x160-scale-crop/_mg_0561_0.jpg"
+    },
+    {
+        "name": "Henri ",
+        "role": "Mouser ",
+        "email": "henri@ucr.edu ",
+        "gitHub": "https://github.com/henrithecat",
+        "linkedIn": "www.linkedin.com/in/henrithecat",
+        "researchGate": "https://www.researchgate.net/profile/Henri_The_Cat",
+        "personWebSite": "www.henrigetsthemouse.com",
+        "funFacts": "Grew up in the Bay Area. Informal science training in the backyard sheds. A 13 yr old veteran mouser and transcontinental traveler, Henri has lived with Dr. Greaney since his days in Berkeley, CA. Henri works from home, and can usually be found napping on Dr. Greaney's desk. ",
+        "researchInterests": "Thermal resistance of recumbent-feline guard-hairs, keyboard ergonomics",
+        "imageUrl": "http://research.engr.oregonstate.edu/greaney/sites/research.engr.oregonstate.edu.greaney/files/imagecache/160x160-scale-crop/henri-newyear-2012-crop.jpg "
+    },
+    {
+        "name": "Mystery Member  ",
+        "role": "PostDoc ",
+        "email": "email@email ",
+        "gitHub": "",
+        "linkedIn": "",
+        "researchGate": "",
+        "personWebSite": "",
+        "funFacts": "You play the flute in a heavy metal band, you make the world’s best lobster thermidor, you once played table tennis with the Dalai Lama... something that shows that there is more to you than science.",
+        "researchInterests": " Loves to think about tiny things, really nano things.",
+        "imageUrl": "https://s3-us-west-2.amazonaws.com/alexgreaney.com/group-members/dude1_300px.JPG"
+    },
+    {
+        "name": "Toonces ",
+        "role": "PostCat ",
+        "email": "email@email ",
+        "gitHub": "",
+        "linkedIn": "",
+        "researchGate": "",
+        "personWebSite": "",
+        "funFacts": "Star researcher. Loves driving.",
+        "researchInterests": " Test failure resistance of automobiles",
+        "imageUrl": "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/toonces.png"
+    }
+]
