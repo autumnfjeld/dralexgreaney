@@ -1,19 +1,47 @@
-section#work
+section#group-members-fun
     .container
         .row
             .col-md-12.col-sm-12
                 .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-                h2 Group members another way
+                h2 Group members image focus fun
                 p Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.
-        .row
-            each person in groupMembers
-                .wow.fadeInUp.col-md-3.col-sm-6(data-wow-delay='0.4s')
-                    .work-thumb
-                        a.image-popup(href= person.imageUrl)
-                            .work-thumb-overlay
-                                small= person.name
-                                h4= person.role
-                                small= person.researchInterests
-                            |
-                            img.img-responsive(src= person.imageUrl, alt= person.name)
+        .d-flex.flex-wrap.mb-3.justify-content-around
+            each person, index in groupMembers
+                .userWrap.d-flex.flex-column.align-content-center
+                    .user
+                        .member-img-box.mx-auto
+                            img.img-fluid.img-member(src= person.imageUrl, alt= person.name)
+                        .displayed-text.text-center
+                            h5= person.name + index
+                            p= person.role
+                            p= person.email
+                        .other-stuff
+                            span.text= person.researchInterests
+                            p= person.funFacts
 
+
+            //
+            //each person, index in groupMembers
+            //    .wow.fadeInUp(data-wow-delay='0.4s')
+            //        .member-container.p-xs-1.p-lg-4(id= 'member-'+ index, data-index= index, data-count= groupMembers.length)
+            //            .member-intro
+            //                .d-flex.flex-column.justify-content-between
+            //                    .member-img-box
+            //                        img.img-fluid.img-member(src= person.imageUrl, alt= person.name)
+            //                    .text-center
+            //                        h5= person.name + index
+            //                    //    p= person.role
+            //                    //    p= person.email
+            //                    //    .icons
+            //                    //        i.fa.fa-github
+            //                    //        i.fa.fa-flask
+            //                    //        i.fa.fa-linkedin
+            //
+            //            .member-expanded(id= 'attached-' + index, data-index= index)
+            //                .card.card-block
+            //                    h5= person.name + index
+            //                    strong Research Interests
+            //                    span.text= person.researchInterests
+            //                    p= person.funFacts
+            //
+            //
