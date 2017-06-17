@@ -1,47 +1,36 @@
 section#group-members-fun
     .container
         .row
-            .col-md-12.col-sm-12
+            .col-md-12.col-sm-12.mb-5
                 .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-                h2 Group members image focus fun
+                h2 The Greaney Group
                 p Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.
-        .d-flex.flex-wrap.mb-3.justify-content-around
+        .d-flex.flex-wrap.mb-3.justify-content-between
             each person, index in groupMembers
-                .userWrap.d-flex.flex-column.align-content-center
-                    .user
+                .contentWrap.d-flex.flex-column.align-content-center
+                    .content
                         .member-img-box.mx-auto
                             img.img-fluid.img-member(src= person.imageUrl, alt= person.name)
-                        .displayed-text.text-center
-                            h5= person.name + index
-                            p= person.role
-                            p= person.email
-                        .other-stuff
-                            span.text= person.researchInterests
-                            p= person.funFacts
+                        .basic-info.d-flex.flex-column.justify-content-around.align-items-center.my-2
+                            h5.text-center= person.name
+                            small.text-center= person.role
+                            small.text-center= person.email
+                            .icons.d-flex.justify-content-between.m-2
+                                a(href= person.gitHub, )
+                                    i.fa.fa-github
+                                a(href= person.linkedIn)
+                                    i.fa.fa-linkedin
+                                a(href= person.researchGate, data-toggle="tooltip", data-placement="top", title="Research Gate Profile")
+                                    i.fa.fa-flask
+                                // Download or open in new ta
+                                a(href= person.cvLink target="_blank")
+                                    i.fa.fa-file-text-o
+                                    //i.fa.fa-id-card-o
+                                a(href= person.personalWebsite, target="_blank", data-toggle="tooltip", data-placement="top", title= person.name+ "'s website")
+                                    i.fa.fa-id-badge
+                                    //i.fa.fa.user-circle-o
+                        .expanded-info.px-3
+                            //p.academic
+                            p.research.text-gray= person.researchInterests
+                            p.funFacts.text-gray-light= person.funFacts
 
-
-            //
-            //each person, index in groupMembers
-            //    .wow.fadeInUp(data-wow-delay='0.4s')
-            //        .member-container.p-xs-1.p-lg-4(id= 'member-'+ index, data-index= index, data-count= groupMembers.length)
-            //            .member-intro
-            //                .d-flex.flex-column.justify-content-between
-            //                    .member-img-box
-            //                        img.img-fluid.img-member(src= person.imageUrl, alt= person.name)
-            //                    .text-center
-            //                        h5= person.name + index
-            //                    //    p= person.role
-            //                    //    p= person.email
-            //                    //    .icons
-            //                    //        i.fa.fa-github
-            //                    //        i.fa.fa-flask
-            //                    //        i.fa.fa-linkedin
-            //
-            //            .member-expanded(id= 'attached-' + index, data-index= index)
-            //                .card.card-block
-            //                    h5= person.name + index
-            //                    strong Research Interests
-            //                    span.text= person.researchInterests
-            //                    p= person.funFacts
-            //
-            //
