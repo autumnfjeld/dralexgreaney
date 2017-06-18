@@ -15,7 +15,7 @@
     "watch:pugFn": "onchange 'src/research-pages/*.pug' -- npm run pugFun",
     "build-html": "onchange 'src/pug/pugCompileData.js' -- npm run watch-pug",
     "lint": "eslint src/app.js || true",
-    "uglify": "uglifyjs src/vendor/jquery.js node_modules/jquery-backstretch/jquery.backstretch.min.js src/vendor/tether.js src/vendor/*.js src/js/*.js src/pugTemplateFunctions.js src/app.js -m -o public/build.js --beautify",
+    "uglify": "uglifyjs src/vendor/jquery.js node_modules/jquery-backstretch/jquery.backstretch.min.js src/vendor/tether.js node_modules/bootstrap/dist/js/bootstrap.min.js src/vendor/*.js src/js/*.js src/pugTemplateFunctions.js src/app.js -m -o public/build.js --beautify",
     "watch:css": "onchange 'src/scss/*.sass' -i -v -- npm run scss",
     "watch:js": "onchange 'src/js/*.js' 'src/app.js' -i -v -- npm run uglify",
     "watch:all": "npm run watch:pug & npm run watch:css & npm run watch:js",
@@ -51,6 +51,7 @@
     "uglify-js": "^3.0.4"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "jquery-backstretch": "^2.1.15"
   }
 }

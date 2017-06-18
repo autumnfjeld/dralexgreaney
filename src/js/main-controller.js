@@ -1,5 +1,4 @@
 (function (window) {
-    console.log('mainController is running');
     'use strict';
 
     /**
@@ -10,17 +9,25 @@
     function MainController() {
     }
 
+    /**
+     * Initalize 3rd party libraries, javascript components, and any functionality needed on page load
+     */
     MainController.prototype.initView = function(){
 
         $('.spinner-box').fadeOut(1000); // set duration in brackets
         this._initBackstretch();
         this._initNavbar();
+        this._initBootstrapComponents();
 
         // Instantiate scoll animation module
         new WOW({mobile: true}).init();
 
     };
 
+    /**
+     * Initialize the backstrech library with rotating images for above-the-fold view
+     * @private
+     */
     MainController.prototype._initBackstretch = function(){
 
         $('.home-backstretch').backstretch([
@@ -41,6 +48,10 @@
 
     };
 
+    /**
+     * Bind smoothscroll event for navbar links
+     * @private
+     */
     MainController.prototype._initNavbar = function(){
 
         // smoothscroll js
@@ -61,8 +72,21 @@
 
     };
 
-        // Export to window
-        window.app = window.app || {};
-        window.app.MainController = MainController;
+    /**
+     * Init bootstrap components that require initialization
+     * @private
+     */
+    MainController.prototype._initBootstrapComponents = function(){
+
+        // Bootstrap4 requires initializing tooltips, due to "performance reasons"
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    };
+
+
+    // Export to window
+    window.app = window.app || {};
+    window.app.MainController = MainController;
 
 })(window);
