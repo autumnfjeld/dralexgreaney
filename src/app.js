@@ -4,16 +4,14 @@
 
     // Expose jQuery to the global object
     window.jQuery = window.$ = jQuery;
-    console.log('window.app', window.app)
 
     function Website(){
         this.mainController = new app.MainController();
-        this.researchData = app.data;
-        // this.researchVIew ???
-        this.researchTemplate = app.researchTemplateFunc;
-        // or new View?
-        this.researchController = new app.ResearchController(this.researchTemplate, this.researchData);
+        this.researchData = app.dataStore;
+        this.researchPopupTemplate = app.researchPopupTemplateFunc;
+        this.researchController = new app.ResearchController(this.researchPopupTemplate, this.researchData);
 
+        console.log('Confirm app: this:', this);
     }
 
     var matSci = new Website();

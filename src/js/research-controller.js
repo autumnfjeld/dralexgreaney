@@ -8,7 +8,7 @@
      * @constructor
      */
     function ResearchController(template, data) {
-        console.log('ResearchController', data);
+        console.log('ResearchController()   template:', template, data);
         this.template = template;
         this.data = data;
     }
@@ -24,26 +24,26 @@
         $('.research-popup').magnificPopup({
             type: 'inline',
             mainClass: 'mfp-fade',
-            closeOnBgClick: true,
             gallery: {
                 enabled: true
             },
             callbacks: {
                 elementParse: function(item) {
-                    console.log('elementParse', item);
+                    var projectIndex = item.index;
+                    console.log('ProjectIndex', projectIndex);
                     var project = $(item.el).attr('data-project');
-                    console.log($(item.el).attr('data-project'));
-                    // item.src = '<div class='"white-popup">' +
-                    //     '<h1> Hi Aut </h1>' +
-                    //     '<h1>' + project + ' </h1>' +
-                    //     '</div>';
-                    console.log('rawData', self.data)
-                    item.src = self.template(self.data[3]);
+                    console.log('data-project', $(item.el).attr('data-project'));
+                    console.log('rawData', self.data, 'this data', self.data[projectIndex]);
+                    item.src = self.template(self.data[projectIndex]);
+                },
+                close: function(){
+                    console.log('fuck you');
                 }
             }
         });
     };
 
+    //Will need to add custom close if going forward with this
 
 
     // Export to window
@@ -53,7 +53,7 @@
 })(window);
 
 
-
+// Use or cleanup  !!!
 
 (function (window) {
 

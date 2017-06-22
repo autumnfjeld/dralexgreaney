@@ -1,0 +1,20 @@
+#research-popup
+    .container.white-popup
+        .row
+            button(title="Close", type="button", class="mfp-close") x &#215;
+                i.fa.fa-times
+            .col-md-3
+                figure.figure
+                    img.figure-img.img-fluid.rounded(src=imageUrl, alt=imageTitle)
+                    figcamption.figure-caption  #{imageTitle}
+                .card
+                    ul.list-group.list-group-flush
+                        li.list-group-item Lisa JOnes PhD
+                        li.list-group-item
+                        li.list-group-item paper references
+                        li.list-group-item Links to other places
+            .col-md-9
+                h3 #{title}
+                p #{teaser}
+                each paragraph in expandedText
+                    p= paragraph

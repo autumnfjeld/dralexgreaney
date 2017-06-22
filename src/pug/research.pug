@@ -11,15 +11,17 @@ section#research
         .row
             each project in researchProjects
                 .wow.fadeInUp.col-md-4.col-sm-6(data-wow-delay='0.4s')
-                    .work-thumb.p-1
-                        //h5.text-truncate= project.title
-                        //a.research-popup(href= project.imageUrl)
-                        a.research-popup(data-project= project.href)
-                            .work-thumb-overlay
-                                h5= project.title
-                                p= project.teaser
-                                p click to read more
-                            img.img-responsive.one-edge-shadow(src= project.imageUrl, alt= project.imageTitle,)
+                    .project-box
+                        .work-thumb
+                            //a.research-popup(href= project.imageUrl)
+                            a.research-popup(data-project= project.href)
+                                .work-thumb-overlay
+                                    h5= project.title
+                                    p= project.teaser
+                                    p click to read more
+                                img.img-responsive(src= project.imageUrl, alt= project.imageTitle)
+                        .title-box.bg-gray-light.py-2.px-1.d-flex.align-content-center.justify-content-center
+                            span.text-truncate.text-small.text-gray-lightest= project.title
 
 
 

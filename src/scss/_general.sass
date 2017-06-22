@@ -1,3 +1,67 @@
+
+/*---------------------------------------
+ *    0 Typography
+ * Bootstrap sets body at 1rem
+ *-----------------------------------------*/
+//
+//h1, h2, h3, h4, h5, h6
+//  font-style: normal
+//  font-weight: bold
+//  letter-spacing: 0
+//
+//h1
+//  color: #373737
+//  font-size: 45px
+//  line-height: normal
+//
+//h2
+    @include media-breakpoint-down(sm)
+        font-size
+
+//
+//h3
+//  color: #585858
+//  font-size: 16px
+//  line-height: 32px
+//  letter-spacing: 6px
+//  text-transform: uppercase
+//
+//h4
+//  color: #656565
+//  font-size: 20px
+//
+p
+    color: $gray-light
+//  font-size: 16px
+//  font-weight: normal
+//  line-height: 25px
+//  letter-spacing: 0.2px
+
+//$line-height-base: 1.5 !default;
+//
+//$font-size-h1: 2.5rem !default;
+//$font-size-h2: 2rem !default;
+//$font-size-h3: 1.75rem !default;
+//$font-size-h4: 1.5rem !default;
+//$font-size-h5: 1.25rem !default;
+//$font-size-h6: 1rem !default;
+//MOVE TO BOOTSTRAP RELATED FILE
+
+@include media-breakpoint-down(sm)
+    h1
+        font-size: 2rem
+    h2
+        font-size: 1.5rem
+    h4
+        font-size: 1rem
+
+
+.spaced
+    letter-spacing: 6px
+    text-transform: uppercase
+
+
+
 /*---------------------------------------
  *    Colors
  *-----------------------------------------*/
@@ -16,11 +80,13 @@
 .text-white
 
 .bg-gray
-    backgroun-color: $gray
+    background-color: $gray
 .bg-gray-light
     background-color: $gray-light
 .bg-gray-lighter
     background-color: $gray-lighter
+.bg-transparent
+    background-color: transparent
 
 // UCR Colors
 $ucr-blue:  #2D6CC0

@@ -47,69 +47,6 @@ html, body
 
 
 /*---------------------------------------
- *    0 Typography
- * Bootstrap sets body at 1rem
- *-----------------------------------------*/
-//
-//h1, h2, h3, h4, h5, h6
-//  font-style: normal
-//  font-weight: bold
-//  letter-spacing: 0
-//
-//h1
-//  color: #373737
-//  font-size: 45px
-//  line-height: normal
-//
-//h2
-    @include media-breakpoint-down(sm)
-        font-size
-
-//
-//h3
-//  color: #585858
-//  font-size: 16px
-//  line-height: 32px
-//  letter-spacing: 6px
-//  text-transform: uppercase
-//
-//h4
-//  color: #656565
-//  font-size: 20px
-//
-p
-  color: $gray-light
-//  font-size: 16px
-//  font-weight: normal
-//  line-height: 25px
-//  letter-spacing: 0.2px
-
-//$line-height-base: 1.5 !default;
-//
-//$font-size-h1: 2.5rem !default;
-//$font-size-h2: 2rem !default;
-//$font-size-h3: 1.75rem !default;
-//$font-size-h4: 1.5rem !default;
-//$font-size-h5: 1.25rem !default;
-//$font-size-h6: 1rem !default;
-//MOVE TO BOOTSTRAP RELATED FILE
-
-@include media-breakpoint-down(sm)
-    h1
-        font-size: 2rem
-    h2
-        font-size: 1.5rem
-    h4
-        font-size: 1rem
-
-
-.spaced
-  letter-spacing: 6px
-  text-transform: uppercase
-
-
-
-/*---------------------------------------
  *    1 Buttons
  *-----------------------------------------*/
 
@@ -163,8 +100,9 @@ a
     @include media-breakpoint-down(md)
         padding: 20px 0
 
-#service, #work, #research, #group-members, #publications
+#home, #service, #work, #research, #publications
   background: #f9f9f9
+  background: $gray-lightest
 
 
 /*---------------------------------------
@@ -384,15 +322,28 @@ ul.navbar-nav li a
  *-----------------------------------------*/
 
 #work, #research
+    $researchTeaserImgSize: 350px
+
+    .project-box
+        margin: 22px 0
+    .title-box
+        border-radius: 0 0 3px 3px
     .work-thumb
-        margin: 22px 0 12px 0
+        width: $researchTeaserImgSize
+        height: $researchTeaserImgSize
+        max-width: $researchTeaserImgSize
+        max-height: $researchTeaserImgSize
         padding: 0
         overflow: hidden
         position: relative
+        border: 2px solid $gray-light
+        //background-color: white
         small
           font-size: 16px
         .img-responsive
-            max-width: 100%
+            max-width: $researchTeaserImgSize
+            //height: $researchTeaserImgSize
+            //max-width: 100%
 
     $overlay-offset: 40px
     .work-thumb-overlay
@@ -413,50 +364,29 @@ ul.navbar-nav li a
     .work-thumb:hover .work-thumb-overlay
         opacity: .8
 
+#research-popup
+    .white-popup
+        max-height: 750px
+        overflow-y: scroll
+    .mfp-close
+        font-size: 20px
+        //top: 4px
+        //right: 4px
+
+
 
 /*---------------------------------------
  *    Group Members
  *-----------------------------------------*/
 
-$imgDiam1: 210px
-// TODO DELETE
+$initImgDiam: 250px
+$change: 100px
+$finalImgDiam: 350px
+$textAreaHeight: 200px
+$initWrapperHeight: 400px
+$initWrapperWidth: $initImgDiam + 100px
+
 #group-members
-    .group-thumb
-        //padding: 20px 20px 20px 0
-        margin-bottom: 30px
-    .img-person, .card-img-top
-        //height: 210px
-        max-width: 100%
-        min-width: 100%
-        border-radius: 110px
-        border: 5px solid #f4f4f4
-    i.fa
-        padding-right: 10px
-    .text
-        font-weight: normal
-        padding-left: 6px
-    p
-        margin: 2px
-    .member-more
-        margin: 0
-        .more-link
-            color: $gray-light
-        .btn
-            padding: 0
-        //    // get rid of blue browser outline
-        //    &:focus, &:selected
-        //        border: none
-        //        outline: none
-
-#group-members-fun
-
-    $initImgDiam: 250px
-    $change: 100px
-    $finalImgDiam: 350px
-    $textAreaHeight: 200px
-    $initWrapperHeight: 400px
-    $initWrapperWidth: $initImgDiam + 100px
-
     .contentWrap
         position: relative
         display: inline-block
@@ -476,7 +406,7 @@ $imgDiam1: 210px
         height: $initImgDiam + $textAreaHeight
         border-radius: $initImgDiam/2
         margin-bottom: 5px
-        background: white
+        //background: white
         //transition: height 0.3s ease 0.5s, width 0.3s ease 0.7s, border-radius 0.3s ease 0.5s
         //transition: border-radius 0.3s ease 0.7s
         .member-img-box
