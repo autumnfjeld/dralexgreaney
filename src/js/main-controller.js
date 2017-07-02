@@ -53,6 +53,7 @@
      * @private
      */
     MainController.prototype._initNavbar = function(){
+
         var hash = window.location.hash;
 
         if (hash) {
@@ -87,11 +88,24 @@
     MainController.prototype._initBootstrapComponents = function(){
 
         // Bootstrap4 requires initializing tooltips, due to "performance reasons"
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    };
+         $('[data-toggle="tooltip"]').tooltip();
 
+        // Init popover for publication section
+        $('.abstract-popover-hover').popover({
+            trigger: 'hover',
+            template:   '<div class="popover abstract" role="tooltip">' +
+                            '<div class="popover-arrow"></div> ' +
+                            '<h3 class="popover-title font-weight-normal"></h3>' +
+                            '<div class="popover-content"></div>' +
+                        '</div>',
+            placement: 'top',
+            constraints: [
+                {to: 'window', pin: true}
+            ],
+            offset: '0 -60%'
+        });
+
+    };
 
     // Export to window
     window.app = window.app || {};

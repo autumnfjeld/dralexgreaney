@@ -28,13 +28,13 @@
  *    13. Mobile Responsive styles
  *------------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700')
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300,400')
 
 body
     background: #ffffff
     font-family: 'Lato', sans-serif
     font-style: normal
-    font-weight: normal
+    font-weight: 300
     overflow-x: hidden
     @include media-breakpoint-down(sm)
        font-size: .8rem
@@ -504,29 +504,24 @@ $initWrapperWidth: $initImgDiam + 100px
 #publications
     .blockquote
         padding: 0 .5rem
-        //margin: 1rem 8rem .5rem 5rem
         font-size: 1rem
         border-left: 0.1rem solid $ucr-gold
-        //&:hover
-        //    -webkit-animation: bounce
-        //    animation: bounce 1s
-    //.animatedhover
-    //    animation-play-state: paused
-    //    &:hover
-    //        animation-play-state: running
     .publication-list
         postion: relative
         .fun-stuff
             position: absolute
             top: 50px
             right: 50px
+    .authors
+        font-family: fantasy
+    .title
+        font-weight: 200
 
-    .author
-        color: $ucr-blue
-        font-weight: bold
-        font-size: 12px
-    //.title
-    //.journal
+.popover.abstract
+    font-family: inherit
+    font-weight: 300
+    max-width: 500px
+    @include media-breakpoint-down(sm)
 
 
 /*---------------------------------------

@@ -3,22 +3,26 @@ section#publications
         .row
             .wow.fadeInUp.section-title(data-wow-delay='0.2s')
                 h2 Publications
-
         div
             each pub in publications
-                blockquote.blockquote.animatedhover
-                    div=  pub.Fields.author + ', '
-                    div.title= "'" + pub.Fields.title + "', "
-                    div
-                        span.font-italic= pub.Fields.journal + ', '
-                        span= 'vol. ' + pub.Fields.volume + ', '
-                        if pub.Fields.pages
-                            span= 'pp. ' + pub.Fields.pages + ', '
-                        if pub.Fields.month
-                            span.font-weight-bold= pub.Fields.month + '.'
-                        else
-                            span.font-weight-bold= pub.Fields.year + '.'
-                    if pub.Fields.doi
-                        div
-                        a.d-inline-block(href= 'https://dx.doi.org/' + pub.Fields.doi, target='_blank')
-                            span= 'doi link ' + pub.Fields.doi
+                blockquote.blockquote
+                    a.abstract-popover-hover(
+                    data-toggle="popover",
+                    title="Abstract", data-content=pub.Fields.Abstract)
+                        span.authors.mr-1=  pub.Fields.Author + ',  '
+                        span.title.mr-1.text-capitalize= "'" + pub.Fields.Title + "', "
+                        //- var journalProperCase = pub.Fields.Journal.toProperCase()
+                        //    span journalProperCase
+                        span.font-italic= pub.Fields.Journal + ', '
+                        span.mr-1
+                            span= 'vol. ' + pub.Fields.Volume + ', '
+                            if pub.Fields.Pages
+                                span= 'pp. ' + pub.Fields.Pages + ', '
+                            if pub.Fields.Month
+                                span= pub.Fields.Month + '.'
+                            else
+                                span= pub.Fields.Year + '.'
+                        if pub.Fields.DOI
+                            span.mr-1
+                            a.d-inline-block(href= 'https://dx.doi.org/' + pub.Fields.DOI, target='_blank')
+                                span= 'doi link ' + pub.Fields.DOI
