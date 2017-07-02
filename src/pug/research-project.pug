@@ -10,7 +10,6 @@ section#research-project
 
                 .section-title
                     h3 #{title}
-                    p #{teaser}
 
         if layout !== "bigImage"
             .row
@@ -25,14 +24,16 @@ section#research-project
                         img.figure-img.img-fluid.rounded(src=imageUrl, alt=imageTitle)
                         figcaption.figure-caption  #{imageCaption}
                 .col-md-8
-                    //h3 #{title}
-                    //p #{teaser}
                     .text-columns
                         each paragraph in expandedText
                             p= paragraph
 
         else
             .row
-                h1= layout
-
+                figure.figure.mt-2.text-center
+                    img.figure-img.img-fluid.rounded(src=projectImages[0].imgUrl, alt=projectImages[0].imgCaption)
+                .text-columns.px-5.pb-5
+                    p #{abstract}
+                    each paragraph in projectWriteUp
+                        p= paragraph
 
