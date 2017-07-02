@@ -53,26 +53,26 @@
      * @private
      */
     MainController.prototype._initNavbar = function(){
-        console.log('_initNavbar should go to url hash');
         var hash = window.location.hash;
+
         if (hash) {
             $('ul.navbar-nav a[href="' + hash + '"]').tab('show');
+            $('html, body').stop().animate({
+                scrollTop: $(hash).offset().top - 49,
+            }, 1000);
         }
 
-        // smoothscroll js
-        $(function() {
-            $('.navbar a').bind('click', function(event) {
-                var $anchor = $(this);
-                console.log('$anchor', $anchor);
-                // console.log('$anchor hash', $anchor[0].attr('href'));
-                $('html, body').stop().animate({
-                    scrollTop: $($anchor.attr('href')).offset().top - 49,
-                }, 1000);
-                // event.preventDefault();
-            });
+        // Bind smoothscroll js
+        $('.navbar a').bind('click', function(event) {
+            $('#main-page').show();
+            var $anchor = $(this);
+            window.location.hash =  $anchor.attr('href');
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top - 49,
+            }, 1000);
         });
 
-        //TODO: (maybe) change url hash during scroll ?
+        //TODO: (maybe) change url hash during scroll
 
         // navigation Section
         $('.navbar-collapse a').on('click', function() {
