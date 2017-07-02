@@ -10,9 +10,7 @@ section#publications
                     data-toggle="popover",
                     title="Abstract", data-content=pub.Fields.Abstract)
                         span.authors.mr-1=  pub.Fields.Author + ',  '
-                        span.title.mr-1.text-capitalize= "'" + pub.Fields.Title + "', "
-                        //- var journalProperCase = pub.Fields.Journal.toProperCase()
-                        //    span journalProperCase
+                        span.title.mr-1= "'" + pub.Fields.Title + "', "
                         span.font-italic= pub.Fields.Journal + ', '
                         span.mr-1
                             span= 'vol. ' + pub.Fields.Volume + ', '

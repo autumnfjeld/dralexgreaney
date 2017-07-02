@@ -106,6 +106,52 @@ function createDataModel() {
 }
 
 
+/**
+ *
+ * Fix capitalization in any of the publication entries that originate from .bib file
+ * Need to manually change pub.Fields.XXX if other fields need correction
+ */
+function fixBibCapitalization(){
+    fs.readFile('src/json-data/publications.json', 'utf-8', function(err, data) {
+        if (err) {
+            console.log('Error', err);
+        } else {
+            var bibData = JSON.parse(data);
+            bibData.forEach( function(pub) {
+                if (pub.Fields.Journal) {
+                    pub.Fields.Journal = pub.Fields.Journal.replace(/\w\S*/g, function(txt){
+                        console.log('txt', txt);
+                        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                    });
+                }
+                if (pub.Fields.Booktitle) {
+                    pub.Fields.Booktitle = pub.Fields.Booktitle.replace(/\w\S*/g, function(txt){
+                        console.log('txt', txt);
+                        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                    });
+                }
+                if (pub.Fields.Month) {
+                    pub.Fields.Month = pub.Fields.Month.replace(/\w\S*/g, function(txt){
+                        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                    });
+                }
+                console.log('pub', pub);
+
+            })
+
+        }
+        fs.writeFile('src/json-data/publications-titlefixed.json', JSON.stringify(bibData), function(err){
+            if (err) {
+                console.log('Error writing file', err);
+            } else {
+                console.log('Success file written');
+            }
+        })
+    });
+
+}
+
+
 /********************************************************************************************
  * Helper Functions
  ********************************************************************************************/
@@ -129,7 +175,8 @@ function fileNameToCamelCase(fileName) {
 
 module.exports = {
     compilePugWithContent: compilePugWithContent,
-    createDataModel: createDataModel
+    createDataModel: createDataModel,
+    fixBibCapitalization: fixBibCapitalization
 };
 
 require('make-runnable');
