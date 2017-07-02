@@ -364,14 +364,65 @@ ul.navbar-nav li a
     .work-thumb:hover .work-thumb-overlay
         opacity: .8
 
-#research-popup
+#research-project-page
+    position: relative
+    padding: 80px 0
+    @include media-breakpoint-down(md)
+        padding: 20px 0
+
+#research-project
+    //display: none
+
+
+#research-popup, #research-project
+    /* TODO sort out height & position for .mfp-container & its contents */
+
     .white-popup
-        max-height: 750px
+        position: relative
         overflow-y: scroll
-    .mfp-close
-        font-size: 20px
-        //top: 4px
-        //right: 4px
+        background: #FFF
+        padding: 20px
+        height: 80%
+        min-height: 100%
+        max-height: 700px
+        //width: 80%
+        //max-width: 80%
+        margin: 20px auto
+        //.mfp-close
+        //    width: 100px
+        //    height: 100px
+        // Copy styles from .mfp-close b/c putting .fa as child of .mfp-close blocks click
+        .fa
+            position: absolute
+            right: 10px
+            top: 8px
+            color: $gray-light
+    .text-columns
+        column-count: 2
+        column-gap: 2rem
+
+/* Style for magnificPopup research projects
+
+.mfp-inline-holder .mfp-content
+    min-height: 80%
+    width: 80%
+    // TODO adjust for mobile
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content
+    opacity: 0
+    transition: all 0.15s ease-out
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+    opacity: 1
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+    opacity: 0
+
+
+
 
 
 
@@ -557,35 +608,6 @@ footer
 /*---------------------------------------
  *    13 Mobile Responsive styles
  *-----------------------------------------*/
-
-
-
-.white-popup
-    position: relative
-    background: #FFF
-    padding: 20px
-    width: auto
-    max-width: 80%
-    margin: 20px auto
-
-    //must style button different color
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content
-    opacity: 0
-
-    -webkit-transition: all 0.15s ease-out
-    -moz-transition: all 0.15s ease-out
-    transition: all 0.15s ease-out
-
-/* content animate it */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content
-    opacity: 1
-
-/* content animate out */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content
-    opacity: 0
-
 
 
 

@@ -5,34 +5,20 @@ section#research
                 // SECTION TITLE
                 .wow.fadeInUp.section-title(data-wow-delay='0.2s')
                     h2 Research Projects
-                    p Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.
-                    p Click the images for research summaries.
+                    //p Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.
+                    p Click the images for research summaries. (make tooltip)
 
-        .row
-            each project in researchProjects
+        .row.research-projects
+            each project, index in researchProjects
                 .wow.fadeInUp.col-md-4.col-sm-6(data-wow-delay='0.4s')
                     .project-box
                         .work-thumb
-                            //a.research-popup(href= project.imageUrl)
+                            //.research-page-link.slide(data-project-index= index)
                             a.research-popup(data-project= project.href)
                                 .work-thumb-overlay
                                     h5= project.title
                                     p= project.teaser
-                                    p click to read more
+                                    p= index + 'click to read more'
                                 img.img-responsive(src= project.imageUrl, alt= project.imageTitle)
                         .title-box.bg-gray-light.py-2.px-1.d-flex.align-content-center.justify-content-center
                             span.text-truncate.text-small.text-gray-lightest= project.title
-
-
-
-
-    #expanded-research.white-popup.mfp-hide
-        .jumbotron
-            h1.display-3 Hello, world!
-            p.lead
-                | This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
-            hr.my-4
-            p
-                | It uses utility classes for typography and spacing to space content out within the larger container.
-            p.lead
-                a.btn.btn-primary.btn-lg(href='#', role='button') Learn more

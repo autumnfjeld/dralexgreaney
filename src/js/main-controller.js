@@ -64,7 +64,6 @@
 
         // Bind smoothscroll js
         $('.navbar a').bind('click', function(event) {
-            $('#main-page').show();
             var $anchor = $(this);
             window.location.hash =  $anchor.attr('href');
             $('html, body').stop().animate({

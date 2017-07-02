@@ -2,8 +2,8 @@ var fs = require('fs');
 var pug = require('pug');
 
 // Compile the template to a function string
-var templateName = 'researchPageTemplateFunc',
-    pugSrcFile = 'src/pug/research-project-page.pug',
+var templateName = 'researchProjectTemplateFunc',
+    pugSrcFile = 'src/pug/research-project.pug',
     pugFnOutFile = 'src/js/' + templateName + '.js';
 
 var jsFunctionString = pug.compileFileClient(pugSrcFile, {name: templateName});

@@ -1,0 +1,38 @@
+section#research-project
+    .white-popup
+        .row
+            i.fa.fa-times
+            .mfp-close
+            .col-md-12.col-sm-12
+                //a.back.mb-4(href="#research")
+                //    i.fa.fa-arrow-left
+                //    span Back
+
+                .section-title
+                    h3 #{title}
+                    p #{teaser}
+
+        if layout !== "bigImage"
+            .row
+                .col-md-3
+                    .card
+                        ul.list-group.list-group-flush
+                            li.list-group-item Lisa Jones PhD
+                            li.list-group-item Suzi Queue
+                            li.list-group-item paper references
+                            li.list-group-item Links to other places
+                    figure.figure.mt-2
+                        img.figure-img.img-fluid.rounded(src=imageUrl, alt=imageTitle)
+                        figcaption.figure-caption  #{imageCaption}
+                .col-md-8
+                    //h3 #{title}
+                    //p #{teaser}
+                    .text-columns
+                        each paragraph in expandedText
+                            p= paragraph
+
+        else
+            .row
+                h1= layout
+
+

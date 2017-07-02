@@ -8,7 +8,6 @@ html(lang='en')
         meta(name='keywords', content='Alex Greaney, Materials Science, Computational Modeling, Henri')
         meta(name='author', content='peng lam')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-        //link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css", integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")
         link(rel='stylesheet', href='css/main.css?v0.3')
     body(data-spy='scroll', data-target='.navbar-collapse', data-offset='50')
         .spinner-box
@@ -16,20 +15,8 @@ html(lang='en')
                 span.spinner-rotate
 
         include nav.pug
-        #main-page
-            include main-page.pug
-        #research-page
+        include main-page.pug
 
-        <br>
-        //include style-guide.pug
-        //.h1.mt-5 End of Site
-        //hr
-        //.h4.mt-5 Other ideas for presentation of research
-        //include research-textfocus
-        //include research-imageandtextfocus
-        //.h4 Other ideas for presentation of group members
-        //include members-imagefoucs.pug
-        //include group-verticalcard.pug
         //script.
         //    console.log('Check Stuff', '!{JSON.stringify(app.publications[0].EntryType)}', !{JSON.stringify(app.publications)});
     script(src="build.js?v0.3")
