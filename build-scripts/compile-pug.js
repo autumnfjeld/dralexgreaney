@@ -2,8 +2,8 @@ var fs = require('fs');
 var pug = require('pug');
 
 // Compile the template to a function string
-var templateName = 'researchPopupTemplateFunc',
-    pugSrcFile = 'src/pug/research-popup.pug',
+var templateName = 'researchPageTemplateFunc',
+    pugSrcFile = 'src/pug/research-project-page.pug',
     pugFnOutFile = 'src/js/' + templateName + '.js';
 
 var jsFunctionString = pug.compileFileClient(pugSrcFile, {name: templateName});
@@ -24,4 +24,9 @@ console.log('Done: ', pugSrcFile, 'compiled and written to ', pugFnOutFile);
 // Could do the reverse and set up a js component file that requires the functionString and then ?????
 // module.exports = pug.compileFileClient('../src/research-pages/research-page.pug', {name: "researchPagePugFunc"});
 
-//TODO YES DO THIS IDEA!!!!  THis file sucks
+
+// module.exports = {
+//     compilePugResearchFunc: compilePugResearchFunc
+// };
+//
+// require('make-runnable');

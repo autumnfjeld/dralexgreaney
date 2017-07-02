@@ -77,7 +77,7 @@ function compilePugWithContent() {
  *   - Research model for dynamic creation of research pages or other dynamic content
  *
  */
-function createDataStoreFile() {
+function createDataModel() {
     var dataStoreFile = projectRootDir + 'src/js/data-store.js';
 
     getJsonContent()
@@ -90,11 +90,12 @@ function createDataStoreFile() {
     function createAppDataModule(siteContent) {
         console.info(' /n site Content has these sections', Object.keys(siteContent));
 
-        var dataStoreJavascript = '(function(window) {' +
-            '"use strict";' +
-            ' var dataStore = ' + JSON.stringify(siteContent.researchProjects) + ';' +
-            'window.app = window.app || {};' +
-            'window.app.dataStore = dataStore;' +
+        var dataStoreJavascript =
+            '(function(window) {' +
+                '"use strict";' +
+                ' var dataStore = ' + JSON.stringify(siteContent.researchProjects) + ';' +
+                'window.app = window.app || {};' +
+                'window.app.dataStore = dataStore;' +
             '}(window));';
 
         //TODO make async for error handling
@@ -128,7 +129,7 @@ function fileNameToCamelCase(fileName) {
 
 module.exports = {
     compilePugWithContent: compilePugWithContent,
-    createDataStoreFile: createDataStoreFile
+    createDataModel: createDataModel
 };
 
 require('make-runnable');

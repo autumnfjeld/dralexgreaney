@@ -9,7 +9,8 @@
         this.mainController = new app.MainController();
         this.researchData = app.dataStore;
         this.researchPopupTemplate = app.researchPopupTemplateFunc;
-        this.researchController = new app.ResearchController(this.researchPopupTemplate, this.researchData);
+        this.researchPageTemplate = app.researchPageTemplateFunc;
+        this.researchController = new app.ResearchController(this.researchData, this.researchPageTemplate, this.researchPopupTemplate);
 
         console.log('Confirm app: this:', this);
     }
