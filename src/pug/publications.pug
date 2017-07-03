@@ -3,7 +3,7 @@ section#publications
         .row
             .wow.fadeInUp.section-title(data-wow-delay='0.2s')
                 h2 Publications
-        div
+        .publication-list
             each pub in publications
                 - var popoverClass = pub.Fields.Abstract ? 'abstract-popover-hover' : null
                 - var popoverTitle = pub.Fields.Abstract ? 'Abstract' : null
@@ -30,3 +30,5 @@ section#publications
                             span.mr-1
                             a.d-inline-block(href= 'https://dx.doi.org/' + pub.Fields.DOI, target='_blank')
                                 span= 'doi link ' + pub.Fields.DOI
+        .row.d-flex.justify-content-end
+            button.btn.btn-link.small.mr-3.show-more-btn(type=button) Show more
