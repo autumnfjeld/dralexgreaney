@@ -30,10 +30,11 @@ section#research-project
 
         else
             .row
-                figure.figure.mt-2.text-center
-                    img.figure-img.img-fluid.rounded(src=projectImages[0].imgUrl, alt=projectImages[0].imgCaption)
-                .text-columns.px-5.pb-5
-                    p #{abstract}
-                    each paragraph in projectWriteUp
-                        p= paragraph
+                .col
+                    figure.figure.mt-2.text-center
+                        img.figure-img.img-fluid.rounded(src=projectImages[0].imgUrl, alt=projectImages[0].imgCaption)
+                    .text-columns.px-md-5.pb-5
+                        p #{abstract}
+                        each paragraph in projectWriteUp
+                            p= paragraph
 

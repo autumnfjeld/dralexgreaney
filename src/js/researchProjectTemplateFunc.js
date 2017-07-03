@@ -96,25 +96,27 @@ else {
 ;pug_debug_line = 32;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
 pug_html = pug_html + "\u003Cdiv class=\"row\"\u003E";
 ;pug_debug_line = 33;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
-pug_html = pug_html + "\u003Cfigure class=\"figure mt-2 text-center\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"col\"\u003E";
 ;pug_debug_line = 34;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
-pug_html = pug_html + "\u003Cimg" + (" class=\"figure-img img-fluid rounded\""+pug_attr("src", projectImages[0].imgUrl, true, false)+pug_attr("alt", projectImages[0].imgCaption, true, false)) + "\u002F\u003E\u003C\u002Ffigure\u003E";
+pug_html = pug_html + "\u003Cfigure class=\"figure mt-2 text-center\"\u003E";
 ;pug_debug_line = 35;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
-pug_html = pug_html + "\u003Cdiv class=\"text-columns px-5 pb-5\"\u003E";
+pug_html = pug_html + "\u003Cimg" + (" class=\"figure-img img-fluid rounded\""+pug_attr("src", projectImages[0].imgUrl, true, false)+pug_attr("alt", projectImages[0].imgCaption, true, false)) + "\u002F\u003E\u003C\u002Ffigure\u003E";
 ;pug_debug_line = 36;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
-pug_html = pug_html + "\u003Cp\u003E";
-;pug_debug_line = 36;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
-pug_html = pug_html + (pug_escape(null == (pug_interp = abstract) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"text-columns px-md-5 pb-5\"\u003E";
 ;pug_debug_line = 37;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
+pug_html = pug_html + "\u003Cp\u003E";
+;pug_debug_line = 37;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
+pug_html = pug_html + (pug_escape(null == (pug_interp = abstract) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
+;pug_debug_line = 38;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
 // iterate projectWriteUp
 ;(function(){
   var $$obj = projectWriteUp;
   if ('number' == typeof $$obj.length) {
       for (var pug_index1 = 0, $$l = $$obj.length; pug_index1 < $$l; pug_index1++) {
         var paragraph = $$obj[pug_index1];
-;pug_debug_line = 38;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
+;pug_debug_line = 39;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
 pug_html = pug_html + "\u003Cp\u003E";
-;pug_debug_line = 38;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
+;pug_debug_line = 39;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = paragraph) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
       }
   } else {
@@ -122,14 +124,14 @@ pug_html = pug_html + (pug_escape(null == (pug_interp = paragraph) ? "" : pug_in
     for (var pug_index1 in $$obj) {
       $$l++;
       var paragraph = $$obj[pug_index1];
-;pug_debug_line = 38;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
+;pug_debug_line = 39;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
 pug_html = pug_html + "\u003Cp\u003E";
-;pug_debug_line = 38;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
+;pug_debug_line = 39;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
 pug_html = pug_html + (pug_escape(null == (pug_interp = paragraph) ? "" : pug_interp)) + "\u003C\u002Fp\u003E";
     }
   }
 }).call(this);
 
-pug_html = pug_html + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
+pug_html = pug_html + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
 }
 pug_html = pug_html + "\u003C\u002Fdiv\u003E\u003C\u002Fsection\u003E";}.call(this,"abstract" in locals_for_with?locals_for_with.abstract:typeof abstract!=="undefined"?abstract:undefined,"expandedText" in locals_for_with?locals_for_with.expandedText:typeof expandedText!=="undefined"?expandedText:undefined,"imageCaption" in locals_for_with?locals_for_with.imageCaption:typeof imageCaption!=="undefined"?imageCaption:undefined,"imageTitle" in locals_for_with?locals_for_with.imageTitle:typeof imageTitle!=="undefined"?imageTitle:undefined,"imageUrl" in locals_for_with?locals_for_with.imageUrl:typeof imageUrl!=="undefined"?imageUrl:undefined,"layout" in locals_for_with?locals_for_with.layout:typeof layout!=="undefined"?layout:undefined,"projectImages" in locals_for_with?locals_for_with.projectImages:typeof projectImages!=="undefined"?projectImages:undefined,"projectWriteUp" in locals_for_with?locals_for_with.projectWriteUp:typeof projectWriteUp!=="undefined"?projectWriteUp:undefined,"title" in locals_for_with?locals_for_with.title:typeof title!=="undefined"?title:undefined));} catch (err) {pug_rethrow(err, pug_debug_filename, pug_debug_line);};return pug_html;}window.app = window.app || {};window.app.researchProjectTemplateFunc = researchProjectTemplateFunc;}(window));
