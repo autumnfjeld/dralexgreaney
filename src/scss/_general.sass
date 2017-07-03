@@ -1,15 +1,28 @@
 /*---------------------------------------
+ * Notes
+ *
+ *	Extra small devices
+ *        Portrait phones (<544px)
+ *   Small devices
+ *        Landscape phones (≥544px - <768px)
+ *   Medium devices
+ *        Tablets (≥768px - <992px)
+ *   Large devices
+ *        Desktops (≥992px - <1200px)
+ *   Extra large devices
+ *        Desktops (≥1200px)
+ *  Vertical aligh
+ *-----------------------------------------*/
+
+/*---------------------------------------
  * General Browser Resets
  *-----------------------------------------*/
 
 body
     background: #ffffff
-    font-family: 'Lato', sans-serif
-    font-style: normal
-    font-weight: 300
+
     overflow-x: hidden
-    @include media-breakpoint-down(sm)
-        font-size: .8rem
+
 
 html, body
     width: 100%
@@ -25,6 +38,27 @@ button
  *-----------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Lato:200,300,400')
+
+
+body
+    font-family: 'Lato', sans-serif
+    font-style: normal
+    font-weight: 300
+    line-height: 1.2
+    @include media-breakpoint-down(xs)
+        font-size: .9rem
+
+.font-weight-light
+    font-weight: 300
+.fw-light
+    font-weight: 300
+
+.text-caps
+    font-weight: bold
+    letter-spacing: 1.6px
+    padding: 12px 32px 16px 32px
+
+
 //
 //h1, h2, h3, h4, h5, h6
 //  font-style: normal
@@ -69,7 +103,7 @@ p
 //$font-size-h6: 1rem !default;
 //MOVE TO BOOTSTRAP RELATED FILE
 
-@include media-breakpoint-down(sm)
+@include media-breakpoint-down(xs)
     h1
         font-size: 2rem
     h2

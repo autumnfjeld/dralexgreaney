@@ -3,8 +3,8 @@
         "layout": "bigImage",
         "title": "Computer design of shape-changing materials",
         "nickname": "morfs",
+        "imageUrl": "media/plaice-holder.jpg",
         "teaser": {
-            "shortTitle": "Materials by Machine Learning",
             "text": "We are teaching computers to invent new molecular machines that change shape in response to light.",
             "imageUrl": "/media/plaice-holder.jpg",
             "imageCaption": "Schematic of a metal-organic-responsive framework (MORF) uses as a self-squeezing hydrogen sponge."

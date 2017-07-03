@@ -289,62 +289,34 @@ ul.navbar-nav li a
       padding: 2px 6px
 
 /*---------------------------------------
- *    9 Work section
+ *    Research section
  *-----------------------------------------*/
 
-#work, #research
-    $researchTeaserImgSize: 350px
-    $boxFrameColor: lighten($gray-light, 10%)
-    $overlay-offset: 40px
-
-    .project-box
-        margin: 22px 0
-    .title-box
-        border-radius: 0 0 3px 3px
-        background-color: $boxFrameColor    //must match .work-thumb border
+#research
+    .card
+        // Force filling of vertical space
+        min-height: 100%
     .work-thumb
-        width: $researchTeaserImgSize
-        height: $researchTeaserImgSize
-        max-width: $researchTeaserImgSize
-        max-height: $researchTeaserImgSize
         padding: 0
         overflow: hidden
         position: relative
-        border: 2px solid $boxFrameColor
-        //background-color: white
-        small
-          font-size: 16px
-        .img-responsive
-            //max-width: $researchTeaserImgSize
-            //height: $researchTeaserImgSize
-            max-width: 100%
     .work-thumb-overlay
         position: absolute
         background: #ffffff
         cursor: pointer
         opacity: 0
-        //width: 100%
-        //height: 100%
-        padding: 10px
-        //margin: 32px
+        padding:  10px 8px 10px 12px
         top: $overlay-offset
         bottom: $overlay-offset
         right: $overlay-offset
         left: $overlay-offset
-        -webkit-transition: all ease-in-out 0.4s
         transition: all ease-in-out 0.4s
-    .work-thumb:hover .work-thumb-overlay
-        opacity: .8
+    .work-thumb:hover
+        .work-thumb-overlay
+            opacity: .8
 
-#research-project-page
-    position: relative
-    padding: 80px 0
-    @include media-breakpoint-down(md)
-        padding: 20px 0
 
-#research-project
-    //display: none
-
+/* Style for magnificPopup that opens on research project click
 
 #research-popup, #research-project
     /* TODO sort out height & position for .mfp-container & its contents */
@@ -360,9 +332,6 @@ ul.navbar-nav li a
         //width: 80%
         //max-width: 80%
         margin: 20px auto
-        //.mfp-close
-        //    width: 100px
-        //    height: 100px
         // Copy styles from .mfp-close b/c putting .fa as child of .mfp-close blocks click
         .fa
             position: absolute
@@ -372,8 +341,6 @@ ul.navbar-nav li a
     .text-columns
         column-count: 2
         column-gap: 2rem
-
-/* Style for magnificPopup research projects
 
 .mfp-inline-holder .mfp-content
     min-height: 80%

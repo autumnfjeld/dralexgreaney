@@ -2,22 +2,18 @@ section#research
     .container
         .wow.fadeInUp.section-title(data-wow-delay='0.2s')
             h2 Research Projects
-            //p Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.
             p Click the images for research summaries. (make tooltip)
 
-        //.row.research-projects
         .d-flex.flex-wrap.mb-3.justify-content-between.research-projects
             each project, index in researchProjects
-                //.wow.fadeInUp.col-md-4.col-sm-6(data-wow-delay='0.4s')
-                .wow.fadeInUp(data-wow-delay='0.4s')
-                    .project-box
-                        .work-thumb
-                            //.research-page-link.slide(data-project-index= index)
-                            a.research-popup(data-project= project.href)
-                                .work-thumb-overlay
-                                    h5= project.title
-                                    p= project.teaser
-                                    p= index + 'click to read more'
-                                img.img-responsive(src= project.imageUrl, alt= project.imageTitle)
-                        .title-box.py-2.px-1.d-flex.align-content-center.justify-content-center
-                            span.text-truncate.text-small.text-gray-lightest= project.title
+                .wow.fadeInUp.col.col-sm-6.col-md-6.col-lg-4.justify-content-md-center.mb-4(data-wow-delay='0.4s')
+                    .card
+                        .card-block.p-0
+                            .work-thumb
+                                a.research-popup(data-project= project.href)
+                                    .work-thumb-overlay.d-flex.flex-column.justify-content-center
+                                        p.m-0.font-weight-normal= project.teaser
+                                        //p.text-caps Click to read more
+                                    img.img-fluid.card-img-top(src= project.imageUrl, alt= project.imageTitle)
+                        .card-footer.bg-gray-light.text-center
+                            p.m-0.text-truncate.text-gray-lightest.font-weight-light= project.title
