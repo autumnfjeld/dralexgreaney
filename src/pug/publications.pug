@@ -1,8 +1,7 @@
 section#publications
     .container
-        .row
-            .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-                h2 Publications
+        .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+             h2 Publications
         .publication-list
             each pub in publications
                 - var popoverClass = pub.Fields.Abstract ? 'abstract-popover-hover' : null
