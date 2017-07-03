@@ -12,7 +12,6 @@
  * Table of contents
  *
  *        Body
- *    0.  Typography
  *    1.  Buttons
  *    2.  General
  *    3.  Pre loader
@@ -31,25 +30,6 @@
 
 
 
-/*---------------------------------------
- *    1 Buttons
- *-----------------------------------------*/
-
-.section-btn
-  background: #454545
-  border: none
-  border-radius: 0
-  color: #ffffff
-  //font-size: 13px
-  font-weight: bold
-  letter-spacing: 1.6px
-  padding: 12px 32px 16px 32px
-  margin-top: 42px
-  -webkit-transition: all ease-in-out 0.4s
-  transition: all ease-in-out 0.4s
-  &:focus, &:hover
-    background: #000000
-    color: #ffffff
 
 /*---------------------------------------
  *    2 General
@@ -75,8 +55,8 @@ a
 .section-title
     margin: 0
     padding-bottom: 32px
-    @include media-breakpoint-down(xl)
-      //margin-left: 1rem
+    @include media-breakpoint-down(sm)
+      padding-bottom: 10px
 
 
 #about, #service, #resume, #work, #research, #research-frame, #group-members, #publications, #contact, footer
@@ -242,20 +222,33 @@ ul.navbar-nav li a
 
 
 /*---------------------------------------
- *    6 About section
+ *    About section
  *-----------------------------------------*/
 
 #about
-  padding-top: 100px
-  .about-profile-thumb
-    padding-top: 32px
-    padding-left: 22px
-    span
-      font-weight: bold
-  .about-thumb
-    padding: 32px 12px
-    p
-      padding: 2px 0
+    .about-profile-thumb
+        span
+          font-weight: bold
+    .about-thumb
+        //padding: 32px 12px
+        p
+          padding: 2px 0
+    @include media-breakpoint-down(sm)
+        padding-top: 60px
+        .about-profile-thumb
+            height: 260px
+            font-size: 1rem
+            &::after
+                content: ""
+                background: url('../media/UCR_seal_300px.gif') no-repeat center center
+                background-size: 280px
+                opacity: 0.1
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+                position: absolute
+                z-index: -1
 
 /*---------------------------------------
  *   7 Service section
