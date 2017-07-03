@@ -2,34 +2,33 @@ section#about
     .container
         .row
             .col-md-4
-                .about-image-thumb
-                    <br>
-                    img.wow.fadeInUp.img-responsive.hidden-md(src='https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/seal_big_340px.gif', data-wow-delay='0.2s', alt='UCR Seal', style="max-width:280px;")
-                .wow.fadeInUp.about-profile-thumb(data-wow-delay='0.4s')
-                    p
-                        span Other info here? -
-                        |  blah  blah
-                    p
-                        span Location -
-                        |  #{about.location} Building something
-                    p
-                        span Phone -
-                        |  001 024 7823 8402
-                    p
-                        span Email -
-                        |  alexgreaney@youremail.com
-                    p
-                        span Mailing address -
-                        |  123 Riverside Drive
-                        |  USA
+                .about-image-thumb.hidden-xs-down.mb-4
+                    img.wow.fadeInUp.img-responsive.hidden-md(src='media/UCR_seal_300px.gif', data-wow-delay='0.2s', alt='UCR Seal', style="max-width:280px;")
+                .wow.fadeInUp.about-profile-thumb.py-3.d-flex.flex-column.justify-content-around(data-wow-delay='0.4s')
+                        p.my-1
+                            span Other info here? -
+                            |  blah  blah
+                        p.my-1
+                            span Location -
+                            |  #{about.location} Building something
+                        p.my-1
+                            span Phone -
+                            |  001 024 7823 8402
+                        p.my-1
+                            span Email -
+                            |  alexgreaney@youremail.com
+                        p.my-1
+                            span Mailing address -
+                            |  123 Riverside Drive
+                            |  USA
 
             .col-md-8
-                .about-thumb
+                .about-thumb.mt-3
                     .wow.fadeInUp.section-title(data-wow-delay='0.6s')
-                        h2 Computational Materials Science Research
+                        h2 Computational Materials Science
                         p
                             strong Research Overview
-                        h4.text-success v0.1.2 Work In Progress!!!  Prototyping only!  But welcome general/broad feedback :) This text should be green
+                            span.text-danger v0.5 Work In Progress!!!
                     .wow.fadeInUp(data-wow-delay='0.8s')
                         for paragraph in about.summary
                             p= paragraph
