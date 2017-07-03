@@ -5,9 +5,11 @@ section#research
             //p Lorem ipsum dolor sit amet, consectetur venenatis tincidunt.
             p Click the images for research summaries. (make tooltip)
 
-        .row.research-projects
+        //.row.research-projects
+        .d-flex.flex-wrap.mb-3.justify-content-between.research-projects
             each project, index in researchProjects
-                .wow.fadeInUp.col-md-4.col-sm-6(data-wow-delay='0.4s')
+                //.wow.fadeInUp.col-md-4.col-sm-6(data-wow-delay='0.4s')
+                .wow.fadeInUp(data-wow-delay='0.4s')
                     .project-box
                         .work-thumb
                             //.research-page-link.slide(data-project-index= index)
@@ -17,5 +19,5 @@ section#research
                                     p= project.teaser
                                     p= index + 'click to read more'
                                 img.img-responsive(src= project.imageUrl, alt= project.imageTitle)
-                        .title-box.bg-gray-light.py-2.px-1.d-flex.align-content-center.justify-content-center
+                        .title-box.py-2.px-1.d-flex.align-content-center.justify-content-center
                             span.text-truncate.text-small.text-gray-lightest= project.title

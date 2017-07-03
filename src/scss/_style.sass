@@ -292,11 +292,14 @@ ul.navbar-nav li a
 
 #work, #research
     $researchTeaserImgSize: 350px
+    $boxFrameColor: lighten($gray-light, 10%)
+
 
     .project-box
         margin: 22px 0
     .title-box
         border-radius: 0 0 3px 3px
+        background-color: $boxFrameColor    //must match .work-thumb border
     .work-thumb
         width: $researchTeaserImgSize
         height: $researchTeaserImgSize
@@ -305,14 +308,14 @@ ul.navbar-nav li a
         padding: 0
         overflow: hidden
         position: relative
-        border: 2px solid $gray-light
+        border: 2px solid $boxFrameColor
         //background-color: white
         small
           font-size: 16px
         .img-responsive
-            max-width: $researchTeaserImgSize
+            //max-width: $researchTeaserImgSize
             //height: $researchTeaserImgSize
-            //max-width: 100%
+            max-width: 100%
 
     $overlay-offset: 40px
     .work-thumb-overlay
