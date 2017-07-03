@@ -172,7 +172,7 @@ ul.navbar-nav li a
         position: absolute
         bottom: 0
         left: 0
-        right: 0
+        //max-width: 100%
         background-color: $gray
         opacity: .7
     .ucr-img, section-btn
@@ -194,6 +194,8 @@ ul.navbar-nav li a
 
     // Phone
     @include media-breakpoint-down(sm)
+        .home-thumb
+            right: 0
         .ucr-img, .section-btn
             height: 40px
         .section-btn
@@ -293,7 +295,7 @@ ul.navbar-nav li a
 #work, #research
     $researchTeaserImgSize: 350px
     $boxFrameColor: lighten($gray-light, 10%)
-
+    $overlay-offset: 40px
 
     .project-box
         margin: 22px 0
@@ -316,8 +318,6 @@ ul.navbar-nav li a
             //max-width: $researchTeaserImgSize
             //height: $researchTeaserImgSize
             max-width: 100%
-
-    $overlay-offset: 40px
     .work-thumb-overlay
         position: absolute
         background: #ffffff
