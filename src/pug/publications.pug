@@ -5,21 +5,27 @@ section#publications
                 h2 Publications
         div
             each pub in publications
+                - var popoverClass = pub.Fields.Abstract ? 'abstract-popover-hover' : null
+                - var popoverTitle = pub.Fields.Abstract ? 'Abstract' : null
                 blockquote.blockquote
-                    a.abstract-popover-hover(
+                    a(
+                    class= popoverClass
                     data-toggle="popover",
-                    title="Abstract", data-content=pub.Fields.Abstract)
+                    title=popoverTitle,
+                    data-content=pub.Fields.Abstract)
                         span.authors.mr-1=  pub.Fields.Author + ',  '
                         span.title.mr-1= "'" + pub.Fields.Title + "', "
-                        span.font-italic= pub.Fields.Journal + ', '
+                        if pub.Fields.Journal
+                            span.font-italic= pub.Fields.Journal + ', '
                         span.mr-1
-                            span= 'vol. ' + pub.Fields.Volume + ', '
+                            if pub.Fields.Volume
+                                span= 'vol. ' + pub.Fields.Volume + ', '
                             if pub.Fields.Pages
                                 span= 'pp. ' + pub.Fields.Pages + ', '
                             if pub.Fields.Month
-                                span= pub.Fields.Month + '.'
-                            else
-                                span= pub.Fields.Year + '.'
+                                span= pub.Fields.Month + ', '
+                            if pub.Fields.Year
+                                span= pub.Fields.Year + '. '
                         if pub.Fields.DOI
                             span.mr-1
                             a.d-inline-block(href= 'https://dx.doi.org/' + pub.Fields.DOI, target='_blank')
