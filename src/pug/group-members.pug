@@ -4,16 +4,16 @@ section#group-members
             .col-12
                 .wow.fadeInUp.section-title(data-wow-delay='0.2s')
                     h2 The Greaney Group
-        .d-flex.flex-wrap.mb-3.justify-content-between
+        .d-flex.flex-wrap.mb-sm-3.justify-content-between
             each person, index in groupMembers
                 .contentWrap.d-flex.flex-column.align-content-center
                     .content
                         .member-img-box.mx-auto
-                            img.img-fluid.img-member(src= person.imageUrl, alt= person.name)
+                            img.img-responsive.img-member(src= person.imageUrl, alt= person.name)
                         .basic-info.d-flex.flex-column.justify-content-around.align-items-center.my-2
                             h5.text-center= person.name
-                            small.text-center= person.role
                             small.text-center= person.email
+                            small= person.role
                             .icons.d-flex.justify-content-between.m-2
                                 if person.gitHub
                                     a(href= person.gitHub, target="_blank")
