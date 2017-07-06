@@ -1,7 +1,8 @@
 [
     {
         "name": "Laura de Sousa Oliveira",
-        "role": "PhD Student",
+        "groupAffiliate": false,
+        "role": ["PhD Student"],
         "email": "laura.rita.oliveira@gmail.com",
         "cvLink": "",
         "gitHub": "",
@@ -18,7 +19,8 @@
     },
     {
         "name": "Henri Quod Felis",
-        "role": "Mouser ",
+        "groupAffiliate": false,
+        "role": ["Mouser"],
         "email": "henri@ucr.edu ",
         "cvLink": "",
         "linkedIn": "www.linkedin.com/in/henrithecat",
@@ -34,7 +36,11 @@
     },
     {
         "name": "Woochul Shin ",
-        "role": "Group affiliate: PhD. student in Chemistry at Oregon State University advised by Prof. David (Xiulei) Ji ",
+        "groupAffiliate": true,
+        "role": [
+            "PhD. student in Chemistry",
+            "Oregon State University advised by Prof. David (Xiulei) Ji "
+            ],
         "email": "shinwoo@oregonstate.edu",
         "cvLink": "media/Woochul_Shin_2017_CV.pdf",
         "gitHub": "",
@@ -50,7 +56,11 @@
     },
     {
         "name": "Wesley Surta ",
-        "role": "Group affilate PhD Student in Chemistry at Oregon State University advised by Prof. Michelle Dolgos",
+        "groupAffiliate": true,
+        "role": [
+            "PhD Student in Chemistry",
+            "Oregon State University advised by Prof. Michelle Dolgos"
+            ],
         "email": "surtat@oregonstate.edu",
         "cvLink": "media/group-members/wesley-surta_CV_GreaneyWebsite.pdf",
         "gitHub": "",
@@ -66,7 +76,12 @@
     },
     {
         "name": "Charlie Manion",
-        "role": "Group affiliate: Ph.D. Student in Mechanical Engineering with a minor in Robotics at Oregon State University advised by Prof. Matt Campbell",
+        "groupAffiliate": true,
+        "role": "Ph.D. Student in Mechanical Engineering with a minor in Robotics at Oregon State University advised by Prof. Matt Campbell",
+        "role": [
+            "Ph.D. Student in Mechanical Engineering, minor in Robotics",
+            "Oregon State University advised by Prof. Matt Campbell"
+            ],
         "email": "cam626@gmail.com",
         "cvLink": "",
         "gitHub": "",
@@ -82,7 +97,8 @@
     },
     {
         "name": "Agnieszka Truszkowska",
-        "role": "Postdoc at Oregon State University",
+        "groupAffiliate": false,
+        "role": ["Postdoc at Oregon State University"],
         "email": "truszkoa@oregonstate.edu ",
         "cvLink": "",
         "gitHub": "https://github.com/atruszkowska",
@@ -98,7 +114,8 @@
     },
     {
         "name": "Luping Han",
-        "role": "PhD student in Mechanical Engineering at UCR",
+        "groupAffiliate": false,
+        "role": ["PhD student in Mechanical Engineering at UCR"],
         "email": "lupinghan@gmail.com ",
         "cvLink": "",
         "gitHub": "",
@@ -114,7 +131,8 @@
     },
     {
         "name": "Wenxi Huang",
-        "role": "PhD student in Materials Science & Engineering at UCR",
+        "groupAffiliate": false,
+        "role": ["PhD student in Materials Science & Engineering at UCR"],
         "email": "wesleywong524@gmail.com",
         "cvLink": "",
         "gitHub": "",
@@ -130,7 +148,11 @@
     },
     {
         "name": "Jude Ighere",
-        "role": "PhD student in Materals Science & Engineering at Oregon State University",
+        "groupAffiliate": false,
+        "role": [
+            "PhD student in Materals Science & Engineering",
+            "Oregon State University"
+        ],
         "email": "jude.ighere@gmail.com",
         "cvLink": "",
         "gitHub": "",
@@ -146,7 +168,11 @@
     },
     {
         "name": "Clem Bommier",
-        "role": "Group affiliate: PhD student in Chemistry at Oregon State University with Prof. David (Xiulei) Ji",
+        "groupAffiliate": true,
+        "role": [
+            "PhD student in Chemistry",
+            "Oregon State University with Prof. David (Xiulei) Ji"
+        ],
         "email": "",
         "cvLink": "",
         "gitHub": "",
@@ -164,7 +190,8 @@
     },    
     {
         "name": "Aria Hosseini",
-        "role": "PhD student in Mechanical Engineering at UCR ",
+        "groupAffiliate": false,
+        "role": ["PhD student in Mechanical Engineering at UCR "],
         "email": "aria.hosseini73@gmail.com",
         "cvLink": "",
         "gitHub": "",
@@ -180,7 +207,10 @@
     },
     {
         "name": "Jackson Harter",
-        "role": "Group affiliate: PhD student in Nuclear Engineering at Oregon State University with Prof. Todd Palmer",
+        "groupAffiliate": true,
+        "role": [
+            "PhD student in Nuclear Engineering",
+            "Oregon State University with Prof. Todd Palmer"],
         "email": "harterj@oregonstate.edu",
         "cvLink": "https://rtrp.github.io/osu-transport/users/harterj/files/jacksonResume.pdf",
         "gitHub": "https://github.com/harterj",
@@ -196,7 +226,8 @@
     },
     {
         "name": "P. Alex Greaney",
-        "role": "Principal Investigator (The Boss)",
+        "groupAffiliate": false,
+        "role": ["Principal Investigator (The Boss)"],
         "email": "greaney@ucr.edu",
         "cvLink": "",
         "gitHub": "",
@@ -212,7 +243,8 @@
     },
     {
         "name": "Jeremy Valdecanas",
-        "role": "Undergraduate Researcher at UCR",
+        "groupAffiliate": false,
+        "role": ["Undergraduate Researcher at UCR"],
         "email": "jvald022@ucr.edu",
         "cvLink": "",
         "gitHub": "",
@@ -221,14 +253,15 @@
         "researchGate": "",
         "associatedWebsite": "",
         "personalWebsite": "",
-        "academicBackground": "Pursuing an BS in Materials Science and Engineering at UCR",
+        "academicBackground": "Pursuing a BS in Materials Science and Engineering at UCR",
         "funFacts": "Makes a mean lobster thermidor. Part of the UCR blade smithing team working to build a trip hammer.",
         "researchInterests": "Discriminating molecules with fingerprints.",
         "imageUrl": "media/group-members/jeremy-valdecanas-heatshot.jpg"
     },
     {
         "name": "Andres Sanchez Paredes",
-        "role": "Undergraduate Researcher at UCR",
+        "groupAffiliate": false,
+        "role": ["Undergraduate Researcher at UCR"],
         "email": "asanc056@ucr.edu",
         "cvLink": "",
         "gitHub": "",
@@ -237,14 +270,15 @@
         "researchGate": "",
         "associatedWebsite": "",
         "personalWebsite": "",
-        "academicBackground": "Pursuing an BS in Mechanical Engineering at UCR",
+        "academicBackground": "Pursuing a BS in Mechanical Engineering at UCR",
         "funFacts": "Electronica aficionado.",
         "researchInterests": "Machine learning and artificial neural networks applied to the behavior of molecules.",
         "imageUrl": "media/group-members/ludwig-boltzmann-headshot.jpg"
     },
     {
         "name": "Edward Koh",
-        "role": "Student at MLK Jr. High School in Riverside.",
+        "groupAffiliate": false,
+        "role": ["Student at MLK Jr. High School in Riverside."],
         "email": "",
         "cvLink": "",
         "gitHub": "",

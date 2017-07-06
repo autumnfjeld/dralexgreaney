@@ -12,14 +12,16 @@ section#group-members
                             img.img-responsive.img-member(src= person.imageUrl, alt= person.name)
                         .basic-info.d-flex.flex-column.justify-content-around.align-items-center.my-2
                             h5.text-center= person.name
-                            small.text-center= person.email
-                            small= person.role
-                            .icons.d-flex.justify-content-between.m-2
+                            small.text-center.pb-1= person.email
+                            //small= person.role
+                            each roleSnippet in person.role
+                                small.role-snippet.pb-1= roleSnippet
+                            .icons.d-flex.justify-content-between.m-1
                                 if person.gitHub
-                                    a(href= person.gitHub, target="_blank")
+                                    a(href= person.gitHub, target="_blank", data-toggle="tooltip", data-placement="top", title="GitHub")
                                         i.fa.fa-github
                                 if person.linkedIn
-                                    a(href= person.linkedIn, target="_blank")
+                                    a(href= person.linkedIn, target="_blank", data-toggle="tooltip", data-placement="top", title="LinkedIn")
                                         i.fa.fa-linkedin
                                 if person.googleScholar
                                     a.gray-tooltip(href= person.googleScholar, target="_blank", data-toggle="tooltip", data-placement="top", title="Google Scholar")
@@ -41,6 +43,7 @@ section#group-members
                                         i.fa.fa-link
                                         //i.fa.fa-id-badge
                                         //i.fa.fa.user-circle-o
+
                         .expanded-info.px-3
                             p.academic.text-gray= person.academicBackground
                             p.research.text-gray= person.researchInterests

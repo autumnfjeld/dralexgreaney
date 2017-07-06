@@ -374,15 +374,12 @@ ul.navbar-nav li a
  *    Group Members
  *-----------------------------------------*/
 
-// Big screen
 $initImgDiam: 250px
 $change: 100px
 $finalImgDiam: 350px
 $textAreaHeight: 200px
 $initWrapperHeight: 400px
 $initWrapperWidth: $initImgDiam + 100px
-// Small screen
-
 
 #group-members
     .contentWrap
@@ -398,7 +395,7 @@ $initWrapperWidth: $initImgDiam + 100px
     .content
         overflow: hidden
         //height: $initImgDiam + $textAreaHeight
-        border-radius: $initImgDiam/2
+        border-radius: $initImgDiam/2  $initImgDiam/2 0 0
         margin-bottom: 5px
         .member-img-box
             width: $initImgDiam
@@ -406,8 +403,6 @@ $initWrapperWidth: $initImgDiam + 100px
             transition: width .5s ease .1s
             .img-member
                 border-radius: $initImgDiam/2
-                //min-width: 100%   //remove this later
-                //min-height: 100%   //remove this later
                 width: 100%
                 height: 100%
                 border: 20px solid #f4f4f4
@@ -418,7 +413,9 @@ $initWrapperWidth: $initImgDiam + 100px
                 max-width: 200px
             i.fa
                 padding: 0 7px
+                font-size: .9rem
         .expanded-info
+            font-size: .9rem
             display: none
             opacity: 0
             transition: opacity .3s ease .5s
@@ -429,6 +426,7 @@ $initWrapperWidth: $initImgDiam + 100px
         background: $gray-lighter
         .member-img-box
             width: $finalImgDiam
+            height: $finalImgDiam
             .img-member
                 border-radius: $finalImgDiam/2
         .expanded-info
