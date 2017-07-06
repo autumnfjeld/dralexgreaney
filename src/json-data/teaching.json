@@ -1,20 +1,108 @@
 [
     {
-        "number": "101",
-        "name": " ",
-        "url": " ",
-        "description": " ",
-        "preReqs": " ",
-        "state": " upcoming"
-
+        "name": "Crystal Structure & Bonding",
+        "instituteInitials": "UCR",
+        "institute": "University of California --- Riverside",
+        "classNumber": "MSE 210",
+        "crosslisting": "",
+        "level": "Graduate",
+        "units": "4",
+        "catalogText": "MSE 210 Crystal Structure and Bonding (4) Lecture, 3 hours; discussion, 1 hour. Prerequisite(s): graduate standing in Materials Science and Engineering or consent of instructor. Covers regular and irregular arrays of points and spheres. Includes lattices (direct and reciprocal); crystallographic point and space groups; and atomic structures. Also addresses bonding in molecules and solids; ionic Pauling rules; and covalent and metallic bonding. Surveys the structure of elements, compounds, minerals, and polymers.",
+        "synopsis": "synopsis-MSE-210.pdf",
+        "termsTaught": [
+            "Winter 2017"
+        ]
     },
     {
-        "number": "",
-        "name": " ",
-        "url": " ",
-        "description": " ",
-        "preReqs": " ",
-        "state": " previous"
-
+        "name": "Nanoscale Heat Transfer & Energy Conversion",
+        "instituteInitials": "UCR",
+        "institute": "University of California --- Riverside",
+        "classNumber": "ME 244",
+        "crosslisting": "MSE 238",
+        "level": "Graduate",
+        "units": "4",
+        "catalogText": "ME 244. Lecture, 4 hours. Prerequisite(s): at least two of EE 201/MSE 207, EE 202/MSE 217, ME 100A, ME 116A, or equivalents. Explores fundamental processes of energy transport and conversion at short length and time scales. Introduces classical and quantum-mechanical size effects on electrons, phonons, and photons. Topics include modes of energy storage, coupling between energy carriers, and electrical and thermal transport using the Boltzmann transport equation and/or kinetic theory. May be taken Satisfactory (S) or No Credit (NC) with consent of instructor and graduate advisor.",
+        "synopsis": "synopsis-ME-244.pdf",
+        "termsTaught": [
+            "Spring 2016",
+            "Spring 2017"
+        ]
+    },
+    {
+        "name": "Mechanical Behavior of Materials",
+        "instituteInitials": "UCR",
+        "institute": "University of California --- Riverside",
+        "classNumber": "ME 156",
+        "crosslisting": "",
+        "level": "Undergraduate",
+        "units": "4",
+        "catalogText": "4 Units, Lecture 3, Laboratory 3, Prerequisite(s): senior standing; ME 110; ME 114 Introduces the theory and experimental techniques for testing the mechanical behavior of materials and structures. Covers the fundamental mechanisms of deformation and failure of metals, ceramics, polymers, composite materials, and electronic materials as well as structural design and materials selection.",
+        "synopsis": "synopsis-ME-156.pdf",
+        "termsTaught": [
+            "Winter 2016",
+            "Winter 2017"
+        ]
+    },
+    {
+        "name": "Computational Methods in Materials Science",
+        "instituteInitials": "OSU",
+        "institute": "Oregon State University",
+        "classNumber": "MATS 588",
+        "crosslisting": "ME 588",
+        "level": "Graduate",
+        "units": "4",
+        "catalogText": "A broad introduction to important materials science simulation methods. These include molecular dynamics, density functional theory, and Monte Carlo methods. Learning is through a mixture of lecture and hands-on lab projects in which students use computational methods to explore and reinforce fundamental concepts in materials science. Lec/lab. CROSSLISTED as ME 588. PREREQS: Experience with Matlab or Mathematica or an equivalent numerical and programming environment.",
+        "synopsis": "synopsis-MATS-588.pdf",
+        "termsTaught": [
+            "Spring 2013",
+            "Spring 2014",
+            "Spring 2015"
+        ]
+    },
+    {
+        "name": "Structure-Property Relations in Materials",
+        "instituteInitials": "OSU",
+        "institute": "Oregon State University",
+        "classNumber": "ME 570",
+        "crosslisting": "MATS 570",
+        "units": "4",
+        "level": "Graduate",
+        "catalogText": "Fundamentals of the interactions between the structure and properties of materials. Atomic bonding and atom interactions. Geometric and algebraic representations of symmetry. Introduction to phase equilibria. Phenomenological background of elasticity and plasticity in materials. Anisotropic materials and tensor representations. Influence of structure on thermal, electrical, and optical properties of materials. CROSSLISTED as MATS 570.",
+        "synopsis": "synopsis-MATS-570.pdf",
+        "termsTaught": [
+            "Fall 2013",
+            "Fall 2014",
+            "Winter 2015"
+        ]
+    },
+    {
+        "name": "Mechanics of Materials",
+        "instituteInitials": "OSU",
+        "institute": "Oregon State University",
+        "classNumber": "ME 316",
+        "crosslisting": "",
+        "level": "Undergraduate",
+        "units": "3",
+        "catalogText": "Introduction to the fundamental mechanisms of plastic deformation and creep behavior in crystals, including qualitative and quantitative analysis of the role of dislocations during deformation.",
+        "synopsis": "synopsis-ME-316.pdf",
+        "termsTaught": [
+            "Winter 2012",
+            "Winter 2013",
+            "Winter 2014"
+        ]
+    },
+    {
+        "name": "Dislocations, Deformation, & Creep",
+        "instituteInitials": "OSU",
+        "institute": "Oregon State University",
+        "classNumber": "ME 587",
+        "crosslisting": "",
+        "level": "Graduate",
+        "units": "4",
+        "catalogText": "Introduction to the fundamental mechanisms of plastic deformation and creep behavior in crystals, including qualitative and quantitative analysis of the role of dislocations during deformation.",
+        "synopsis": "synopsis-ME-587.pdf",
+        "termsTaught": [
+            "Spring 2012"
+        ]
     }
 ]
