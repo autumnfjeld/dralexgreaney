@@ -17,7 +17,7 @@
     "autoprefixer": "postcss -u autoprefixer -r public/css/*",
     "//": "run script to compile pug templates for clientside use into js function ",
     "pug": "node build-scripts/custom-build-scripts.js compilePugWithContent",
-    "watch:pug": "onchange 'src/pug/*.pug' 'src/json-data/*.json' -- npm run pug",
+    "watch:pug": "onchange 'src/pug/*.pug' 'src/json-data/*.json' -i -v -- npm run pug",
     "pug-to-func": "node build-scripts/compile-pug.js",
     "watch:pug-to-func": "onchange 'src/pug/research-popup.pug' 'src/json-data/research-projects.json' -- npm run pug-to-func",
     "lint": "eslint src/app.js || true",
