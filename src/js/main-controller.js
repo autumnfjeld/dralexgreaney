@@ -91,16 +91,17 @@
         // Bootstrap4 requires initializing tooltips, due to "performance reasons"
         $('[data-toggle="tooltip"]').tooltip();
 
+
         // Init popover for publication section on tablet & desktop screens
         var phoneBreakpoint = 576;
         if ($(window).width() > phoneBreakpoint) {
             $('.abstract-popover-hover').popover({
                 trigger: 'hover',
                 template: '<div class="popover abstract" role="tooltip">' +
-                '<div class="popover-arrow"></div> ' +
-                '<h3 class="popover-title font-weight-normal"></h3>' +
-                '<div class="popover-content"></div>' +
-                '</div>',
+                            '<div class="popover-arrow"></div> ' +
+                            '<h3 class="popover-title font-weight-normal"></h3>' +
+                            '<div class="popover-content"></div>' +
+                          '</div>',
                 placement: 'top',
                 constraints: [
                     {to: 'window', pin: true}
@@ -109,6 +110,19 @@
             });
         }
 
+        // Init popover for teaching sections
+        $('.course-catalog-popover').popover({
+            trigger: 'hover',
+            template:   '<div class="popover course-catalog" role="tooltip">' +
+                            '<div class="popover-arrow"></div> ' +
+                            '<h3 class="popover-title font-weight-normal"></h3>' +
+                            '<div class="popover-content"></div>' +
+                        '</div>',
+            placement: 'top',
+            constraints: [
+                {to: 'window', pin: true}
+            ]
+        });
     };
 
     /**

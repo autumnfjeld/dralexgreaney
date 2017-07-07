@@ -19,7 +19,7 @@
  *    5.  Home section
  *    6.  About section
  *    7.  Service section
- *    8.  Resume section
+ *    8.  Teaching section
  *    9.  Work section
  *    10. Contact section
  *    11. Footer
@@ -59,7 +59,7 @@ a
       padding-bottom: 10px
 
 
-#about, #service, #resume, #work, #research, #research-frame, #group-members, #publications, #contact, footer
+#about, #service, #teaching, #work, #research, #research-frame, #group-members, #publications, #contact, footer
     position: relative
     padding: 80px 0
     @include media-breakpoint-down(md)
@@ -172,7 +172,6 @@ ul.navbar-nav li a
         position: absolute
         bottom: 0
         left: 0
-        //max-width: 100%
         background-color: $gray
         opacity: .7
     .ucr-img, section-btn
@@ -209,7 +208,7 @@ ul.navbar-nav li a
         display: inline-block
 
 @media (max-width: 767px)
-    #resume .resume-thumb-sec
+    #teaching .teaching-thumb-sec
         margin-top: 45px
 
 @media (max-width: 580px)
@@ -267,26 +266,6 @@ ul.navbar-nav li a
   margin-top: 32px
   margin-bottom: 22px
 
-/*---------------------------------------
- *    8 Resume section
- *-----------------------------------------*/
-
-#resume
-  .resume-thumb
-    margin-top: 12px
-    margin-bottom: 40px
-    .fa
-      color: #000000
-      padding-right: 8px
-  strong
-    color: #797979
-    display: block
-    border-bottom: 2px solid #f0f0f0
-    padding-bottom: 18px
-    margin-bottom: 18px
-    span
-      display: inline-block
-      padding: 2px 6px
 
 /*---------------------------------------
  *    Research section
@@ -470,11 +449,32 @@ $initWrapperWidth: $initImgDiam + 100px
         font-weight: 200
 
 .popover.abstract
-    font-family: inherit
-    font-weight: 300
     max-width: 500px
     //@include media-breakpoint-down(sm)
 
+
+/*---------------------------------------
+ *    Teaching section
+ *-----------------------------------------*/
+
+#teaching
+    .teaching-thumb
+        margin-bottom: 30px
+        .fa
+            color: #000000
+            padding-right: 8px
+            font-size: 12px
+    .sub-text
+        color: #797979
+        display: block
+        span
+            display: inline-block
+    @include media-breakpoint-down(sm)
+        .teaching-thumb
+            margin-bottom: 15px
+
+.popover.course-catalog
+    width: 400px
 
 
 /*---------------------------------------
