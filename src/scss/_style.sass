@@ -458,20 +458,17 @@ $initWrapperWidth: $initImgDiam + 100px
  *-----------------------------------------*/
 
 #teaching
-    .teaching-thumb
-        margin-bottom: 30px
-        .fa
-            color: #000000
-            padding-right: 8px
-            font-size: 12px
     .sub-text
         color: #797979
         display: block
         span
             display: inline-block
+    .course-synopsis-link
+        font-size: .9rem
+        padding: 6px 6px 0 2px
     @include media-breakpoint-down(sm)
-        .teaching-thumb
-            margin-bottom: 15px
+        .course-synopsis-link
+            padding-top: 2px
 
 .popover.course-catalog
     width: 400px

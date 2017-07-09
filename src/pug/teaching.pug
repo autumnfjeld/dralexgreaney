@@ -6,26 +6,20 @@ section#teaching
                     h2 Teaching
         .row.justify-content-between
             each course in teaching
+                - var courseNumber = course.crossListing ? course.classNumber + "/" + course.crossListing : course.classNumber
                 .col-sm-12.col-md-6.wow.fadeInUp(data-wow-delay='0.4s')
-                    a.d-block.course-catalog-popover( data-toggle="popover", title="Catalog Description", data-content=course.catalogText)
-                        .teaching-thumb.d-inline-block
-                            .d-flex.align-items-start
-                                h5.pr-2= course.name
-                                span
-                                    button.btn-link.gray-tooltip( href= course.synopsisUrl, target="_blank", data-toggle="tooltip",data-placement="top", title="Course Synopsis")
-                                        i.fa.fa-file-text-o
-                            .d-flex.justify-content-between.align-items-baseline.mb-1
-                                h6.m-0.font-weight-light
-                                    span= course.classNumber
-                                    if course.crossListing
-                                        span /
+                    .d-flex.flex-wrap.mb-3
+                        a.d-block.course-catalog-popover( data-toggle="popover", title=courseNumber + "   Catalog Description" , data-content=course.catalogText)
+                            .d-inline-block
+                                .d-flex.align-items-start
+                                    h5.pr-2= course.name
+                                div.d-flex.align-items-baseline
+                                    h6.pr-2
+                                        span= course.classNumber
+                                        if course.crossListing
+                                            span /
                                         span= course.crossListing
-                                    span.pl-3= course.level
-                                    span.pl-3= course.units + ' units'
-                            .mb-1
-                                each year in course.termsTaught
-                                    span.pr-2= year
-                            .institution.d-flex.justify-content-between.align-items-baseline
-                                p= course.institute
-                                //a.btn-link(href= course.synopsisUrl, target="_blank") Synopsis
-                                //p TODO link for mobile
+                                    p= course.institute
+                        a.btn-link.gray-tooltip( href= course.synopsisUrl, target="_blank", data-toggle="tooltip",data-placement="top", title="Course Synopsis")
+                            i.fa.fa-file-text-o.course-synopsis-link
+                            //TODO on mobile put links on 2nd line for both catalog & sysnopsis

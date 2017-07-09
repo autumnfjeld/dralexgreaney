@@ -108,9 +108,11 @@
                 ],
                 offset: '0 -60%'
             });
+
         }
 
-        // Init popover for teaching sections
+        // Init popover for teaching sections, note popover gets janky when it shows on top of the initiating hover content
+        // TODO figure out mobile display
         $('.course-catalog-popover').popover({
             trigger: 'hover',
             template:   '<div class="popover course-catalog" role="tooltip">' +
