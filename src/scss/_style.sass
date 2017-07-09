@@ -333,8 +333,7 @@ ul.navbar-nav li a
  *-----------------------------------------*/
 
 $initImgDiam: 250px
-$change: 100px
-$finalImgDiam: 350px
+$finalImgDiam: 300px
 $textAreaHeight: 200px
 $initWrapperHeight: 400px
 $initWrapperWidth: $initImgDiam + 100px
@@ -352,20 +351,20 @@ $initWrapperWidth: $initImgDiam + 100px
         z-index: 2
     .content
         overflow: hidden
-        //height: $initImgDiam + $textAreaHeight
         border-radius: $initImgDiam/2  $initImgDiam/2 0 0
         margin-bottom: 5px
+        transition: height .5s ease .1s
         .member-img-box
             width: $initImgDiam
             height: $initImgDiam
-            transition: width .5s ease .1s
+            transition: width .5s ease .1s, height .5s ease .1s
             .img-member
                 border-radius: $initImgDiam/2
                 width: 100%
                 height: 100%
-                border: 20px solid #f4f4f4
+                border: 10px solid  $gray-lighter
                 // hover off transition
-                transition: border-radius 0.5s ease .1s
+                transition: border-radius 0.5s ease .1s, width 0.5s ease .1s, height 0.5s ease .1s,
         .basic-info
             .icons
                 max-width: 200px
@@ -374,12 +373,13 @@ $initWrapperWidth: $initImgDiam + 100px
                 font-size: .9rem
         .expanded-info
             font-size: .9rem
-            display: none
+            height: auto
+            max-height: 0
             opacity: 0
-            transition: opacity .3s ease .5s
+            transition: opacity .5s ease .1s, max-height .5s ease .1s
     .content:hover
         position: absolute
-        border-radius:  $finalImgDiam/2  $finalImgDiam/2 20px 20px
+        border-radius:  $finalImgDiam/2+20  $finalImgDiam/2+20 20px 20px
         height: auto
         background: $gray-lighter
         .member-img-box
@@ -388,21 +388,21 @@ $initWrapperWidth: $initImgDiam + 100px
             .img-member
                 border-radius: $finalImgDiam/2
         .expanded-info
-            display: block
             opacity: 1
+            max-height: 600px
     // Show all contents on
-    @include media-breakpoint-down(xs)
-        .content
-            .member-img-box
-                max-height: 100%
-            &:hover
-                border-radius:  $initImgDiam/2  $initImgDiam/2 20px 20px
-                height: auto
-                background: $gray-lighter
-                .member-img-box
-                    width: $initImgDiam
-                    .img-member
-                        border-radius: $initImgDiam/2
+    //@include media-breakpoint-down(xs)
+    //    .content
+    //        .member-img-box
+    //            max-height: 100%
+    //        &:hover
+    //            border-radius:  $initImgDiam/2  $initImgDiam/2 20px 20px
+    //            height: auto
+    //            background: $gray-lighter
+    //            .member-img-box
+    //                width: $initImgDiam
+    //                .img-member
+    //                    border-radius: $initImgDiam/2
 
 
 /*---------------------------------------
