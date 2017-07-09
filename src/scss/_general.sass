@@ -18,19 +18,34 @@
  * General Browser Resets
  *-----------------------------------------*/
 
+html
+    -webkit-font-smoothing: antialiased
+
+
 body
     background: #ffffff
-
     overflow-x: hidden
-
 
 html, body
     width: 100%
     height: 100%
+*
+    box-sizing: border-box
+    &:before, &:after
+        box-sizing: border-box
 
 button
     &:focus
         outline: 0 solid transparent
+
+a
+    color: #2668b2                // This is UCR Link color
+    -webkit-transition: 0.5s
+    transition: 0.5s
+    text-decoration: none !important
+    &:hover, &:active, &:focus
+        color: #000000
+        outline: none
 
 /*---------------------------------------
  * Typography
@@ -86,8 +101,10 @@ body
 //  color: #656565
 //  font-size: 20px
 //
-h1, h2, h3, h4, h5
+h1, h2
     color: $gray
+h3, h4, h5
+    color: lighten($gray, 20%)
 p
     color: $gray-light
 //  font-size: 16px

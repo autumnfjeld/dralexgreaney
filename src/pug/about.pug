@@ -1,43 +1,34 @@
 section#about
     .container
+        .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+            h2.mb-0.mb-md-1 Computational Materials Science at UC Riverside
         .row
-            .col-md-4
-                .about-image-thumb.hidden-xs-down.mb-4
-                    img.wow.fadeInUp.img-responsive.hidden-md(src='media/UCR_seal_300px.gif', data-wow-delay='0.2s', alt='UCR Seal', style="max-width:280px;")
-                .wow.fadeInUp.about-profile-thumb.py-3.d-flex.flex-column.justify-content-around(data-wow-delay='0.4s')
-                        p.my-1
-                            span Other info here? -
-                            |  blah  blah
-                        p.my-1
-                            span Location -
-                            |  #{about.location} Building something
-                        p.my-1
-                            span Phone -
-                            |  001 024 7823 8402
-                        p.my-1
-                            span Email -
-                            |  alexgreaney@youremail.com
-                        p.my-1
-                            span Mailing address -
-                            |  123 Riverside Drive
-                            |  USA
-
-            .col-md-8
-                .about-thumb.mt-3
-                    .wow.fadeInUp.section-title(data-wow-delay='0.6s')
-                        h2 Computational Materials Science
-                        p
-                            strong Research Overview
-                            span.text-danger v0.5 Work In Progress!!!
-                    .wow.fadeInUp(data-wow-delay='0.8s')
+            .col-md-5.wow.fadeInUp(data-wow-delay='0.4s')
+                .d-inline-block.hidden-xs-down
+                    .about-image-box.mb-4.text-center
+                        img.img-responsive.hidden-md.urc-seal-img(src='media/UCR_seal_250px.gif', alt='University of California at Riverside Seal')
+                .about-profile-box.py-1.pt-md-0
+                        p.my-2
+                            span.about-label Department
+                            |  #{about.department}
+                        p.my-2
+                            span.about-label Program
+                            |  #{about.program}
+                        p.my-2
+                            span.about-label Building
+                            |  #{about.campusBuilding}
+                        p.my-2
+                            span.about-label Phone
+                            |  #{about.phone}
+                        p.my-2
+                            span.about-label Email
+                            |  #{about.email}
+                        p.my-2
+                            span.about-label Mail
+                            |  #{about.mailingAddress}
+            .col-md-7.wow.fadeInUp(data-wow-delay='0.4s')
+                .about-box.mt-3
+                    h5 Research Overview
+                    .mr-md-2
                         for paragraph in about.summary
                             p= paragraph
-
-
-                    //| Check my works there
-                            //a(href='#') Dribbble
-                            //| ,
-                            //a(href='#') Behance
-                            //|  and
-                            //a(href='#') Twitter
-                            //|  dolor sit amet consectetur.

@@ -10,11 +10,9 @@
 
 /*---------------------------------------------------------------
  * Table of contents
- *
- *        Body
- *    1.  Buttons
- *    2.  General
- *    3.  Pre loader
+ *      General
+ *      Transitions & Animations
+ *      Pre loader
  *    4.  Navigation section
  *    5.  Home section
  *    6.  About section
@@ -32,25 +30,8 @@
 
 
 /*---------------------------------------
- *    2 General
+ *    General
  *-----------------------------------------*/
-
-html
-  -webkit-font-smoothing: antialiased
-
-a
-  color: #2668b2                // This is UCR Link color
-  -webkit-transition: 0.5s
-  transition: 0.5s
-  text-decoration: none !important
-  &:hover, &:active, &:focus
-    color: #000000
-    outline: none
-
-*
-  box-sizing: border-box
-  &:before, &:after
-    box-sizing: border-box
 
 .section-title
     margin: 0
@@ -79,7 +60,7 @@ a
         transform: scale(1.1)
 
 /*---------------------------------------
- *    3 Pre loader section
+ *    Pre loader section
  *-----------------------------------------*/
 
 .spinner-box
@@ -121,7 +102,7 @@ a
 
 
 /*---------------------------------------
- *    4 Navigation section
+ *    Navigation section
  *-----------------------------------------*/
 
 .navbar
@@ -163,6 +144,7 @@ ul.navbar-nav li a
  *-----------------------------------------*/
 
 #home
+    background-color: $gray
     .home-backstretch
         background-size: cover
         display: flex
@@ -227,29 +209,26 @@ ul.navbar-nav li a
  *-----------------------------------------*/
 
 #about
-    .about-profile-thumb
-        span
-          font-weight: bold
-    .about-thumb
-        //padding: 32px 12px
-        p
-          padding: 2px 0
+    .ucr-seal-img
+        width: 250px
+    .about-label
+        font-weight: 400
     @include media-breakpoint-down(sm)
         padding-top: 60px
-        .about-profile-thumb
-            height: 260px
+        .about-profile-box
             font-size: 1rem
-            &::after
-                content: ""
-                background: url('../media/UCR_seal_300px.gif') no-repeat center center
-                background-size: 280px
-                opacity: 0.1
-                top: 0
-                left: 0
-                bottom: 0
-                right: 0
-                position: absolute
-                z-index: -1
+            padding-left: 10px
+        &::before
+            content: ""
+            background: url('../media/UCR_seal_200px.gif') no-repeat center center
+            background-size: 280px
+            opacity: 0.1
+            top: -378px
+            left: 0
+            bottom: 0
+            right: 0
+            position: absolute
+            z-index: -1
 
 /*---------------------------------------
  *   7 Service section
