@@ -18,23 +18,6 @@
 	
     },
     {
-        "name": "Henri Quod Felis",
-        "groupAffiliate": false,
-        "role": ["Mouser"],
-        "email": "henri@ucr.edu ",
-        "cvLink": "",
-        "linkedIn": "www.linkedin.com/in/henrithecat",
-        "googleScholar": "",
-        "gitHub": "https://github.com/henrithecat",
-        "researchGate": "https://www.researchgate.net/profile/Henri_The_Cat",
-        "associatedWebsite": "",
-        "academicBackground": "PhD in string theory (and other cat toys)",
-        "personalWebsite": "www.henrigetsthemouse.com",
-        "funFacts": "Grew up in the Bay Area. Informal science training in the backyard sheds. A 13 yr old veteran mouser and transcontinental traveler, Henri has lived with Dr. Greaney since his days in Berkeley, CA. Henri works from home, and can usually be found napping on Dr. Greaney's desk. ",
-        "researchInterests": "Thermal resistance of recumbent-feline guard-hairs, keyboard ergonomics",
-        "imageUrl": "http://research.engr.oregonstate.edu/greaney/sites/research.engr.oregonstate.edu.greaney/files/imagecache/160x160-scale-crop/henri-newyear-2012-crop.jpg "
-    },
-    {
         "name": "Woochul Shin ",
         "groupAffiliate": true,
         "role": [
@@ -291,5 +274,22 @@
         "funFacts": "Loves tennis.",
         "researchInterests": "Uncovering the structure-property relationships in Discriminating molecules with fingerprints.",
         "imageUrl": "media/group-members/paul-dirac-headshot.jpg"
+    },
+    {
+        "name": "Henri Quod Felis",
+        "groupAffiliate": false,
+        "role": ["Mouser"],
+        "email": "henri@ucr.edu ",
+        "cvLink": "",
+        "linkedIn": "www.linkedin.com/in/henrithecat",
+        "googleScholar": "",
+        "gitHub": "https://github.com/henrithecat",
+        "researchGate": "https://www.researchgate.net/profile/Henri_The_Cat",
+        "associatedWebsite": "",
+        "academicBackground": "PhD in string theory (and other cat toys)",
+        "personalWebsite": "www.henrigetsthemouse.com",
+        "funFacts": "Grew up in the Bay Area. Informal science training in the backyard sheds. A 13 yr old veteran mouser and transcontinental traveler, Henri has lived with Dr. Greaney since his days in Berkeley, CA. Henri works from home, and can usually be found napping on Dr. Greaney's desk. ",
+        "researchInterests": "Thermal resistance of recumbent-feline guard-hairs, keyboard ergonomics",
+        "imageUrl": "http://research.engr.oregonstate.edu/greaney/sites/research.engr.oregonstate.edu.greaney/files/imagecache/160x160-scale-crop/henri-newyear-2012-crop.jpg "
     }
 ]
