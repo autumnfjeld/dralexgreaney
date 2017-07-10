@@ -1,0 +1,14 @@
+section#outreach
+    .container
+        .row
+            .col-12
+                .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+                    h2 Outreach
+        .row
+            each item in outreach
+                .col-sm-12.col-lg-6.wow.fadeInUp.mb-3.px-3.px-lg-5(data-wow-delay='0.4s')
+                    .d-flex.align-items-baseline
+                        h4.pr-2= item.title
+                        a.btn-link.gray-tooltip(href= item.link, target="_blank")
+                            i.fa.fa-link
+                    p= item.description
