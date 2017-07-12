@@ -52,7 +52,16 @@ a
  * Bootstrap sets body at 1rem
  *-----------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Lato:200,300,400')
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400')
+// can't use 200 w/out font loadking optimization
+
+//@font-face
+//    font-family: 'Lato'
+//    font-style: normal
+//    font-weight: 200
+//    src: local("Lato Light"), local("Lato Light"), url(https://fonts.googleapis.com/css?family=Lato:200)
+//    //http://themes.googleusercontent.com/static/fonts/drsugiyama/v2/rq_8251Ifx6dE1Mq7bUM6brIa-7acMAeDBVuclsi6Gc.woff) format("woff");
+//
 
 
 body
@@ -62,11 +71,6 @@ body
     line-height: 1.2
     @include media-breakpoint-down(xs)
         font-size: .9rem
-
-.font-weight-light
-    font-weight: 300
-.fw-light
-    font-weight: 300
 
 .text-caps
     font-weight: bold
