@@ -9,11 +9,11 @@ section#research
                 .wow.fadeInUp.col-xs-12.col-sm-6.col-md-6.col-lg-4.justify-content-md-center.mb-4(data-wow-delay='0.4s')
                     .card
                         .card-block.p-0
-                            .work-thumb
+                            .work-box
                                 a.research-popup(data-project= project.href)
-                                    .work-thumb-overlay.d-flex.flex-column.justify-content-center
+                                    .work-box-overlay.d-flex.flex-column.justify-content-center
                                         p.m-0.font-weight-normal= project.teaser
                                         //p.text-caps Click to read more
-                                    img.img-fluid.card-img-top(src= project.imageUrl, alt= project.imageTitle)
+                                    img.img-fluid.card-img-top.lazy(data-original= project.imageUrl, alt= project.imageTitle)
                         .card-footer.bg-gray-light.text-center
                             p.m-0.text-truncate.text-gray-lightest.font-weight-light= project.title

@@ -39,7 +39,7 @@
         "nickName": "mof",
         "title": "Engineering thermal properties in MOFs",
         "href": "engineering-thermal-properties-in-mofs",
-        "imageUrl": "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/irmof-3-struct.thumbnail.png",
+        "imageUrl": "media/research/irmof-3-struct_338x338.jpg",
         "imageCaption": "Image Caption",
         "teaser": "MOFs sexy 1-2 sentence teaser that must tantalize the reader to make them follow the link and read more.",
         "expandedText": [
@@ -57,7 +57,7 @@
         "nickName": "gecko",
         "title": "Gecko-inspired dry adhesion system",
         "href": "media/research_teaser_350px_gecko_foot_on_glass.jpg",
-        "imageUrl": "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/gecko_foot_on_glass-sm-600px.png",
+        "imageUrl": "media/gecko_foot_on_glass-sm-300px.png",
         "imageCaption": "Gecko foot on glass",
         "teaser": "Gecko teaser.....Write a sexy 1-2 sentence teaser that must tantalize the reader to make them follow the link and read more.",
         "expandedText": [
@@ -69,7 +69,7 @@
         "nickName": "resonators",
         "title": "Dissipation in nanoscale resonators",
         "href": "dissipation-in-nanoscale-resonators",
-        "imageUrl": "https://s3-us-west-2.amazonaws.com/alexgreaney.com/media/poly-graphite-bg-orange-600px.png",
+        "imageUrl": "media/poly-graphite-bg-orange-338px.jpg",
         "imageCaption": "Wave packet in Carbon Nano Tubes",
         "teaser": "Write a sexy 1-2 sentence teaser that must tantalize the reader to make them follow the link and read more.",
         "expandedText": [

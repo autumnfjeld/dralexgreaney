@@ -16,6 +16,7 @@
 
         $('.spinner-box').fadeOut(1000); // set duration in brackets
         this._initBackstretch();
+        this._initLazyLoad();
         this._initNavbar();
         this._initBootstrapComponents();
         this._initBindings();
@@ -32,21 +33,33 @@
     MainController.prototype._initBackstretch = function () {
 
         $('.home-backstretch').backstretch([
-                [
-                    {'width': 1920, 'url': 'media/Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'},
-                    {'width': 960, 'url': 'media/Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'}
-                ],
-                [
-                    {'width': 1920, 'url': 'media/HardCarbon_Sized_1920x1280.png'},
-                    {'width': 960, 'url': 'media/HardCarbon_Sized_960x640.png'}
-                ],
-                [
-                    {'width': 1920, 'url': 'media/hard-carbon-stormtroopers_1920x1080.png'},
-                    {'width': 960, 'url': 'media/hard-carbon-stormtroopers_960x540.png'}
-                ]
+            [
+                {'width': 1920, 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'},
+                {'width': 1200, 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_1200x.jpg'},
+                {'width': 960, 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'},
+                {'width': 576, 'deviceOrientation': 'portrait', 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_576x_portrait.jpg'}
+            ],
+            [
+                {'width': 1920, 'url': 'media/home_HardCarbon_Sized_1920x1280.jpg'},
+                {'width': 1200, 'url': 'media/home_HardCarbon_Sized_1200.jpg'},
+                {'width': 960, 'url': 'media/home_HardCarbon_Sized_960x640.jpg'}
+            ],
+            [
+                {'width': 1920, 'url': 'media/home_hard-carbon-stormtroopers_1920x1080.jpg'},
+                {'width': 960, 'url': 'media/home_hard-carbon-stormtroopers_960x540.jpg'},
+                {'width': 576, 'deviceOrientation': 'portrait',  'url': 'media/home_hard-carbon-stormtroopers_576x_portrait.jpg'}
             ]
-            , {duration: 2000, fade: 750});
+        ], {
+                duration: 2000,
+                fade: 750,
+                preload: 0
+            }
+        );
 
+    };
+
+    MainController.prototype._initLazyLoad = function() {
+        $('img.lazy').lazyload();
     };
 
     /**

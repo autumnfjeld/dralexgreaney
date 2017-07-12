@@ -9,7 +9,7 @@ section#group-members
                 .contentWrap.d-flex.flex-column.align-content-center
                     .content
                         .member-img-box.mx-auto.text-center
-                            img.img-responsive.img-member(src= person.imageUrl, alt= person.name)
+                            img.img-responsive.img-member.lazy(data-original= person.imageUrl, alt= person.name)
                         .basic-info.d-flex.flex-column.justify-content-center.align-items-center.mb-1.mt-2
                             h5.text-center= person.name
                             each roleSnippet in person.role

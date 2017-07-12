@@ -255,11 +255,15 @@ ul.navbar-nav li a
     .card
         // Force filling of vertical space
         min-height: 100%
-    .work-thumb
+    .work-box
         padding: 0
         overflow: hidden
         position: relative
-    .work-thumb-overlay
+        // lazyload requires a size
+        .lazy
+            width: 338px
+            height: 338px
+    .work-box-overlay
         position: absolute
         background: #ffffff
         cursor: pointer
@@ -270,8 +274,8 @@ ul.navbar-nav li a
         right: $overlay-offset
         left: $overlay-offset
         transition: all ease-in-out 0.4s
-    .work-thumb:hover
-        .work-thumb-overlay
+    .work-box:hover
+        .work-box-overlay
             opacity: .8
 
 
@@ -422,7 +426,7 @@ $initWrapperWidth: $initImgDiam + 100px
     .authors
         font-family: fantasy
     .title
-        font-weight: 200
+        //font-weight: 200
 
 .popover.abstract
     max-width: 500px
