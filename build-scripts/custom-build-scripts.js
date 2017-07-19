@@ -135,12 +135,21 @@ function fixBibCapitalization(){
                         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
                     });
                 }
+                // Ensure all keyMost keys in the Field object are Capitalized, a few need to be capitalized
+                var keys = Object.keys(pub.Fields);
+                keys.forEach(function(key) {
+                    // keyCapitalized = key.charAt(0).toUpperCase() + key.slice(1)
+                    if (key !== key.toLowerCase()) {
+                        pub.Fields[key.toLowerCase()] = pub.Fields[key]
+                        delete pub.Fields[key] // delete the old key
+                    }
+                });
                 console.log('pub', pub);
 
             })
 
         }
-        fs.writeFile('src/json-data/publications-titlefixed.json', JSON.stringify(bibData), function(err){
+        fs.writeFile('src/json-data/publications-fixed.json', JSON.stringify(bibData), function(err){
             if (err) {
                 console.log('Error writing file', err);
             } else {
@@ -148,6 +157,20 @@ function fixBibCapitalization(){
             }
         })
     });
+
+}
+
+function seperateFeaturedPublications(){
+    var featuredPublications = [
+        'Li_2017_AdEnergyMat_DopedHardCarbonAnodes',
+        'Wang_2017_AngewChemi_Hydronium',
+        'Oliveira_2017_PRE_GreenKuboIntegrationError',
+        'Truszkowska_2016_CompChemEng_MultiscaleLBM',
+        'Manion_2016_DaltonTrans_DesignOFlexibleLinker'
+    ];
+
+    //TODO Decide on how to seperate feature pubs - into single json with { "featured" : [], "theRest": []}  Think I like this
+
 
 }
 

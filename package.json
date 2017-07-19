@@ -13,6 +13,7 @@
     "//OneOffScripts": "",
     "  //": "convert publication data from .bib to .json ",
     "bib-to-json":"node node_modules/bib2json/Bib2JSON.js src/json-data/references-with-abstract.bib src/json-data/publications2.json",
+    "bib-fix":  "node build-scripts/custom-build-scripts.js fixBibCapitalization",
     "//BuildScripts": "",
     "autoprefixer": "postcss -u autoprefixer -r public/css/*",
     "// pug":      "Compile pug templates with json data",
@@ -26,6 +27,7 @@
     "watch:css":  "onchange 'src/scss/*.sass' -i -v -- npm run scss",
     "watch:js":   "onchange 'src/js/*.js' 'src/app.js' -i -v -- npm run uglify",
     "watch:all":  "npm run watch:pug & npm run watch:pug-to-func & npm run watch:css & npm run watch:js",
+    "// TODO": "compress css",
     "build:css":  "npm run scss & npm run autoprefixer",
     "build:js":   "npm run lint & npm run uglify",
     "build":       "npm run pug-to-func & npm run pug & npm run build:css & npm run build:js"
