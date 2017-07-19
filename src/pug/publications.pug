@@ -1,33 +1,40 @@
+mixin publicationEntry(pub)
+    blockquote.blockquote
+        div.d-flex
+            a.d-block.col-9(
+            class= popoverClass
+            data-toggle="popover",
+            title=popoverTitle,
+            data-content=pub.Fields.abstract)
+                span.authors.mr-1=  pub.Fields.author + ',  '
+                span.title.mr-1= "'" + pub.Fields.title + "', "
+                if pub.Fields.journal
+                    span.font-italic= pub.Fields.journal + ', '
+                span.ml-2.date-vol
+                    if pub.Fields.volume
+                        span= 'vol. ' + pub.Fields.volume + ', '
+                    if pub.Fields.pages
+                        span= 'pp. ' + pub.Fields.pages + ', '
+                    if pub.Fields.month
+                        span= pub.Fields.month + ', '
+                    if pub.Fields.year
+                        span= pub.Fields.year + '. '
+            div.col-3.pt-2.pl-lg-5
+                if pub.Fields.doi
+                    a.ml-2.doi.btn.btn-secondary.btn-sm(href= 'https://dx.doi.org/' + pub.Fields.doi, target='_blank', role="button") doi
+                        //span= 'doi link ' + pub.Fields.doi
+                if pub.EntryKey
+                    a.ml-3.doi.btn.btn-secondary.btn-sm(href= 'media/publications/' + pub.EntryKey +'.pdf', target='_blank', role="button") pdf
+
 section#publications
     .container
         .wow.fadeInUp.section-title(data-wow-delay='0.2s')
              h2 Publications
         .publication-list
             each pub in publications
-                - var popoverClass = pub.Fields.Abstract ? 'abstract-popover-hover' : null
-                - var popoverTitle = pub.Fields.Abstract ? 'Abstract' : null
-                blockquote.blockquote
-                    a.d-block(
-                    class= popoverClass
-                    data-toggle="popover",
-                    title=popoverTitle,
-                    data-content=pub.Fields.Abstract)
-                        span.authors.mr-1=  pub.Fields.Author + ',  '
-                        span.title.mr-1= "'" + pub.Fields.Title + "', "
-                        if pub.Fields.Journal
-                            span.font-italic= pub.Fields.Journal + ', '
-                        span.mr-1
-                            if pub.Fields.Volume
-                                span= 'vol. ' + pub.Fields.Volume + ', '
-                            if pub.Fields.Pages
-                                span= 'pp. ' + pub.Fields.Pages + ', '
-                            if pub.Fields.Month
-                                span= pub.Fields.Month + ', '
-                            if pub.Fields.Year
-                                span= pub.Fields.Year + '. '
-                        if pub.Fields.DOI
-                            span.mr-1
-                            a.d-inline-block(href= 'https://dx.doi.org/' + pub.Fields.DOI, target='_blank')
-                                span= 'doi link ' + pub.Fields.DOI
+                    - var popoverClass = pub.Fields.abstract ? 'abstract-popover-hover' : null
+                    - var popoverTitle = pub.Fields.abstract ? 'Abstract' : null
+                    +publicationEntry(pub)
+
         .row.d-flex.justify-content-end
             button.btn.btn-link.small.mr-3.show-more-btn(type=button) Show more
