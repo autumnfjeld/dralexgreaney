@@ -70,6 +70,7 @@
 
         var hash = window.location.hash;
 
+        // TODO check that hash is valid (one of the menu hashes)
         if (hash) {
             $('ul.navbar-nav a[href="' + hash + '"]').tab('show');
             $('html, body').stop().animate({
@@ -150,17 +151,20 @@
             var initialHeight = 630;
 
             if ($(this).text() === 'Show more') {
-                console.log($(this).text(),  initialHeight);
-                $('.publication-list').animate({
-                    height: $('.publication-list').get(0).scrollHeight
-                }, 'easeOutSine', function () {
+                $('.publication-list-more').animate({
+                    height: $('.publication-list-more').get(0).scrollHeight
+                }, 1200, function () {
                     $('.show-more-btn').text('Show less');
                 });
             } else {
-                $('.publication-list').animate({
-                    height: initialHeight
-                }, 'easeOutSine', function () {
+                $('.publication-list-more').animate({
+                    height: 0
+                }, 1200, function () {
                     $('.show-more-btn').text('Show more');
+                    // TODO scroll as publication list shrinks
+                    $('html, body').stop().animate({
+                        scrollTop: $('#publications').offset().top - 49,
+                    }, 1000);
                 });
             }
         });

@@ -20,21 +20,26 @@ mixin publicationEntry(pub)
                     if pub.Fields.year
                         span= pub.Fields.year + '. '
             div.col-3.pt-2.pl-lg-5
-                if pub.Fields.doi
-                    a.ml-2.doi.btn.btn-secondary.btn-sm(href= 'https://dx.doi.org/' + pub.Fields.doi, target='_blank', role="button") doi
-                        //span= 'doi link ' + pub.Fields.doi
                 if pub.EntryKey
                     a.ml-3.doi.btn.btn-secondary.btn-sm(href= 'media/publications/' + pub.EntryKey +'.pdf', target='_blank', role="button") pdf
+                if pub.Fields.doi
+                    a.ml-2.doi.btn.btn-secondary.btn-sm(href= 'https://dx.doi.org/' + pub.Fields.doi, target='_blank', role="button") doi
 
 section#publications
     .container
         .wow.fadeInUp.section-title(data-wow-delay='0.2s')
              h2 Publications
         .publication-list
-            each pub in publications
+            each pub in publications.featured
                     - var popoverClass = pub.Fields.abstract ? 'abstract-popover-hover' : null
                     - var popoverTitle = pub.Fields.abstract ? 'Abstract' : null
                     +publicationEntry(pub)
+        .publication-list-more
+            each pub in publications.theRest
+                - var popoverClass = pub.Fields.abstract ? 'abstract-popover-hover' : null
+                - var popoverTitle = pub.Fields.abstract ? 'Abstract' : null
+                +publicationEntry(pub)
+        .row
+            .col-3.offset-9.pt-2.pl-lg-5
+                button.btn.btn-link.small.mr-3.show-more-btn(type=button) Show more
 
-        .row.d-flex.justify-content-end
-            button.btn.btn-link.small.mr-3.show-more-btn(type=button) Show more

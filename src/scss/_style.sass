@@ -406,14 +406,14 @@ $initWrapperWidth: $initImgDiam + 100px
         padding: 0 .5rem
         font-size: 1rem
         border-left: 0.1rem solid $ucr-gold
-        @include media-breakpoint-down(sm)
-            font-size: .8rem
-    .publication-list
-        height: 500px
-        overflow-y: hidden
-        transition: height 2s
         span
             line-height: 1
+        @include media-breakpoint-down(sm)
+            font-size: .8rem
+    .publication-list-more
+        height: 0
+        overflow-y: hidden
+
     .authors
     .title
         font-family: sans-serif
@@ -424,6 +424,8 @@ $initWrapperWidth: $initImgDiam + 100px
         background-color: transparent
         font-variant: small-caps
         padding-top: .1rem
+    .btn-link
+        padding: 0
 
 .popover.abstract
     max-width: 500px
