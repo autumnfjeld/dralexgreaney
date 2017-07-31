@@ -6,10 +6,11 @@ var pug = require('pug');
 var projectRootDir = "/Users/afjeld/Documents/Aut/dralexgreaney/";
 var jsonDataDir = projectRootDir + 'src/json-data/';
 
-/**
+/*************************************************************************************************
  * Build the project data into a js object: Reads project json data files and builds
  * @return {Promise}
- */
+ ************************************************************************************************/
+
 function getJsonContent() {
     var siteContent = {};
     return new Promise(function (resolve, reject) {
@@ -37,8 +38,14 @@ function getJsonContent() {
     });
 }
 
+
+
+/*************************************************************************************************
+ * Compile all pug templates with data into index.html
+ ************************************************************************************************/
+
 /**
- * Compile all pug templates
+ * Create the public/index.html file
  */
 function compilePugWithContent() {
 
@@ -70,13 +77,15 @@ function compilePugWithContent() {
 }
 
 
-/**
- * Create a javascript data store that will supply data to the client-side application Models
+/***********************************************************************************************
+ * Create a javascript data store that will supply data to the client-side pug functions
  * A bit hacky: produces a js module file
  * Needed models:
  *   - Research model for dynamic creation of research pages or other dynamic content
  *
- */
+ /************************************************************************************************/
+
+
 function createDataModel() {
     var dataStoreFile = projectRootDir + 'src/js/data-store.js';
 
@@ -106,27 +115,66 @@ function createDataModel() {
 }
 
 
+
+/***********************************************************************************************
+ *  Process publication data
+ ***********************************************************************************************/
+
 /**
- *
- * Fix capitalization in any of the publication entries that originate from .bib file
- * Need to manually change pub.Fields.XXX if other fields need correction
+ * Define featured publications
  */
-function fixBibCapitalization(){
-    fs.readFile('src/json-data/publications.json', 'utf-8', function(err, data) {
+var featuredPublications = [
+    'Li_2017_AdEnergyMat_DopedHardCarbonAnodes',
+    'Wang_2017_AngewChemi_Hydronium',
+    'Oliveira_2017_PRE_GreenKuboIntegrationError',
+    'Truszkowska_2016_CompChemEng_MultiscaleLBM',
+    'Manion_2016_DaltonTrans_DesignOFlexibleLinkers'
+];
+
+/**
+ * Identify featured publications
+ * @param entryKey
+ * @return {boolean}
+ */
+function isFeaturedPublication(entryKey){
+    return featuredPublications.some(function(featuredEntry){
+        return featuredEntry === entryKey;
+    });
+}
+
+/**
+ * Prior to running this the raw .bib file is processed via third party parser Bib2JSON.js
+ *
+ * Process .json publication file:
+ *   - change capitinilation of some content
+ *   - make capitilizaion of Field keys uniform
+ *   - seperate featured publications from the rest for UI display.
+ */
+function processPublicationEntries(){
+    var outputJsonFile = 'src/json-data/publications.json',
+        publicationsJsonFile = 'src/json-data/publications.json',
+        publications = {
+            featured: [],
+            theRest: []
+        };
+
+    fs.readFile(publicationsJsonFile, 'utf-8', function(err, data) {
         if (err) {
             console.log('Error', err);
         } else {
             var bibData = JSON.parse(data);
             bibData.forEach( function(pub) {
+
+                // Fix capitalization of the content where needed
                 if (pub.Fields.Journal) {
                     pub.Fields.Journal = pub.Fields.Journal.replace(/\w\S*/g, function(txt){
-                        console.log('txt', txt);
+                        // console.log('txt', txt);
                         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
                     });
                 }
                 if (pub.Fields.Booktitle) {
                     pub.Fields.Booktitle = pub.Fields.Booktitle.replace(/\w\S*/g, function(txt){
-                        console.log('txt', txt);
+                        // console.log('txt', txt);
                         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
                     });
                 }
@@ -135,7 +183,8 @@ function fixBibCapitalization(){
                         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
                     });
                 }
-                // Ensure all keyMost keys in the Field object are Capitalized, a few need to be capitalized
+
+                // Ensure all keys in the Field object are Capitalized
                 var keys = Object.keys(pub.Fields);
                 keys.forEach(function(key) {
                     // keyCapitalized = key.charAt(0).toUpperCase() + key.slice(1)
@@ -144,33 +193,31 @@ function fixBibCapitalization(){
                         delete pub.Fields[key] // delete the old key
                     }
                 });
-                console.log('pub', pub);
 
-            })
+                // Separate featured publications
 
+                // console.log('pub', pub.EntryKey);
+                if (isFeaturedPublication(pub.EntryKey)) {
+                    publications.featured.push(pub);
+                } else {
+                    publications.theRest.push(pub);
+                }
+
+            });
         }
-        fs.writeFile('src/json-data/publications-fixed.json', JSON.stringify(bibData), function(err){
+
+        console.log('Number of featured publications sorted: ', publications.featured.length, ' out of ', featuredPublications.length, ' specified');
+        // Output correct .json file
+        fs.writeFile(publicationsJsonFile, JSON.stringify(publications), function(err){
             if (err) {
                 console.log('Error writing file', err);
             } else {
-                console.log('Success file written');
+                console.log('Success! publication json data written to ', publicationsJsonFile);
+                // TODO eliminate manual check write over plublications.json
+                console.log('Manually check this file and then rename to publications.json');
             }
         })
     });
-
-}
-
-function seperateFeaturedPublications(){
-    var featuredPublications = [
-        'Li_2017_AdEnergyMat_DopedHardCarbonAnodes',
-        'Wang_2017_AngewChemi_Hydronium',
-        'Oliveira_2017_PRE_GreenKuboIntegrationError',
-        'Truszkowska_2016_CompChemEng_MultiscaleLBM',
-        'Manion_2016_DaltonTrans_DesignOFlexibleLinker'
-    ];
-
-    //TODO Decide on how to seperate feature pubs - into single json with { "featured" : [], "theRest": []}  Think I like this
-
 
 }
 
@@ -190,6 +237,7 @@ function fileNameToCamelCase(fileName) {
     return camelCase;
 }
 
+
 /********************************************************************************************
  * Export Functions
  * make-runnable module makes export functions accessible via command line: >node filepath functionName args
@@ -199,7 +247,7 @@ function fileNameToCamelCase(fileName) {
 module.exports = {
     compilePugWithContent: compilePugWithContent,
     createDataModel: createDataModel,
-    fixBibCapitalization: fixBibCapitalization
+    processPublicationEntries: processPublicationEntries
 };
 
 require('make-runnable');
