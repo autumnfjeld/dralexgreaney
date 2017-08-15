@@ -243,17 +243,27 @@ ul.navbar-nav li a
 
 #research
     $overlay-offset: 40px
+    $card-bg-color: lighten($gray-light, 20%)
     .card
         // Force filling of vertical space
-        min-height: 100%
+        //min-height: 100%
+        border: none
+        .card-block
+            border-top: 2px solid   $card-bg-color
+            border-left: 2px solid   $card-bg-color
+            border-right: 2px solid   $card-bg-color
+            border-radius: 4px 4px 0 0
+        .card-footer
+            background-color: $card-bg-color
+
     .work-box
         padding: 0
         overflow: hidden
         position: relative
-        // lazyload requires a size
+        // lazyload requires a size, maybe do this in js?
         .lazy
-            width: 338px
-            height: 338px
+            width: 305px
+            height: 305px
     .work-box-overlay
         position: absolute
         background: #ffffff

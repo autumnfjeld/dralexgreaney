@@ -7,7 +7,7 @@ section#research
         .d-flex.flex-wrap.mb-3.justify-content-between.research-projects
             each project, index in researchProjects
                 .wow.fadeInUp.col-xs-12.col-sm-6.col-md-6.col-lg-4.justify-content-md-center.mb-4(data-wow-delay='0.4s')
-                    .card
+                    .card.m-3.mb-0
                         .card-block.p-0
                             .work-box
                                 a.research-popup(data-project= project.href)
@@ -16,4 +16,4 @@ section#research
                                         //p.text-caps Click to read more
                                     img.img-fluid.card-img-top.lazy(data-original= project.imageUrl, alt= project.imageTitle)
                         .card-footer.bg-gray-light.text-center
-                            p.m-0.text-truncate.text-gray-lightest.font-weight-light= project.title
+                            p.m-0.text-truncate.text-gray-lightest.fw-400= project.title
