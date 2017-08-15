@@ -1,0 +1,35 @@
+section#contact
+    .container
+        .row
+            .col-md-7.col-sm-7
+                .wow.fadeInUp.section-title.pb-0(data-wow-delay='0.2s')
+                    h2 Get in touch
+                    p Send a message to the Greaney Group
+                .wow.fadeInUp(data-wow-delay='0.4s')
+                    form#contact-form
+                        .col-md-6.col-sm-6
+                            input.form-control(type='text', name='name', placeholder='Name')
+                        .col-md-6.col-sm-6
+                            input.form-control(type='email', name='email', placeholder='Email')
+                        .col-md-12.col-sm-12
+                            textarea.form-control(rows='5', name='message', placeholder='Message')
+                        .col-md-offset-8.col-md-4.col-sm-offset-6.col-sm-6
+                            button#submit.form-control(type='submit', name='submit') Send Message
+            .col-md-5.col-sm-5
+                .wow.fadeInUp.contact-info(data-wow-delay='0.4s')
+                    .section-title
+                        h2 Contact Information
+                        //p
+                        //    | Lorem ipsum dolor sit consectetur adipiscing morbi venenatis et tortor consectetur adipisicing lacinia tortor morbi ultricies.
+                    p
+                        i.fa.fa-map-marker
+                        |  UC Riverside #{about.location}
+                    p
+                        i.fa.fa-envelope
+                        a(href='mailto:' + about.email) #{about.email}
+                    p
+                        i.fa.fa-phone
+                        |  #{about.phone}
+                    p
+                        i.fa.fa-university
+                        | Mail: #{about.mailingAddress}

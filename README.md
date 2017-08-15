@@ -1,7 +1,7 @@
 # dralexgreaney
 This is a freelance project to create a website for a computational materials science group at UC Riverside.  The site is currently a work-in-progress; when finished I'll include the link to the site.
  
-Since I was working with a computational group I could take great liberty in knowing the content I needed to collect could be directly entered into json format by my client and his group members.  As a result I chose to create a static-ish site, without a content management system or a database, with the intention of using Amazon Web Services (AWS) to fullfill any 'traditional' server needs.  These simplifications made this a very fun project, in which I could stretch my knowledge into new technical spaces, for example: AWS, node scripting, build processes, customer service, design concepts and UI features.
+Since I was working with a computational group I could take great liberty in knowing the content I needed to collect could be directly entered into json format by my client and his group members.  As a result I chose to create a static-ish site hosted from [Amazon's Simple Storage System (S3)](https://aws.amazon.com/s3/),  without a content management system or a database.  Any 'traditional' server needs would be handled through the myriad of Amazon Web Services (AWS).  These simplifications made this a very fun project, in which I could stretch my knowledge into new technical spaces, including AWS, node scripting, build processes, customer communication, design concepts, and UI features.
 
  # Goals
  'Goals' are loosely defined as client objectives for the site, technical objectives I had for the site, or goals in my personal technical learning.
