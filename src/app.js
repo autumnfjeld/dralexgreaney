@@ -8,7 +8,7 @@
         this.researchPopupTemplate = window.app.researchPopupTemplateFunc;
         this.researchProjectTemplate = window.app.researchProjectTemplateFunc;
         this.researchController = new window.app.ResearchController(this.researchData, this.researchProjectTemplate, this.researchPopupTemplate);
-
+        this.contactController = new window.app.ContactController();
     }
 
     var matSci = new Website();
@@ -16,6 +16,7 @@
     function initMatSci() {
         matSci.mainController.initView();
         matSci.researchController.initView();
+        matSci.contactController.initView();
     }
 
     window.$(window).on('load', initMatSci());
