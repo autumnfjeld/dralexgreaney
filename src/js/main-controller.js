@@ -35,13 +35,13 @@
         $('.home-backstretch').backstretch([
             [
                 {'width': 1920, 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'},
-                {'width': 1200, 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_1200x.jpg'},
+                // {'width': 1200, 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_1200x.jpg'},
                 {'width': 960, 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'},
                 {'width': 576, 'deviceOrientation': 'portrait', 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_576x_portrait.jpg'}
             ],
             [
                 {'width': 1920, 'url': 'media/home_HardCarbon_Sized_1920x1280.jpg'},
-                {'width': 1200, 'url': 'media/home_HardCarbon_Sized_1200.jpg'},
+                {'width': 1200, 'url': 'media/home_HardCarbon_Sized_1200x.jpg'},
                 {'width': 960, 'url': 'media/home_HardCarbon_Sized_960x640.jpg'}
             ],
             [
@@ -74,7 +74,7 @@
         if (hash) {
             $('ul.navbar-nav a[href="' + hash + '"]').tab('show');
             $('html, body').stop().animate({
-                scrollTop: $(hash).offset().top - 49,
+                scrollTop: $(hash).offset().top - 40,
             }, 1000);
         }
 
@@ -83,7 +83,7 @@
             var $anchor = $(this);
             window.location.hash = $anchor.attr('href');
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 49,
+                scrollTop: $($anchor.attr('href')).offset().top - 40,
             }, 1000);
         });
 

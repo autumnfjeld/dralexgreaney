@@ -120,9 +120,6 @@
         font-size: 1.25em
         .matsci-tet-img
             height: 38px
-        // hamburger is 56px wide so brand must be after that
-        @include media-breakpoint-down(md)  //to match nav breakpoint
-            text-align: right
 
 
 ul.navbar-nav li a
@@ -475,9 +472,11 @@ $initWrapperWidth: $initImgDiam + 100px
  *-----------------------------------------*/
 
 #contact
+    $inputHeight: 55px;
     margin-bottom: 250px
     .contact-info .fa
         padding-right: 5px
+        color: $ucr-navy
     .form-control
         background-color: $gray-lightest
         border: none
@@ -492,19 +491,22 @@ $initWrapperWidth: $initImgDiam + 100px
         &:focus
             border-bottom-color: #999999
     input
-        height: 55px
-    button#submit
+        height: $inputHeight
+    #submit
         background: #454545
         border: none
         border-radius: 0
         color: #ffffff
         font-weight: bold
-        height: 55px
+        height: $inputHeight
         padding-bottom: 10px
         margin-top: 24px
         &:hover
             background: #000000
             color: #ffffff
+    @include media-breakpoint-down(xs)
+        input, #submit
+            height: 40px
 
 
 /*---------------------------------------
