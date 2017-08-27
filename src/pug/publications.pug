@@ -21,11 +21,11 @@ mixin citationBlock(pub)
             div.col-12.pl-0.col-sm-3.offset-sm-0.pt-2.pl-lg-5
                 if pub.EntryKey
                     //a.ml-3.doi.btn.btn-secondary.btn-sm.d-inline-flex.align-items-center(href= 'media/publications/' + pub.EntryKey + '.pdf', target='_blank', role="button")
-                    a.ml-3.doi.btn.btn-secondary.btn-sm.px-2(href= 'media/publications/' + pub.EntryKey + '.pdf', target='_blank', role="button")
+                    a.ml-3.btn.btn-secondary.btn-sm.px-2(href= 'media/publications/' + pub.EntryKey + '.pdf', target='_blank', role="button")
                         i.fa.fa-file-text-o.pr-1
                         span.py-2 pdf
                 if pub.Fields.doi
-                    a.ml-2.doi.btn.btn-secondary.btn-sm.px-2(href= 'https://dx.doi.org/' + pub.Fields.doi, target='_blank', role="button")
+                    a.ml-2.btn.btn-secondary.btn-sm.px-2(href= 'https://dx.doi.org/' + pub.Fields.doi, target='_blank', role="button")
                         i.fa.fa-link.pr-1
                         span.py-2 doi
 mixin articleCitation(pub)
