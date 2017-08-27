@@ -148,18 +148,16 @@
     MainController.prototype._initBindings = function () {
         $('#publications .show-more-btn').on('click', function () {
 
-            var initialHeight = 630;
-
             if ($(this).text() === 'Show more') {
                 $('.publication-list-more').animate({
                     height: $('.publication-list-more').get(0).scrollHeight
-                }, 1200, function () {
+                }, 1000, function () {
                     $('.show-more-btn').text('Show less');
                 });
             } else {
                 $('.publication-list-more').animate({
                     height: 0
-                }, 1200, function () {
+                }, 1000, function () {
                     $('.show-more-btn').text('Show more');
                     // TODO scroll as publication list shrinks
                     $('html, body').stop().animate({

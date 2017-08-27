@@ -1,29 +1,76 @@
-mixin publicationEntry(pub)
+mixin citationBlock(pub)
+    - var popoverClass = pub.Fields.abstract ? 'abstract-popover-hover' : null
+    - var popoverTitle = pub.Fields.abstract ? 'Abstract' : null
     blockquote.blockquote
-        div.d-flex
-            a.d-block.col-9(
+        div.row
+            a.d-block.col-12.col-sm-9(
             class= popoverClass
             data-toggle="popover",
+            data-placement="right",
+            data-offset=" -100 0"
             title=popoverTitle,
             data-content=pub.Fields.abstract)
-                span.authors.mr-1=  pub.Fields.author + ',  '
-                span.title.mr-1= "'" + pub.Fields.title + "', "
-                if pub.Fields.journal
-                    span.font-italic= pub.Fields.journal + ', '
-                span.ml-2.date-vol
-                    if pub.Fields.volume
-                        span= 'vol. ' + pub.Fields.volume + ', '
-                    if pub.Fields.pages
-                        span= 'pp. ' + pub.Fields.pages + ', '
-                    if pub.Fields.month
-                        span= pub.Fields.month + ', '
-                    if pub.Fields.year
-                        span= pub.Fields.year + '. '
-            div.col-3.pt-2.pl-lg-5
+                - if (pub.EntryType === "article")
+                    +articleCitation(pub)
+                - if(pub.EntryType === "phdthesis")
+                    +phdThesisCitation(pub)
+                - if (pub.EntryType === "inproceedings")
+                    +inProceedingsCitation(pub)
+                - if(pub.EntryType === "incollection")
+                    +inCollectionCitation(pub)
+            div.col-12.pl-0.col-sm-3.offset-sm-0.pt-2.pl-lg-5
                 if pub.EntryKey
-                    a.ml-3.doi.btn.btn-secondary.btn-sm(href= 'media/publications/' + pub.EntryKey +'.pdf', target='_blank', role="button") pdf
+                    //a.ml-3.doi.btn.btn-secondary.btn-sm.d-inline-flex.align-items-center(href= 'media/publications/' + pub.EntryKey + '.pdf', target='_blank', role="button")
+                    a.ml-3.doi.btn.btn-secondary.btn-sm.px-2(href= 'media/publications/' + pub.EntryKey + '.pdf', target='_blank', role="button")
+                        i.fa.fa-file-text-o.pr-1
+                        span.py-2 pdf
                 if pub.Fields.doi
-                    a.ml-2.doi.btn.btn-secondary.btn-sm(href= 'https://dx.doi.org/' + pub.Fields.doi, target='_blank', role="button") doi
+                    a.ml-2.doi.btn.btn-secondary.btn-sm.px-2(href= 'https://dx.doi.org/' + pub.Fields.doi, target='_blank', role="button")
+                        i.fa.fa-link.pr-1
+                        span.py-2 doi
+mixin articleCitation(pub)
+    span.authors.mr-1=  pub.Fields.author + ',  '
+    span.title= "'" + pub.Fields.title + "', "
+    if pub.Fields.journal
+        span.font-italic= pub.Fields.journal + ', '
+    span.date-vol
+        if pub.Fields.volume
+            span= 'vol. ' + pub.Fields.volume + ', '
+        if pub.Fields.pages
+            span= 'pp. ' + pub.Fields.pages + ', '
+        if pub.Fields.month
+            span= pub.Fields.month + ', '
+        if pub.Fields.year
+            span= pub.Fields.year + '. '
+
+mixin phdThesisCitation(pub)
+    span.authors=  pub.Fields.author + '.  '
+    span= "" + pub.Fields.year + ". "
+    span= pub.Fields.booktitle
+    span.journal= "" + pub.Fields.title + ". "
+    span= "(Doctoral dissertation. " + pub.Fields.school + ")"
+
+mixin inProceedingsCitation(pub)
+    span.font-weight-bold 'PROCEEDINGS     '
+    span.authors=  pub.Fields.author + '. '
+    span= pub.Fields.year + ". "
+    span.font-italic= pub.Fields.booktitle + ". "
+    span Presented at:
+    if pub.Fields.series
+        span= " " + pub.Fields.series + ". "
+    if pub.Fields.organization
+        span= " " + pub.Fields.organization + ". "
+    if pub.Fields.note
+        span= pub.Fields.note + "."
+
+mixin inCollectionCitation(pub)
+    span.font-weight-bold 'COLLECTION    '
+    span.authors=  pub.Fields.author + '. '
+    span= pub.Fields.year + ". "
+    span= pub.Fields.title + ". "
+    span= "in " + pub.Fields.editor + ", ed."
+    span.font-italic= pub.Fields.booktitle + ". "
+
 
 section#publications
     .container
@@ -31,14 +78,10 @@ section#publications
              h2 Publications
         .publication-list
             each pub in publications.featured
-                    - var popoverClass = pub.Fields.abstract ? 'abstract-popover-hover' : null
-                    - var popoverTitle = pub.Fields.abstract ? 'Abstract' : null
-                    +publicationEntry(pub)
+                +citationBlock(pub)
         .publication-list-more
             each pub in publications.theRest
-                - var popoverClass = pub.Fields.abstract ? 'abstract-popover-hover' : null
-                - var popoverTitle = pub.Fields.abstract ? 'Abstract' : null
-                +publicationEntry(pub)
+                +citationBlock(pub)
         .row
             .col-3.offset-9.pt-2.pl-lg-5
                 button.btn.btn-link.small.mr-3.show-more-btn(type=button) Show more
