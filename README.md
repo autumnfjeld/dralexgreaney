@@ -1,4 +1,15 @@
-# dralexgreaney
+#  dralexgreaney   
+
+![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
+![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
+![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
+![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
+![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
+![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
+![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
+
+
+
 This is a freelance project to create a website for a computational materials science group at the University of California at Riverside.  The site is currently a work-in-progress; when finished I'll include the link to the site.  Happy to provide the in-progress site link privately.
  
 I am working with a computational group and thus could take great liberty in knowing the content I needed to collect could be directly entered into json format by my client and his group members.  As a result, I chose to create a static-ish site hosted from [Amazon's Simple Storage System (S3)](https://aws.amazon.com/s3/),  without a content management system or a database.  Any 'traditional' server needs will be handled through the myriad of Amazon Web Services (AWS).  These simplifications (of relying on the client's technical saviness) made this a very fun project, in which I could expand my knowledge into new technical spaces, including AWS, node scripting, build processes, customer communication, design concepts, and UI features.
