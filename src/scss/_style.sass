@@ -1,33 +1,27 @@
 /*---------------------------------------------------------------
  *
- *  Project Name: Homane - Minimal Resume HTML Template
- *  File Name: style.css
- *  Author: Peng Lam
- *  Author URI: http://khaitawng.com
- *  Version: 1.0.0
+ *  Oringal Template Name: Homane - Minimal Resume HTML Template
+ *  Template creator: Peng Lam http://khaitawng.com
+ *  Template adapted by Autumn Fjeld for Dr. Greaney Project
  *
  *------------------------------------------------------------------*/
 
 /*---------------------------------------------------------------
  * Table of contents
- *      General
- *      Transitions & Animations
- *      Pre loader
- *    4.  Navigation section
- *    5.  Home section
- *    6.  About section
- *    7.  Service section
- *    8.  Teaching section
- *    9.  Work section
- *    10. Contact section
- *    11. Footer
- *    12. Social icon
- *    13. Mobile Responsive styles
+ *     General
+ *     Transitions & Animations
+ *     Pre loader
+ *     Navigation section
+ *     Home section
+ *     About section
+ *     Service section
+ *     Teaching section
+ *     Work section
+ *     Contact section
+ *     Footer
+ *     Social icon
+ *     Mobile Responsive styles
  *------------------------------------------------------------------*/
-
-
-
-
 
 /*---------------------------------------
  *    General
@@ -208,7 +202,8 @@ ul.navbar-nav li a
             padding-left: 10px
         &::before
             content: ""
-            background: url('../media/UCR_seal_200px.gif') no-repeat center center
+            //TODO absolute url for images
+            //background: url('../media/UCR_seal_200px.gif') no-repeat center center
             background-size: 280px
             opacity: 0.1
             top: -378px
@@ -239,19 +234,37 @@ ul.navbar-nav li a
  *-----------------------------------------*/
 
 #research
-    $overlay-offset: 40px
+    $overlay-offset: 20px
     $card-bg-color: lighten($gray-light, 20%)
+    $card-block-size-lg: 340px
+    $card-block-size-md: 300px
+    $card-block-size-xs: 300px
+
     .card
         // Force filling of vertical space
         //min-height: 100%
         border: none
+        width: $card-block-size-lg
+        @include media-breakpoint-only(md)
+            width: $card-block-size-md
+        @include media-breakpoint-only(xs)
+            width: $card-block-size-xs
         .card-block
-            border-top: 2px solid   $card-bg-color
-            border-left: 2px solid   $card-bg-color
-            border-right: 2px solid   $card-bg-color
-            border-radius: 4px 4px 0 0
+            position: relative
+            .btn
+                position: absolute
+                top: 6px
+                right: 6px
+                opacity: .7
+                z-index: 10
+            .card-img-top
+                width: 100%
+                border: 2px solid   $card-bg-color
         .card-footer
+            border: none
             background-color: $card-bg-color
+        // Tablet
+        @include media-breakpoint-only(sm)
 
     .work-box
         padding: 0
@@ -264,11 +277,11 @@ ul.navbar-nav li a
     .work-box-overlay
         position: absolute
         background: #ffffff
-        cursor: pointer
+        //cursor: pointer
         opacity: 0
         padding:  10px 8px 10px 12px
-        top: $overlay-offset
-        bottom: $overlay-offset
+        top: $overlay-offset*3
+        bottom: $overlay-offset*3
         right: $overlay-offset
         left: $overlay-offset
         transition: all ease-in-out 0.4s
