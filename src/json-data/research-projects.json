@@ -15,7 +15,7 @@
         "teaser": {
             "shortTitle": "Sodium-Ion Batteries",
             "text": "We seek to understand the structure, and corresponding electrochemical properties, of various forms of amorphous carbon for use as the anode material in low cost sodium-ion batteries that could be used for grid-scale energy storage.",
-            "imgUrl": "research/HardCarbon_LederImage-1_300px.png",
+            "imgUrl": "research/HardCarbon_LederImage-1_350px.png",
             "imgCaption": "Hard carbon: nano-domains of crumpled and twisted graphene"
         }
     },
@@ -95,7 +95,7 @@
         "teaser": {
             "shortTitle": "Silicon Thermoelectics",
             "text": "Thermoelectrics are materials that convert a temperature difference directly into an electrical current with no moving parts. We are working to create high efficiency thermoelectric silicon which is cheep and widely abundant.",
-            "imgUrl": "research/SiThermoelectrics_LederImage_1.png",
+            "imgUrl": "research/SiThermoelectrics_LederImage_1_350px.png",
             "imgCaption": "Phonon collision with SiC dispersoid in Si"
         }
     }

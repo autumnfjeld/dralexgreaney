@@ -6,15 +6,14 @@ section#research
         .d-flex.flex-wrap.mb-3.justify-content-md-between.justify-content-center.research-projects
             each project, index in researchProjects
                 .wow.fadeInUp.justify-content-md-center.mb-4(data-wow-delay='0.4s')
-                    .card.m-2
+                    .card.m-md-2
                         .card-block.p-0
                             button.btn.btn-secondary.btn-sm.more-teaser.hidden-md-up
                                 i.fa.fa-comment
-
                             .work-box
                                 //a.research-popup(data-project= project.href)
                                 .work-box-overlay.d-flex.flex-column.justify-content-center
-                                    p.text-gray-dark.m-0.font-weight-normal= project.teaser.text
+                                    p.d-inline-block.align-baseline.text-gray-dark.m-0.font-weight-normal= project.teaser.text
                                     //p.text-caps Click to read more
                                 img.img-fluid.card-img-top.lazy(data-original= about.mediaUrl + project.teaser.imgUrl, alt= project.teaser.imgCaption)
                         .card-footer.bg-gray-light.text-center

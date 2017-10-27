@@ -238,17 +238,18 @@ ul.navbar-nav li a
     $card-bg-color: lighten($gray-light, 20%)
     $card-block-size-lg: 340px
     $card-block-size-md: 300px
-    $card-block-size-xs: 300px
+    $card-block-size-xs: 100%
 
     .card
-        // Force filling of vertical space
-        //min-height: 100%
         border: none
         width: $card-block-size-lg
         @include media-breakpoint-only(md)
             width: $card-block-size-md
-        @include media-breakpoint-only(xs)
+        @include media-breakpoint-only(xs)  // < 544px
+            margin-bottom: 2rem
+            width: 100%
             width: $card-block-size-xs
+            max-width: 350px;
         .card-block
             position: relative
             .btn
@@ -263,7 +264,7 @@ ul.navbar-nav li a
         .card-footer
             border: none
             background-color: $card-bg-color
-            min-height: 62 px            // To allow 2 lines of text
+            min-height: 62px            // To allow 2 lines of text
         // Tablet
         //@include media-breakpoint-only(sm)
 
@@ -271,10 +272,10 @@ ul.navbar-nav li a
         padding: 0
         overflow: hidden
         position: relative
-        // lazyload requires a size, maybe do this in js?
-        .lazy
-            width: 305px
-            height: 305px
+        // TODO lazyload requires a size, maybe do this in js?
+        //.lazy
+        //    width: 305px
+        //    height: 305px
     .work-box-overlay
         position: absolute
         background: #ffffff
