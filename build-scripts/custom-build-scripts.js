@@ -24,7 +24,7 @@ function getJsonContent() {
                 files.forEach(function (fileName) {
                     // Read only json files
                     if (fileName.slice(-4) === 'json') {
-                        // console.log('fileName:', fileName, fileNameToCamelCase(fileName));
+                        console.log('fileName:', fileName, fileNameToCamelCase(fileName));
                         sectionName = fileNameToCamelCase(fileName);
                         siteContent[sectionName] = JSON.parse(fs.readFileSync(jsonDataDir + fileName, 'utf8'));
                     }
