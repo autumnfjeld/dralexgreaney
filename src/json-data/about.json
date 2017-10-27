@@ -12,5 +12,6 @@
     "campusBuilding": "Materials Science & Engineering",
     "phone": "(+1) 951-827-2884",
     "email": "greaney@ucr.edu",
-    "mailingAddress": "900 University Ave, CA 92521, USA"
+    "mailingAddress": "900 University Ave, CA 92521, USA",
+    "mediaUrl": "https://s3-us-west-2.amazonaws.com/gin-n-tonic.alexgreaney.com/media/"
 }

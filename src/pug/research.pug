@@ -2,18 +2,21 @@ section#research
     .container
         .wow.fadeInUp.section-title(data-wow-delay='0.2s')
             h2 Research Projects
-            p Click the images for research summaries. (make tooltip)
-
-        .d-flex.flex-wrap.mb-3.justify-content-between.research-projects
+            //p Click the images for research summaries. (make tooltip)
+        .d-flex.flex-wrap.mb-3.justify-content-md-between.justify-content-center.research-projects
             each project, index in researchProjects
-                .wow.fadeInUp.col-xs-12.col-sm-6.col-md-6.col-lg-4.justify-content-md-center.mb-4(data-wow-delay='0.4s')
-                    .card.m-3.mb-0
+                .wow.fadeInUp.justify-content-md-center.mb-4(data-wow-delay='0.4s')
+                    .card.m-2
                         .card-block.p-0
+                            button.btn.btn-secondary.btn-sm.more-teaser.hidden-md-up
+                                i.fa.fa-comment
+
                             .work-box
-                                a.research-popup(data-project= project.href)
-                                    .work-box-overlay.d-flex.flex-column.justify-content-center
-                                        p.m-0.font-weight-normal= project.teaser
-                                        //p.text-caps Click to read more
-                                    img.img-fluid.card-img-top.lazy(data-original= project.imageUrl, alt= project.imageTitle)
+                                //a.research-popup(data-project= project.href)
+                                .work-box-overlay.d-flex.flex-column.justify-content-center
+                                    p.text-gray-dark.m-0.font-weight-normal= project.teaser.text
+                                    //p.text-caps Click to read more
+                                img.img-fluid.card-img-top.lazy(data-original= about.mediaUrl + project.teaser.imgUrl, alt= project.teaser.imgCaption)
                         .card-footer.bg-gray-light.text-center
-                            p.m-0.text-truncate.text-gray-lightest.fw-400= project.title
+                            p.m-0.text-gray-lightest.fw-400= project.title
+                            //p.m-0.text-truncate.text-gray-lightest.fw-400= project.title
