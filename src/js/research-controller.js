@@ -12,10 +12,36 @@
         this.data = data;
     }
 
+    /**
+     * Initialize view for reseach section
+     */
     ResearchController.prototype.initView = function () {
-        this._initResearchPopup();
+        this._initBindings();
+        // this._initResearchPopup();
 
     };
+
+    /**
+     * Set up event bindings for Research UI
+     * @private
+     */
+    ResearchController.prototype._initBindings = function () {
+        var isOverLayHidden;
+
+        $('#research .more-teaser').on('click', function(){
+            if (isOverLayHidden) {
+                // todo must grab closest one
+                $(this).next().find('.work-box-overlay').css({opacity: 0});
+                // $('.work-box-overlay').css({opacity: 0});
+                isOverLayHidden = false;
+            } else {
+                // $('.work-box-overlay').css({opacity: .8});
+                $(this).next().find('.work-box-overlay').css({opacity: .8});
+                isOverLayHidden = true;
+            }
+        });
+    };
+
 
     ResearchController.prototype._initResearchPopup = function () {
 
@@ -102,19 +128,19 @@
 
 // Use or cleanup  !!!
 
-(function (window) {
-
-    function ResearchModel() {
-
-    }
-
-
-    // Export to window
-    window.app = window.app || {};
-    window.app.ResearchModel = ResearchModel;
-
-})(window);
-
-
+// (function (window) {
+//
+//     function ResearchModel() {
+//
+//     }
+//
+//
+//     // Export to window
+//     window.app = window.app || {};
+//     window.app.ResearchModel = ResearchModel;
+//
+// })(window);
+//
+//
 
 

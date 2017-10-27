@@ -7,6 +7,7 @@
      * @constructor
      */
     function MainController() {
+        this.researchController = new app.ResearchController();
     }
 
     /**
@@ -20,6 +21,8 @@
         this._initNavbar();
         this._initBootstrapComponents();
         this._initBindings();
+
+        this.researchController.initView();
 
         // Instantiate scoll animation module
         new WOW({mobile: true}).init();
