@@ -13,9 +13,8 @@ section#research
                             .work-box
                                 //a.research-popup(data-project= project.href)
                                 .work-box-overlay.d-flex.flex-column.justify-content-center
-                                    p.d-inline-block.align-baseline.text-gray-dark.m-0.font-weight-normal= project.teaser.text
+                                    p.text-gray-dark.m-0.font-weight-normal= project.teaser.text
                                     //p.text-caps Click to read more
                                 img.img-fluid.card-img-top.lazy(data-original= about.mediaUrl + project.teaser.imgUrl, alt= project.teaser.imgCaption)
                         .card-footer.bg-gray-light.text-center
-                            p.m-0.text-gray-lightest.fw-400= project.title
-                            //p.m-0.text-truncate.text-gray-lightest.fw-400= project.title
+                            p.d-inline-block.align-baseline-webkit.m-0.text-gray-lightest.fw-400= project.title
