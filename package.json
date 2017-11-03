@@ -29,6 +29,7 @@
     "uglify":     "uglifyjs src/vendor/jquery.js node_modules/jquery-lazyload/jquery.lazyload.js node_modules/jquery-backstretch/jquery.backstretch.min.js src/vendor/tether.js node_modules/bootstrap/dist/js/bootstrap.js src/vendor/*.js src/js/*.js src/pugTemplateFunctions.js src/app.js -m -o public/build.js",
     "watch:js":   "onchange 'src/js/*.js' 'src/app.js' -i -v -- npm run uglify",
     "watch:all":  "npm run watch:pug & npm run watch:pug-to-func & npm run watch:css & npm run watch:js",
+    "uglify": "uglifyjs src/vendor/jquery.js node_modules/jquery-lazyload/jquery.lazyload.js node_modules/jquery-backstretch/jquery.backstretch.min.js src/vendor/tether.js node_modules/bootstrap/dist/js/bootstrap.bundle.min.js src/vendor/*.js src/js/*.js src/pugTemplateFunctions.js src/app.js -m -o public/build.js",
     "// TODO": "compress css",
     "build:css":  "npm run scss & npm run autoprefixer",
     "build:js":   "npm run lint & npm run uglify",
@@ -64,7 +65,8 @@
     "uglify-js": "^3.0.4"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
-    "jquery-backstretch": "^2.1.15"
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery-backstretch": "^2.1.15",
+    "jquery-lazyload": "^1.9.7"
   }
 }
