@@ -14,8 +14,6 @@
      * Initialize 3rd party libraries, javascript components, and any functionality needed on page load
      */
     MainController.prototype.initView = function () {
-
-        $('.spinner-box').fadeOut(1000); // set duration in brackets
         this._initBackstretch();
         this._initLazyLoad();
         this._initNavbar();
@@ -37,20 +35,20 @@
 
         $('.home-backstretch').backstretch([
             [
-                {'width': 1920, 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'},
+                {'width': 1920, 'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'},
                 // {'width': 1200, 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_1200x.jpg'},
-                {'width': 960, 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'},
-                {'width': 576, 'deviceOrientation': 'portrait', 'url': 'media/home_Si_Al2O3_Ar_rotated_zoomed_in_576x_portrait.jpg'}
+                {'width': 960, 'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'},
+                {'width': 576, 'deviceOrientation': 'portrait', 'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_576x_portrait.jpg'}
             ],
             [
-                {'width': 1920, 'url': 'media/home_HardCarbon_Sized_1920x1280.jpg'},
-                {'width': 1200, 'url': 'media/home_HardCarbon_Sized_1200x.jpg'},
-                {'width': 960, 'url': 'media/home_HardCarbon_Sized_960x640.jpg'}
+                {'width': 1920, 'url': '../media/home_HardCarbon_Sized_1920x1280.jpg'},
+                {'width': 1200, 'url': '../media/home_HardCarbon_Sized_1200x.jpg'},
+                {'width': 960, 'url': '../media/home_HardCarbon_Sized_960x640.jpg'}
             ],
             [
-                {'width': 1920, 'url': 'media/home_hard-carbon-stormtroopers_1920x1080.jpg'},
-                {'width': 960, 'url': 'media/home_hard-carbon-stormtroopers_960x540.jpg'},
-                {'width': 576, 'deviceOrientation': 'portrait',  'url': 'media/home_hard-carbon-stormtroopers_576x_portrait.jpg'}
+                {'width': 1920, 'url': '../media/home_hard-carbon-stormtroopers_1920x1080.jpg'},
+                {'width': 960, 'url': '../media/home_hard-carbon-stormtroopers_960x540.jpg'},
+                {'width': 576, 'deviceOrientation': 'portrait',  'url': '../media/home_hard-carbon-stormtroopers_576x_portrait.jpg'}
             ]
         ], {
                 duration: 2000,
@@ -74,8 +72,8 @@
         var hash = window.location.hash;
 
         // TODO check that hash is valid (one of the menu hashes)
+
         if (hash) {
-            $('ul.navbar-nav a[href="' + hash + '"]').tab('show');
             $('html, body').stop().animate({
                 scrollTop: $(hash).offset().top - 40,
             }, 1000);
@@ -108,24 +106,19 @@
         // Bootstrap4 requires initializing tooltips, due to "performance reasons"
         $('[data-toggle="tooltip"]').tooltip();
 
-
         // Init popover for publication section on tablet & desktop screens
         var phoneBreakpoint = 576;
+        // TODO make trigger variable dependent on screensize and add abstract button for mobile
         if ($(window).width() > phoneBreakpoint) {
             $('.abstract-popover-hover').popover({
                 trigger: 'hover',
                 template: '<div class="popover abstract" role="tooltip">' +
-                            '<div class="popover-arrow"></div> ' +
-                            '<h3 class="popover-title font-weight-normal"></h3>' +
-                            '<div class="popover-content"></div>' +
+                            '<div class="arrow"></div> ' +
+                            '<h3 class="popover-header font-weight-normal"></h3>' +
+                            '<div class="popover-body"></div>' +
                           '</div>',
-                placement: 'top',
-                constraints: [
-                    {to: 'window', pin: true}
-                ],
-                offset: '0 -60%'
+                placement: 'auto'
             });
-
         }
 
         // Init popover for teaching sections, note popover gets janky when it shows on top of the initiating hover content
@@ -133,14 +126,11 @@
         $('.course-catalog-popover').popover({
             trigger: 'hover',
             template:   '<div class="popover course-catalog" role="tooltip">' +
-                            '<div class="popover-arrow"></div> ' +
-                            '<h3 class="popover-title font-weight-normal"></h3>' +
-                            '<div class="popover-content"></div>' +
+                            '<div class="arrow"></div> ' +
+                            '<h3 class="popover-header font-weight-normal"></h3>' +
+                            '<div class="popover-body"></div>' +
                         '</div>',
-            placement: 'top',
-            constraints: [
-                {to: 'window', pin: true}
-            ]
+            placement: 'auto'
         });
     };
 
@@ -150,7 +140,6 @@
      */
     MainController.prototype._initBindings = function () {
         $('#publications .show-more-btn').on('click', function () {
-
             if ($(this).text() === 'Show more') {
                 $('.publication-list-more').animate({
                     height: $('.publication-list-more').get(0).scrollHeight
@@ -169,7 +158,6 @@
                 });
             }
         });
-
     };
 
     // Export to window

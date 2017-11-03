@@ -14,7 +14,7 @@
         "academicBackground": "BS in Physics and Mathematics with minors in Hispanic Studies and Electrical Engineering from the New Mexico Institute of Mining and Technology.",
         "funFacts": " Laura was born in Loulé, Portgal. When she is not working, Laura enjoys thinking about life, the universe and everything.",
         "researchInterests": "Laura's research interests include understanding transport phenomena at an atomistic scale, which she does via a mix of classical molecular dynamics and density functional theory codes, some other software, her own codes and the codes of her collaborator buddies. Her focus to date has been on phonon thermal transport. Recently she has been working on a fascinating project for high-throughput molecular design of metal–organic frameworks and has acquired a taste for photochemistry.",
-    	"imageUrl": "media/group-members/laura-oliveira-headshot.jpg"
+    	"imageUrl": "../media/group-members/laura-oliveira-headshot.jpg"
 	
     },
     {
@@ -25,7 +25,7 @@
             "Oregon State University advised by Prof. David (Xiulei) Ji "
             ],
         "email": "shinwoo@oregonstate.edu",
-        "cvLink": "media/Woochul_Shin_2017_CV.pdf",
+        "cvLink": "../media/Woochul_Shin_2017_CV.pdf",
         "gitHub": "",
         "linkedIn": "",
         "googleScholar": "",
@@ -35,7 +35,7 @@
         "academicBackground": "BS in Chemistry from XXX, MS in XXX from YYY ",
         "funFacts": "Always wanted to be a comedian when I was a teenager since I had (even now) a very suitable face for that.",
         "researchInterests": "Constructing and designing novel electrode structure for lithium ion and post-lithium ion batteries based on structure-property-performance relationships.",
-        "imageUrl": "media/group-members/woochul-shin-headshot.jpg"
+        "imageUrl": "../media/group-members/woochul-shin-headshot.jpg"
     },
     {
         "name": "Wesley Surta ",
@@ -55,7 +55,7 @@
         "academicBackground": "BS in Chemistry from Fort Lewis College",
         "funFacts": "Wesley has started a number of businesses including a t-shirt company and company booking and promoting concerts. That forced him to work a lot of different kinds of jobs to make ends meet, such as a hydraulic mechanic, carpenter, cook, and pizza boy. These jobs ultimately motivated him to go to graduate school and pursue his PhD, because he would rather work smarter than harder - little did he realize he would have to work smarter <em>and</em> harder.",
         "researchInterests": "Crystallography! He enjoys shooting X-rays at anything he can and neutrons are even better. ",
-        "imageUrl": "media/group-members/wesley-surta-headshot.png"
+        "imageUrl": "../media/group-members/wesley-surta-headshot.png"
     },
     {
         "name": "Charlie Manion",
@@ -76,7 +76,7 @@
         "academicBackground": "BS in Mechanical Engineering from the University of Texas, Austin",
         "funFacts": "Originally from Texas, Charlie's expertise lies at the intersection of engineering design and molecular simulation. One of Charlie's ambitions in life is to design molecular Strandbeests. ",
         "researchInterests": "Designing molecular materials that can change shape.",
-        "imageUrl": "media/group-members/charles-manion-headshot.jpg"
+        "imageUrl": "../media/group-members/charles-manion-headshot.jpg"
     },
     {
         "name": "Agnieszka Truszkowska",
@@ -93,7 +93,7 @@
         "academicBackground": "BS in Biotechnology from University of Belgrade, PhD in Chemical Engineering from Oregon State University",
         "funFacts": "Makes excellent cheese. Her goal in life if to play football (soccer) for Barcelona.",
         "researchInterests": "Deformation and plasticity, granular mechanics, discrete element modeling, and solid fluid interactions.",
-        "imageUrl": "media/group-members/rosalind-franklin-headshot.jpg"
+        "imageUrl": "../media/group-members/rosalind-franklin-headshot.jpg"
     },
     {
         "name": "Luping Han",
@@ -110,7 +110,7 @@
         "academicBackground": "BS in XXX from YYY University",
         "funFacts": "Originally from XXX in China. Catches all his own food spearfishing and scuba diving.",
         "researchInterests": "Thermal transport in metal-organic frameworks.",
-        "imageUrl": "media/group-members/luping-han-headshot.jpg"
+        "imageUrl": "../media/group-members/luping-han-headshot.jpg"
     },
     {
         "name": "Wenxi Huang",
@@ -127,7 +127,7 @@
         "academicBackground": "BS in XXX from YYY University, MS in Materials Science and Engineering from Oregon State University",
         "funFacts": "Originally from XXX in China.",
         "researchInterests": "Thermal transport in metal-organic frameworks. Ion conduction in battery electrodes",
-        "imageUrl": "media/group-members/jagadish-bose-headshot.jpg"
+        "imageUrl": "../media/group-members/jagadish-bose-headshot.jpg"
     },
     {
         "name": "Jude Ighere",
@@ -147,7 +147,7 @@
         "academicBackground": "BS in XXX from YYY University, MS in Mechanical Engineering from Howard University",
         "funFacts": "Originally from Nigeria, Jude works full time as a quality assurance engineer for Intel in Portland OR, and is studying for his PhD on the side.",
         "researchInterests": "Engineering thermal properties of zirconium diboride.",
-        "imageUrl": "media/group-members/josiah-gibbs-headshot.jpg"
+        "imageUrl": "../media/group-members/josiah-gibbs-headshot.jpg"
     },
     {
         "name": "Clem Bommier",
@@ -169,7 +169,7 @@
         "academicBackground": "BS in Chemistry from SUNY XXX, PhD in Chemistry from Oregon State University",
         "funFacts": "Worked for XX years as a professional chef, and taught cooking for XXX years at the Portland Culinary Institue. Loves living in the Pacific Northwest and taking advantage of all it has to offer.",
         "researchInterests": "Transport theory, and deterministic phonon transport.",
-        "imageUrl": "media/group-members/hertha-ayerton-headshot.jpg"
+        "imageUrl": "../media/group-members/hertha-ayerton-headshot.jpg"
     },    
     {
         "name": "Aria Hosseini",
@@ -186,7 +186,7 @@
         "academicBackground": "",
         "funFacts": "",
         "researchInterests": "Transport theory, and high ZT silicon based thermoelectric materials",
-        "imageUrl": "media/group-members/aria-hosseini-headshot.jpg"
+        "imageUrl": "../media/group-members/aria-hosseini-headshot.jpg"
     },
     {
         "name": "Jackson Harter",
@@ -205,7 +205,7 @@
         "academicBackground": "BS in Nuclear Engineering from Oregon State University in 2013; MS in Nuclear Engineering with a minor in Materials Science & Engineering from Oregon State University in 2015.",
         "funFacts": "Worked for several years as a professional chef including teaching at the Portland Culinary Institue. Thinks that sometimes science is more art than an algorithm, a lot of people don't get that.",
         "researchInterests": "Transport theory and simulating phonon transport with a modified form of the Boltzmann transport equation.",
-        "imageUrl": "media/group-members/jackson-harter-headshot.jpg"
+        "imageUrl": "../media/group-members/jackson-harter-headshot.jpg"
     },
     {
         "name": "P. Alex Greaney",
@@ -222,7 +222,7 @@
         "academicBackground": "MEng in Metallurgy and the Science of Materials from Oxford, PhD in Materials Science & Engineering from the UC Berkeley; Postdoc at LBNL and MIT",
         "funFacts": "Grew up in the UK, but born in Iraq. Likes to cook with xanthan gum. Once converted a motorcycle to run on wood.",
         "researchInterests": "Theory and simulation of materials, particularly computational design of materials and elucidation of structure-property relationships relating to mechanical thermal and transport properties of materials.",
-        "imageUrl": "media/group-members/alex-greaney-headshot.jpg"
+        "imageUrl": "../media/group-members/alex-greaney-headshot.jpg"
     },
     {
         "name": "Jeremy Valdecanas",
@@ -239,7 +239,7 @@
         "academicBackground": "Pursuing a BS in Materials Science and Engineering at UCR",
         "funFacts": "Makes a mean lobster thermidor. Part of the UCR blade smithing team working to build a trip hammer.",
         "researchInterests": "Discriminating molecules with fingerprints.",
-        "imageUrl": "media/group-members/jeremy-valdecanas-heatshot.jpg"
+        "imageUrl": "../media/group-members/jeremy-valdecanas-heatshot.jpg"
     },
     {
         "name": "Andres Sanchez Paredes",
@@ -256,7 +256,7 @@
         "academicBackground": "Pursuing a BS in Mechanical Engineering at UCR",
         "funFacts": "Electronica aficionado.",
         "researchInterests": "Machine learning and artificial neural networks applied to the behavior of molecules.",
-        "imageUrl": "media/group-members/ludwig-boltzmann-headshot.jpg"
+        "imageUrl": "../media/group-members/ludwig-boltzmann-headshot.jpg"
     },
     {
         "name": "Edward Koh",
@@ -273,7 +273,7 @@
         "academicBackground": "",
         "funFacts": "Loves tennis.",
         "researchInterests": "Uncovering the structure-property relationships in Discriminating molecules with fingerprints.",
-        "imageUrl": "media/group-members/paul-dirac-headshot.jpg"
+        "imageUrl": "../media/group-members/paul-dirac-headshot.jpg"
     },
     {
         "name": "Henri Quod Felis",
