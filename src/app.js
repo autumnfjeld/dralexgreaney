@@ -1,8 +1,7 @@
-(function () {
+(function() {
     'use strict';
 
     function Website() {
-
         this.mainController = new window.app.MainController();
         this.researchData = window.app.dataStore;
         this.researchPopupTemplate = window.app.researchPopupTemplateFunc;
@@ -20,6 +19,5 @@
     }
 
     window.$(window).on('load', initMatSci());
-
 
 })(window);
