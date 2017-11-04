@@ -13,9 +13,8 @@ section#group-members
                         .basic-info.d-flex.flex-column.justify-content-center.align-items-center.mb-1.mt-2
                             h5.text-center= person.name
                             each roleSnippet in person.role
-                                small.role-snippet.pb-1= roleSnippet
+                                small.pb-1= roleSnippet
                         .expanded-info.px-3
-                            //small.text-center.pb-1= person.email
                             .d-flex.justify-content-center.mb-3
                                 a(href="mailto:" + person.email, data-toggle="tooltip", data-placement="top", data-trigger"hover click", title=person.email)
                                     i.fa.fa-envelope-o.px-2
@@ -45,7 +44,7 @@ section#group-members
                                         i.fa.fa-link.px-2
                                         //i.fa.fa-id-badge
                                         //i.fa.fa.user-circle-o
-                            p.academic.text-gray= person.academicBackground
-                            p.research.text-gray= person.researchInterests
-                            p.funFacts.text-gray-light= person.funFacts
+                            p.academic.text-light= person.academicBackground
+                            p.research.text-light= person.researchInterests
+                            p.funFacts.text-light= person.funFacts
 

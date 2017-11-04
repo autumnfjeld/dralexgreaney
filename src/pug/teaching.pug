@@ -21,14 +21,14 @@ section#teaching
                 - var courseNumber = course.crossListing ? course.classNumber + "/" + course.crossListing : course.classNumber
                 .col-sm-12.col-md-6.wow.fadeInUp(data-wow-delay='0.4s')
                     .d-flex.flex-wrap.mb-3
-
-                        a.hidden-sm-down.d-block.course-catalog-popover(
+                        // TODO fix this layout for all screen sizes it is yuk!!!!!
+                        // Show on md+, Hide on smaller screens
+                        a.d-none.d-md-block.course-catalog-popover(
                         data-toggle="popover",
-                        data-placement="bottom",
                         title="Catalog Description " + courseNumber,
                         data-content=course.catalogText)
                             +courseInfo(course)
-                        a.hidden-sm-down.btn-link.gray-tooltip(
+                        a.d-none.d-md-block.btn-link.gray-tooltip(
                         href= course.synopsisUrl,
                         target="_blank",
                         data-toggle="tooltip",
@@ -36,8 +36,9 @@ section#teaching
                         title="Course Synopsis")
                             i.fa.fa-file-text-o.course-synopsis-link
 
-                        .hidden-md-up
+                        // Show on smaller screens, hide on md+ screens
+                        .d-md-none
                             +courseInfo(course)
-                        a.hidden-md-up.btn-link(href= course.synopsisUrl, target="_blank")
+                        a.d-md-none.btn-link(href= course.synopsisUrl, target="_blank")
                             i.fa.fa-file-text-o.course-synopsis-link
                             //TODO on mobile put links on 2nd line for both catalog & sysnopsis ?

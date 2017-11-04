@@ -15,19 +15,16 @@ section#contact
                             .col-md-12.col-sm-12
                                 textarea.form-control(rows='5', name='message', placeholder='Message')
                         .row
-                            .col-md-offset-8.col-md-4.col-sm-offset-6.col-sm-6.submit-box
-                                button#submit.form-control(type='submit', name='submit') Send Message
+                            .col-md-12.col-sm-12
+                                button#submit.btn.btn-dark.mt-2.py-2(type='submit', name='submit') Send Message                           
                             .col-12.msg-box.hidden
                                 h4.message.text-danger
-
-
 
             .col-sm-5.offset-sm-1.col-12
                 .wow.fadeInUp.contact-info(data-wow-delay='0.4s')
                     .section-title.mb-4
                         h2 Contact Information
-                        //p
-                        //    | Lorem ipsum dolor sit consectetur adipiscing morbi venenatis et tortor consectetur adipisicing lacinia tortor morbi ultricies.
+       
                     p
                         i.fa.fa-map-marker
                         span UC Riverside #{about.location}

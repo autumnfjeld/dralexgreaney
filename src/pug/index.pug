@@ -10,12 +10,9 @@ html(lang='en')
         meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
         link(rel='stylesheet', href='css/main.css?v0.8.1')
     body(data-spy='scroll', data-target='.navbar-collapse', data-offset='50')
-        .spinner-box
-            .spinner
-                span.spinner-rotate
-
         include nav.pug
         include main-page.pug
+        // TODO add footer
 
         //script.
         //    console.log('Check Stuff', '!{JSON.stringify(app.publications[0].EntryType)}', !{JSON.stringify(app.publications)});
