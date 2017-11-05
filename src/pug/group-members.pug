@@ -6,41 +6,43 @@ section#group-members
                     h2 The Greaney Group
         .d-flex.flex-wrap.mb-sm-3.justify-content-center
             each person, index in groupMembers
-                .contentWrap.d-flex.flex-column.align-content-center
-                    .content
+                .contentWrap.d-flex.flex-column.align-content-center.m-md-4
+                    .content.pl-3.pr-2.px-md-3
                         .member-img-box.mx-auto.text-center
                             img.img-responsive.img-member.lazy(data-original= person.imageUrl, alt= person.name)
-                        .basic-info.d-flex.flex-column.justify-content-center.align-items-center.mb-1.mt-2
+                        .basic-info.d-flex.flex-column.justify-content-center.align-items-center.mt-3
+                            .affiliation
+                                img(src=person.affiliation.logo)
                             h5.text-center= person.name
                             each roleSnippet in person.role
                                 small.pb-1= roleSnippet
-                        .expanded-info.px-3
-                            .d-flex.justify-content-center.mb-3
-                                a(href="mailto:" + person.email, data-toggle="tooltip", data-placement="top", data-trigger"hover click", title=person.email)
+                        .expanded-info
+                            .d-flex.justify-content-center.my-2
+                                a.btn-link(href="mailto:" + person.email, data-toggle="tooltip", data-placement="top", data-trigger"hover click", title=person.email)
                                     i.fa.fa-envelope-o.px-2
                                 if person.gitHub
-                                    a(href= person.gitHub, target="_blank", data-toggle="tooltip", data-placement="top", title="GitHub")
+                                    a.btn-link(href= person.gitHub, target="_blank", data-toggle="tooltip", data-placement="top", title="GitHub")
                                         i.fa.fa-github.px-2
                                 if person.linkedIn
-                                    a(href= person.linkedIn, target="_blank", data-toggle="tooltip", data-placement="top", title="LinkedIn")
+                                    a.btn-link(href= person.linkedIn, target="_blank", data-toggle="tooltip", data-placement="top", title="LinkedIn")
                                         i.fa.fa-linkedin.px-2
                                 if person.googleScholar
-                                    a.gray-tooltip(href= person.googleScholar, target="_blank", data-toggle="tooltip", data-placement="top", title="Google Scholar")
+                                    a.btn-link.gray-tooltip(href= person.googleScholar, target="_blank", data-toggle="tooltip", data-placement="top", title="Google Scholar")
                                         i.fa.fa-graduation-cap.px-2
                                 if person.researchGate
-                                    a(href= person.researchGate, target="_blank", data-toggle="tooltip", data-placement="top", title="Research Gate Profile")
+                                    a.btn-link(href= person.researchGate, target="_blank", data-toggle="tooltip", data-placement="top", title="Research Gate Profile")
                                         i.fa.fa-flask.px-2
                                 if person.cvLink
-                                    a(href= person.cvLink, target="_blank", data-toggle="tooltip", data-placement="top", title= person.name + "'s CV")
+                                    a.btn-link(href= person.cvLink, target="_blank", data-toggle="tooltip", data-placement="top", title= person.name + "'s CV")
                                         i.fa.fa-file-text-o.px-2
                                         //i.fa.fa-id-card-o.px-2
                                 if person.personalWebsite
-                                    a(href= person.personalWebsite, target="_blank", data-toggle="tooltip", data-placement="top", title= person.name + "'s website")
+                                    a.btn-link(href= person.personalWebsite, target="_blank", data-toggle="tooltip", data-placement="top", title= person.name + "'s website")
                                         i.fa.fa-link.px-2
                                         //i.fa.fa-id-badge.px-2
                                         //i.fa.fa.user-circle-o.px-2
                                 if person.associatedWebsite
-                                    a(href= person.associatedWebsite, target="_blank", data-toggle="tooltip", data-placement="top", title= person.associatedWebsite)
+                                    a.btn-link(href= person.associatedWebsite, target="_blank", data-toggle="tooltip", data-placement="top", title= person.associatedWebsite)
                                         i.fa.fa-link.px-2
                                         //i.fa.fa-id-badge
                                         //i.fa.fa.user-circle-o

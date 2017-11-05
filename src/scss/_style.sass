@@ -28,6 +28,7 @@
  *-----------------------------------------*/
 
 .section-title
+    font-variant: petite-caps
     margin: 0
     padding-bottom: 32px
     @include media-breakpoint-down(sm)
@@ -342,10 +343,10 @@
  *    Group Members
  *-----------------------------------------*/
 
-$initImgDiam: 250px
-$finalImgDiam: 300px
+$initImgDiam: 210px
+$finalImgDiam: 250px
 $textAreaHeight: 200px
-$initWrapperHeight: 400px
+$initWrapperHeight: 320px
 $initWrapperWidth: $initImgDiam + 100px
 
 #group-members
@@ -362,7 +363,7 @@ $initWrapperWidth: $initImgDiam + 100px
     .content
         overflow: hidden
         border-radius: $initImgDiam/2  $initImgDiam/2 0 0
-        margin-bottom: 5px
+        // margin-bottom: 5px
         transition: height .5s ease .1s
         .member-img-box
             width: $initImgDiam
@@ -372,10 +373,23 @@ $initWrapperWidth: $initImgDiam + 100px
                 border-radius: $initImgDiam/2
                 width: 100%
                 height: 100%
-                border: 10px solid  $gray-600         //.bg-secondary
+                border: 6px solid  $gray-600         //.bg-secondary
                 // hover off transition
                 transition: border-radius 0.5s ease .1s, width 0.5s ease .1s, height 0.5s ease .1s,
         .basic-info
+            position: relative
+        .affiliation
+            position: absolute
+            top: -50px
+            left: 200px
+            height: 26px
+            // background: white
+            padding: 2px 4px 4px
+            border-radius: 2px
+            //TODO correctly size image
+            img
+                max-height: 100%
+                vertical-align: bottom
         .expanded-info
             font-size: .9rem
             height: auto
@@ -385,8 +399,9 @@ $initWrapperWidth: $initImgDiam + 100px
             i.fa
                 font-size: .9rem
     .content:hover
+        box-shadow: 40px 70px 43px white, -40px 70px 43px white
         position: absolute
-        border-radius:  $finalImgDiam/2+20  $finalImgDiam/2+20 20px 20px
+        border-radius:  $finalImgDiam/2+30  $finalImgDiam/2+30 20px 20px
         height: auto
         background: $gray-600
         .member-img-box
