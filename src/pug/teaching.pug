@@ -1,44 +1,50 @@
 mixin courseInfo(course)
-    .d-inline-block
-        .d-flex.align-items-start
-            h5.pr-2= course.name
-        .d-flex.align-items-baseline
-            h6.pr-2
+    .d-block.d-md-inline-block
+        h5.pr-2.mb-1.mb-md-2= course.name
+        div
+            h6.d-inline-block.pr-2
                 span= course.classNumber
                 if course.crossListing
                     span /
                 span= course.crossListing
-            p= course.institute
+            p.d-inline-block.mb-1= course.institute
 
 section#teaching
     .container
-        .row
-            .col-12
-                .wow.fadeInUp.section-title(data-wow-delay='0.2s')
+        .wow.fadeInUp.section-title(data-wow-delay='0.2s')
                     h2 Teaching
         .row.justify-content-between
             each course in teaching
                 - var courseNumber = course.crossListing ? course.classNumber + "/" + course.crossListing : course.classNumber
-                .col-sm-12.col-md-6.wow.fadeInUp(data-wow-delay='0.4s')
-                    .d-flex.flex-wrap.mb-3
-                        // TODO fix this layout for all screen sizes it is yuk!!!!!
-                        // Show on md+, Hide on smaller screens
-                        a.d-none.d-md-block.course-catalog-popover(
-                        data-toggle="popover",
-                        title="Catalog Description " + courseNumber,
-                        data-content=course.catalogText)
+                .col-sm-12.col-md-6.wow.fadeInUp.course-box(data-wow-delay='0.4s')
+                   
+                    // Show on md+, Hide on smaller screens
+                    .d-none.d-md-flex.flex-wrap.mb-4.justify-content-between
+                        a.course-catalog-popover(
+                            data-toggle="popover",
+                            data-trigger="hover focus",
+                            title="Catalog Description " + courseNumber,
+                            data-content=course.catalogText)
                             +courseInfo(course)
-                        a.d-none.d-md-block.btn-link.gray-tooltip(
-                        href= course.synopsisUrl,
-                        target="_blank",
-                        data-toggle="tooltip",
-                        data-placement="top",
-                        title="Course Synopsis")
+                        a.btn-link.gray-tooltip.pt-2(
+                            href= course.synopsisUrl,
+                            target="_blank",
+                            data-toggle="tooltip",
+                            data-placement="top",
+                            title="Course Synopsis")
                             i.fa.fa-file-text-o.course-synopsis-link
+                
+                    // Show on smaller screens, hide on md+ screens
+                    .d-flex.justify-content-between.d-md-none.mb-4
+                        +courseInfo(course)                        
+                        .d-flex.flex-column.align-items-center
+                            button.btn.btn-link.p-0.py-1.course-catalog-popover(type="button",
+                                data-toggle="popover",
+                                data-trigger="focus",
+                                title="Catalog Description " + courseNumber,
+                                data-content=course.catalogText)
+                                i.fa.fa-info-circle
+                            a.btn-link(href= course.synopsisUrl, target="_blank")
+                                i.fa.fa-file-text-o.course-synopsis-link
 
-                        // Show on smaller screens, hide on md+ screens
-                        .d-md-none
-                            +courseInfo(course)
-                        a.d-md-none.btn-link(href= course.synopsisUrl, target="_blank")
-                            i.fa.fa-file-text-o.course-synopsis-link
                             //TODO on mobile put links on 2nd line for both catalog & sysnopsis ?

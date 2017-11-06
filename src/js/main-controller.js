@@ -6,6 +6,7 @@
      */
     function MainController() {
         this.researchController = new app.ResearchController();
+        this.phoneBreakpoint = 576;
     }
 
     /**
@@ -16,7 +17,8 @@
         this._initLazyLoad();
         this._initNavbar();
         this._initBootstrapComponents();
-        this._initBindings();
+        this._initTeachingBindings();
+        this._initPublicationsBindings();
 
         this.researchController.initView();
 
@@ -105,22 +107,16 @@
         // Init popover for publication section on tablet & desktop screens
         var phoneBreakpoint = 576;
         // TODO make trigger variable dependent on screensize and add abstract button for mobile
-        if ($(window).width() > phoneBreakpoint) {
-            $('.abstract-popover-hover').popover({
-                trigger: 'hover',
-                template: '<div class="popover abstract" role="tooltip">' +
-                    '<div class="arrow"></div> ' +
-                    '<h3 class="popover-header font-weight-normal"></h3>' +
-                    '<div class="popover-body"></div>' +
-                    '</div>',
-                placement: 'auto'
-            });
-        }
+  
 
-        // Init popover for teaching sections, note popover gets janky when it shows on top of the initiating hover content
-        // TODO figure out mobile display
+    };
+
+    /**
+     * Initialize event bindings in Teaching section
+     * @private
+     */
+    MainController.prototype._initTeachingBindings = function() {
         $('.course-catalog-popover').popover({
-            trigger: 'hover',
             template: '<div class="popover course-catalog" role="tooltip">' +
                 '<div class="arrow"></div> ' +
                 '<h3 class="popover-header font-weight-normal"></h3>' +
@@ -131,10 +127,10 @@
     };
 
     /**
-     * Initialize general event bindings
+     * Initialize event bindings in Publications section
      * @private
      */
-    MainController.prototype._initBindings = function() {
+    MainController.prototype._initPublicationsBindings = function() {
         $('#publications .show-more-btn').on('click', function() {
             if ($(this).text() === 'Show more') {
                 $('.publication-list-more').animate({
@@ -154,6 +150,19 @@
                 });
             }
         });
+
+        // Init popover for larger screens
+        if ($(window).width() > this.phoneBreakpoint) {
+            $('.abstract-popover-hover').popover({
+                trigger: 'hover',
+                template: '<div class="popover abstract" role="tooltip">' +
+                    '<div class="arrow"></div> ' +
+                    '<h3 class="popover-header font-weight-normal"></h3>' +
+                    '<div class="popover-body"></div>' +
+                    '</div>',
+                placement: 'auto'
+            });
+        }
     };
 
     // Export to window
