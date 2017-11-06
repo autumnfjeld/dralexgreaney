@@ -8,7 +8,7 @@
 
 /*---------------------------------------------------------------
  * Table of contents
- *     General
+ *     Shared styles
  *     Transitions & Animations
  *     Pre loader
  *     Navigation section
@@ -24,7 +24,7 @@
  *------------------------------------------------------------------*/
 
 /*---------------------------------------
- *    General
+ *    Shared styles
  *-----------------------------------------*/
 
 .section-title
@@ -44,6 +44,9 @@
 
 #home, #service, #work, #research, #publications, #outreach
   background: $gray-300
+
+.fa.fa-info-circle
+    font-size: 1.2rem
 
 
 /*---------------------------------------
@@ -242,11 +245,14 @@
         .card-block
             position: relative
             .btn
+                background: $gray-800
                 position: absolute
                 top: 6px
                 right: 6px
-                opacity: .7
+                opacity: .8
                 z-index: 10
+                .fa
+                    font-size: 1.4rem
             .card-img-top
                 width: 100%
         .card-footer
@@ -386,7 +392,7 @@ $initWrapperWidth: $initImgDiam + 100px
             i.fa
                 font-size: .9rem
     .content:hover
-        box-shadow: 40px 70px 43px white, -40px 70px 43px white
+        box-shadow: 40px 50px 30px white, -40px 50px 30px white
         position: absolute
         border-radius:  $finalImgDiam/2+30  $finalImgDiam/2+30 20px 20px
         height: auto
@@ -427,7 +433,6 @@ $initWrapperWidth: $initImgDiam + 100px
     .publication-list-more
         height: 0
         overflow-y: hidden
-
     .authors
         font-size: .9rem
         font-family: sans-serif
