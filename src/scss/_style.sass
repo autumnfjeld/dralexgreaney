@@ -34,7 +34,6 @@
     @include media-breakpoint-down(sm)
       padding-bottom: 10px
 
-
 #about, #service, #teaching, #work, #research, #research-frame,
 #group-members, #publications, #outreach, #contact, footer
     position: relative
@@ -61,7 +60,6 @@
 /*---------------------------------------
  *    Pre loader section
  *-----------------------------------------*/
-// TODO clean up if not needed
 .spinner-box
   position: fixed
   top: 0
@@ -197,8 +195,6 @@
 #about
     .ucr-seal-img
         width: 250px
-    .about-label
-        font-weight: 400
     @include media-breakpoint-down(sm)
         padding-top: 60px
         .about-profile-box
@@ -206,20 +202,20 @@
             padding-left: 10px
 
 
-/*---------------------------------------
- *   7 Service section
- *-----------------------------------------*/
+// /*---------------------------------------
+//  *   7 Service section
+//  *-----------------------------------------*/
 
-#service .fa
-  background: #ffffff
-  color: #000000
-  font-size: 32px
-  width: 85px
-  height: 85px
-  line-height: 85px
-  text-align: center
-  margin-top: 32px
-  margin-bottom: 22px
+// #service .fa
+//   background: #ffffff
+//   color: #000000
+//   font-size: 32px
+//   width: 85px
+//   height: 85px
+//   line-height: 85px
+//   text-align: center
+//   margin-top: 32px
+//   margin-bottom: 22px
 
 
 /*---------------------------------------
@@ -530,10 +526,12 @@ $initWrapperWidth: $initImgDiam + 100px
  *-----------------------------------------*/
 
 footer
-  background: #f9f9f9
-  text-align: center
-  p
-    padding-bottom: 16px
+    background: #f9f9f9
+    text-align: center
+    p
+        padding-bottom: 16px
+    .autumn 
+        color: $ucr-purple
 
 
 /*---------------------------------------
