@@ -1,44 +1,24 @@
 section#about
     .container
         .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-            h2.mb-0.mb-md-1 Computational Materials Science at UC Riverside
-        .row
-            .col-md-5.wow.fadeInUp(data-wow-delay='0.4s')
-                .d-inline-block.hidden-xs-down
-                    .about-image-box.mb-4.text-center
-                        img.img-responsive.hidden-md.urc-seal-img(src='../media/UCR_seal_250px.gif', alt='University of California at Riverside Seal')
-                .about-profile-box.py-1.pt-md-0
-                    p.my-2
-                        span.about-label #{about.profName}, Assistant Professor
-                    p.my-2
-                        span.about-label #{about.departmentLong}
-                    p.my-2
-                        span.about-label #{about.program}
-                    p.my-2
-                        span.about-label #{about.email}
-
-                        //p.my-2
-                        //    span.about-label Department
-                        //    |  #{about.department}
-                        //p.my-2
-                        //    span.about-label Program
-                        //    |  #{about.program}
-                        //p.my-2
-                        //    span.about-label Building
-                        //    |  #{about.campusBuilding}
-                        //p.my-2
-                        //    span.about-label Phone
-                        //    |  #{about.phone}
-                        //p.my-2
-                        //    span.about-label Email
-                        //    |  #{about.email}
-                        //p.my-2
-                        //    span.about-label Mail
-                        //    |  #{about.mailingAddress}
+            h2 Computational Materials Science at UC Riverside
+        .row.section-content
             .col-md-7.wow.fadeInUp(data-wow-delay='0.4s')
-                .about-box.mt-3
+                .about-box
                     .mr-md-2
                         for paragraph in about.summary
                             p= paragraph
+            .col-md-4.order-md-first.text-center.mr-2.wow.fadeInUp(data-wow-delay='0.4s')
+                .d-inline-block.hidden-xs-down.text-center.mt-md-1
+                    img.img-responsive.hidden-md.urc-seal-img(src='../media/logos/UCR_seal_150px.gif', alt='University of California at Riverside Seal')
+                .about-profile-box.py-1.pt-md-3.text-center
+                    p.my-2
+                        span #{about.profName}, Assistant Professor
+                    p.my-2
+                        span #{about.departmentLong}
+                    p.my-2
+                        span #{about.program}
+                    p.my-2
+                        span #{about.email}
 
 
