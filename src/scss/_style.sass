@@ -35,13 +35,13 @@
       padding-bottom: 10px
 
 #about, #service, #teaching, #work, #research, #research-frame,
-#group-members, #publications, #outreach, #contact, footer
+#group-members, #publications, #outreach, #contact
     position: relative
     padding: 80px 0
     @include media-breakpoint-down(md)
         padding: 40px 0
 
-#home, #service, #work, #research, #publications, #outreach
+#home, #service, #work, #research, #publications, #outreach, footer
   background: $gray-300
 
 .fa.fa-info-circle
@@ -526,19 +526,25 @@ $initWrapperWidth: $initImgDiam + 100px
  *-----------------------------------------*/
 
 footer
-    background: #f9f9f9
     text-align: center
-    p
-        padding-bottom: 16px
     .autumn 
         color: $ucr-purple
+    .social-icons
+        li
+            .fa
+                background: $ucr-green
+                background: lighten($ucr-purple, 30%)
+                color: $dark
+                &:hover
+                    background: $ucr-purple
+                    color: $light
 
 
 /*---------------------------------------
  *   12 Social icon
  *-----------------------------------------*/
 
-.social-icon
+.social-icons
   position: relative
   padding: 0
   margin: 0
@@ -546,8 +552,8 @@ footer
   li
     display: inline-block
     list-style: none
-    a
-      background: #ffffff
+    .fa
+      // background: #ffffff
       border-radius: 100%
       color: #454545
       cursor: pointer

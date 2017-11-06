@@ -12,28 +12,22 @@ html(lang='en')
     body(data-spy='scroll', data-target='.navbar-collapse', data-offset='50')
         include nav.pug
         include main-page.pug
-        footer
-            div Website by Autumn Fjeld.     TDOO: style
-            div
-                a.btn-link(
-                    href="mailto:autumnfjeld@gmail.com", 
-                    data-toggle="tooltip", 
-                    data-placement="top", 
-                    data-trigger"hover click", 
-                    title="autumnfjeld@gmail.com")
-                    i.fa.fa-envelope-o.px-2
-                a.btn-link(
-                    href="https://www.linkedin.com/in/autumnfjeld/",
-                     target="_blank", 
-                     data-toggle="tooltip", 
-                     data-placement="top", 
-                     title="LinkedIn")
-                    i.fa.fa-linkedin.px-2                        
-
-            p Template based on 
+        footer.py-5
+            p Website built by 
+                a.autumn(href="http://autumnfjeld.com", target="_blank") Autumn Fjeld.
+            ul.social-icons
+                li
+                    a.fa.fa-envelope-o(href="mailto:autumnfjeld@gmail.com", 
+                        data-toggle="tooltip", 
+                        data-placement="top", 
+                        data-trigger"hover click", 
+                        title="autumnfjeld@gmail.com")
+                li
+                    a.fa.fa-linkedin(href="https://www.linkedin.com/in/autumnfjeld/",
+                         target="_blank", 
+                         data-toggle="tooltip", 
+                         data-placement="top", 
+                         title="LinkedIn")                     
+            p.small Template based on 
                 a(href="http://preview.themeforest.net/item/homane-minimal-resume-html-template/full_screen_preview/19682315?_ga=2.140194995.1039933768.1493948585-1211979247.1489464104") Homane Template
-
-
-        //script.
-        //    console.log('Check Stuff', '!{JSON.stringify(app.publications[0].EntryType)}', !{JSON.stringify(app.publications)});
     script(src="build.js?v0.9")
