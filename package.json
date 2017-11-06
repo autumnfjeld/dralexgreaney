@@ -1,6 +1,6 @@
 {
   "name": "dralexgreaney.com",
-  "version": "0.9",
+  "version": "0.9.0",
   "description": "Dr. Greaney's Research Group Site",
   "main": "index.js",
   "config": {
