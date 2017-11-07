@@ -7,12 +7,14 @@
     function MainController() {
         this.researchController = new app.ResearchController();
         this.phoneBreakpoint = 576;
+        this.isTouchDevice = false;
     }
 
     /**
      * Initialize 3rd party libraries, javascript components, and any functionality needed on page load
      */
     MainController.prototype.initView = function() {
+        this._detectTouchScreen();
         this._initBackstretch();
         this._initLazyLoad();
         this._initNavbar();
@@ -26,6 +28,19 @@
         new WOW({
             mobile: true
         }).init();
+
+        console.log('isTouchDevice', this.isTouchDevice);
+    };
+
+    /**
+     * Check is user is on touch screen, to accurately set up relevant events
+     * @private
+     */
+    MainController.prototype._detectTouchScreen = function() {
+        window.addEventListener('touchstart', function() {
+            this.isTouchDevice = true;
+            $(document.body).attr('id', 'touch-device');
+        }.bind(this));
     };
 
     /**
@@ -57,6 +72,7 @@
             }
         );
     };
+
 
     /**
      * Initialize Lazy Load for image load optimization
@@ -103,12 +119,17 @@
     MainController.prototype._initBootstrapComponents = function() {
         // Bootstrap4 requires initializing tooltips, due to "performance reasons"
         $('[data-toggle="tooltip"]').tooltip();
+    };
 
-        // Init popover for publication section on tablet & desktop screens
-        var phoneBreakpoint = 576;
-        // TODO make trigger variable dependent on screensize and add abstract button for mobile
-  
-
+    /**
+     * Initialize event bindings in Teaching section
+     * @private
+     */
+    MainController.prototype._initGreaneyGroupBindings = function() {
+        // Set up hover class for non-touch screens
+        if (!this.isTouchDevice) {
+            $('#group-members .content').addClass('hover');
+        }
     };
 
     /**
@@ -152,7 +173,8 @@
         });
 
         // Init popover for larger screens
-        if ($(window).width() > this.phoneBreakpoint) {
+        // if ($(window).width() > this.phoneBreakpoint) {
+        if (!this.isTouchDevice) {
             $('.abstract-popover-hover').popover({
                 trigger: 'hover',
                 template: '<div class="popover abstract" role="tooltip">' +
