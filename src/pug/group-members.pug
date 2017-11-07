@@ -16,6 +16,8 @@ section#group-members
                             h5.text-center= person.name
                             each roleSnippet in person.role
                                 small.pb-1= roleSnippet
+                            button.btn.btn-more-info
+                                i.fa.fa-info
                         .expanded-info
                             .d-flex.justify-content-center.my-2
                                 a.btn-link(href="mailto:" + person.email, data-toggle="tooltip", data-placement="top", data-trigger"hover click", title=person.email)
@@ -35,17 +37,12 @@ section#group-members
                                 if person.cvLink
                                     a.btn-link(href= person.cvLink, target="_blank", data-toggle="tooltip", data-placement="top", title= person.name + "'s CV")
                                         i.fa.fa-file-text-o.px-2
-                                        //i.fa.fa-id-card-o.px-2
                                 if person.personalWebsite
                                     a.btn-link(href= person.personalWebsite, target="_blank", data-toggle="tooltip", data-placement="top", title= person.name + "'s website")
                                         i.fa.fa-link.px-2
-                                        //i.fa.fa-id-badge.px-2
-                                        //i.fa.fa.user-circle-o.px-2
                                 if person.associatedWebsite
                                     a.btn-link(href= person.associatedWebsite, target="_blank", data-toggle="tooltip", data-placement="top", title= person.associatedWebsite)
                                         i.fa.fa-link.px-2
-                                        //i.fa.fa-id-badge
-                                        //i.fa.fa.user-circle-o
                             p.academic.text-light= person.academicBackground
                             p.research.text-light= person.researchInterests
                             p.funFacts.text-light= person.funFacts

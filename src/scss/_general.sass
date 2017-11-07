@@ -162,7 +162,6 @@ $ucr-navy:    #003066
     border: none
     border-radius: 0
     color: #ffffff
-    //font-size: 13px
     font-weight: bold
     letter-spacing: 1.6px
     padding: 12px 32px 16px 32px
@@ -173,6 +172,21 @@ $ucr-navy:    #003066
         background: #000000
         color: #ffffff
 
+@mixin btn-more-info($moreInfoDiam)
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 1px 0 0 1px
+    height: $moreInfoDiam
+    width: $moreInfoDiam
+    line-height: 1
+    border-radius: $moreInfoDiam/2
+    background-color: $ucr-blue
+    color: $gray-200
+    // color: $ucr-gold
+    .fa-info
+        font-size: $moreInfoDiam*.7
+        
 
 /*---------------------------------------
  *    Fun Treats
@@ -193,6 +207,8 @@ $ucr-navy:    #003066
     max-width: 300px
 .tooltip > .tooltip-arrow
     border-bottom-color: $gray-400
+
+
 
 .btn-link
     font-size: 12px

@@ -2,19 +2,17 @@ section#research
     .container
         .wow.fadeInUp.section-title(data-wow-delay='0.2s')
             h2 Research Projects
-            //p Click the images for research summaries. (make tooltip)
-        .d-flex.flex-wrap.mb-3.justify-content-xl-between.justify-content-lg-around.justify-content-center.research-projects
+        .d-flex.flex-wrap.mb-3.justify-content-xl-between.justify-content-lg-around.justify-content-center
             each project, index in researchProjects
                 .wow.fadeInUp.justify-content-md-center.mb-4(data-wow-delay='0.4s')
                     .card.m-md-2
                         .card-block.p-0
-                            button.btn.btn-secondary.btn-sm.more-teaser.d-md-none
-                                i.fa.fa-info-circle
+                            button.btn.btn-more-info
+                                i.fa.fa-info
                             .work-box
                                 //a.research-popup(data-project= project.href)
                                 .work-box-overlay.d-flex.flex-column.justify-content-center
                                     p.text-dark.m-0.font-weight-normal= project.teaser.text
-                                    //p.text-caps Click to read more
                                 img.img-fluid.card-img-top.lazy(data-original= about.mediaUrl + project.teaser.imgUrl, alt= project.teaser.imgCaption)
                         .card-footer.bg-secondary.text-center
                             p.d-inline-block.align-baseline-webkit.m-0.text-light.fw-400= project.title
