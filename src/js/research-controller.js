@@ -19,30 +19,34 @@
         this._initBindings();
         // this._initResearchPopup();
 
-    };
+    }; 
 
     /**
-     * Set up event bindings for Research UI
+     * TODO Set up event bindings for Research UI
      * @private
      */
     ResearchController.prototype._initBindings = function () {
-        var isOverLayHidden;
+        // Assume device is non-touch screen and add hover class (could add in markup)
+        $('#research .work-box').addClass('hover');
 
-        $('#research .more-teaser').on('click', function(){
-            if (isOverLayHidden) {
-                // todo must grab closest one
-                $(this).next().find('.work-box-overlay').css({opacity: 0});
-                // $('.work-box-overlay').css({opacity: 0});
-                isOverLayHidden = false;
-            } else {
-                // $('.work-box-overlay').css({opacity: .8});
-                $(this).next().find('.work-box-overlay').css({opacity: .8});
-                isOverLayHidden = true;
-            }
+        // Listen for touch event to reset/setup DOM for touch device
+        window.addEventListener('touch-device-detected', function(ev){
+            // This stops click event from registering twice
+            ev.stopImmediatePropagation();
+            //Undo hover effect on the research teaser
+            $('#research .work-box').removeClass('hover');
+            var $overlay = null;
+            $('#research').on('click', '.btn-more-info', function() {
+                  $overlay = $(this).parent().children('.work-box-overlay');
+                  $overlay.toggleClass('show');
+            });              
         });
     };
 
 
+    /**
+     * @return {[type]} [description]
+     */
     ResearchController.prototype._initResearchPopup = function () {
 
         var self = this;
@@ -126,14 +130,11 @@
 })(window);
 
 
-// Use or cleanup  !!!
-
 // (function (window) {
 //
 //     function ResearchModel() {
 //
 //     }
-//
 //
 //     // Export to window
 //     window.app = window.app || {};

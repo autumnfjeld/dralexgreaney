@@ -225,7 +225,6 @@
 #research
     $overlay-offset: 20px
     $card-bg-color: $gray-200
-
     $card-block-size-lg: 340px
     $card-block-size-md: 300px
     $card-block-size-xs: 100%
@@ -248,7 +247,6 @@
         .card-footer
             border: none
             min-height: 62px            // To allow 2 lines of text
-
     .work-box
         padding: 0
         overflow: hidden
@@ -264,9 +262,12 @@
         right: $overlay-offset
         left: $overlay-offset
         transition: all ease-in-out 0.4s
-    .work-box:hover
+        &.show 
+            opacity: .8
+    .work-box.hover:hover
         .work-box-overlay
             opacity: .8
+
 
 #touch-device
     #research
@@ -390,6 +391,7 @@ $initWrapperWidth: $initImgDiam + 100px
             transition: opacity .5s ease .1s, max-height .5s ease .1s
             i.fa
                 font-size: .9rem
+    // TODO make this have a time so it opens slower
     .content.hover:hover
         box-shadow: 40px 50px 30px white, -40px 50px 30px white
         position: absolute

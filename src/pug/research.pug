@@ -7,10 +7,11 @@ section#research
                 .wow.fadeInUp.justify-content-md-center.mb-4(data-wow-delay='0.4s')
                     .card.m-md-2
                         .card-block.p-0
-                            button.btn.btn-more-info
-                                i.fa.fa-info
                             .work-box
+                                button.btn.btn-more-info
+                                    i.fa.fa-info
                                 //a.research-popup(data-project= project.href)
+                                // RENAME to .research-teaser or .teaser
                                 .work-box-overlay.d-flex.flex-column.justify-content-center
                                     p.text-dark.m-0.font-weight-normal= project.teaser.text
                                 img.img-fluid.card-img-top.lazy(data-original= about.mediaUrl + project.teaser.imgUrl, alt= project.teaser.imgCaption)
