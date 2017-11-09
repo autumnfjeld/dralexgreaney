@@ -1,24 +1,24 @@
 (function(window) {
     'use strict';
     /**
-     * Handles events on the main page and sets up view bindings
+     * Handle events on the main page and set up view bindings
      * @constructor
      */
     function MainController() {
+        //TODO move to app.js?
         this.researchController = new app.ResearchController();
-        this.phoneBreakpoint = 576;
-        this.isTouchDevice = false;
+        this.isTouchDevice =  $(window).width() < 576;
     }
 
     /**
      * Initialize 3rd party libraries, javascript components, and any functionality needed on page load
      */
     MainController.prototype.initView = function() {
-        this._detectTouchScreen();
         this._initBackstretch();
         this._initLazyLoad();
         this._initNavbar();
         this._initBootstrapComponents();
+        this._initGreaneyGroupBindings();
         this._initTeachingBindings();
         this._initPublicationsBindings();
 
@@ -29,18 +29,6 @@
             mobile: true
         }).init();
 
-        console.log('isTouchDevice', this.isTouchDevice);
-    };
-
-    /**
-     * Check is user is on touch screen, to accurately set up relevant events
-     * @private
-     */
-    MainController.prototype._detectTouchScreen = function() {
-        window.addEventListener('touchstart', function() {
-            this.isTouchDevice = true;
-            $(document.body).attr('id', 'touch-device');
-        }.bind(this));
     };
 
     /**
@@ -48,7 +36,6 @@
      * @private
      */
     MainController.prototype._initBackstretch = function() {
-
         $('.home-backstretch').backstretch([
             [
                 {'width': 1920, 'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'},
@@ -73,9 +60,9 @@
         );
     };
 
-
     /**
      * Initialize Lazy Load for image load optimization
+     * @private
      */
     MainController.prototype._initLazyLoad = function() {
         $('img.lazy').lazyload();
@@ -122,7 +109,7 @@
     };
 
     /**
-     * Initialize event bindings in Teaching section
+     * Initialize event bindings in Group Members section
      * @private
      */
     MainController.prototype._initGreaneyGroupBindings = function() {
@@ -171,10 +158,10 @@
                 });
             }
         });
-
+// 
         // Init popover for larger screens
-        // if ($(window).width() > this.phoneBreakpoint) {
-        if (!this.isTouchDevice) {
+        // TODO FIX UP for new touch listener
+        if (!this.isTouchDevice) {  
             $('.abstract-popover-hover').popover({
                 trigger: 'hover',
                 template: '<div class="popover abstract" role="tooltip">' +
