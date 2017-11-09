@@ -3,7 +3,7 @@ var pug = require('pug');
 
 
 /** Config variables */
-var projectRootDir = "/Users/autumn/Code/PAGreaney/dralexgreaney/";
+var projectRootDir = "/Users/autumn/Code/dralexgreaney/";
 var jsonDataDir = projectRootDir + 'src/json-data/';
 
 /*************************************************************************************************
