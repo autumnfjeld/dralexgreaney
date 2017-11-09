@@ -36,6 +36,7 @@
             //Undo hover effect on the research teaser
             $('#research .work-box').removeClass('hover');
             var $overlay = null;
+            // TODO make whole work-box clickable - and rename to .teaser!
             $('#research').on('click', '.btn-more-info', function() {
                   $overlay = $(this).parent().children('.work-box-overlay');
                   $overlay.toggleClass('show');
