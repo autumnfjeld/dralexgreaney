@@ -349,7 +349,7 @@ $initWrapperWidth: $initImgDiam + 100px
         height: $initWrapperHeight
         overflow: visible
         z-index: 1
-    .contentWrap:hover
+    .contentWrap:hover,
         // this moves the hovered item above its neighbors
         z-index: 2
     .content
@@ -392,8 +392,9 @@ $initWrapperWidth: $initImgDiam + 100px
             i.fa
                 font-size: .9rem
     // TODO make this have a time so it opens slower
-    .content.hover:hover
-        box-shadow: 40px 50px 30px white, -40px 50px 30px white
+    .content.hover:hover,
+    .content.show
+        box-shadow: 40px 80px 10px white, -40px 80px 10px white
         position: absolute
         border-radius:  $finalImgDiam/2+30  $finalImgDiam/2+30 20px 20px
         height: auto
@@ -413,7 +414,7 @@ $initWrapperWidth: $initImgDiam + 100px
             @include btn-more-info(16px)
             position: absolute
             top: 1px
-            right: 36px
+            right: 42px
 
 
 

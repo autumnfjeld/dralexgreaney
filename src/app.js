@@ -1,5 +1,5 @@
 (function() {
-'use strict';
+    'use strict';
 
     function Website() {
         this.mainController = new window.app.MainController();

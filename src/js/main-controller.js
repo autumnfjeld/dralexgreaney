@@ -113,10 +113,32 @@
      * @private
      */
     MainController.prototype._initGreaneyGroupBindings = function() {
-        // Set up hover class for non-touch screens
-        if (!this.isTouchDevice) {
-            $('#group-members .content').addClass('hover');
-        }
+        // Assume user is on non-touch screen; set up hover class for non-touch screens
+        $('#group-members .content').addClass('hover');
+
+        // Listen for touch-device event to remove hover and setup touch-device bindings
+        window.addEventListener('touch-device-detected', function(ev){
+            // This stops click event from registering twice
+            ev.stopPropagation();
+            $('#group-members .content').removeClass('hover');
+
+            // TODO can this be made using bootstrap popup?
+            $('#group-members').on('click', '.content', function(ev) {
+                // ev.stopImmediatePropagation();
+                $(this).toggleClass('show');
+            });  
+
+            // If user clicks on 'background', remove .show from .content div
+            $('#group-members .container').on('click', function(ev){
+                var $content = $(this).find('.content');
+                if ($content.hasClass('show')) {
+                    // This is event will propogate down to .content, so must prevent that
+                    ev.stopImmediatePropagation();
+                    $('#group-members .content').removeClass('show');
+                }
+            });
+
+        });
     };
 
     /**
@@ -165,7 +187,7 @@
             $('.abstract-popover-hover').popover({
                 trigger: 'hover',
                 template: '<div class="popover abstract" role="tooltip">' +
-                    '<div class="arrow"></div> ' +
+                    // '<div class="arrow"></div> ' +
                     '<h3 class="popover-header font-weight-normal"></h3>' +
                     '<div class="popover-body"></div>' +
                     '</div>',
