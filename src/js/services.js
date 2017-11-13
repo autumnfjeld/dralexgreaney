@@ -1,6 +1,8 @@
 
 (function(window) {
 	'use strict';
+
+    // Polyfills: add IE detection and necessary polyfill
     var touchDeviceEvent = new CustomEvent('touch-device-detected', {bubbles: true, cancelable: true});
     //If IE do this:
     // polyfill https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent
