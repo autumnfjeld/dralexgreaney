@@ -113,6 +113,9 @@
      * @private
      */
     MainController.prototype._initGreaneyGroupBindings = function() {
+        var $groupMembers = $('#group-members');
+  
+
         // Assume user is on non-touch screen; set up hover class for non-touch screens
         $('#group-members .content').addClass('hover');
 
@@ -124,12 +127,12 @@
 
             // TODO can this be made using bootstrap popup?
             $('#group-members').on('click', '.content', function(ev) {
-                // ev.stopImmediatePropagation();
+                ev.stopPropagation();
                 $(this).toggleClass('show');
             });  
 
             // If user clicks on 'background', remove .show from .content div
-            $('#group-members .container').on('click', function(ev){
+            $('#group-members').on('click', '.container', function(ev){
                 var $content = $(this).find('.content');
                 if ($content.hasClass('show')) {
                     // This is event will propogate down to .content, so must prevent that
@@ -137,8 +140,34 @@
                     $('#group-members .content').removeClass('show');
                 }
             });
-
         });
+
+        // Stop propogation on a links
+        $groupMembers.on('click', '.links .btn-link', function(ev) {
+            ev.stopPropagation();
+        });
+
+
+        // Control visibility of alumni
+        $('#group-members .show-more-btn').on('click', function() {
+            if ($(this).text() === 'Show alumni') {
+                $('.group-list-more').animate({
+                    height: $('.group-list-more').get(0).scrollHeight
+                }, 1000, function() {
+                    $('.show-more-btn').text('Hide alumni');
+                });
+            } else {
+                $('.group-list-more').animate({
+                    height: 0
+                }, 1000, function() {
+                    $('.show-more-btn').text('Show alumni');
+                    // TODO scroll as group list shrinks
+                    $('html, body').stop().animate({
+                        scrollTop: $('#group-members').offset().top - 49,
+                    }, 1000);
+                });
+            }
+        });        
     };
 
     /**

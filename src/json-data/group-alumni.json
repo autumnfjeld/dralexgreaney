@@ -1,0 +1,135 @@
+[{
+    "name": "Clem Bommier",
+    "alum": true,
+    "groupAffiliate": true,
+    "affiliation": {
+        "type": "OSU",
+        "logo": "../media/logos/OSU_logo.png"
+    },
+    "role": [
+        "PhD student in Chemistry", 
+        "Advised by Prof. David (Xiulei) Ji"
+    ],
+    "email": "cbommier@princeton.edu",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "https://www.linkedin.com/in/clement-bommier-73b390128/",
+    "googleScholar": "https://scholar.google.com/citations?user=TlPi41kAAAAJ&hl=en",
+    "researchGate": "",
+    "associatedWebsite": "http://jigroup.chem.oregonstate.edu/",
+    "personalWebsite": "",
+    "status": "alumni",
+    "currentPosition": ["Postdoc at Princeton University", "Advised by Prof. Dan Steingart"],
+    "academicBackground": "BS in Chemistry from SUNY, PhD in Chemistry from Oregon State University",
+    "funFacts": "Clem is French, but he has not let it hold him back in life, and he is now working as a postdoc with Dan Steingart at Prinston.",
+    "researchInterests": "Anythng to do with batteries and electrochemical energy storage.",
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+}, {
+    "name": "Rajesh Saranam",
+    "alum": true,
+    "groupAffiliate": false,
+    "affiliation": {
+        "type": "OSU",
+        "logo": "../media/logos/OSU_logo.png"
+    },
+    "role": ["MS Student"],
+    "status": "alumni",
+
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+}, {
+    "name": "Congcon Hu",
+    "alum": true,
+    "groupAffiliate": false,
+    "affiliation": {
+        "type": "OSU",
+        "logo": "../media/logos/OSU_logo.png"
+    },
+    "role": ["MS Student"],
+    "status": "alumni",
+    "currentPosition": [],
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+}, {
+    "name": "Ian Winter",
+    "alum": true,
+    "groupAffiliate": false,
+    "affiliation": {
+        "type": "OSU",
+        "logo": "../media/logos/OSU_logo.png"
+    },
+    "role": ["Undergraduate Student"],
+    "status": "alumni",
+    "currentPosition": ["PhD Student at UC Berkeley"],
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+}, {
+    "name": "Daniel Leonard",
+    "alum": true,
+    "groupAffiliate": false,
+    "affiliation": {
+        "type": "OSU",
+        "logo": "../media/logos/OSU_logo.png"
+    },
+    "role": ["Visiting Student from France"],
+    "status": "alumni",
+    "currentPosition": [],
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+}, {
+    "name": "Tassilo Selover-Stephan",
+    "alum": true,
+    "groupAffiliate": false,
+    "affiliation": {
+        "type": "OSU",
+        "logo": "../media/logos/OSU_logo.png"
+    },
+    "role": ["Undergraduate Student"],
+    "status": "alumni",
+    "currentPosition": [],
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+}, {
+    "name": "Zihchao Yu",
+    "alum": true,
+    "groupAffiliate": false,
+    "affiliation": {
+        "type": "OSU",
+        "logo": "../media/logos/OSU_logo.png"
+    },
+    "role": ["MS Student"],
+    "status": "alumni",
+    "currentPosition": [],
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+}, {
+    "name": "Devon Frazier",
+    "alum": true,
+    "groupAffiliate": false,
+    "affiliation": {
+        "type": "OSU",
+        "logo": "../media/logos/OSU_logo.png"
+    },
+    "role": ["Undergraduate Student"],
+    "status": "alumni",
+    "currentPosition": [],
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+}, {
+    "name": "Makenzie Budge",
+    "alum": true,
+    "groupAffiliate": false,
+    "affiliation": {
+        "type": "OSU",
+        "logo": "../media/logos/OSU_logo.png"
+    },
+    "role": ["Undergraduate Student"],
+    "status": "alumni",
+    "currentPosition": [],
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+}, {
+    "name": "Jason Castaneda",
+    "alum": true,
+    "groupAffiliate": false,
+    "affiliation": {
+        "type": "OSU",
+        "logo": "../media/logos/OSU_logo.png"
+    },
+    "role": ["Undergraduate Student"],
+    "status": "alumni",
+    "currentPosition": [],
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+}]

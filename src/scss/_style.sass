@@ -342,9 +342,13 @@ $initWrapperHeight: 320px
 $initWrapperWidth: $initImgDiam + 100px
 
 #group-members
+    .group-list-more
+        height: 0
+        overflow-y: hidden
     .contentWrap
         position: relative
         display: inline-block
+        // min-width: $initWrapperWidth
         width: $initWrapperWidth
         height: $initWrapperHeight
         overflow: visible
@@ -353,11 +357,13 @@ $initWrapperWidth: $initImgDiam + 100px
         // this moves the hovered item above its neighbors
         z-index: 2
     .content
+        min-width: 100%
         overflow: hidden
         border-radius: $initImgDiam/2  $initImgDiam/2 0 0
         transition: height .5s ease .1s
         .member-img-box
             width: $initImgDiam
+            min-width: $initImgDiam
             height: $initImgDiam
             transition: width .5s ease .1s, height .5s ease .1s
             .img-member
@@ -394,7 +400,7 @@ $initWrapperWidth: $initImgDiam + 100px
     // TODO make this have a time so it opens slower
     .content.hover:hover,
     .content.show
-        box-shadow: 40px 80px 10px white, -40px 80px 10px white
+        box-shadow: 80px 120px 10px white, -80px 120px 10px white
         position: absolute
         border-radius:  $finalImgDiam/2+30  $finalImgDiam/2+30 20px 20px
         height: auto
@@ -489,8 +495,7 @@ $initWrapperWidth: $initImgDiam + 100px
 #contact
     $inputHeight: 55px
     margin-bottom: 250px
-    .contact-info .fa
-        padding-right: 5px
+    .fa
         color: $ucr-navy
     .form-control
         background-color: $gray-200
