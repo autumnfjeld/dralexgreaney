@@ -3,7 +3,8 @@ section#contact
         .row
             .col-sm-6.col-12
                 .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-                    h2 Message the Greaney Group
+                    .section-title
+                        h2 Message the Greaney Group
                 .wow.fadeInUp(data-wow-delay='0.4s')
                     form#contact-form
                         .row
@@ -20,21 +21,20 @@ section#contact
                             .col-12.msg-box.hidden
                                 h4.message.text-danger
 
-            .col-sm-5.offset-sm-1.col-12
-                .wow.fadeInUp.contact-info(data-wow-delay='0.4s')
+            .col-sm-6.col-12
+                .pl-3.wow.fadeInUp(data-wow-delay='0.2s')
                     .section-title.mb-4
                         h2 Contact Information
-       
-                    p
-                        i.fa.fa-map-marker
+                    p.wow.fadeInUp(data-wow-delay='0.3s')
+                        i.fa.fa-map-marker.pr-2
                         span UC Riverside #{about.location}
-                    p
-                        i.fa.fa-envelope
+                    p.wow.fadeInUp(data-wow-delay='0.4s')
+                        i.fa.fa-envelope.pr-2
                         span #{about.email}
                         //a(href='mailto:' + about.email) #{about.email}
-                    p
-                        i.fa.fa-phone
+                    p.wow.fadeInUp(data-wow-delay='0.5s')
+                        i.fa.fa-phone.pr-2
                         span #{about.phone}
-                    p
-                        i.fa.fa-university
+                    p.wow.fadeInUp(data-wow-delay='0.6s')
+                        i.fa.fa-university.pr-2
                         span Mail: #{about.mailingAddress}
