@@ -11,8 +11,8 @@ mixin courseInfo(course)
 
 section#teaching
     .container
-        .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-                    h2 Teaching
+        .section-title.wow.fadeInUp(data-wow-delay='0.2s')
+            h2 Teaching
         .row.justify-content-between
             each course in teaching
                 - var courseNumber = course.crossListing ? course.classNumber + "/" + course.crossListing : course.classNumber

@@ -60,41 +60,41 @@
 /*---------------------------------------
  *    Pre loader section
  *-----------------------------------------*/
-.spinner-box
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  z-index: 99999
-  display: flex
-  flex-flow: row nowrap
-  justify-content: center
-  align-items: center
-  background: none repeat scroll 0 0 #ffffff
+// .spinner-box
+//   position: fixed
+//   top: 0
+//   left: 0
+//   width: 100%
+//   height: 100%
+//   z-index: 99999
+//   display: flex
+//   flex-flow: row nowrap
+//   justify-content: center
+//   align-items: center
+//   background: none repeat scroll 0 0 #ffffff
 
-.spinner
-  border: 1px solid transparent
-  border-radius: 5px
-  position: relative
-  &:before
-    content: ''
-    box-sizing: border-box
-    position: absolute
-    top: 50%
-    left: 50%
-    width: 65px
-    height: 65px
-    margin-top: -10px
-    margin-left: -10px
-    border-radius: 50%
-    border: 2px solid #454545
-    border-top-color: #ffffff
-    animation: spinner .9s linear infinite
+// .spinner
+//   border: 1px solid transparent
+//   border-radius: 5px
+//   position: relative
+//   &:before
+//     content: ''
+//     box-sizing: border-box
+//     position: absolute
+//     top: 50%
+//     left: 50%
+//     width: 65px
+//     height: 65px
+//     margin-top: -10px
+//     margin-left: -10px
+//     border-radius: 50%
+//     border: 2px solid #454545
+//     border-top-color: #ffffff
+//     animation: spinner .9s linear infinite
 
-@keyframes spinner
-  to
-    transform: rotate(360deg)
+// @keyframes spinner
+//   to
+//     transform: rotate(360deg)
 
 
 /*---------------------------------------
@@ -200,22 +200,6 @@
         .about-profile-box
             font-size: 1rem
             padding-left: 10px
-
-
-// /*---------------------------------------
-//  *   7 Service section
-//  *-----------------------------------------*/
-
-// #service .fa
-//   background: #ffffff
-//   color: #000000
-//   font-size: 32px
-//   width: 85px
-//   height: 85px
-//   line-height: 85px
-//   text-align: center
-//   margin-top: 32px
-//   margin-bottom: 22px
 
 
 /*---------------------------------------
@@ -348,7 +332,6 @@ $initWrapperWidth: $initImgDiam + 100px
     .contentWrap
         position: relative
         display: inline-block
-        // min-width: $initWrapperWidth
         width: $initWrapperWidth
         height: $initWrapperHeight
         overflow: visible
@@ -369,7 +352,6 @@ $initWrapperWidth: $initImgDiam + 100px
             .img-member
                 border-radius: $initImgDiam/2
                 width: 100%
-                // height: 100%
                 border: 6px solid  $gray-600         //.bg-secondary
                 // hover off transition
                 transition: border-radius 0.5s ease .1s, width 0.5s ease .1s, height 0.5s ease .1s,
@@ -382,7 +364,6 @@ $initWrapperWidth: $initImgDiam + 100px
             height: 26px
             padding: 2px 4px 4px
             border-radius: 2px
-            //TODO correctly size image
             img
                 max-height: 100%
                 vertical-align: bottom
@@ -402,7 +383,7 @@ $initWrapperWidth: $initImgDiam + 100px
     .content.show
         box-shadow: 80px 120px 10px white, -80px 120px 10px white
         position: absolute
-        border-radius:  $finalImgDiam/2+30  $finalImgDiam/2+30 20px 20px
+        border-radius:  $finalImgDiam/2+30  $finalImgDiam/2+30 4px 4px
         height: auto
         background: $gray-600
         .member-img-box
@@ -421,7 +402,6 @@ $initWrapperWidth: $initImgDiam + 100px
             position: absolute
             top: 1px
             right: 42px
-
 
 
 /*---------------------------------------
@@ -560,16 +540,15 @@ $socialDiam: 30px
     display: inline-block
     list-style: none
     .fa
-      // background: #ffffff
       border-radius: 100%
       color: #454545
       cursor: pointer
       font-size: 15px
       text-decoration: none
       transition: all 0.4s ease-in-out
-      width: socialDiam
-      height: socialDiam
-      line-height: socialDiam
+      width: $socialDiam
+      height: $socialDiam
+      line-height: $socialDiam
       text-align: center
       vertical-align: middle
       position: relative

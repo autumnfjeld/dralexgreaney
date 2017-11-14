@@ -129,6 +129,7 @@
             $('#group-members').on('click', '.content', function(ev) {
                 ev.stopPropagation();
                 $(this).toggleClass('show');
+                // TODO: toggle .fa-info with a .fa-close
             });  
 
             // If user clicks on 'background', remove .show from .content div

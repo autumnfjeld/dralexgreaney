@@ -25,12 +25,12 @@
      * TODO Set up event bindings for Research UI
      * @private
      */
-    ResearchController.prototype._initBindings = function () {
+    ResearchController.prototype._initBindings = function() {
         // Assume device is non-touch screen and add hover class (could add in markup)
         $('#research .work-box').addClass('hover');
 
         // Listen for touch event to reset/setup DOM for touch device
-        window.addEventListener('touch-device-detected', function(ev){
+        window.addEventListener('touch-device-detected', function(ev) {
             // This stops click event from registering twice
             ev.stopImmediatePropagation();
             //Undo hover effect on the research teaser
@@ -38,9 +38,10 @@
             var $overlay = null;
             // TODO make whole work-box clickable - and rename to .teaser!
             $('#research').on('click', '.btn-more-info', function() {
-                  $overlay = $(this).parent().children('.work-box-overlay');
-                  $overlay.toggleClass('show');
-            });              
+                $overlay = $(this).parent().children('.work-box-overlay');
+                $overlay.toggleClass('show');
+                // TODO: toggle .fa-info with a .fa-close
+            });
         });
     };
 
