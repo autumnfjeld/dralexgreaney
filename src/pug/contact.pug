@@ -1,40 +1,38 @@
 section#contact
     .container
         .row
-            .col-sm-6.col-12
-                .wow.fadeInUp.section-title(data-wow-delay='0.2s')
-                    .section-title
-                        h2 Message the Greaney Group
-                .wow.fadeInUp(data-wow-delay='0.4s')
-                    form#contact-form
-                        .row
-                            .col-md-6.col-sm-6
-                                input.form-control(type='text', name='name', placeholder='Name')
-                            .col-md-6.col-sm-6
-                                input.form-control(type='email', name='email', placeholder='Email')
-                        .row
-                            .col-md-12.col-sm-12
-                                textarea.form-control(rows='5', name='message', placeholder='Message')
-                        .row
-                            .col-md-12.col-sm-12
-                                button#submit.btn.btn-dark.mt-2.py-2(type='submit', name='submit') Send Message                           
-                            .col-12.msg-box.hidden
-                                h4.message.text-danger
+            .col-md-6.col-12
+                .section-title.wow.fadeInUp(data-wow-delay='0.2s')
+                    h2 Message the Greaney Group
+                form#contact-form
+                    .row.wow.fadeInUp(data-wow-delay='0.4s')
+                        .col-md-6.col-sm-6
+                            input.form-control(type='text', name='name', placeholder='Name')
+                        .col-md-6.col-sm-6
+                            input.form-control(type='email', name='email', placeholder='Email')
+                    .row.wow.fadeInUp(data-wow-delay='0.5s')
+                        .col-md-12.col-sm-12
+                            textarea.form-control(rows='5', name='message', placeholder='Message')
+                    .row.wow.fadeInUp(data-wow-delay='0.6s')
+                        .col-md-12.col-sm-12
+                            button#submit.btn.btn-dark.mt-2.py-2(type='submit', name='submit') Send Message                           
+                        .col-12.msg-box.hidden
+                            h4.message.text-danger
 
-            .col-sm-6.col-12
-                .pl-3.wow.fadeInUp(data-wow-delay='0.2s')
-                    .section-title.mb-4
+            .col-md-6.col-12.mt-5.mt-md-0.pl-md-5
+                .section-title.wow.fadeInUp(data-wow-delay='0.2s')
                         h2 Contact Information
-                    p.wow.fadeInUp(data-wow-delay='0.3s')
-                        i.fa.fa-map-marker.pr-2
-                        span UC Riverside #{about.location}
-                    p.wow.fadeInUp(data-wow-delay='0.4s')
-                        i.fa.fa-envelope.pr-2
-                        span #{about.email}
-                        //a(href='mailto:' + about.email) #{about.email}
-                    p.wow.fadeInUp(data-wow-delay='0.5s')
-                        i.fa.fa-phone.pr-2
-                        span #{about.phone}
-                    p.wow.fadeInUp(data-wow-delay='0.6s')
-                        i.fa.fa-university.pr-2
-                        span Mail: #{about.mailingAddress}
+                // TODO: make these into flex columns so icons align on small screens                        
+                p.wow.fadeInUp(data-wow-delay='0.3s')
+                    i.fa.fa-map-marker.pr-2
+                    span UC Riverside #{about.location}
+                p.wow.fadeInUp(data-wow-delay='0.4s')
+                    i.fa.fa-envelope.pr-2
+                    span #{about.email}
+                    //a(href='mailto:' + about.email) #{about.email}
+                p.wow.fadeInUp(data-wow-delay='0.5s')
+                    i.fa.fa-phone.pr-2
+                    span #{about.phone}
+                p.wow.fadeInUp(data-wow-delay='0.6s')
+                    i.fa.fa-university.pr-2
+                    span Mail: #{about.mailingAddress}
