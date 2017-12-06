@@ -324,6 +324,7 @@ $finalImgDiam: 250px
 $textAreaHeight: 200px
 $initWrapperHeight: 320px
 $initWrapperWidth: $initImgDiam + 100px
+$memberContentColor: $gray-500
 
 #group-members
     .group-list-more
@@ -352,7 +353,7 @@ $initWrapperWidth: $initImgDiam + 100px
             .img-member
                 border-radius: $initImgDiam/2
                 width: 100%
-                border: 6px solid  $gray-600         //.bg-secondary
+                border: 6px solid  $memberContentColor         //.bg-secondary
                 // hover off transition
                 transition: border-radius 0.5s ease .1s, width 0.5s ease .1s, height 0.5s ease .1s,
         .basic-info
@@ -385,7 +386,7 @@ $initWrapperWidth: $initImgDiam + 100px
         position: absolute
         border-radius:  $finalImgDiam/2+30  $finalImgDiam/2+30 4px 4px
         height: auto
-        background: $gray-600
+        background: $memberContentColor
         .member-img-box
             width: $finalImgDiam
             height: $finalImgDiam
