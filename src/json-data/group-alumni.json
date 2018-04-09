@@ -1,4 +1,30 @@
 [{
+        "name": "Laura de Sousa Oliveira",
+        "groupAffiliate": false,
+        "affiliation": {
+            "type": "UCR",
+            "logo": "../media/logos/UCR_logo.png"
+        },
+        "alum": true,
+        "role": ["Graduated in 2017","Ph.D Student"],
+        "currentPosition": [
+            "Postdoc at University of Warwick, UK",
+            "Advised by Prof. Neophytos Neophytou"
+        ],
+        "email": "laura.rita.oliveira@gmail.com",
+        "cvLink": "",
+        "gitHub": "",
+        "linkedIn": "",
+        "googleScholar": "",
+        "researchGate": "",
+        "associatedWebsite": "https://warwick.ac.uk/fac/sci/eng/research/grouplist/sensorsanddevices/compnanotechlab/",
+        "personalWebsite": "",
+        "academicBackground": "BS in Physics and Mathematics with minors in Hispanic Studies and Electrical Engineering from the New Mexico Institute of Mining and Technology. PhD from UCR in Mechanical Engineering specializing in Computational Materials Science.",
+        "funFacts": " Laura was born in Loulé, Portugal. When she is not working, Laura enjoys thinking about life, the universe and everything.",
+        "researchInterests": "Laura's research interests include understanding transport phenomena at an atomistic scale, which she does via a mix of classical molecular dynamics and density functional theory codes, some other software, her own codes and the codes of her collaborator buddies. Her focus to date has been on phonon thermal transport. Recently she has been working on a fascinating project for high-throughput molecular design of metal–organic frameworks and has acquired a taste for photochemistry.",
+        "imageUrl": "../media/group-members/laura-oliveira-headshot.jpg"
+    },
+    {
     "name": "Clem Bommier",
     "alum": true,
     "groupAffiliate": true,
@@ -7,7 +33,8 @@
         "logo": "../media/logos/OSU_logo.png"
     },
     "role": [
-        "PhD student in Chemistry", 
+        "Graduated 2017",
+        "PhD student in Chemistry",
         "Advised by Prof. David (Xiulei) Ji"
     ],
     "email": "cbommier@princeton.edu",
@@ -24,7 +51,35 @@
     "funFacts": "Clem is French, but he has not let it hold him back in life, and he is now working as a postdoc with Dan Steingart at Prinston.",
     "researchInterests": "Anythng to do with batteries and electrochemical energy storage.",
     "imageUrl": "../media/group-members/mystery-student.jpg"
-}, {
+},
+{
+   "name": "Charlie Manion",
+   "groupAffiliate": true,
+   "affiliation": {
+       "type": "OSU",
+       "logo": "../media/logos/OSU_logo.png"
+   },
+   "alum": true,
+   "role": [
+       "Graduated 2017",
+       "PhD Student in Mechanical Engineering",
+       "Minor in Robotics",
+       "Advised by Prof. Matt Campbell"
+   ],
+   "email": "cam626@gmail.com",
+   "cvLink": "",
+   "gitHub": "",
+   "linkedIn": "",
+   "googleScholar": "",
+   "researchGate": "https://www.researchgate.net/profile/Charles_Manion",
+   "associatedWebsite": "",
+   "personalWebsite": "",
+   "academicBackground": "BS in Mechanical Engineering from the University of Texas, Austin",
+   "funFacts": "Originally from Texas, Charlie's expertise lies at the intersection of engineering design and molecular simulation. One of Charlie's ambitions in life is to design molecular Strandbeests. ",
+   "researchInterests": "Designing molecular materials that can change shape.",
+   "imageUrl": "../media/group-members/charles-manion-headshot.jpg"
+},
+{
     "name": "Rajesh Saranam",
     "alum": true,
     "groupAffiliate": false,
