@@ -7,7 +7,7 @@
     function MainController() {
         //TODO move to app.js?
         this.researchController = new app.ResearchController();
-        this.isTouchDevice =  $(window).width() < 576;
+        this.isTouchDevice = $(window).width() < 576;
     }
 
     /**
@@ -25,9 +25,7 @@
         this.researchController.initView();
 
         // Instantiate scoll animation module
-        new WOW({
-            mobile: true
-        }).init();
+        new WOW({mobile: true}).init();
 
     };
 
@@ -38,26 +36,48 @@
     MainController.prototype._initBackstretch = function() {
         $('.home-backstretch').backstretch([
             [
-                {'width': 1920, 'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'},
-                {'width': 960,  'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'},
-                {'width': 576,  'deviceOrientation': 'portrait', 'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_576x_portrait.jpg'}
+                {
+                    'width': 1920,
+                    'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'
+                }, {
+                    'width': 960,
+                    'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'
+                }, {
+                    'width': 576,
+                    'deviceOrientation': 'portrait',
+                    'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_576x_portrait.jpg'
+                }
             ],
             [
-                {'width': 1920, 'url': '../media/home_HardCarbon_Sized_1920x1280.jpg'},
-                {'width': 1200, 'url': '../media/home_HardCarbon_Sized_1200x.jpg'},
-                {'width': 960,  'url': '../media/home_HardCarbon_Sized_960x640.jpg'}
+                {
+                    'width': 1920,
+                    'url': '../media/home_HardCarbon_Sized_1920x1280.jpg'
+                }, {
+                    'width': 1200,
+                    'url': '../media/home_HardCarbon_Sized_1200x.jpg'
+                }, {
+                    'width': 960,
+                    'url': '../media/home_HardCarbon_Sized_960x640.jpg'
+                }
             ],
             [
-                {'width': 1920, 'url': '../media/home_hard-carbon-stormtroopers_1920x1080.jpg'},
-                {'width': 960,  'url': '../media/home_hard-carbon-stormtroopers_960x540.jpg'},
-                {'width': 576,  'deviceOrientation': 'portrait',  'url': '../media/home_hard-carbon-stormtroopers_576x_portrait.jpg'}
+                {
+                    'width': 1920,
+                    'url': '../media/home_hard-carbon-stormtroopers_1920x1080.jpg'
+                }, {
+                    'width': 960,
+                    'url': '../media/home_hard-carbon-stormtroopers_960x540.jpg'
+                }, {
+                    'width': 576,
+                    'deviceOrientation': 'portrait',
+                    'url': '../media/home_hard-carbon-stormtroopers_576x_portrait.jpg'
+                }
             ]
         ], {
-                duration: 2000,
-                fade: 750,
-                preload: 0
-            }
-        );
+            duration: 2000,
+            fade: 750,
+            preload: 0
+        });
     };
 
     /**
@@ -72,22 +92,22 @@
      * Bind smoothscroll event for navbar links
      * @private
      */
-    MainController.prototype._initNavbar = function () {
+    MainController.prototype._initNavbar = function() {
         var hash = window.location.hash;
 
         // TODO check that hash is valid (one of the menu hashes)
         if (hash) {
             $('html, body').stop().animate({
-                scrollTop: $(hash).offset().top - 40,
+                scrollTop: $(hash).offset().top - 40
             }, 1000);
         }
 
         // Bind smoothscroll js
-        $('.navbar a').bind('click', function(event) {
+        $('.navbar a').bind('click', function() {
             var $anchor = $(this);
             window.location.hash = $anchor.attr('href');
             $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 40,
+                scrollTop: $($anchor.attr('href')).offset().top - 40
             }, 1000);
         });
 
@@ -114,13 +134,12 @@
      */
     MainController.prototype._initGreaneyGroupBindings = function() {
         var $groupMembers = $('#group-members');
-  
 
         // Assume user is on non-touch screen; set up hover class for non-touch screens
         $('#group-members .content').addClass('hover');
 
         // Listen for touch-device event to remove hover and setup touch-device bindings
-        window.addEventListener('touch-device-detected', function(ev){
+        window.addEventListener('touch-device-detected', function(ev) {
             // This stops click event from registering twice
             ev.stopPropagation();
             $('#group-members .content').removeClass('hover');
@@ -130,10 +149,10 @@
                 ev.stopPropagation();
                 $(this).toggleClass('show');
                 // TODO: toggle .fa-info with a .fa-close
-            });  
+            });
 
             // If user clicks on 'background', remove .show from .content div
-            $('#group-members').on('click', '.container', function(ev){
+            $('#group-members').on('click', '.container', function(ev) {
                 var $content = $(this).find('.content');
                 if ($content.hasClass('show')) {
                     // This is event will propogate down to .content, so must prevent that
@@ -147,7 +166,6 @@
         $groupMembers.on('click', '.links .btn-link', function(ev) {
             ev.stopPropagation();
         });
-
 
         // Control visibility of alumni
         $('#group-members .show-more-btn').on('click', function() {
@@ -164,11 +182,11 @@
                     $('.show-more-btn').text('Show alumni');
                     // TODO scroll as group list shrinks
                     $('html, body').stop().animate({
-                        scrollTop: $('#group-members').offset().top - 49,
+                        scrollTop: $('#group-members').offset().top - 49
                     }, 1000);
                 });
             }
-        });        
+        });
     };
 
     /**
@@ -177,11 +195,7 @@
      */
     MainController.prototype._initTeachingBindings = function() {
         $('.course-catalog-popover').popover({
-            template: '<div class="popover course-catalog" role="tooltip">' +
-                '<div class="arrow"></div> ' +
-                '<h3 class="popover-header font-weight-normal"></h3>' +
-                '<div class="popover-body"></div>' +
-                '</div>',
+            template: '<div class="popover course-catalog" role="tooltip">' + '<div class="arrow"></div> ' + '<h3 class="popover-header font-weight-normal"></h3>' + '<div class="popover-body"></div>' + '</div>',
             placement: 'auto'
         });
     };
@@ -205,22 +219,20 @@
                     $('.show-more-btn').text('Show more');
                     // TODO scroll as publication list shrinks
                     $('html, body').stop().animate({
-                        scrollTop: $('#publications').offset().top - 49,
+                        scrollTop: $('#publications').offset().top - 49
                     }, 1000);
                 });
             }
         });
-// 
+        //
         // Init popover for larger screens
         // TODO FIX UP for new touch listener
-        if (!this.isTouchDevice) {  
+        if (!this.isTouchDevice) {
             $('.abstract-popover-hover').popover({
                 trigger: 'hover',
                 template: '<div class="popover abstract" role="tooltip">' +
-                    // '<div class="arrow"></div> ' +
-                    '<h3 class="popover-header font-weight-normal"></h3>' +
-                    '<div class="popover-body"></div>' +
-                    '</div>',
+                // '<div class="arrow"></div> ' +
+                '<h3 class="popover-header font-weight-normal"></h3>' + '<div class="popover-body"></div>' + '</div>',
                 placement: 'auto'
             });
         }

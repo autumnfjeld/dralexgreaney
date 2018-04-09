@@ -1,50 +1,48 @@
-
-
 .card-image-temp {
-  width: 100%;
+    width: 100%;
 }
 
 .research-big-card {
-  .cart-title {
-    font-size: 19px;
-  }
-  .card-text {
-    height: 200px;
-  }
-}
-
-$imgDiam2: 250px;
-#group-vertical {
-  background: $gray-lightest;
-  .card-img-block {
-
-  }
-  .img-person, .card-img-top {
-    height: $imgDiam2;
-    width: $imgDiam2;
-    border-radius: $imgDiam2/2;
-    border: 5px solid #f4f4f4;
-    //margin-top: -30px;
-  }
-  .card {
-    border: none;
-    //background-color: unset;
-    //margin-bottom: 60px;
-  }
-  .card-block {
-    //background-color: white;
-  }
-  .research-interests {
-    min-height: 100px;
-    .card-text {
-      font-size: .9em;
-      line-height: 1.4em;
+    .cart-title {
+        font-size: 19px;
     }
-  }
-  .ri-text {
-    min-height: 100px;
-  }
-  i.fa {
-    padding: 10px;
-  }
+
+    .card-text {
+        height: 200px;
+    }
+}
+$imgDiam2: 250px;
+
+#group-vertical {
+    background: $gray-lightest;
+
+    .card-img-block {}
+
+    .card-img-top,
+    .img-person {
+        height: $imgDiam2 width:$imgDiam2;
+        border-radius: $imgDiam2/2;
+        border: 5px solid #f4f4f4;
+    }
+
+    .card {
+        border: none;
+    }
+
+    .research-interests {
+        min-height: 100px;
+
+        .card-text {
+            font-size: 0.9em;
+            line-height: 1.4em;
+        }
+    }
+
+    .ri-text {
+        min-height: 100px;
+    }
+
+    i.fa {
+        padding: 10px;
+    }
 }

@@ -27,7 +27,7 @@
             if (validData) {
                 this._awsPostForm(formData);
             } else {
-                this._showMessage('missingInput')
+                this._showMessage('missingInput');
             }
         }.bind(this));
     };
@@ -55,12 +55,12 @@
         var controller = this;
         // TODO Consider spinner if server response is slow
         $.ajax({
-            type: "POST",
+            type: 'POST',
             cache: false,
             // url: "https://z6xpli9nr0.execute-api.us-west-2.amazonaws.com/prod/makeitwork",
-            url: " https://br94wjlmdh.execute-api.us-west-2.amazonaws.com/prod/contactform",
+            url: ' https://br94wjlmdh.execute-api.us-west-2.amazonaws.com/prod/contactform',
             data: JSON.stringify(formData),
-            contentType: "application/json"
+            contentType: 'application/json'
         }).done(function () {
             controller._showMessage('success');
         }).fail(function (res) {

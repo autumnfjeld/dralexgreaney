@@ -19,6 +19,15 @@
         "semi": [
             "error",
             "always"
+        ],
+        "no-console": [
+            "error",
+            {"allow": ["warn"]}
         ]
+    },
+    "globals": {
+        "$": false,
+        "WOW":false,
+        "app": false
     }
 }
