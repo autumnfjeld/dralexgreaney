@@ -1,10 +1,12 @@
 var fs = require('fs');
+var path = require('path');
 var pug = require('pug');
 
 
+
 /** Config variables */
-var projectRootDir = "/Users/autumn/Code/dralexgreaney/";
-var jsonDataDir = projectRootDir + 'src/json-data/';
+var projectRootDir = path.join(__dirname, '..');
+var jsonDataDir = projectRootDir + '/src/json-data/';
 
 /*************************************************************************************************
  * Build the project data into a js object: Reads project json data files and builds
@@ -57,8 +59,8 @@ function compilePugWithContent() {
     });
 
     function createIndexHtml(siteContent) {
-        var pugTemplate = projectRootDir + 'src/pug/index.pug',
-            indexBuildFile = projectRootDir + 'public/index.html';
+        var pugTemplate = projectRootDir + '/src/pug/index.pug',
+            indexBuildFile = projectRootDir + '/public/index.html';
         // var html = pug.renderFile('../src/pug/index.pug', siteContent, null);
         // Node.js-style callback receiving the rendered results. This callback is called synchronously.
         pug.renderFile(pugTemplate, siteContent, function (err, html) {
