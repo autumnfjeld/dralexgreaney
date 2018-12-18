@@ -10,10 +10,10 @@ section#research
                             .work-box
                                 button.btn.btn-more-info
                                     i.fa.fa-info
-                                //a.research-popup(data-project= project.href)
-                                // RENAME to .research-teaser or .teaser
-                                .work-box-overlay.d-flex.flex-column.justify-content-center
-                                    p.text-dark.m-0.font-weight-normal= project.teaser.text
-                                img.img-fluid.card-img-top.lazy(data-original= about.mediaUrl + project.teaser.imgUrl, alt= project.teaser.imgCaption)
+                                a.research-popup(data-project= project.href)
+                                    // RENAME to .research-teaser or .teaser
+                                    .work-box-overlay.d-flex.flex-column.justify-content-center
+                                        p.text-dark.m-0.font-weight-normal= project.teaser.text
+                                    img.img-fluid.card-img-top.lazy(data-original= about.mediaUrl + project.teaser.imgUrl, alt= project.teaser.imgCaption)
                         .card-footer.bg-secondary.text-center
                             p.d-inline-block.align-baseline-webkit.m-0.text-light.fw-400= project.title

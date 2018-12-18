@@ -1,0 +1,112 @@
+/*---------------------------------------
+ *    Research section
+ *-----------------------------------------*/
+
+#research
+    $overlay-offset: 20px
+    $card-bg-color: $gray-200
+    $card-block-size-lg: 340px
+    $card-block-size-md: 300px
+    $card-block-size-xs: 100%
+
+    .card
+        border: none
+        width: $card-block-size-lg
+        @include media-breakpoint-only(xs)  // < 544px
+            margin-bottom: 2rem
+            width: 100%
+            width: $card-block-size-xs
+            max-width: 350px;
+        .card-block
+            position: relative
+            .btn-more-info
+                display: none
+                // See #touch-device below
+            .card-img-top
+                width: 100%
+        .card-footer
+            border: none
+            min-height: 62px            // To allow 2 lines of text
+    .work-box
+        padding: 0
+        overflow: hidden
+        position: relative
+    .work-box-overlay
+        position: absolute
+        background: #ffffff
+        //cursor: pointer
+        opacity: 0
+        padding:  10px 8px 10px 12px
+        top: $overlay-offset*3
+        bottom: $overlay-offset*3
+        right: $overlay-offset
+        left: $overlay-offset
+        transition: all ease-in-out 0.4s
+        &.show
+            opacity: .8
+    .work-box.hover:hover
+        .work-box-overlay
+            opacity: .8
+
+
+#touch-device
+    #research
+        .btn-more-info
+            @include btn-more-info(22px)
+            position: absolute
+            top: 6px
+            right: 6px
+            z-index: 1
+
+/* Style for magnificPopup that opens on research project click
+
+#research-popup, #research-project
+    position: relative
+    /* TODO sort out height & position for .mfp-container & its contents */
+    // .white-popup
+    //     //position: relative
+    //     overflow-y: scroll
+    //     background: #FFF
+    //     padding: 20px
+    //     height: 80%
+    //     min-height: 100%
+    //     max-height: 700px
+    //     margin: 20px auto
+    //     // Copy styles from .mfp-close b/c putting .fa as child of .mfp-close blocks click
+    //     .mfp-close
+
+    //     .fa
+    //         position: absolute
+    //         right: 10px
+    //         top: 8px
+    //         color: $gray-200
+    // .text-columns
+    //     column-count: 2
+    //     column-gap: 2rem
+    // @include media-breakpoint-down(xs)
+    //     .text-columns
+    //         column-count: 1
+
+// These are children of body, not #research
+.mfp-inline-holder .mfp-content
+    min-height: 80%
+    width: 80%
+    @include media-breakpoint-down(xs)
+        margin-top:  24px
+        width: 100%
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content
+    opacity: 0
+    transition: all 0.15s ease-out
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
+    opacity: 1
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
+    opacity: 0
+
+.mfp-arrow:before
+    opacity: 1
