@@ -31,7 +31,7 @@ function getJsonContent() {
                         siteContent[sectionName] = JSON.parse(fs.readFileSync(jsonDataDir + fileName, 'utf8'));
                     }
                 });
-                console.log('Success combing json data.  siteContent sections:', Object.keys(siteContent), '\n');
+                console.log('Success combining json data.  siteContent sections:', Object.keys(siteContent), '\n');
                 resolve(siteContent);
                 // console.log('siteContent.about.summary', siteContent.about.summary);
             }
@@ -66,7 +66,7 @@ function compilePugWithContent() {
         pug.renderFile(pugTemplate, siteContent, function (err, html) {
             // console.log(siteContent.about);
             if (err) {
-                console.error('Pug file did not compile', err)
+                console.error('Pug file did not compile', err);
             } else {
                 console.log('\nPug file compiled and written to ', indexBuildFile);
                 // TODO  make async for error
@@ -89,7 +89,8 @@ function compilePugWithContent() {
 
 
 function createDataModel() {
-    var dataStoreFile = projectRootDir + 'src/js/data-store.js';
+    console.log('STARTING: createDataModel');
+    var dataStoreFile = projectRootDir + '/src/js/data-store.js';
 
     getJsonContent()
         .then(function (siteContent) {
@@ -243,7 +244,7 @@ function fileNameToCamelCase(fileName) {
 /********************************************************************************************
  * Export Functions
  * make-runnable module makes export functions accessible via command line: >node filepath functionName args
- * Ex: >node ./pug-json-compiler.js compilePugWithContent
+ * Ex: >node ./custom-build-scripts.js compilePugWithContent
  ********************************************************************************************/
 
 module.exports = {

@@ -43,10 +43,11 @@ I am working with a computational group and thus could take great liberty in kno
 * The source code is set up with a js folder, json-data folder, pug folder, and scss
 * My client uses [Latex](https://www.latex-project.org/), a typsetting system commonly used in the scientific community, that relies on a .bib file as a list of publication references.  I found a nice  [bib-to-json parser](https://github.com/mayanklahiri/bib2json) written by Mayank Lahiri that let me use my client's .bib file to convert his publications into json.  I created a [custom build script](https://github.com/autumnfjeld/dralexgreaney/blob/master/build-scripts/custom-build-scripts.js) to make adjustments to the publication data.
 * Custom build scripts are set up to do the following:
-  * `getJsonContent` - compiles the separate json files that exist for each section of the site into. 
+  * `getJsonContent` - compiles the separate json files that exist for each section of the site into a javascript object. 
   * `compilePugWithContent` - uses pug.renderFile to compile the index.pug file with the jsonContent to create the index.html file
-   * `createDataModel` - creates a .js file to contain data in a data model for any data that is need for client-side rendering of a pug function
    * `processPublicationEntries` - this method is run after the .bib file is converted to json, taking care of fixing capitalization, separating selected journal papers from 'the rest'
+   * `createDataModel` - creates a .js file to contain data in a data model for any data that is need for client-side rendering of a pug function
+   * `create-pug-template-function.js` creates a javascript template function from a pug file, specifically for use with magnifiPop in creating project description pop-ups
 * A number of common npm modules are used to compile scss, lint, uglify, and watch all code files
 * A `watch:all` npm script command is executed to watch and compile the code during development.  Since .json files do not take comments, I had to be creative in include comments with keys starting with `// item`.  Messy, but functional, and a nice challenge to see if an npm-only build process was doable and easy to use.
 
