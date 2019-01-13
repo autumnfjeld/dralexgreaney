@@ -58,36 +58,14 @@
             right: 6px
             z-index: 1
 
-/* Style for magnificPopup that opens on research project click
+/*---------------------------------------
+ *    Research magnificPopup
+ *-----------------------------------------*/
 
-#research-popup, #research-project
-    position: relative
-    /* TODO sort out height & position for .mfp-container & its contents */
-    // .white-popup
-    //     //position: relative
-    //     overflow-y: scroll
-    //     background: #FFF
-    //     padding: 20px
-    //     height: 80%
-    //     min-height: 100%
-    //     max-height: 700px
-    //     margin: 20px auto
-    //     // Copy styles from .mfp-close b/c putting .fa as child of .mfp-close blocks click
-    //     .mfp-close
-
-    //     .fa
-    //         position: absolute
-    //         right: 10px
-    //         top: 8px
-    //         color: $gray-200
-    // .text-columns
-    //     column-count: 2
-    //     column-gap: 2rem
-    // @include media-breakpoint-down(xs)
-    //     .text-columns
-    //         column-count: 1
-
-// These are children of body, not #research
+/* TODO sort out height & position for .mfp-container & its contents */
+// magnificPopup specific styling overrides, note these are children of body
+.mfp-content 
+    background-color: white
 .mfp-inline-holder .mfp-content
     min-height: 80%
     width: 80%
@@ -110,3 +88,31 @@
 
 .mfp-arrow:before
     opacity: 1
+
+// Custom project styling
+#research-popup, #research-project
+    position: relative
+    .project-container
+        min-height: 80vh    // must match mfp-content height percent
+        position: relative
+        overflow-y: scroll
+        background: #FFF
+        padding: 20px
+        //height: 80%
+    //     min-height: 100%
+    //     max-height: 700px
+    //     margin: 20px auto
+    //     // Copy styles from .mfp-close b/c putting .fa as child of .mfp-close blocks click
+        .mfp-close
+        .fa
+             position: absolute
+             right: 10px
+             top: 8px
+             color: $gray-200
+     .text-columns
+         column-count: 2
+         column-gap: 2rem
+     @include media-breakpoint-down(xs)
+         .text-columns
+             column-count: 1
+

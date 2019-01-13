@@ -1,14 +1,14 @@
 (function (window) {
 
-
     /**
      *
+     * @param data - site content to be injected into pug template function
      * @param templatePage - a pug template compiled into js function
-     * @param data
      * @constructor
      */
     function ResearchController(data, templatePage) {
-        console.log('ResearchController.templagePage()', data, templatePage);
+        console.log('ResearchController.templagePage()');
+        console.log('data', data, 'templatePage', templatePage);
         this.templatePage = templatePage;
         this.data = data;
     }
@@ -66,8 +66,9 @@
                     var projectIndex = item.index;
                     console.log('ProjectIndex', projectIndex);
                     var project = $(item.el).attr('data-project');
-                    console.log('data-project', $(item.el).attr('data-project'));
-                    console.log('rawData', self.data, '\nthis data', self.data[projectIndex]);
+                    // console.log('data-project', $(item.el).attr('data-project'));
+                    console.log('rawData', self.data);
+                    console.log('this data', self.data[projectIndex]);
                     // Create the page with data
                     item.src = self.templatePage(self.data[projectIndex]);
                 }

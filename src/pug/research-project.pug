@@ -1,5 +1,5 @@
 section#research-project
-    .white-popup
+    .project-container
         .row
             i.fa.fa-times
             .mfp-close
@@ -7,34 +7,20 @@ section#research-project
                 //a.back.mb-4(href="#research")
                 //    i.fa.fa-arrow-left
                 //    span Back
-
                 .section-title
                     h3 #{title}
-
-        if layout !== "bigImage"
-            .row
-                .col-md-3
-                    .card
-                        ul.list-group.list-group-flush
-                            li.list-group-item Lisa Jones PhD
-                            li.list-group-item Suzi Queue
-                            li.list-group-item paper references
-                            li.list-group-item Links to other places
-                    figure.figure.mt-2
-                        img.figure-img.img-fluid.rounded(src=imageUrl, alt=imageTitle)
-                        figcaption.figure-caption  #{imageCaption}
-                .col-md-8
-                    .text-columns
-                        each paragraph in expandedText
-                            p= paragraph
-
-        else
-            .row
-                .col
-                    figure.figure.mt-2.text-center
-                        img.figure-img.img-fluid.rounded(src=projectImages[0].imgUrl, alt=projectImages[0].imgCaption)
-                    .text-columns.px-md-5.pb-5
-                        p #{abstract}
-                        each paragraph in projectWriteUp
-                            p= paragraph
+        .row
+            .col-md-3
+                .card
+                    ul.list-group.list-group-flush
+                        li.list-group-item Lisa Jones PhD
+                        li.list-group-item Suzi Queue
+                        li.list-group-item paper references
+                        li.list-group-item Links to other places
+                figure.figure.mt-2
+                    img.figure-img.img-fluid.rounded(src=imageUrl, alt=imageTitle)
+                    figcaption.figure-caption  #{imageCaption}
+            .col-md-8
+                .text-columns
+                    p Tessst
 

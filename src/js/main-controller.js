@@ -5,8 +5,6 @@
      * @constructor
      */
     function MainController() {
-        //TODO move to app.js?
-        this.researchController = new app.ResearchController();
         this.isTouchDevice = $(window).width() < 576;
     }
 
@@ -21,8 +19,6 @@
         this._initGreaneyGroupBindings();
         this._initTeachingBindings();
         this._initPublicationsBindings();
-
-        this.researchController.initView();
 
         // Instantiate scoll animation module
         new WOW({mobile: true}).init();

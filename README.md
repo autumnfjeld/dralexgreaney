@@ -48,6 +48,9 @@ I am working with a computational group and thus could take great liberty in kno
    * `processPublicationEntries` - this method is run after the .bib file is converted to json, taking care of fixing capitalization, separating selected journal papers from 'the rest'
    * `createDataModel` - creates a .js file to contain data in a data model for any data that is need for client-side rendering of a pug function
    * `create-pug-template-function.js` creates a javascript template function from a pug file, specifically for use with magnifiPop in creating project description pop-ups
+   * Files generated from build scripts:
+      * data-store.js
+      * researchProjectTemplateFunc.js
 * A number of common npm modules are used to compile scss, lint, uglify, and watch all code files
 * A `watch:all` npm script command is executed to watch and compile the code during development.  Since .json files do not take comments, I had to be creative in include comments with keys starting with `// item`.  Messy, but functional, and a nice challenge to see if an npm-only build process was doable and easy to use.
 
