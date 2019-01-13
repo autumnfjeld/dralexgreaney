@@ -1,5 +1,5 @@
 mixin personContent(person)
-    .contentWrap.d-flex.flex-column.align-content-center.m-md-3
+    .contentWrap.d-flex.flex-column.align-content-center.m-md-3(id= person.id)
         .content.pl-3.pr-2.px-md-3
             .member-img-box.mx-auto.text-center
                 img.img-responsive.img-member.lazy(data-original= person.imageUrl, alt= person.name)
