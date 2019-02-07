@@ -8,18 +8,24 @@ section#research-project
                 //    i.fa.fa-arrow-left
                 //    span Back
                 .section-title
-                    h3 #{title}
+                    h2 #{title}
         .row
-            .col-md-3
-                .card
-                    ul.list-group.list-group-flush
-                        li.list-group-item Lisa Jones PhD
-                        li.list-group-item Suzi Queue
-                        li.list-group-item paper references
-                        li.list-group-item Links to other places
-                figure.figure.mt-2
-                    img.figure-img.img-fluid.rounded(src=imageUrl, alt=imageTitle)
-                    figcaption.figure-caption  #{imageCaption}
-            .col-md-8
+            .col-md-4
+                .researchers-box
+                    h4 Researchers
+                    each person in researchers
+                        p= person
+
+                    //- ul.list-group.list-group-flush
+                    //-     li.list-group-item #{researchers[0]}
+                    //-     li.list-group-item #{researchers[1]}
+                    //-     li.list-group-item 1paper references
+                    //-     li.list-group-item Links to other places
+                each image in content.imageUrls
+                    figure.figure.mt-2
+                        img.figure-img.img-fluid.rounded(src=image, alt=imageTitle)
+                        //- figcaption.figure-caption  #{imageCaption}
+            .col-md-7
                 .text-columns
-                    p Tessst
+                    each paragraph, index in content.paragraphs
+                        p.paragraph= paragraph

@@ -18,7 +18,8 @@
      */
     ResearchController.prototype.initView = function () {
         this._initBindings();
-        this._initResearchPopup();
+        // TODO: wip, uncomment when ready for production
+        // this._initResearchPopup();
     }; 
 
     /**
@@ -67,8 +68,8 @@
                     console.log('ProjectIndex', projectIndex);
                     var project = $(item.el).attr('data-project');
                     // console.log('data-project', $(item.el).attr('data-project'));
-                    console.log('rawData', self.data);
-                    console.log('this data', self.data[projectIndex]);
+                    console.log('self.data', self.data,  projectIndex);
+                    console.log('self.data[projectIndex]', self.data[projectIndex]);
                     // Create the page with data
                     item.src = self.templatePage(self.data[projectIndex]);
                 }
