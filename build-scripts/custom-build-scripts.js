@@ -1,10 +1,12 @@
 var fs = require('fs');
+var path = require('path');
 var pug = require('pug');
 
 
+
 /** Config variables */
-var projectRootDir = "/Users/autumn/Code/dralexgreaney/";
-var jsonDataDir = projectRootDir + 'src/json-data/';
+var projectRootDir = path.join(__dirname, '..');
+var jsonDataDir = projectRootDir + '/src/json-data/';
 
 /*************************************************************************************************
  * Build the project data into a js object: Reads project json data files and builds
@@ -24,12 +26,12 @@ function getJsonContent() {
                 files.forEach(function (fileName) {
                     // Read only json files
                     if (fileName.slice(-4) === 'json') {
-                        console.log('fileName:', fileName, fileNameToCamelCase(fileName));
+                        console.info('fileName:', fileName, fileNameToCamelCase(fileName));
                         sectionName = fileNameToCamelCase(fileName);
                         siteContent[sectionName] = JSON.parse(fs.readFileSync(jsonDataDir + fileName, 'utf8'));
                     }
                 });
-                console.log('Success combing json data.  siteContent sections:', Object.keys(siteContent), '\n');
+                console.info('Success combining json data.  siteContent sections:', Object.keys(siteContent), '\n');
                 resolve(siteContent);
                 // console.log('siteContent.about.summary', siteContent.about.summary);
             }
@@ -51,22 +53,22 @@ function compilePugWithContent() {
 
     getJsonContent()
         .then(function (siteContent) {
-            createIndexHtml(siteContent)
+            createIndexHtml(siteContent);
         }).catch(function (reason) {
-        console.log('getJsonContent() fail', reason);
-    });
+            console.info('getJsonContent() fail', reason);
+        });
 
     function createIndexHtml(siteContent) {
-        var pugTemplate = projectRootDir + 'src/pug/index.pug',
-            indexBuildFile = projectRootDir + 'public/index.html';
+        var pugTemplate = projectRootDir + '/src/pug/index.pug',
+            indexBuildFile = projectRootDir + '/public/index.html';
         // var html = pug.renderFile('../src/pug/index.pug', siteContent, null);
         // Node.js-style callback receiving the rendered results. This callback is called synchronously.
         pug.renderFile(pugTemplate, siteContent, function (err, html) {
             // console.log(siteContent.about);
             if (err) {
-                console.error('Pug file did not compile', err)
+                console.error('Pug file did not compile', err);
             } else {
-                console.log('\nPug file compiled and written to ', indexBuildFile);
+                console.info('\nPug file compiled and written to ', indexBuildFile);
                 // TODO  make async for error
                 fs.writeFileSync(indexBuildFile, html);
             }
@@ -79,32 +81,34 @@ function compilePugWithContent() {
 
 /***********************************************************************************************
  * Create a javascript data store that will supply data to the client-side pug functions
- * A bit hacky: produces a js module file
+ * Produces a js module file
  * Needed models:
- *   - Research model for dynamic creation of research pages or other dynamic content
+ *  - Research data models in research-project.pug for dynamic creation of research pop-up or other dynamic content
+ *  - This should run with json file watchers
  *
  /************************************************************************************************/
 
 
 function createDataModel() {
-    var dataStoreFile = projectRootDir + 'src/js/data-store.js';
+    console.info('~~~~~~~~~~~~~ STARTING: createDataModel ~~~~~~~~~~~~~');
+    var dataStoreFile = projectRootDir + '/src/js/data-store.js';
 
     getJsonContent()
         .then(function (siteContent) {
-            createAppDataModule(siteContent)
+            createAppDataModule(siteContent);
         }).catch(function (reason) {
-        console.error('getJsonContent() fail', reason);
-    });
+            console.error('getJsonContent() fail', reason);
+        });
 
     function createAppDataModule(siteContent) {
         console.info(' /n site Content has these sections', Object.keys(siteContent));
 
         var dataStoreJavascript =
             '(function(window) {' +
-                '"use strict";' +
-                ' var dataStore = ' + JSON.stringify(siteContent.researchProjects) + ';' +
-                'window.app = window.app || {};' +
-                'window.app.dataStore = dataStore;' +
+            '"use strict";' +
+            ' var dataStore = ' + JSON.stringify(siteContent.researchProjects) + ';' +
+            'window.app = window.app || {};' +
+            'window.app.dataStore = dataStore;' +
             '}(window));';
 
         //TODO make async for error handling
@@ -136,8 +140,8 @@ var featuredPublications = [
  * @param entryKey
  * @return {boolean}
  */
-function isFeaturedPublication(entryKey){
-    return featuredPublications.some(function(featuredEntry){
+function isFeaturedPublication(entryKey) {
+    return featuredPublications.some(function (featuredEntry) {
         return featuredEntry === entryKey;
     });
 }
@@ -150,47 +154,48 @@ function isFeaturedPublication(entryKey){
  *   - make capitilizaion of Field keys uniform
  *   - seperate featured publications from the rest for UI display.
  */
-function processPublicationEntries(){
-    var outputJsonFile = 'src/json-data/publications.json',
-        publicationsJsonFile = 'src/json-data/publications.json',
+function processPublicationEntries() {
+    // const outputJsonFile = 'src/json-data/publications.json';
+    const publicationsJsonFile = 'src/json-data/publications.json',
         publications = {
             featured: [],
             theRest: []
         };
 
-    fs.readFile(publicationsJsonFile, 'utf-8', function(err, data) {
+    fs.readFile(publicationsJsonFile, 'utf-8', function (err, data) {
         if (err) {
-            console.log('Error', err);
+            console.error('Error', err);
         } else {
             var bibData = JSON.parse(data);
-            bibData.forEach( function(pub) {
+            bibData.forEach(function (pub) {
 
                 // Fix capitalization of the content where needed
                 if (pub.Fields.Journal) {
-                    pub.Fields.Journal = pub.Fields.Journal.replace(/\w\S*/g, function(txt){
+                    pub.Fields.Journal = pub.Fields.Journal.replace(/\w\S*/g, function (txt) {
                         // console.log('txt', txt);
                         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
                     });
                 }
                 if (pub.Fields.Booktitle) {
-                    pub.Fields.Booktitle = pub.Fields.Booktitle.replace(/\w\S*/g, function(txt){
+                    pub.Fields.Booktitle = pub.Fields.Booktitle.replace(/\w\S*/g, function (txt) {
                         // console.log('txt', txt);
                         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
                     });
                 }
                 if (pub.Fields.Month) {
-                    pub.Fields.Month = pub.Fields.Month.replace(/\w\S*/g, function(txt){
+                    pub.Fields.Month = pub.Fields.Month.replace(/\w\S*/g, function (txt) {
                         return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
                     });
                 }
 
                 // Ensure all keys in the Field object are Capitalized
                 var keys = Object.keys(pub.Fields);
-                keys.forEach(function(key) {
+                keys.forEach(function (key) {
                     // keyCapitalized = key.charAt(0).toUpperCase() + key.slice(1)
                     if (key !== key.toLowerCase()) {
-                        pub.Fields[key.toLowerCase()] = pub.Fields[key]
-                        delete pub.Fields[key] // delete the old key
+                        pub.Fields[key.toLowerCase()] = pub.Fields[key];
+                        // delete the old key
+                        delete pub.Fields[key];
                     }
                 });
 
@@ -206,17 +211,17 @@ function processPublicationEntries(){
             });
         }
 
-        console.log('Number of featured publications sorted: ', publications.featured.length, ' out of ', featuredPublications.length, ' specified');
+        console.info('Number of featured publications sorted: ', publications.featured.length, ' out of ', featuredPublications.length, ' specified');
         // Output correct .json file
-        fs.writeFile(publicationsJsonFile, JSON.stringify(publications), function(err){
+        fs.writeFile(publicationsJsonFile, JSON.stringify(publications), function (err) {
             if (err) {
-                console.log('Error writing file', err);
+                console.error('Error writing file', err);
             } else {
-                console.log('Success! publication json data written to ', publicationsJsonFile);
+                console.info('Success! publication json data written to ', publicationsJsonFile);
                 // TODO eliminate manual check write over plublications.json
-                console.log('Manually check this file and then rename to publications.json');
+                console.info('Manually check this file and then rename to publications.json');
             }
-        })
+        });
     });
 
 }
@@ -241,7 +246,7 @@ function fileNameToCamelCase(fileName) {
 /********************************************************************************************
  * Export Functions
  * make-runnable module makes export functions accessible via command line: >node filepath functionName args
- * Ex: >node ./pug-json-compiler.js compilePugWithContent
+ * Ex: >node ./custom-build-scripts.js compilePugWithContent
  ********************************************************************************************/
 
 module.exports = {

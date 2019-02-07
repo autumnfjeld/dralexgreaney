@@ -1,5 +1,6 @@
 [ {
-        "name": "Woochul Shin ",
+        "name": "Woochul Shin",
+        "id": "woochul",
         "groupAffiliate": true,
         "affiliation": {
             "type": "OSU",
@@ -24,6 +25,7 @@
         "imageUrl": "../media/group-members/woochul-shin-headshot.jpg"
     }, {
         "name": "Wesley Surta ",
+        "id": "wesley",
         "groupAffiliate": true,
         "affiliation": {
             "type": "OSU",
@@ -48,6 +50,7 @@
         "imageUrl": "../media/group-members/wesley-surta-headshot.png"
     }, {
         "name": "Agnieszka Truszkowska",
+        "id": "agnieszka",
         "groupAffiliate": false,
         "affiliation": {
             "type": "OSU",

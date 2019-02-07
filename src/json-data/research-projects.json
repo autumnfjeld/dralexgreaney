@@ -7,6 +7,21 @@
             "text": "We are working to understand how the architecture of gecko's feet enables them to stick to walks, and to quickly unstick.",
             "imgUrl": "research/gecko_foot_on_glass-sm-300px.png",
             "imgCaption": "The underside of a gecko's foot"
+        },
+        "researchers": [
+            "woochul", "wesley"
+        ],
+        "content": {
+            "imageUrls": [
+                "mozzie1.jpg",
+                "mozzie2.jpg",
+                "mozzie3.jpg"
+            ],
+            "paragraphs": [
+                "paragraph 1 No trip is complete without a visit to Duke’s Waikiki for a sunset cocktail and pupus—Hawaiian tapas. The bar and restaurant is named after one of Hawaii’s most famous locals, dubbed the father of modern surfing. Duke Paoa Kahanamoku grew up in Waikiki with the ocean as his playground. A five-time Olympic medalist in swimming, Duke is also credited with spreading the popularity of surfing. Fittingly, Duke’s Waikiki is a lively, open-air restaurant located right on the sand, showcasing live music performances and local cuisine.",
+                "paragraph 2 No trip is complete without a visit to Duke’s Waikiki for a sunset cocktail and pupus—Hawaiian tapas. The bar and restaurant is named after one of Hawaii’s most famous locals, dubbed the father of modern surfing. Duke Paoa Kahanamoku grew up in Waikiki with the ocean as his playground. A five-time Olympic medalist in swimming, Duke is also credited with spreading the popularity of surfing. Fittingly, Duke’s Waikiki is a lively, open-air restaurant located right on the sand, showcasing live music performances and local cuisine.",
+                "paragraph 3 No trip is complete without a visit to Duke’s Waikiki for a sunset cocktail and pupus—Hawaiian tapas. The bar and restaurant is named after one of Hawaii’s most famous locals, dubbed the father of modern surfing. Duke Paoa Kahanamoku grew up in Waikiki with the ocean as his playground. A five-time Olympic medalist in swimming, Duke is also credited with spreading the popularity of surfing. Fittingly, Duke’s Waikiki is a lively, open-air restaurant located right on the sand, showcasing live music performances and local cuisine. "
+            ]
         }
     },
     {

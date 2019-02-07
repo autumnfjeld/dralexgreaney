@@ -1,40 +1,31 @@
 section#research-project
-    .white-popup
+    .project-container
         .row
-            i.fa.fa-times
             .mfp-close
+                i.fa.fa-times
             .col-md-12.col-sm-12
                 //a.back.mb-4(href="#research")
                 //    i.fa.fa-arrow-left
                 //    span Back
-
                 .section-title
-                    h3 #{title}
+                    h2 #{title}
+        .row
+            .col-md-4
+                .researchers-box
+                    h4 Researchers
+                    each person in researchers
+                        p= person
 
-        if layout !== "bigImage"
-            .row
-                .col-md-3
-                    .card
-                        ul.list-group.list-group-flush
-                            li.list-group-item Lisa Jones PhD
-                            li.list-group-item Suzi Queue
-                            li.list-group-item paper references
-                            li.list-group-item Links to other places
+                    //- ul.list-group.list-group-flush
+                    //-     li.list-group-item #{researchers[0]}
+                    //-     li.list-group-item #{researchers[1]}
+                    //-     li.list-group-item 1paper references
+                    //-     li.list-group-item Links to other places
+                each image in content.imageUrls
                     figure.figure.mt-2
-                        img.figure-img.img-fluid.rounded(src=imageUrl, alt=imageTitle)
-                        figcaption.figure-caption  #{imageCaption}
-                .col-md-8
-                    .text-columns
-                        each paragraph in expandedText
-                            p= paragraph
-
-        else
-            .row
-                .col
-                    figure.figure.mt-2.text-center
-                        img.figure-img.img-fluid.rounded(src=projectImages[0].imgUrl, alt=projectImages[0].imgCaption)
-                    .text-columns.px-md-5.pb-5
-                        p #{abstract}
-                        each paragraph in projectWriteUp
-                            p= paragraph
-
+                        img.figure-img.img-fluid.rounded(src=image, alt=imageTitle)
+                        //- figcaption.figure-caption  #{imageCaption}
+            .col-md-7
+                .text-columns
+                    each paragraph, index in content.paragraphs
+                        p.paragraph= paragraph
