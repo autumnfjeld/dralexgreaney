@@ -34,10 +34,11 @@
             [
                 {
                     'width': 1920,
+                    // TODO: change all research media to media/research
                     'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_1920x1280.jpg'
                 }, {
                     'width': 960,
-                    'url': '../media/home_Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'
+                    'url': '../media/research/home_Si_Al2O3_Ar_rotated_zoomed_in_960x640.jpg'
                 }, {
                     'width': 576,
                     'deviceOrientation': 'portrait',
