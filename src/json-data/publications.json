@@ -1,686 +1,809 @@
 {
-    "featured": [
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Li_2017_AdEnergyMat_DopedHardCarbonAnodes",
-            "Fields": {
-                "author": "Li, Zhifei and Bommier, Clement and Chong, Zhi Sen and Jian, Zelang and Surta, Todd Wesley and Wang, Xingfeng and Xing, Zhenyu and Neuefeind, Joerg C. and Stickle, William F. and Dolgos, Michelle and Greaney, P. Alex and Ji, Xiulei",
-                "title": "Mechanism of Na-Ion Storage in Hard Carbon Anodes Revealed by Heteroatom Doping",
-                "journal": "Advanced Energy Materials",
-                "issn": "1614-6840",
-                "url": "http://dx.doi.org/10.1002/aenm.201602894",
-                "doi": "10.1002/aenm.201602894",
-                "pages": "1602894",
-                "keywords": "hard carbon anodes, heteroatom doping, local structures, mechanisms, Na-ion batteries",
-                "note": "1602894",
-                "abstract": "Hard carbon is the leading candidate anode for commercialization of Na-ion batteries. Hard carbon has a unique local atomic structure, which is composed of nanodomains of layered rumpled sheets that have short-range local order resembling graphene within each layer, but complete disorder along the c-axis between layers. A primary challenge holding back the development of Na-ion batteries is that a complete understanding of the structure<E2><80><93>capacity correlations of Na-ion storage in hard carbon has remained elusive. This article presents two key discoveries: first, the characteristics of hard carbons structure can be modified systematically by heteroatom doping, and second, that these structural changes greatly affect Na-ion storage properties, which reveals the mechanisms for Na storage in hard carbon. Specifically, via P or S doping, the interlayer spacing is dilated, which extends the low-voltage plateau capacity, while increasing the defect concentrations with P or B doping leads to higher sloping sodiation capacity. The combined experimental studies and first principles calculations reveal that it is the Na-ion-defect binding that corresponds to the sloping capacity, while the Na intercalation between graphenic layers causes the low-potential plateau capacity. The understanding suggests a new design principle of hard carbon anode: more reversibly binding defects and dilated turbostratic domains, given that the specific surface area is maintained low.",
-                "year": "2017"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Wang_2017_AngewChemi_Hydronium",
-            "Fields": {
-                "author": "Wang, Xingfeng and Bommier, Clement and Jian, Zelang and Li, Zhifei and Chandrabose, Raghu S. and Rodriguez-Perez, Ismael A. and Greaney, P. Alex and Ji, Xiulei",
-                "title": "Hydronium-Ion Batteries with Perylenetetracarboxylic Dianhydride Crystals as an Electrode",
-                "journal": "Angewandte Chemie-international Edition",
-                "year": "2017",
-                "volume": "56",
-                "number": "11",
-                "pages": "2909-2913",
-                "month": "Mar 6",
-                "abstract": "We demonstrate for the first time that hydronium ions can be reversibly stored in an electrode of crystalline 3,4,9,10-perylenetetracarboxylic dianhydride (PTCDA). PTCDA exhibits a capacity of 85 mAhg(-1) at 1 Ag-1 after an initial conditioning process. Ex situ X-ray diffraction revealed reversible and significant structure dilation upon reduction of PTCDA in an acidic electrolyte, which can only be ascribed to hydronium-ion intercalation. The lattice expansion upon hydronium storage was theoretically explored by first-principles density functional theory (DFT) calculations, which confirmed the hydronium storage in PTCDA.",
-                "doi": "10.1002/anie.201700148",
-                "issn": "1433-7851",
-                "eissn": "1521-3773",
-                "unique-id": "ISI:000397307600012"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Oliveira_2017_PRE_GreenKuboIntegrationError",
-            "Fields": {
-                "author": "Oliveira, Laura de Sousa and Greaney, P. Alex",
-                "title": "Method to manage integration error in the Green-Kubo method",
-                "journal": "Physical Review E",
-                "year": "2017",
-                "volume": "95",
-                "number": "2",
-                "month": "Feb 21",
-                "abstract": "The Green-Kubo method is a commonly used approach for predicting transport properties in a system from equilibrium molecular dynamics simulations. The approach is founded on the fluctuation dissipation theorem and relates the property of interest to the lifetime of fluctuations in its thermodynamic driving potential. For heat transport, the lattice thermal conductivity is related to the integral of the autocorrelation of the instantaneous heat flux. A principal source of error in these calculations is that the autocorrelation function requires a long averaging time to reduce remnant noise. Integrating the noise in the tail of the autocorrelation function becomes conflated with physically important slow relaxation processes. In this paper we present a method to quantify the uncertainty on transport properties computed using the Green-Kubo formulation based on recognizing that the integrated noise is a random walk, with a growing envelope of uncertainty. By characterizing the noise we can choose integration conditions to best trade off systematic truncation error with unbiased integration noise, to minimize uncertainty for a given allocation of computational resources.",
-                "doi": "10.1103/PhysRevE.95.023308",
-                "article-number": "023308",
-                "issn": "2470-0045",
-                "eissn": "2470-0053",
-                "unique-id": "ISI:000394665000011"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Truszkowska_2016_CompChemEng_MultiscaleLBM",
-            "Fields": {
-                "author": "Truszkowska, Agnieszka and Greaney, P. Alex and Jovanovic, Goran",
-                "title": "Multiscale lattice Boltzmann modeling of two-phase flow and retention times in micro-patterned fluidic devices",
-                "journal": "Computers & Chemical Engineering",
-                "year": "2016",
-                "volume": "95",
-                "pages": "249-259",
-                "month": "Dec 5",
-                "abstract": "Recent advances for fabricating micro-featured architectures such as posts or pillars in fluidic devices provide exciting opportunities for multiphase flow management. Here we describe a novel, multiscale modeling approach for two-phase flows in microfeatured architectures developed within the Shan and Chen Lattice Boltzmann method. In our approach a fine scale is used to resolve the true microfeatured architecture, with a coarser scale used to model the gross geometry of the device. We develop the basic features of the approach and demonstrate its applicability to modeling retention times of droplets of a dispersed phase in an array of microposts - an architecture used in microfluidic reactors, bioreactors, and biomedical devises. Additionally we show that it is feasible to model the microfeatured geometry in a piecewise manner which includes extrapolating dispersed phase flow characteristics in the entire system based on simulations in smaller subdomains. (C) 2016 Elsevier Ltd. All rights reserved.",
-                "doi": "10.1016/j.compchemeng.2016.08.016",
-                "issn": "0098-1354",
-                "eissn": "1873-4375",
-                "unique-id": "ISI:000386248700021"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Manion_2016_DaltonTrans_DesignOFlexibleLinkers",
-            "Fields": {
-                "author": "Manion, Charles and Arlitt, Ryan and Campbell, Matthew I. and Tumer, Irem and Stone, Rob and Greaney, P. Alex",
-                "title": "Automated design of flexible linkers",
-                "journal": "Dalton Transactions",
-                "year": "2016",
-                "volume": "45",
-                "number": "10",
-                "pages": "4338-4345",
-                "abstract": "This paper presents a method for the systematic and automated design of flexible organic linkers for construction of metal organic-frameworks (MOFs) in which flexibility, compliance, or other mechanically exotic properties originate at the linker level rather than from the framework kinematics. Our method couples a graph grammar method for systematically generating linker like molecules with molecular dynamics modeling of linkers' mechanical response. Using this approach we have generated a candidate pool of >59 000 hypothetical linkers. We screen linker candidates according to their mechanical behaviors under large deformation, and extract fragments common to the most performant candidate materials. To demonstrate the general approach to MOF design we apply our system to designing linkers for pressure switching MOFs-MOFs that undergo reversible structural collapse after a stress threshold is exceeded.",
-                "doi": "10.1039/c5dt03511b",
-                "issn": "1477-9226",
-                "eissn": "1477-9234",
-                "unique-id": "ISI:000371710500033"
-            }
-        }
-    ],
-    "theRest": [
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Truszkowska_2017_MRS_DEM",
-            "Fields": {
-                "title": "Developing a Crystal Plasticity Model for Metallic Materials Based on the Discrete Element Method",
-                "journal": "MRS Advances",
-                "publisher": "Materials Research Society",
-                "author": "Truszkowska, Agnieszka and Yu, Qin and Greaney, Peter Alex and Evans, T. Matthew and Kruzic, Jamie J.",
-                "year": "2017",
-                "pages": "1–6",
-                "abstract": "Failure of metallic materials due to plastic and/or creep deformation occur by the emergence of necking, microvoids, and cracks at heterogeneities in the material microstructure. While many traditional deformation modeling approaches have difficulty capturing these emergent phenomena, the discrete element method (DEM) has proven effective for the simulation of materials whose properties and response vary over multiple spatial scales, e.g., bulk granular materials. The DEM framework inherently provides a mesoscale simulation approach that can be used to model macroscopic response of a microscopically diverse system. DEM naturally captures the heterogeneity and geometric frustration inherent to deformation processes. While DEM has recently been adapted successfully for modeling the fracture of brittle solids, to date it has not been used for simulating metal deformation. In this paper, we present our progress in reformulating DEM to model the key elastic and plastic deformation characteristics of FCC polycrystals to create an entirely new crystal plasticity modeling methodology well-suited for the incorporation of heterogeneities and simulation of emergent phenomena.",
-                "doi": "10.1557/adv.2017.430"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Jian_2017_ChemOfMat_SoftCarbonAnode",
-            "Fields": {
-                "author": "Jian, Zelang and Bommier, Clement and Luo, Langli and Li, Zhifei and Wang, Wentao and Wang, Chongmin and Greaney, P. Alex and Ji, Xiulei",
-                "title": "Insights on the Mechanism of Na-Ion Storage in Soft Carbon Anode",
-                "journal": "Chemistry Of Materials",
-                "year": "2017",
-                "volume": "29",
-                "number": "5",
-                "pages": "2314-2320",
-                "month": "Mar 14",
-                "abstract": "Graphite is the commercial anode for lithium-ion batteries; however, it fails to extend its success to sodium-ion batteries. Recently, we demonstrated that a low-cost amorphous carbon soft carbon exhibits remarkable rate performance and stable cycling life of Na-ion storage. However, its Na-ion storage mechanism has remained elusive, which has plagued further development of such carbon anodes. Here, we remedy this shortfall by presenting the results from an integrated set of experimental and computational studies that, for the first time, reveal the storage mechanism for soft carbon. We find that sodium ions intercalate into graphenic layers, leading to an irreversible quasi-plateau at similar to 0.5 V versus Na+/Na as well as an irreversible expansion seen by in situ transmission electron microscopy (TEM) and X-ray diffraction (XRD). Such a high-potential plateau is correlated to the defective local structure inside the turbostratic stacking of soft carbon and the associated high-binding energies with Na ions, suggesting a trapping mechanism. On the other hand, soft carbon exhibits long sloping regions above and below the quasi-plateau during the first sodiation, where the sloping regions present highly reversible behavior. It is attributed to the more defects contained by soft carbon revealed by neutron total scattering and the associated pair distribution function studies.",
-                "doi": "10.1021/acs.chemmater.6b05474",
-                "issn": "0897-4756",
-                "eissn": "1520-5002",
-                "researcherid-numbers": "Luo, Langli/B-5239-2013",
-                "orcid-numbers": "Luo, Langli/0000-0002-6311-051X",
-                "unique-id": "ISI:000396639400046"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Bommier_2016_AdMatInt_SolidElectrolyteInterphase",
-            "Fields": {
-                "author": "Bommier, Clement and Leonard, Daniel and Jian, Zelang and Stickle, William F. and Greaney, P. Alex and Ji, Xiulei",
-                "title": "New Paradigms on the Nature pof Solid Electrolyte Interphase Formation and Capacity Fading of Hard Carbon Anodes in Na-Ion Batteries",
-                "journal": "Advanced Materials Interfaces",
-                "year": "2016",
-                "volume": "3",
-                "number": "19",
-                "month": "Oct 6",
-                "abstract": "Capacity fading in Na/C half-cells has long been attributed to the continuous formation of the solid electrolyte interphase (SEI). The SEI is often assumed to grow thicker on the carbon anode surface during cycling, eventually rendering it electrochemically inactive. However, the findings here shed new light on this assumption. It is shown that SEI has an inward progression into the anode material, not an outward one. Additionally, it is also reported that the Na-metal counter electrode is hardly an inactive component in the Na/C half-cell. Contrarily, it is a primary source of electrolyte degradation. It is then shown that the combination of SEI formation, along with electrolyte degradation leads to severe kinetic problems at the electrolyte/anode interface, resulting in poor electrochemical performances. However, it is also demonstrated that such negative effects in a Na/C half-cell are easily reversible. By either drastically reducing the current rate, or pairing the carbon electrode with new electrolyte and new Na-metal counter electrode a carbon material with a 70% capacity loss can recover its original performances. These conclusions bring forth valuable insight. This shows that in a Na/C half-cell setting, long-term fading is not due to the carbon material, but caused by electrolyte degradation stemming from interface phenomenon.",
-                "doi": "10.1002/admi.201600449",
-                "article-number": "1600449",
-                "issn": "2196-7350",
-                "unique-id": "ISI:000386058100007"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "inproceedings",
-            "EntryKey": "Manion_2016_IDETC_MoleculeDesign",
-            "Fields": {
-                "author": "Manion, Charles A. and Arlitt, Ryan and Turner, Irem and Campbell, Matthew I. and Greaney, P. Alex",
-                "book-group-author": "ASME",
-                "title": "TOWARDS AUTOMATED DESIGN OF MECHANICALLY FUNCTIONAL MOLECULES",
-                "booktitle": "International Design Engineering Technical Conferences And Computers And Information In Engineering Conference, 2015, Vol 2a",
-                "year": "2016",
-                "pages": "COVER1C-U60",
-                "note": "ASME International Design Engineering Technical Conferences and Computers and Information in Engineering Conference, Boston, MA, AUG 02-05, 2015",
-                "organization": "ASME, Design Engn Div; ASME, Comp & Informat Engn Div",
-                "abstract": "Metal Organic Responsive Frameworks (MORFs) are a proposed new class of smart materials consisting of a Metal Organic Framework (MOF) with photoisomerizing beams (also known as linkers) that fold in response to light. Within a device these new light responsive materials could provide the capabilities such as photo-actuation, photo-tunable rigidity, and photo-tunable porosity. However, conventional MOF architectures are too rigid to allow isomerization of photoactive sub-molecules. We propose a new computational approach for designing MOF linkers to have the required mechanical properties to allow the photoisomer to fold by borrowing concepts from de novo molecular design and graph synthesis. Here we show how this approach can be used to design compliant linkers with the necessary flexibility to be actuated by photoisomerization and used to design MORFs with desired functionality.",
-                "article-number": "V02AT03A004",
-                "isbn": "978-0-7918-5707-6",
-                "unique-id": "ISI:000379883700004"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "inproceedings",
-            "EntryKey": "Harter_2016_ANS_PolynomialChaos",
-            "Fields": {
-                "author": "Jackson R. Harter, P. Alex Greaney, Todd S. Palmer",
-                "title": "Quantifying the Uncertainty in Deterministic Phonon Transport Calculations of Thermal Conductivity using Polynomial Chaos Expansions",
-                "booktitle": "Transactions of American Nuclear Society 2015 Annual Meeting",
-                "year": "2016",
-                "volume": "115",
-                "pages": "611--814",
-                "organization": "American Nuclear Society",
-                "publisher": "American Nuclear Society"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Oliveira_2015_CompMatSci_ThermalResistance",
-            "Fields": {
-                "author": "Oliveira, Laura de Sousa and Greaney, P. Alex",
-                "title": "Thermal resistance from irradiation defects in graphite",
-                "journal": "Computational Materials Science",
-                "year": "2015",
-                "volume": "103",
-                "pages": "68-76",
-                "month": "Jun 1",
-                "abstract": "An atomistic level understanding of how varying types and numbers of irradiation induced defects affect thermal resistance in graphite is vital in designing accident tolerant fuels for next-generation nuclear reactors. To this end we performed equilibrium molecular dynamics simulations and computed the change to thermal conductivity due to a series of clustering and non-clustering point defects using the Green-Kubo method. In addition, we present a comprehensive discussion of several approaches to converge the integral of the heat current autocorrelation function. Our calculations show that more energetically favorable clustering defects exhibit fewer low frequency modes and increase the anisotropic nature of graphite selectively exerting a significant effect on thermal resistance along the c-axis. (C) 2015 Elsevier B.V. All rights reserved.",
-                "doi": "10.1016/j.commatsci.2015.03.001",
-                "issn": "0927-0256",
-                "eissn": "1879-0801",
-                "unique-id": "ISI:000353377100008"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "inproceedings",
-            "EntryKey": "Harter_2015_ANS_PhononBTE",
-            "Fields": {
-                "author": "Jackson R. Harter, P. Alex Greaney, Todd S. Palmer",
-                "title": "Characterization of Thermal Conductivity using Deterministic Phonon Transport in Rattlesnake",
-                "booktitle": "Transactions of American Nuclear Society 2015 Annual Meeting",
-                "year": "2015",
-                "volume": "112",
-                "pages": "829--832",
-                "organization": "American Nuclear Society",
-                "publisher": "American Nuclear Society"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Bommier_2014_Carbon_HardCarbonAnodes",
-            "Fields": {
-                "title": "Predicting capacity of hard carbon anodes in sodium-ion batteries using porosity measurements",
-                "journal": "Carbon",
-                "volume": "76",
-                "number": "",
-                "pages": "165 - 174",
-                "year": "2014",
-                "note": "",
-                "issn": "0008-6223",
-                "doi": "http://dx.doi.org/10.1016/j.carbon.2014.04.064",
-                "url": "http://www.sciencedirect.com/science/article/pii/S0008622314003960",
-                "author": "Clement Bommier and Wei Luo and Wen-Yang Gao and Alex Greaney and Shengqian Ma and Xiulei Ji",
-                "abstract": "We report an inverse relationship between measurable porosity values and reversible capacity from sucrose-derived hard carbon as an anode for sodium-ion batteries (SIBs). Materials with low measureable pore volumes and surface areas obtained through N2 sorption yield higher reversible capacities. Conversely, increasing measurable porosity and specific surface area leads to sharp decreases in reversible capacity. Utilizing a low porosity material, we thus are able to obtain a reversible capacity of 335mAhg−1. These findings suggest that sodium-ion storage is highly dependent on the absence of pores detectable through N2 sorption in sucrose-derived carbon."
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Han_2014_CompMatSci_MOF5",
-            "Fields": {
-                "author": "Han, Luping and Budge, Makenzie and Greaney, P. Alex",
-                "title": "Relationship between thermal conductivity and framework architecture in MOF-5",
-                "journal": "Computational Materials Science",
-                "year": "2014",
-                "volume": "94",
-                "number": "SI",
-                "pages": "292-297",
-                "month": "Nov",
-                "abstract": "Metal-organic-framework materials (MOFs) are the most porous materials known to humanity and thus are promising materials for gas storage and absorption refrigerators-reducing the overall size of the absorption bed. Central to the performance of the MOF is its ability to withdraw heat from the absorbed working gas. Here we use a suite of molecular dynamics simulations to relate structural features of the MOF-5 framework to its thermal transport properties. These were performed for the purpose of establishing design principles that can be used in the development of new MOFs with tailored thermal conductivity. The last part of the paper examines thermal transport in MOF-5 when loaded with hydrogen and deuterium which increases thermal conductivity. (C) 2014 Elsevier B.V. All rights reserved.",
-                "doi": "10.1016/j.commatsci.2014.06.008",
-                "issn": "0927-0256",
-                "eissn": "1879-0801",
-                "unique-id": "ISI:000342360000035"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Hu_2014_JAP_Gecko",
-            "Fields": {
-                "author": "Hu, Congcong and Greaney, P. Alex",
-                "title": "Role of seta angle and flexibility in the gecko adhesion mechanism",
-                "journal": "Journal Of Applied Physics",
-                "year": "2014",
-                "volume": "116",
-                "number": "7",
-                "month": "Aug 21",
-                "abstract": "A model is developed to describe the reversible nature of gecko dry adhesion. The central aspect of this model is that the seta can be easily peeled away from the contacting surface by a small moment at the contact tip. It is shown that this contact condition is very sensitive, but can result in robust adhesion if individual setae are canted and highly flexible. In analogy to the ``cone of friction,'' we consider the `` adhesion region''-the domain of normal and tangential forces that maintain adhesion. Results demonstrate that this adhesion region is highly asymmetric enabling the gecko to adhere under a variety of loading conditions associated with scuttling horizontally, vertically, and inverted. Moreover, under each of these conditions, there is a low energy path to de-adhesion. In this model, obliquely canted seta (as possessed by geckos) rather than vertically aligned fibers (common in synthetic dry adhesive) provides the most robust adhesion. (C) 2014 AIP Publishing LLC.",
-                "doi": "10.1063/1.4892628",
-                "article-number": "074302",
-                "issn": "0021-8979",
-                "eissn": "1089-7550",
-                "unique-id": "ISI:000341189400043"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Qian_2014_SusChemEng_TiO2HybridizedGraphene",
-            "Fields": {
-                "author": "Qian, Wen and Greaney, P. Alex and Fowler, Simon and Chiu, Sheng-Kuei and Goforth, Andrea M. and Jiao, Jun",
-                "title": "Low-Temperature Nitrogen Doping in Ammonia Solution for Production of N-Doped TiO2-Hybridized Graphene as a Highly Efficient Photocatalyst for Water Treatment",
-                "journal": "Acs Sustainable Chemistry & Engineering",
-                "year": "2014",
-                "volume": "2",
-                "number": "7",
-                "pages": "1802-1810",
-                "month": "Jul",
-                "abstract": "To facilitate the potential application of TiO2 as an efficient photocatalyst, the modulation of its band gap and electrical structure is of great significance. Herein, we report a very simple nitrogen (N)-doping method to obtain N-doped TiO2, which is hybridized with graphene sheets at a temperature as low as 180 degrees C and using an ammonia solution as the N source and reaction medium. X-ray photoelectron spectroscopy analysis revealed that the atomic N level could reach 2.4 atomic percent when the reaction time was 14 h. Photoluminescence (PL) emission spectra indicated that N-doped TiO2/graphene composites have drastically suppressed TiO2 PL intensity when compared to undoped TiO2, confirming the lower recombination rate of electron hole pairs in the N-doped TiO2. Additionally, photodegradation data showed that the decomposition rate of methylene blue with our N-doped TiO2/graphene photocatalyst is twice as fast as a commercial Degussa P25 catalyst. Furthermore, density functional theory (DFT) calculations demonstrate that N doping creates empty states in the band gap of the TiO2 that are below the Fermi energy of graphene. Thus, when N-doped TiO2 is brought into contact with graphene, these states become filled by electrons from the graphene, shifting the TiO2 bands upward relative to the graphene. Such a shift in band alignment across the TiO2/graphene heterojunction makes transfer of the photoexcited electron more energetically favorable. This work provides a very convenient chemical route to the scalable production of N-doped TiO2/graphene photocatalyst for potential applications in wastewater treatment.",
-                "doi": "10.1021/sc5001176",
-                "issn": "2168-0485",
-                "unique-id": "ISI:000338748400035"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Oliveira_2013_MRS_DefectThermalResistance",
-            "Fields": {
-                "title": "Mapping thermal resistance around vacancy defects in graphite",
-                "volume": "1543",
-                "journal": "MRS Proceedings",
-                "publisher": "Cambridge University Press",
-                "author": "Oliveira, Laura de Sousa and Greaney, P. Alex",
-                "year": "2013",
-                "pages": "65–70",
-                "abstract": "High purity bulk graphite is applicable in many capacities in the nuclear industry. The thermal conductivity of graphite has been found to vary as a function of how its morphology changes on the nanoscale, and the type and number of defects present. We compute thermal conductivities at the nanolevel using large scale classical molecular dynamics simulations and by employing the Green-Kubo method in a set of in silico experiments geared towards understanding the impact of defects in the thermal conductivity of graphite. We present the results obtained for systems with 1– 3 vacancies, and compile a summary of some of the methods applied and difficulties encountered.",
-                "doi": "10.1557/opl.2013.672"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Sklan_2013_JAP_ResonantHeatTransfer",
-            "Fields": {
-                "author": "Sklan, Sophia R. and Greaney, P. Alex and Grossman, Jeffrey C.",
-                "title": "Resonant behavior in heat transfer across weak molecular interfaces",
-                "journal": "Journal Of Applied Physics",
-                "year": "2013",
-                "volume": "114",
-                "number": "23",
-                "month": "Dec 21",
-                "abstract": "Molecular dynamics (MD) simulations are used to study, in detail, the transfer of thermal (vibrational) energy between objects with discrete vibrational spectra to those with a semi-continuum of spectra. The transfer of energy is stochastic and strongly dependent on the instantaneous separation between the bodies. The insight from the MD simulations can be captured with a simple classical model that agrees well with quantum models. This model can be used to optimize systems for efficient frequency selective energy transfer, which can be used in designing a chemical sensor through nanomechanical resonance spectroscopy. (C) 2013 AIP Publishing LLC.",
-                "doi": "10.1063/1.4851035",
-                "article-number": "234308",
-                "issn": "0021-8979",
-                "eissn": "1089-7550",
-                "unique-id": "ISI:000329056800053"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Saranam_2013_JPhysD_CNTDissipation",
-            "Fields": {
-                "author": "Saranam, Venkata Rajesh and Greaney, P. Alex",
-                "title": "Surprising behaviour during dissipation and collision of flexural waves in carbon nanotubes",
-                "journal": "Journal Of Physics D-applied Physics",
-                "year": "2013",
-                "volume": "46",
-                "number": "48",
-                "month": "Dec 4",
-                "abstract": "The manuscript reports on simulations of the intrinsic dissipation of standing and travelling flexural vibrations in carbon nanotubes. It is found that extended travelling and standing waves exhibit anomalous dissipation, during which the excited modes experience massive damping that is triggered by the accumulation of energy in special gateway modes. In the second part of this work the attenuation of travelling flexural wave packets is examined-including the collisions between wave packets. Surprisingly, these wave packets show markedly different dissipation behaviour from extended waves with the same wavelength and amplitude. Moreover, the wave packet collisions are seen to be sensitive to the direction of collision, hinting at temperature gradient induced reduction of the thermal conductivity. Following the cascade of energy as it dissipates it is seen that scattering of energy into other flexural modes has little effect on the net energy flux, while dissipation into non-flexural modes is thermally resistive.",
-                "doi": "10.1088/0022-3727/46/48/485502",
-                "article-number": "485502",
-                "issn": "0022-3727",
-                "eissn": "1361-6463",
-                "unique-id": "ISI:000327539500030"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Greaney_2011_MetTrans_Mpemba",
-            "Fields": {
-                "author": "Greaney, P. Alex and Lani, Giovanna and Cicero, Giancarlo and Grossman, Jeffrey C.",
-                "title": "Mpemba-Like Behavior in Carbon Nanotube Resonators",
-                "journal": "Metallurgical And Materials Transactions A-physical Metallurgy And Materials Science",
-                "year": "2011",
-                "volume": "42A",
-                "number": "13",
-                "pages": "3907-3912",
-                "month": "Dec",
-                "abstract": "Surprising Mpemba-like dissipation is observed during computer simulated ring-down of the flexural modes of a single-walled carbon nanotube resonator. Vibrations are made to decay to zero faster by adding a larger initial excitation. We liken this counterintuitive observation to the well-known Mpemba effect in which hot water freezes faster that cold water. In both cases, the system seems to pose a memory of its thermal history; a paradoxical result that is reconciled if the dissipative state of the system is not described uniquely by the system's average temperature. A vibrational mode projection algorithm is used to track the dissipation pathway, showing that dissipation is dependent strongly on the development of an athermal phonon population. The implications of Mpemba-like behavior in more general, and continuously driven, nanomechanical systems are discussed.",
-                "doi": "10.1007/s11661-011-0843-4",
-                "issn": "1073-5623",
-                "orcid-numbers": "Cicero, Giancarlo/0000-0002-2920-9882",
-                "unique-id": "ISI:000297253100012"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Raghunathan_2011_JChemPhys_Phonostat",
-            "Fields": {
-                "author": "Raghunathan, Rajamani and Greaney, P. Alex and Grossman, Jeffrey C.",
-                "title": "Phonostat: Thermostatting phonons in molecular dynamics simulations",
-                "journal": "Journal Of Chemical Physics",
-                "year": "2011",
-                "volume": "134",
-                "number": "21",
-                "month": "Jun 7",
-                "abstract": "Thermostat algorithms in a molecular dynamics simulation maintain an average temperature of a system by regulating the atomic velocities rather than the internal degrees of freedom. Herein, we present a ``phonostat'' algorithm that can regulate the total energy in a given internal degree of freedom. In this algorithm, the modal energies are computed at each time step using a mode-tracking scheme and then the system is driven by an external driving force of desired frequency and amplitude. The rate and amount of energy exchange between the phonostat and the system is controlled by two distinct damping parameters. Two different schemes for controlling the external driving force amplitude are also presented. In order to test our algorithm, the method is applied initially to a simple anharmonic oscillator for which the role of various phonostat parameters can be carefully tested. We then apply the phonostat to a more realistic (10,0) carbon nanotube system and show how such an approach can be used to regulate energy of highly anharmonic modes. (c) 2011 American Institute of Physics. [doi:10.1063/1.3597605]",
-                "doi": "10.1063/1.3597605",
-                "article-number": "214117",
-                "issn": "0021-9606",
-                "unique-id": "ISI:000291402700018"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "incollection",
-            "EntryKey": "Greaney_2011_BookChapter_SimulatingThermomechanicalPhenomena",
-            "Fields": {
-                "abstract": "Using nanoscale structures, systems have the potential to radically alter the way that we use, and think of heat. It is a field that abounds with opportunity, from expanding the limits of thermal conductivity, to diagnostics, phononics, and adding worth to heat beyond its face caloric value. In this chapter we give a brief survey of recent experimental progress, and a discussion of computational approaches to nanoscale thermal problems. Explored are the merits of calculation (theory) versus simulation. In the second part of the chapter a set of case studies are used to demonstrate a selection of computational methods for simulating and analyzing heat transfer and dissipation in nanoscale systems. Despite much progress in advancing methodology for computing and simulating heat, numerous important challenges are yet to be surmounted. Our aim in this chapter is to encourage and spur much-needed further work in this exciting field.",
-                "doi": "10.1039/9781849732680-00109",
-                "author": "Greaney, P. Alex and Grossman, Jeffrey C.",
-                "editor": "Bichoutskaia, Elena",
-                "title": "Simulating Thermomechanical Phenomena of Nanoscale Systems",
-                "booktitle": "Computational Nanoscience",
-                "series": "RSC Theoretical and Computational Chemistry Series",
-                "year": "2011",
-                "number": "4",
-                "pages": "109-146",
-                "issn": "2041-3181",
-                "isbn": "978-1-84973-268-0",
-                "researcherid-numbers": "Besley, Elena/I-5672-2013",
-                "orcid-numbers": "Besley, Elena/0000-0002-9910-7603",
-                "unique-id": "ISI:000296272000006"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Greaney_2009_NanoLett_AnomalousDissipation",
-            "Fields": {
-                "author": "Greaney, P. Alex and Lani, Giovanna and Cicero, Giancarlo and Grossman, Jeffrey C.",
-                "title": "Anomalous Dissipation in Single-Walled Carbon Nanotube Resonators",
-                "journal": "Nano Letters",
-                "year": "2009",
-                "volume": "9",
-                "number": "11",
-                "pages": "3699-3703",
-                "month": "Nov",
-                "abstract": "We observe a new anomalous and transient process of intrinsic dissipation in simulations of the ring-down of flexural modes in single-walled carbon nanotube (CNT) resonators. The effect is pronounced, causing the quality factor of the mode to be reduced by more that 95% for tens of picoseconds. The anomalous dissipation depends on the CNT temperature and the energy in the mode, and remarkably increasing the excitation energy in the resonator causes it to decay to zero faster. By tracking the cascade of energy as it dissipates we identify ``gateway'' modes that provide important channels for dissipation. The processes we observe show that an athermal phonon population accompanying dissipation can strongly influence the quality factor in nanoelectromechanical devices.",
-                "doi": "10.1021/nl901706y",
-                "issn": "1530-6984",
-                "eissn": "1530-6992",
-                "orcid-numbers": "Cicero, Giancarlo/0000-0002-2920-9882",
-                "unique-id": "ISI:000271566400006"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "{Greaney_2008_NanoLett_NanomechanicalResonanceSpectroscopy",
-            "Fields": {
-                "author": "Greaney, P. Alex and Grossman, Jeffrey C.",
-                "title": "Nanomechanical resonance spectroscopy: A novel route to ultrasensitive label-free detection",
-                "journal": "Nano Letters",
-                "year": "2008",
-                "volume": "8",
-                "number": "9",
-                "pages": "2648-2652",
-                "month": "Sep",
-                "abstract": "We propose a new chemical detection technique in which an analyte's vibrational frequencies are interrogated directly using an array of nanomechanical resonators. This ``nanomechanical resonance spectroscopy'' (NRS) could permit label-free chemical detection, combining the high sensitivity of nanomechanical approaches with the high selectivity of traditional spectroscopy. A computational proof of principle is presented, demonstrating the central concept: exploiting resonant exchange of vibrational energy for chemical identification. Guidelines for experimental realization of NRS are discussed.",
-                "doi": "10.1021/nl0808278",
-                "issn": "1530-6984",
-                "unique-id": "ISI:000259140200009"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Greaney_2007_PRL_NanomechanicalEnergyTransfer",
-            "Fields": {
-                "author": "Greaney, P. Alex and Grossman, Jeffrey C.",
-                "title": "Nanomechanical energy transfer and resonance effects in single-walled carbon nanotubes",
-                "journal": "Physical Review Letters",
-                "year": "2007",
-                "volume": "98",
-                "number": "12",
-                "month": "Mar 23",
-                "abstract": "Molecular dynamics simulations are employed to elucidate the important factors in mechanical energy transfer between carbon nanotubes. Our calculations show that sharp resonance effects allow for near complete and highly efficient energy transfer. In addition, the weak coupling between two nanotubes sets the time scale for the energy transfer. The simulations provide the mechanistic basis for a theoretical description of lattice vibration mediated heat flow in nanoscale materials.",
-                "doi": "10.1103/PhysRevLett.98.125503",
-                "article-number": "125503",
-                "issn": "0031-9007",
-                "unique-id": "ISI:000245135400036"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Robinson_2005_NanoLett_TruncatedPyramids",
-            "Fields": {
-                "author": "Robinson, JT and Liddle, JA and Minor, A and Radmilovic, V and Yi, DO and Greaney, PA and Long, KN and Chrzan, DC and Dubon, OD",
-                "title": "Metal-induced assembly of a semiconductor island lattice: Ge truncated pyramids on Au-patterned Si",
-                "journal": "Nano Letters",
-                "year": "2005",
-                "volume": "5",
-                "number": "10",
-                "pages": "2070-2073",
-                "month": "Oct",
-                "abstract": "We report the two-dimensional alignment of semiconductor islands using rudimentary metal patterning to control nucleation and growth. In the Ge on Si system, a square array of submicron Au dots on the Si (001) surface induces the assembly of deposited Ge adatoms into an extensive island lattice. Remarkably, these highly ordered Ge islands form between the patterned Au dots and are characterized by a unique truncated pyramidal shape. A model based on patterned diffusion barriers explains the observed ordering and establishes general criteria for the broader applicability of such a directed assembly process to quantum dot ordering.",
-                "doi": "10.1021/nl051719d",
-                "issn": "1530-6984",
-                "researcherid-numbers": "Robinson, Jeremy/F-2748-2010 Liddle, James/A-4867-2013",
-                "orcid-numbers": "Liddle, James/0000-0002-2508-7910",
-                "unique-id": "ISI:000232623700041"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Greaney_2005_PRB_AnisotropicDiffusionGrowth",
-            "Fields": {
-                "author": "Greaney, PA and Chrzan, DC",
-                "title": "Irreversible island growth in the presence of anisotropic surface diffusion with long jumps",
-                "journal": "Physical Review B",
-                "year": "2005",
-                "volume": "72",
-                "number": "11",
-                "month": "Sep",
-                "abstract": "Kinetic Monte Carlo (KMC) simulations are used to investigate the dynamics of island growth during submonolayer epitaxy in the presence of anisotropic surface diffusion, and the influence of a recently hypothesized crowdion diffusion mechanism. An existing rate equation mean-field analysis of island growth is extended to include anisotropic diffusion. The mean-field analysis is found to be at odds with results from KMC simulations indicating that the details of the surface diffusion mechanism influence the nucleation rate. It is found that anisotropy in adatom hopping reduces the density of stable islands. It is also found that although the shape of the island size distribution is sensitive to island relaxation processes, it is not discernibly affected by hopping anisotropy with ratios D-xx/D-yy up to 16.",
-                "doi": "10.1103/PhysRevB.72.115432",
-                "article-number": "115432",
-                "issn": "1098-0121",
-                "unique-id": "ISI:000232229100157"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Ertekin_2005_JAP_EquilibriumLimitsOfCoherency",
-            "Fields": {
-                "author": "Ertekin, E and Greaney, PA and Chrzan, DC and Sands, TD",
-                "title": "Equilibrium limits of coherency in strained nanowire heterostructures",
-                "journal": "Journal Of Applied Physics",
-                "year": "2005",
-                "volume": "97",
-                "number": "11",
-                "month": "Jun 1",
-                "abstract": "Due to their unique boundary conditions, nanowire heterostructures may exhibit defect-free interfaces even for systems with large lattice mismatch. Heteroepitaxial material integration is limited by lattice mismatches in planar systems, but we use a variational approach to show that nanowire heterostructures are more effective at relieving mismatch strain coherently. This is an equilibrium model based on the Matthews critical thickness in which the lattice mismatch strain is shared by the nanowire overlayer and underlayer, and could as well be partially accomodated by the introduction of a pair of misfit dislocations. The model is highly portable to other nanowire material systems and can be used to estimate critical feature sizes. We find that the critical radius of this system is roughly an order of magnitude larger than the critical thickness of the corresponding thin film/substrate material system. Finite element analysis is used to assess some aspects of the model; in particular, to show that the variational approach describes well the decay of the strain energy density away from the interface. (C) 2005 American Institute of Physics.",
-                "doi": "10.1063/1.1903106",
-                "article-number": "114325",
-                "issn": "0021-8979",
-                "researcherid-numbers": "Sands, Timothy/D-2133-2009 Ertekin, Elif/D-6764-2013",
-                "orcid-numbers": "Sands, Timothy/0000-0001-9718-6515 Ertekin, Elif/0000-0002-7816-1803",
-                "unique-id": "ISI:000229804700119"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "inproceedings",
-            "EntryKey": "Greaney_2004_MRS_IslandGrowth",
-            "Fields": {
-                "title": "Island Growth in the Presence of Anisotropic Diffusion with Long Atomic Jumps",
-                "author": "P. Alex Greaney and D. C. Chrzan",
-                "booktitle": "Materials Research Society Symposium Proceedings",
-                "volume": "859",
-                "pages": "130",
-                "year": "2004",
-                "organization": "Warrendale, Pa.; Materials Research Society; 1999",
-                "abstract": "Kinetic Monte Carlo (KMC) simulations have been conducted to study the influence of a recently predicted surface crowdion on the nucleation and growth of islands during the the early stages of thin film epitaxy. Comparisons are made between island populations grown in the the presence of the same anisotropic macroscopic diffusion tensor but with differing microscopic diffusion mechanisms. In one instance only anisotropic nearest neighbour hopping is permitted, and in other simulations nearest neighbour hopping is isotropic but long atomic jumps are permitted in one direction. The densities of stable islands are compared with the predictions of a mean field set of rate equations. It is found that long atomic jumps reduce the efficiency with which monomers search the bare substrate and subsequently increase the density of stable islands. The long atomic jumps also change the concentration of monomers around growing islands, and alter island-island correlations."
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Xiao_2004_PRB_PtSurfacedDiffusion",
-            "Fields": {
-                "author": "Xiao, W and Greaney, PA and Chrzan, DC",
-                "title": "Pt adatom diffusion on strained Pt(001)",
-                "journal": "Physical Review B",
-                "year": "2004",
-                "volume": "70",
-                "number": "3",
-                "month": "Jul",
-                "abstract": "The diffusion of Pt on unreconstructed, strained Pt(001) is considered. The strain dependence for the energy barrier to adatom diffusion is computed using the embedded atom method. The computations predict that for a broad range of accessible strain states, the dominant diffusion mechanism is mediated by the formation and motion of a surface crowdion. Further, the saddle-point configuration for ``simple'' hopping is predicted to extend over a number of lattice sites. The diffusion energy barriers for both exchange and hopping mechanisms depend on the size of the cell used in the calculation.",
-                "doi": "10.1103/PhysRevB.70.033402",
-                "article-number": "033402",
-                "issn": "2469-9950",
-                "eissn": "2469-9969",
-                "unique-id": "ISI:000222996700024"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "phdthesis",
-            "EntryKey": "Greaney_2003_Thesis",
-            "Fields": {
-                "author": "P. Alex Greaney",
-                "title": "Theoretical studies of nano self-assembly",
-                "school": "University of California, Berkeley",
-                "year": "2003",
-                "pages": "148",
-                "abstract": "The role of surface strain in the growth of self-assembling nanostructures is investigated theoretically. The magnitude of the strain at the surface of a film generated by a buried array of misfit dislocations is calculated. It is demonstrated that such a film provides a suitable substrate for wavelength controlled spinodal decomposition of a second film grown on top of it. The role of homogeneous substrate strain is discussed in the context of how it affects diffusion processes and how these, in turn, impact island growth. An existing mean-field analysis of island growth is extended to include anisotropic diffusion. The results of the mean field calculations are compared with kinetic Monte Carlo simulations. It is found that anisotropy in adatom hopping reduces the density of stable islands. It is also found that although the shape of island size distribution is sensitive to island relaxation processes, it is not discernibly affected by hopping anisotropy with ratios $fracD_xxD_yy$ up to 16. A diffusion mechanism involving the recently discovered surface crowdion is hypothesised and the implications of this mechanism on island growth are studied through KMC simulations."
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Greaney_2003_APL_Spinodal",
-            "Fields": {
-                "author": "Greaney, PA and Chrzan, DC and Clemens, BM and Nix, WD",
-                "title": "Self-assembled nanostructures through wavelength-controlled spinodal decomposition",
-                "journal": "Applied Physics Letters",
-                "year": "2003",
-                "volume": "83",
-                "number": "7",
-                "pages": "1364-1366",
-                "month": "Aug 18",
-                "abstract": "The self-assembly of nanostructured materials through controlled wavelength spinodal decomposition is explored using a simple model. The model assumes that a homogeneous alloy is deposited on a rigid, periodically strained substrate. A linear stability analysis establishes that the film will undergo spinodal decomposition with the dominant wavelength determined by the periodicity of the substrate strain. (C) 2003 American Institute of Physics.",
-                "doi": "10.1063/1.1602581",
-                "issn": "0003-6951",
-                "eissn": "1077-3118",
-                "unique-id": "ISI:000184748600028"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Xiao_2003_PRL_Crowdion",
-            "Fields": {
-                "author": "Xiao, W and Greaney, PA and Chrzan, DC",
-                "title": "Adatom transport on strained Cu(001): Surface crowdions",
-                "journal": "Physical Review Letters",
-                "year": "2003",
-                "volume": "90",
-                "number": "15",
-                "month": "Apr 18",
-                "abstract": "Surface strain is often suggested as a means to control the self-assembled growth of nanostructures. Strain affects both the kinetics of nucleation and the free energies of formation of the desired nanostructure. It is demonstrated here that diffusion on some strained surfaces may be mediated by newly identified adatom transport mechanism: the formation and motion of a surface crowdion.",
-                "doi": "10.1103/PhysRevLett.90.156102",
-                "article-number": "156102",
-                "issn": "0031-9007",
-                "eissn": "1079-7114",
-                "unique-id": "ISI:000182320200034"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "inproceedings",
-            "EntryKey": "Ertekin_2002_MRS_MismatchedHeterowires",
-            "Fields": {
-                "author": "Ertekin, E and Greaney, PA and Sands, TD and Chrzan, DC",
-                "editor": "Kilmov, VI and Buriak, JM and Wayner, DDM and Priolo, F and White, B and Tsybeskov, L",
-                "title": "Equilibrium analysis of lattice-mismatched nanowire heterostructures",
-                "booktitle": "Quantum Confined Semiconductor Nanostructures",
-                "series": "Materials Research Society Symposium Proceedings",
-                "year": "2003",
-                "volume": "737",
-                "pages": "769-774",
-                "note": "Symposium on Quantum Confined Semiconductor Nanostructures held at the 2002 MRS Fall Meeting, BOSTON, MA, DEC 02, 2001-DEC 05, 2002",
-                "organization": "Mat Res Soc; Evident Technol Inc; IBM TJ Watson Res Ctr; Los Alamos Natl Lab; Motorola Inc; Texas A&M Univ",
-                "abstract": "The quality of lattice-mismatched semiconductor heterojunctions is often limited by the presence of misfit dislocations. Nanowire geometries offer the promise of creating highly mismatched, yet dislocation free heterojunctions. A simple model, based upon the critical thickness model of Matthews and Blakeslee for misfit dislocation formation in planar heterostructures, illustrates that there exists a critical nanowire radius for which a coherent heterostructured nanowire system is unstable with respect to the formation of misfit dislocations. The model indicates that within the nanowire geometry, it should be possible to create perfect heterojunctions with large lattice-mismatch.",
-                "issn": "0272-9172",
-                "isbn": "1-55899-674-5",
-                "researcherid-numbers": "Sands, Timothy/D-2133-2009",
-                "orcid-numbers": "Sands, Timothy/0000-0001-9718-6515",
-                "unique-id": "ISI:000183136600114"
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Greaney_2002_CompMatSci_InternalFriction",
-            "Fields": {
-                "title": "Continuum simulation of dislocation dynamics: predictions for internal friction response",
-                "journal": "Computational Materials Science",
-                "volume": "25",
-                "number": "3",
-                "pages": "387 - 403",
-                "year": "2002",
-                "note": "",
-                "issn": "0927-0256",
-                "doi": "http://dx.doi.org/10.1016/S0927-0256(02)00242-2",
-                "url": "http://www.sciencedirect.com/science/article/pii/S0927025602002422",
-                "author": "P. Alex Greaney and Lawrence H. Friedman and D.C. Chrzan",
-                "abstract": "The amplitude dependent mechanical loss due to bowing of an idealized Frank–Read source is studied using both simulation and analytical techniques. Dislocations are modeled within isotropic elasticity theory, and are assumed to be in the over-damped limit. The dynamics incorporated in the model are tested directly, by comparison with the exact solution to the linearized isotropic elasticity theory of the mechanical losses. The model is then applied to the study of the mechanical losses from two coupled dislocations. It is concluded that the implemented dislocation dynamics method represents an accurate solution to the initially stated problem, that the elastic string model often employed to model losses is inadequate, and that dislocation interactions may alter substantially the dislocation component of the spectrum observed during internal friction experiments."
-            }
-        },
-        {
-            "ObjectType": "entry",
-            "EntryType": "article",
-            "EntryKey": "Greaney_1999_MRS_InternalFriction",
-            "Fields": {
-                "title": "Amplitude Dependent Internal Friction within a Continuum Simulation",
-                "volume": "578",
-                "journal": "Materials Research Society Symposium Proceedings",
-                "publisher": "Cambridge University Press",
-                "author": "Greaney, P. Alex and Chrzan, D. C.",
-                "year": "1999",
-                "abstract": "The mechanical losses due to the bowing of isolated Frank-Read sources under application of periodic loads is studied within a continuum simulation of dislocation dynamics. The dislocations are modelled within isotropic elasticity theory and assumed to be in the overdamped limit. Dislocation radiation effects are neglected. The mechanical losses are studied as a function of bias stress, amplitude of the periodic stress and frequency. The frequencies studied lie between 10 KHz and 1 MHz. Under high stresses applied at low frequencies, a deviation from the expected Lorentzian resonance shape is observed. The physical origins of this deviation are discussed.",
-                "doi": "10.1557/PROC-578-161"
-            }
-        }
-    ]
+  "featured": [
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Wu_2019_NatEn_Grotthuss",
+      "Fields": {
+        "doi": "10.1038/s41560-018-0309-7",
+        "url": "https://doi.org/10.1038/s41560-018-0309-7",
+        "year": "2019",
+        "month": "jan",
+        "publisher": "Springer Nature",
+        "author": "Xianyong Wu and Jessica J. Hong and Woochul Shin and Lu Ma and Tongchao Liu and Xuanxuan Bi and Yifei Yuan and Yitong Qi and T. Wesley Surta and Wenxi Huang and Joerg Neuefeind and Tianpin Wu and P. Alex Greaney and Jun Lu and Xiulei Ji",
+        "title": "Diffusion-free Grotthuss topochemistry for high-rate and long-life proton batteries",
+        "journal": "Nature Energy",
+        "abstract": "The design of Faradaic battery electrodes that exhibit high rate capability and long cycle life equivalent to those of the electrodes of electrical double-layer capacitors is a big challenge. Here we report a strategy to fill this performance gap using the concept of Grotthuss proton conduction, in which proton transfer takes place by means of concerted cleavage and formation of O–H bonds in a hydrogen-bonding network. We show that in a hydrated Prussian blue analogue (Turnbull’s blue) the abundant lattice water molecules with a contiguous hydrogen-bonding network facilitate Grotthuss proton conduction during redox reactions. When using it as a battery electrode, we find high-rate behaviours at 4,000 C (380 A g−1, 508 mA cm−2), and a long cycling life of 0.73 million cycles. These results for diffusion-free Grotthuss topochemistry of protons, in contrast to orthodox battery electrochemistry, which requires ion diffusion inside electrodes, indicate a potential direction to revolutionize electrochemical energy storage for high-power applications."
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Bommier_2018_ChemMat_Na_HardCarbon",
+      "Fields": {
+        "title": "Electrochemical Properties and Theoretical Capacity For Sodium Storage In Hard Carbon—Insights From First Principles Calculations",
+        "author": "Bommier, Clement and Ji, Xiulei and Greaney, P Alex",
+        "journal": "Chemistry of Materials",
+        "volume": "0",
+        "number": "0",
+        "pages": "null",
+        "year": "0",
+        "doi": "10.1021/acs.chemmater.8b01390",
+        "abstract": " This paper utilizes density functional theory calculations to explore amorphous carbon materials, and concludes that the theoretical capacity is between 300 and 400 mAh g–1, depending on the degree of defects. This conclusion arises from a comprehensive number of simulations used to validate the experimentally determined storage mechanism, with these results then being extrapolated to elucidate a theoretical capacity limit. Through investigating the breadth of structures, with multiple Na configurations, the studies lead to four major conclusions. First, we found that the nature of Na storage in carbon materials changes with increasing Na concentrations in a continuum from ionic storage to metallic plating. Second, we revealed the critical role of the intersheet spacing, stacking misalignment, and effects of spacing expansion on the feasibility of Na intercalation into graphitic structures. This leads to the third and fourth conclusion, which stipulates that the results provided here offer compelling support towards an earlier experimentally derived Na ion storage for hard carbon materials, along with the existence of a theoretical limit of sodium ion storage in hard carbon materials. Moreover, the techniques and scope of the work involved are highly relevant to future simulations exploring amorphous carbon as an active material, whether it should be for Li-ion battery anodes, supercapacitors, or catalysts.",
+        "url": "https://doi.org/10.1021/acs.chemmater.8b01390"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Truszkowska_2018_JMPS_AnisotropicElasticityDEM",
+      "Fields": {
+        "title": "A discrete element method representation of an anisotropic elastic continuum",
+        "journal": "Journal of the Mechanics and Physics of Solids",
+        "volume": "121",
+        "pages": "363 - 386",
+        "year": "2018",
+        "issn": "0022-5096",
+        "doi": "https://doi.org/10.1016/j.jmps.2018.04.015",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0022509618302394",
+        "author": "Agnieszka Truszkowska and Qin Yu and P. Alex Greaney and T. Matthew Evans and Jamie J. Kruzic",
+        "keywords": "Discrete element method, Anisotropic elasticity, Granular mechanics",
+        "abstract": "A method for modeling cubically anisotropic elasticity within the discrete element method is presented. The discrete element method (DEM) is an approach originally intended for modeling granular materials (sand, soil, and powders); however, recent developments have usefully extended it to model stochastic mechanical processes in monolithic solids which, to date, have been assumed to be elastically isotropic. The method presented here for efficiently capturing cubic elasticity in DEM is an important prerequisite for further extending DEM to capture the influence of elastic anisotropy on the mechanical response of polycrystals, composites, etc. The system demonstrated here uses a directionally assigned stiffness in the bonds between adjacent elements and includes separate schemes for achieving anisotropy with Zener ratios greater and smaller than one. The model framework is presented along with an analysis of the accessible space of elastic properties that can be modeled and an artificial neural network interpolation scheme for mapping input parameters to model elastic behavior."
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Harter_2017_JHT_BTEinUO2withXe",
+      "Fields": {
+        "title": "Deterministic Phonon Transport Predictions of Thermal Conductivity in Uranium Dioxide With Xenon Impurities",
+        "author": "Harter, Jackson R and de Sousa Oliveira, Laura and Truszkowska, Agnieszka and Palmer, Todd S and Greaney, P Alex",
+        "journal": "Journal of Heat Transfer",
+        "volume": "140",
+        "number": "5",
+        "pages": "051301",
+        "year": "2018",
+        "doi": "10.1115/1.4038554",
+        "url": "https://doi.org/10.1115/1.4038554",
+        "publisher": "ASME International",
+        "abstract": "We present a method for solving the Boltzmann transport equation (BTE) for phonons by modifying the neutron transport code Rattlesnake which provides a numerically efficient method for solving the BTE in its self-adjoint angular flux (SAAF) form. Using this approach, we have computed the reduction in thermal conductivity of uranium dioxide (UO2) due to the presence of a nanoscale xenon bubble across a range of temperatures. For these simulations, the values of group velocity and phonon mean free path in the UO2 were determined from a combination of experimental heat conduction data and first principles calculations. The same properties for the Xe under the high pressure conditions in the nanoscale bubble were computed using classical molecular dynamics (MD). We compare our approach to the other modern phonon transport calculations, and discuss the benefits of this multiscale approach for thermal conductivity in nuclear fuels under irradiation."
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Manion_2016_DaltonTrans_DesignOFlexibleLinkers",
+      "Fields": {
+        "author": "Manion, Charles and Arlitt, Ryan and Campbell, Matthew I. and Tumer, Irem and Stone, Rob and Greaney, P. Alex",
+        "title": "Automated design of flexible linkers",
+        "journal": "Dalton Transactions",
+        "year": "2016",
+        "volume": "45",
+        "number": "10",
+        "pages": "4338-4345",
+        "abstract": "This paper presents a method for the systematic and automated design of flexible organic linkers for construction of metal organic-frameworks (MOFs) in which flexibility, compliance, or other mechanically exotic properties originate at the linker level rather than from the framework kinematics. Our method couples a graph grammar method for systematically generating linker like molecules with molecular dynamics modeling of linkers' mechanical response. Using this approach we have generated a candidate pool of >59 000 hypothetical linkers. We screen linker candidates according to their mechanical behaviors under large deformation, and extract fragments common to the most performant candidate materials. To demonstrate the general approach to MOF design we apply our system to designing linkers for pressure switching MOFs-MOFs that undergo reversible structural collapse after a stress threshold is exceeded.",
+        "doi": "10.1039/c5dt03511b",
+        "issn": "1477-9226",
+        "eissn": "1477-9234",
+        "unique-id": "ISI:000371710500033"
+      }
+    }
+  ],
+  "theRest": [
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Nimmala_2018_MSR_Sharvin",
+      "Fields": {
+        "title": "Characterizing Macroscopic Thermal Resistance Across Contacting Interfaces Through Local Understanding of Thermal Transport",
+        "author": "Nimmala, Seshu and Hosseini, S Aria and Harter, Jackson and Palmer, Todd and Lenz, Eric and Greaney, P Alex",
+        "journal": "MRS Advances",
+        "volume": "3",
+        "number": "44",
+        "pages": "2735--2741",
+        "year": "2018",
+        "publisher": "Materials Research Society",
+        "abstract": "Thermal resistance across the interface between touching surfaces is critical for many industrial applications. We developed a network model to predict the macroscopic thermal resistance of mechanically contacting surfaces. Contacting interfaces are fractally rough, with small islands of locally intimate contact separated by regions with a wider gas filled boundary gap. Heat flow across the interface is therefore heterogeneous and thus the contact model is based on a network of thermal resistors representing boundary resistance at local contacts and the access resistance for lateral transport to contacts. Molecular dynamics simulations have been performed to characterize boundary resistance of Silicon Alumina interfaces for testing the sensitivity of thermal resistance to contact opening. Boltzmann transport simulations of access resistance in Si are conducted in the ballistic transport regime.",
+        "doi": "10.1557/adv.2018.485",
+        "url": "https://www.cambridge.org/core/journals/mrs-advances/article/characterizing-macroscopic-thermal-resistance-across-contacting-interfaces-through-local-understanding-of-thermal-transport/2D16C30900EC548099091F30084DCB98"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Lou_2018_SSCom_SpinPhononInteractionsInSi",
+      "Fields": {
+        "doi": "10.1016/j.ssc.2018.08.008",
+        "url": "https://doi.org/10.1016/j.ssc.2018.08.008",
+        "year": "2018",
+        "month": "nov",
+        "publisher": "Elsevier BV",
+        "volume": "283",
+        "pages": "37--42",
+        "author": "Paul C. Lou and Laura de Sousa Oliveira and Chi Tang and Alex Greaney and Sandeep Kumar",
+        "title": "Spin phonon interactions and magneto-thermal transport behavior in p-Si",
+        "journal": "Solid State Communications",
+        "abstract": "The spin-phonon interaction is the dominant process for spin relaxation in Si, and as thermal transport in Si is dominated by phonons, one would expect spin polarization to influence Si's thermal conductivity. Here we report the experimental evidence of just such a coupling. We have performed concurrent measurements of spin, charge, and phonon transport in p-doped Si across a wide range of temperatures. In an experimental system of a free-standing 2 μm p-Si beam coated on one side with a thin (25 nm) ferromagnetic spin injection layer, we use the self-heating 3ω method to measure changes in electrical and thermal conductivity under the influence of a magnetic field. These magneto-thermal transport measurements reveal signatures in the variation of electrical and thermal transport that are consistent with spin-phonon interaction. Raman spectroscopy measurements and first principle's calculations support that these variations are due to spin-phonon interaction. Spin polarization leads to softening of phonon modes, a reduction in the group velocity of acoustic modes, and a subsequent decrease in thermal conductivity at room temperature. Moreover, magneto-thermal transport measurements as a function of temperature indicate a change in the spin-phonon relaxation behavior low temperature."
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "RodriguezPerez_2017_JACS_MgInHerringbonePTCDA",
+      "Fields": {
+        "title": "Mg-Ion Battery Electrode: An Organic Solid’s Herringbone Structure Squeezed upon Mg-Ion Insertion",
+        "author": "Rodr'iguez-P'erez, Ismael A and Yuan, Yifei and Bommier, Clement and Wang, Xingfeng and Ma, Lu and Leonard, Daniel P and Lerner, Michael M and Carter, Rich G and Wu, Tianpin and Greaney, P Alex and others",
+        "journal": "Journal of the American Chemical Society",
+        "volume": "139",
+        "number": "37",
+        "pages": "13031--13037",
+        "year": "2017",
+        "doi": "10.1021/jacs.7b06313",
+        "url": "https://doi.org/10.1021/jacs.7b06313",
+        "month": "sep",
+        "publisher": "American Chemical Society (ACS)",
+        "abstract": "We report that crystalline 3,4,9,10-perylenetetracarboxylic dianhydride (PTCDA), an organic solid, is highly amenable to host divalent metal ions, i.e., Mg2+ and Ca2+, in aqueous electrolytes, where the van der Waals structure is intrinsically superior in hosting charge-dense ions. We observe that the divalent nature of Mg2+ causes unique squeezing deformation of the electrode structure, where it contracts and expands in different crystallographic directions when hosting the inserted Mg-ions. This phenomenon is revealed experimentally by ex situ X-ray diffraction and transmission electron microscopy, and is investigated theoretically by first-principles calculations. Interestingly, hosting one Mg2+ ion requires the coordination from three PTCDA molecules in adjacent columns of stacked molecules, which rotates the columns, thus reducing the (011) spacing but increasing the (021) spacing. We demonstrate that a PTCDA Mg-ion electrode delivers a reversible capacity of 125 mA h g–1, which may include a minor contribution of hydronium storage, a good rate capability by retaining 75 mA h g–1 at 500 mA g–1 (or 3.7 C), and a stable cycle life. We also report Ca2+ storage in PTCDA, where a reversible capacity of over 80 mA h g–1 is delivered."
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Truszkowska_2017_MRS_DEM",
+      "Fields": {
+        "title": "Developing a Crystal Plasticity Model for Metallic Materials Based on the Discrete Element Method",
+        "journal": "MRS Advances",
+        "publisher": "Materials Research Society",
+        "author": "Truszkowska, Agnieszka and Yu, Qin and Greaney, Peter Alex and Evans, T. Matthew and Kruzic, Jamie J.",
+        "year": "2017",
+        "pages": "1–6",
+        "abstract": "Failure of metallic materials due to plastic and/or creep deformation occur by the emergence of necking, microvoids, and cracks at heterogeneities in the material microstructure. While many traditional deformation modeling approaches have difficulty capturing these emergent phenomena, the discrete element method (DEM) has proven effective for the simulation of materials whose properties and response vary over multiple spatial scales, e.g., bulk granular materials. The DEM framework inherently provides a mesoscale simulation approach that can be used to model macroscopic response of a microscopically diverse system. DEM naturally captures the heterogeneity and geometric frustration inherent to deformation processes. While DEM has recently been adapted successfully for modeling the fracture of brittle solids, to date it has not been used for simulating metal deformation. In this paper, we present our progress in reformulating DEM to model the key elastic and plastic deformation characteristics of FCC polycrystals to create an entirely new crystal plasticity modeling methodology well-suited for the incorporation of heterogeneities and simulation of emergent phenomena.",
+        "doi": "10.1557/adv.2017.430"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Li_2017_AdEnergyMat_DopedHardCarbonAnodes",
+      "Fields": {
+        "author": "Li, Zhifei and Bommier, Clement and Chong, Zhi Sen and Jian, Zelang and Surta, Todd Wesley and Wang, Xingfeng and Xing, Zhenyu and Neuefeind, Joerg C. and Stickle, William F. and Dolgos, Michelle and Greaney, P. Alex and Ji, Xiulei",
+        "title": "Mechanism of Na-Ion Storage in Hard Carbon Anodes Revealed by Heteroatom Doping",
+        "journal": "Advanced Energy Materials",
+        "issn": "1614-6840",
+        "url": "http://dx.doi.org/10.1002/aenm.201602894",
+        "doi": "10.1002/aenm.201602894",
+        "pages": "1602894--n/a",
+        "keywords": "hard carbon anodes, heteroatom doping, local structures, mechanisms, Na-ion batteries",
+        "note": "1602894",
+        "abstract": "Hard carbon is the leading candidate anode for commercialization of Na-ion batteries. Hard carbon has a unique local atomic structure, which is composed of nanodomains of layered rumpled sheets that have short-range local order resembling graphene within each layer, but complete disorder along the c-axis between layers. A primary challenge holding back the development of Na-ion batteries is that a complete understanding of the structure<E2><80><93>capacity correlations of Na-ion storage in hard carbon has remained elusive. This article presents two key discoveries: first, the characteristics of hard carbons structure can be modified systematically by heteroatom doping, and second, that these structural changes greatly affect Na-ion storage properties, which reveals the mechanisms for Na storage in hard carbon. Specifically, via P or S doping, the interlayer spacing is dilated, which extends the low-voltage plateau capacity, while increasing the defect concentrations with P or B doping leads to higher sloping sodiation capacity. The combined experimental studies and first principles calculations reveal that it is the Na-ion-defect binding that corresponds to the sloping capacity, while the Na intercalation between graphenic layers causes the low-potential plateau capacity. The understanding suggests a new design principle of hard carbon anode: more reversibly binding defects and dilated turbostratic domains, given that the specific surface area is maintained low."
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Jian_2017_ChemOfMat_SoftCarbonAnode",
+      "Fields": {
+        "author": "Jian, Zelang and Bommier, Clement and Luo, Langli and Li, Zhifei and Wang, Wentao and Wang, Chongmin and Greaney, P. Alex and Ji, Xiulei",
+        "title": "Insights on the Mechanism of Na-Ion Storage in Soft Carbon Anode",
+        "journal": "Chemistry Of Materials",
+        "year": "2017",
+        "volume": "29",
+        "number": "5",
+        "pages": "2314-2320",
+        "month": "Mar 14",
+        "abstract": "Graphite is the commercial anode for lithium-ion batteries; however, it fails to extend its success to sodium-ion batteries. Recently, we demonstrated that a low-cost amorphous carbon soft carbon exhibits remarkable rate performance and stable cycling life of Na-ion storage. However, its Na-ion storage mechanism has remained elusive, which has plagued further development of such carbon anodes. Here, we remedy this shortfall by presenting the results from an integrated set of experimental and computational studies that, for the first time, reveal the storage mechanism for soft carbon. We find that sodium ions intercalate into graphenic layers, leading to an irreversible quasi-plateau at similar to 0.5 V versus Na+/Na as well as an irreversible expansion seen by in situ transmission electron microscopy (TEM) and X-ray diffraction (XRD). Such a high-potential plateau is correlated to the defective local structure inside the turbostratic stacking of soft carbon and the associated high-binding energies with Na ions, suggesting a trapping mechanism. On the other hand, soft carbon exhibits long sloping regions above and below the quasi-plateau during the first sodiation, where the sloping regions present highly reversible behavior. It is attributed to the more defects contained by soft carbon revealed by neutron total scattering and the associated pair distribution function studies.",
+        "doi": "10.1021/acs.chemmater.6b05474",
+        "issn": "0897-4756",
+        "eissn": "1520-5002",
+        "researcherid-numbers": "Luo, Langli/B-5239-2013",
+        "orcid-numbers": "Luo, Langli/0000-0002-6311-051X",
+        "unique-id": "ISI:000396639400046"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Wang_2017_AngewChemi_Hydronium",
+      "Fields": {
+        "author": "Wang, Xingfeng and Bommier, Clement and Jian, Zelang and Li, Zhifei and Chandrabose, Raghu S. and Rodriguez-Perez, Ismael A. and Greaney, P. Alex and Ji, Xiulei",
+        "title": "Hydronium-Ion Batteries with Perylenetetracarboxylic Dianhydride Crystals as an Electrode",
+        "journal": "Angewandte Chemie-international Edition",
+        "year": "2017",
+        "volume": "56",
+        "number": "11",
+        "pages": "2909-2913",
+        "month": "Mar 6",
+        "abstract": "We demonstrate for the first time that hydronium ions can be reversibly stored in an electrode of crystalline 3,4,9,10-perylenetetracarboxylic dianhydride (PTCDA). PTCDA exhibits a capacity of 85 mAhg(-1) at 1 Ag-1 after an initial conditioning process. Ex situ X-ray diffraction revealed reversible and significant structure dilation upon reduction of PTCDA in an acidic electrolyte, which can only be ascribed to hydronium-ion intercalation. The lattice expansion upon hydronium storage was theoretically explored by first-principles density functional theory (DFT) calculations, which confirmed the hydronium storage in PTCDA.",
+        "doi": "10.1002/anie.201700148",
+        "issn": "1433-7851",
+        "eissn": "1521-3773",
+        "unique-id": "ISI:000397307600012"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Oliveira_2017_PRE_GreenKuboIntegrationError",
+      "Fields": {
+        "author": "Oliveira, Laura de Sousa and Greaney, P. Alex",
+        "title": "Method to manage integration error in the Green-Kubo method",
+        "journal": "Physical Review E",
+        "year": "2017",
+        "volume": "95",
+        "number": "2",
+        "month": "Feb 21",
+        "abstract": "The Green-Kubo method is a commonly used approach for predicting transport properties in a system from equilibrium molecular dynamics simulations. The approach is founded on the fluctuation dissipation theorem and relates the property of interest to the lifetime of fluctuations in its thermodynamic driving potential. For heat transport, the lattice thermal conductivity is related to the integral of the autocorrelation of the instantaneous heat flux. A principal source of error in these calculations is that the autocorrelation function requires a long averaging time to reduce remnant noise. Integrating the noise in the tail of the autocorrelation function becomes conflated with physically important slow relaxation processes. In this paper we present a method to quantify the uncertainty on transport properties computed using the Green-Kubo formulation based on recognizing that the integrated noise is a random walk, with a growing envelope of uncertainty. By characterizing the noise we can choose integration conditions to best trade off systematic truncation error with unbiased integration noise, to minimize uncertainty for a given allocation of computational resources.",
+        "doi": "10.1103/PhysRevE.95.023308",
+        "article-number": "023308",
+        "issn": "2470-0045",
+        "eissn": "2470-0053",
+        "unique-id": "ISI:000394665000011"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Truszkowska_2016_CompChemEng_MultiscaleLBM",
+      "Fields": {
+        "author": "Truszkowska, Agnieszka and Greaney, P. Alex and Jovanovic, Goran",
+        "title": "Multiscale lattice Boltzmann modeling of two-phase flow and retention times in micro-patterned fluidic devices",
+        "journal": "Computers & Chemical Engineering",
+        "year": "2016",
+        "volume": "95",
+        "pages": "249-259",
+        "month": "Dec 5",
+        "abstract": "Recent advances for fabricating micro-featured architectures such as posts or pillars in fluidic devices provide exciting opportunities for multiphase flow management. Here we describe a novel, multiscale modeling approach for two-phase flows in microfeatured architectures developed within the Shan and Chen Lattice Boltzmann method. In our approach a fine scale is used to resolve the true microfeatured architecture, with a coarser scale used to model the gross geometry of the device. We develop the basic features of the approach and demonstrate its applicability to modeling retention times of droplets of a dispersed phase in an array of microposts - an architecture used in microfluidic reactors, bioreactors, and biomedical devises. Additionally we show that it is feasible to model the microfeatured geometry in a piecewise manner which includes extrapolating dispersed phase flow characteristics in the entire system based on simulations in smaller subdomains. (C) 2016 Elsevier Ltd. All rights reserved.",
+        "doi": "10.1016/j.compchemeng.2016.08.016",
+        "issn": "0098-1354",
+        "eissn": "1873-4375",
+        "unique-id": "ISI:000386248700021"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Bommier_2016_AdMatInt_SolidElectrolyteInterphase",
+      "Fields": {
+        "author": "Bommier, Clement and Leonard, Daniel and Jian, Zelang and Stickle, William F. and Greaney, P. Alex and Ji, Xiulei",
+        "title": "New Paradigms on the Nature of Solid Electrolyte Interphase Formation and Capacity Fading of Hard Carbon Anodes in Na-Ion Batteries",
+        "journal": "Advanced Materials Interfaces",
+        "year": "2016",
+        "volume": "3",
+        "number": "19",
+        "month": "Oct 6",
+        "abstract": "Capacity fading in Na/C half-cells has long been attributed to the continuous formation of the solid electrolyte interphase (SEI). The SEI is often assumed to grow thicker on the carbon anode surface during cycling, eventually rendering it electrochemically inactive. However, the findings here shed new light on this assumption. It is shown that SEI has an inward progression into the anode material, not an outward one. Additionally, it is also reported that the Na-metal counter electrode is hardly an inactive component in the Na/C half-cell. Contrarily, it is a primary source of electrolyte degradation. It is then shown that the combination of SEI formation, along with electrolyte degradation leads to severe kinetic problems at the electrolyte/anode interface, resulting in poor electrochemical performances. However, it is also demonstrated that such negative effects in a Na/C half-cell are easily reversible. By either drastically reducing the current rate, or pairing the carbon electrode with new electrolyte and new Na-metal counter electrode a carbon material with a 70% capacity loss can recover its original performances. These conclusions bring forth valuable insight. This shows that in a Na/C half-cell setting, long-term fading is not due to the carbon material, but caused by electrolyte degradation stemming from interface phenomenon.",
+        "doi": "10.1002/admi.201600449",
+        "article-number": "1600449",
+        "issn": "2196-7350",
+        "unique-id": "ISI:000386058100007"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "inproceedings",
+      "EntryKey": "Manion_2016_IDETC_MoleculeDesign",
+      "Fields": {
+        "author": "Manion, Charles A. and Arlitt, Ryan and Turner, Irem and Campbell, Matthew I. and Greaney, P. Alex",
+        "book-group-author": "ASME",
+        "title": "TOWARDS AUTOMATED DESIGN OF MECHANICALLY FUNCTIONAL MOLECULES",
+        "booktitle": "International Design Engineering Technical Conferences And Computers And Information In Engineering Conference, 2015, Vol 2a",
+        "year": "2016",
+        "pages": "COVER1C-U60",
+        "note": "ASME International Design Engineering Technical Conferences and Computers and Information in Engineering Conference, Boston, MA, AUG 02-05, 2015",
+        "organization": "ASME, Design Engn Div; ASME, Comp & Informat Engn Div",
+        "abstract": "Metal Organic Responsive Frameworks (MORFs) are a proposed new class of smart materials consisting of a Metal Organic Framework (MOF) with photoisomerizing beams (also known as linkers) that fold in response to light. Within a device these new light responsive materials could provide the capabilities such as photo-actuation, photo-tunable rigidity, and photo-tunable porosity. However, conventional MOF architectures are too rigid to allow isomerization of photoactive sub-molecules. We propose a new computational approach for designing MOF linkers to have the required mechanical properties to allow the photoisomer to fold by borrowing concepts from de novo molecular design and graph synthesis. Here we show how this approach can be used to design compliant linkers with the necessary flexibility to be actuated by photoisomerization and used to design MORFs with desired functionality.",
+        "article-number": "V02AT03A004",
+        "isbn": "978-0-7918-5707-6",
+        "unique-id": "ISI:000379883700004"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "inproceedings",
+      "EntryKey": "Harter_2016_ANS_PolynomialChaos",
+      "Fields": {
+        "author": "Jackson R. Harter, P. Alex Greaney, Todd S. Palmer",
+        "title": "Quantifying the Uncertainty in Deterministic Phonon Transport Calculations of Thermal Conductivity using Polynomial Chaos Expansions",
+        "booktitle": "Transactions of American Nuclear Society 2015 Annual Meeting",
+        "year": "2016",
+        "volume": "115",
+        "pages": "611--814",
+        "organization": "American Nuclear Society",
+        "publisher": "American Nuclear Society"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Oliveira_2015_CompMatSci_ThermalResistance",
+      "Fields": {
+        "author": "Oliveira, Laura de Sousa and Greaney, P. Alex",
+        "title": "Thermal resistance from irradiation defects in graphite",
+        "journal": "Computational Materials Science",
+        "year": "2015",
+        "volume": "103",
+        "pages": "68-76",
+        "month": "Jun 1",
+        "abstract": "An atomistic level understanding of how varying types and numbers of irradiation induced defects affect thermal resistance in graphite is vital in designing accident tolerant fuels for next-generation nuclear reactors. To this end we performed equilibrium molecular dynamics simulations and computed the change to thermal conductivity due to a series of clustering and non-clustering point defects using the Green-Kubo method. In addition, we present a comprehensive discussion of several approaches to converge the integral of the heat current autocorrelation function. Our calculations show that more energetically favorable clustering defects exhibit fewer low frequency modes and increase the anisotropic nature of graphite selectively exerting a significant effect on thermal resistance along the c-axis. (C) 2015 Elsevier B.V. All rights reserved.",
+        "doi": "10.1016/j.commatsci.2015.03.001",
+        "issn": "0927-0256",
+        "eissn": "1879-0801",
+        "unique-id": "ISI:000353377100008"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "inproceedings",
+      "EntryKey": "Harter_2015_ANS_PhononBTE",
+      "Fields": {
+        "author": "Jackson R. Harter, P. Alex Greaney, Todd S. Palmer",
+        "title": "Characterization of Thermal Conductivity using Deterministic Phonon Transport in Rattlesnake",
+        "booktitle": "Transactions of American Nuclear Society 2015 Annual Meeting",
+        "year": "2015",
+        "volume": "112",
+        "pages": "829--832",
+        "organization": "American Nuclear Society",
+        "publisher": "American Nuclear Society"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Bommier_2014_Carbon_HardCarbonAnodes",
+      "Fields": {
+        "title": "Predicting capacity of hard carbon anodes in sodium-ion batteries using porosity measurements",
+        "journal": "Carbon",
+        "volume": "76",
+        "number": "",
+        "pages": "165 - 174",
+        "year": "2014",
+        "note": "",
+        "issn": "0008-6223",
+        "doi": "http://dx.doi.org/10.1016/j.carbon.2014.04.064",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0008622314003960",
+        "author": "Clement Bommier and Wei Luo and Wen-Yang Gao and Alex Greaney and Shengqian Ma and Xiulei Ji",
+        "abstract": "We report an inverse relationship between measurable porosity values and reversible capacity from sucrose-derived hard carbon as an anode for sodium-ion batteries (SIBs). Materials with low measureable pore volumes and surface areas obtained through N2 sorption yield higher reversible capacities. Conversely, increasing measurable porosity and specific surface area leads to sharp decreases in reversible capacity. Utilizing a low porosity material, we thus are able to obtain a reversible capacity of 335mAhg−1. These findings suggest that sodium-ion storage is highly dependent on the absence of pores detectable through N2 sorption in sucrose-derived carbon."
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Han_2014_CompMatSci_MOF5",
+      "Fields": {
+        "author": "Han, Luping and Budge, Makenzie and Greaney, P. Alex",
+        "title": "Relationship between thermal conductivity and framework architecture in MOF-5",
+        "journal": "Computational Materials Science",
+        "year": "2014",
+        "volume": "94",
+        "number": "SI",
+        "pages": "292-297",
+        "month": "Nov",
+        "abstract": "Metal-organic-framework materials (MOFs) are the most porous materials known to humanity and thus are promising materials for gas storage and absorption refrigerators-reducing the overall size of the absorption bed. Central to the performance of the MOF is its ability to withdraw heat from the absorbed working gas. Here we use a suite of molecular dynamics simulations to relate structural features of the MOF-5 framework to its thermal transport properties. These were performed for the purpose of establishing design principles that can be used in the development of new MOFs with tailored thermal conductivity. The last part of the paper examines thermal transport in MOF-5 when loaded with hydrogen and deuterium which increases thermal conductivity. (C) 2014 Elsevier B.V. All rights reserved.",
+        "doi": "10.1016/j.commatsci.2014.06.008",
+        "issn": "0927-0256",
+        "eissn": "1879-0801",
+        "unique-id": "ISI:000342360000035"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Hu_2014_JAP_Gecko",
+      "Fields": {
+        "author": "Hu, Congcong and Greaney, P. Alex",
+        "title": "Role of seta angle and flexibility in the gecko adhesion mechanism",
+        "journal": "Journal Of Applied Physics",
+        "year": "2014",
+        "volume": "116",
+        "number": "7",
+        "month": "Aug 21",
+        "abstract": "A model is developed to describe the reversible nature of gecko dry adhesion. The central aspect of this model is that the seta can be easily peeled away from the contacting surface by a small moment at the contact tip. It is shown that this contact condition is very sensitive, but can result in robust adhesion if individual setae are canted and highly flexible. In analogy to the ``cone of friction,'' we consider the `` adhesion region''-the domain of normal and tangential forces that maintain adhesion. Results demonstrate that this adhesion region is highly asymmetric enabling the gecko to adhere under a variety of loading conditions associated with scuttling horizontally, vertically, and inverted. Moreover, under each of these conditions, there is a low energy path to de-adhesion. In this model, obliquely canted seta (as possessed by geckos) rather than vertically aligned fibers (common in synthetic dry adhesive) provides the most robust adhesion. (C) 2014 AIP Publishing LLC.",
+        "doi": "10.1063/1.4892628",
+        "article-number": "074302",
+        "issn": "0021-8979",
+        "eissn": "1089-7550",
+        "unique-id": "ISI:000341189400043"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Qian_2014_SusChemEng_TiO2HybridizedGraphene",
+      "Fields": {
+        "author": "Qian, Wen and Greaney, P. Alex and Fowler, Simon and Chiu, Sheng-Kuei and Goforth, Andrea M. and Jiao, Jun",
+        "title": "Low-Temperature Nitrogen Doping in Ammonia Solution for Production of N-Doped TiO2-Hybridized Graphene as a Highly Efficient Photocatalyst for Water Treatment",
+        "journal": "Acs Sustainable Chemistry & Engineering",
+        "year": "2014",
+        "volume": "2",
+        "number": "7",
+        "pages": "1802-1810",
+        "month": "Jul",
+        "abstract": "To facilitate the potential application of TiO2 as an efficient photocatalyst, the modulation of its band gap and electrical structure is of great significance. Herein, we report a very simple nitrogen (N)-doping method to obtain N-doped TiO2, which is hybridized with graphene sheets at a temperature as low as 180 degrees C and using an ammonia solution as the N source and reaction medium. X-ray photoelectron spectroscopy analysis revealed that the atomic N level could reach 2.4 atomic percent when the reaction time was 14 h. Photoluminescence (PL) emission spectra indicated that N-doped TiO2/graphene composites have drastically suppressed TiO2 PL intensity when compared to undoped TiO2, confirming the lower recombination rate of electron hole pairs in the N-doped TiO2. Additionally, photodegradation data showed that the decomposition rate of methylene blue with our N-doped TiO2/graphene photocatalyst is twice as fast as a commercial Degussa P25 catalyst. Furthermore, density functional theory (DFT) calculations demonstrate that N doping creates empty states in the band gap of the TiO2 that are below the Fermi energy of graphene. Thus, when N-doped TiO2 is brought into contact with graphene, these states become filled by electrons from the graphene, shifting the TiO2 bands upward relative to the graphene. Such a shift in band alignment across the TiO2/graphene heterojunction makes transfer of the photoexcited electron more energetically favorable. This work provides a very convenient chemical route to the scalable production of N-doped TiO2/graphene photocatalyst for potential applications in wastewater treatment.",
+        "doi": "10.1021/sc5001176",
+        "issn": "2168-0485",
+        "unique-id": "ISI:000338748400035"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Oliveira_2013_MRS_DefectThermalResistance",
+      "Fields": {
+        "title": "Mapping thermal resistance around vacancy defects in graphite",
+        "volume": "1543",
+        "journal": "MRS Proceedings",
+        "publisher": "Cambridge University Press",
+        "author": "Oliveira, Laura de Sousa and Greaney, P. Alex",
+        "year": "2013",
+        "pages": "65–70",
+        "abstract": "High purity bulk graphite is applicable in many capacities in the nuclear industry. The thermal conductivity of graphite has been found to vary as a function of how its morphology changes on the nanoscale, and the type and number of defects present. We compute thermal conductivities at the nanolevel using large scale classical molecular dynamics simulations and by employing the Green-Kubo method in a set of in silico experiments geared towards understanding the impact of defects in the thermal conductivity of graphite. We present the results obtained for systems with 1– 3 vacancies, and compile a summary of some of the methods applied and difficulties encountered.",
+        "doi": "10.1557/opl.2013.672"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Sklan_2013_JAP_ResonantHeatTransfer",
+      "Fields": {
+        "author": "Sklan, Sophia R. and Greaney, P. Alex and Grossman, Jeffrey C.",
+        "title": "Resonant behavior in heat transfer across weak molecular interfaces",
+        "journal": "Journal Of Applied Physics",
+        "year": "2013",
+        "volume": "114",
+        "number": "23",
+        "month": "Dec 21",
+        "abstract": "Molecular dynamics (MD) simulations are used to study, in detail, the transfer of thermal (vibrational) energy between objects with discrete vibrational spectra to those with a semi-continuum of spectra. The transfer of energy is stochastic and strongly dependent on the instantaneous separation between the bodies. The insight from the MD simulations can be captured with a simple classical model that agrees well with quantum models. This model can be used to optimize systems for efficient frequency selective energy transfer, which can be used in designing a chemical sensor through nanomechanical resonance spectroscopy. (C) 2013 AIP Publishing LLC.",
+        "doi": "10.1063/1.4851035",
+        "article-number": "234308",
+        "issn": "0021-8979",
+        "eissn": "1089-7550",
+        "unique-id": "ISI:000329056800053"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Saranam_2013_JPhysD_CNTDissipation",
+      "Fields": {
+        "author": "Saranam, Venkata Rajesh and Greaney, P. Alex",
+        "title": "Surprising behaviour during dissipation and collision of flexural waves in carbon nanotubes",
+        "journal": "Journal Of Physics D-applied Physics",
+        "year": "2013",
+        "volume": "46",
+        "number": "48",
+        "month": "Dec 4",
+        "abstract": "The manuscript reports on simulations of the intrinsic dissipation of standing and travelling flexural vibrations in carbon nanotubes. It is found that extended travelling and standing waves exhibit anomalous dissipation, during which the excited modes experience massive damping that is triggered by the accumulation of energy in special gateway modes. In the second part of this work the attenuation of travelling flexural wave packets is examined-including the collisions between wave packets. Surprisingly, these wave packets show markedly different dissipation behaviour from extended waves with the same wavelength and amplitude. Moreover, the wave packet collisions are seen to be sensitive to the direction of collision, hinting at temperature gradient induced reduction of the thermal conductivity. Following the cascade of energy as it dissipates it is seen that scattering of energy into other flexural modes has little effect on the net energy flux, while dissipation into non-flexural modes is thermally resistive.",
+        "doi": "10.1088/0022-3727/46/48/485502",
+        "article-number": "485502",
+        "issn": "0022-3727",
+        "eissn": "1361-6463",
+        "unique-id": "ISI:000327539500030"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Greaney_2011_MetTrans_Mpemba",
+      "Fields": {
+        "author": "Greaney, P. Alex and Lani, Giovanna and Cicero, Giancarlo and Grossman, Jeffrey C.",
+        "title": "Mpemba-Like Behavior in Carbon Nanotube Resonators",
+        "journal": "Metallurgical And Materials Transactions A-physical Metallurgy And Materials Science",
+        "year": "2011",
+        "volume": "42A",
+        "number": "13",
+        "pages": "3907-3912",
+        "month": "Dec",
+        "abstract": "Surprising Mpemba-like dissipation is observed during computer simulated ring-down of the flexural modes of a single-walled carbon nanotube resonator. Vibrations are made to decay to zero faster by adding a larger initial excitation. We liken this counterintuitive observation to the well-known Mpemba effect in which hot water freezes faster that cold water. In both cases, the system seems to pose a memory of its thermal history; a paradoxical result that is reconciled if the dissipative state of the system is not described uniquely by the system's average temperature. A vibrational mode projection algorithm is used to track the dissipation pathway, showing that dissipation is dependent strongly on the development of an athermal phonon population. The implications of Mpemba-like behavior in more general, and continuously driven, nanomechanical systems are discussed.",
+        "doi": "10.1007/s11661-011-0843-4",
+        "issn": "1073-5623",
+        "orcid-numbers": "Cicero, Giancarlo/0000-0002-2920-9882",
+        "unique-id": "ISI:000297253100012"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Raghunathan_2011_JChemPhys_Phonostat",
+      "Fields": {
+        "author": "Raghunathan, Rajamani and Greaney, P. Alex and Grossman, Jeffrey C.",
+        "title": "Phonostat: Thermostatting phonons in molecular dynamics simulations",
+        "journal": "Journal Of Chemical Physics",
+        "year": "2011",
+        "volume": "134",
+        "number": "21",
+        "month": "Jun 7",
+        "abstract": "Thermostat algorithms in a molecular dynamics simulation maintain an average temperature of a system by regulating the atomic velocities rather than the internal degrees of freedom. Herein, we present a ``phonostat'' algorithm that can regulate the total energy in a given internal degree of freedom. In this algorithm, the modal energies are computed at each time step using a mode-tracking scheme and then the system is driven by an external driving force of desired frequency and amplitude. The rate and amount of energy exchange between the phonostat and the system is controlled by two distinct damping parameters. Two different schemes for controlling the external driving force amplitude are also presented. In order to test our algorithm, the method is applied initially to a simple anharmonic oscillator for which the role of various phonostat parameters can be carefully tested. We then apply the phonostat to a more realistic (10,0) carbon nanotube system and show how such an approach can be used to regulate energy of highly anharmonic modes. (c) 2011 American Institute of Physics. [doi:10.1063/1.3597605]",
+        "doi": "10.1063/1.3597605",
+        "article-number": "214117",
+        "issn": "0021-9606",
+        "unique-id": "ISI:000291402700018"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "incollection",
+      "EntryKey": "Greaney_2011_BookChapter_SimulatingThermomechanicalPhenomena",
+      "Fields": {
+        "abstract": "Using nanoscale structures, systems have the potential to radically alter the way that we use, and think of heat. It is a field that abounds with opportunity, from expanding the limits of thermal conductivity, to diagnostics, phononics, and adding worth to heat beyond its face caloric value. In this chapter we give a brief survey of recent experimental progress, and a discussion of computational approaches to nanoscale thermal problems. Explored are the merits of calculation (theory) versus simulation. In the second part of the chapter a set of case studies are used to demonstrate a selection of computational methods for simulating and analyzing heat transfer and dissipation in nanoscale systems. Despite much progress in advancing methodology for computing and simulating heat, numerous important challenges are yet to be surmounted. Our aim in this chapter is to encourage and spur much-needed further work in this exciting field.",
+        "doi": "10.1039/9781849732680-00109",
+        "author": "Greaney, P. Alex and Grossman, Jeffrey C.",
+        "editor": "Bichoutskaia, Elena",
+        "title": "Simulating Thermomechanical Phenomena of Nanoscale Systems",
+        "booktitle": "Computational Nanoscience",
+        "series": "RSC Theoretical and Computational Chemistry Series",
+        "year": "2011",
+        "number": "4",
+        "pages": "109-146",
+        "issn": "2041-3181",
+        "isbn": "978-1-84973-268-0",
+        "researcherid-numbers": "Besley, Elena/I-5672-2013",
+        "orcid-numbers": "Besley, Elena/0000-0002-9910-7603",
+        "unique-id": "ISI:000296272000006"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Greaney_2009_NanoLett_AnomalousDissipation",
+      "Fields": {
+        "author": "Greaney, P. Alex and Lani, Giovanna and Cicero, Giancarlo and Grossman, Jeffrey C.",
+        "title": "Anomalous Dissipation in Single-Walled Carbon Nanotube Resonators",
+        "journal": "Nano Letters",
+        "year": "2009",
+        "volume": "9",
+        "number": "11",
+        "pages": "3699-3703",
+        "month": "Nov",
+        "abstract": "We observe a new anomalous and transient process of intrinsic dissipation in simulations of the ring-down of flexural modes in single-walled carbon nanotube (CNT) resonators. The effect is pronounced, causing the quality factor of the mode to be reduced by more that 95% for tens of picoseconds. The anomalous dissipation depends on the CNT temperature and the energy in the mode, and remarkably increasing the excitation energy in the resonator causes it to decay to zero faster. By tracking the cascade of energy as it dissipates we identify ``gateway'' modes that provide important channels for dissipation. The processes we observe show that an athermal phonon population accompanying dissipation can strongly influence the quality factor in nanoelectromechanical devices.",
+        "doi": "10.1021/nl901706y",
+        "issn": "1530-6984",
+        "eissn": "1530-6992",
+        "orcid-numbers": "Cicero, Giancarlo/0000-0002-2920-9882",
+        "unique-id": "ISI:000271566400006"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "{Greaney_2008_NanoLett_NanomechanicalResonanceSpectroscopy",
+      "Fields": {
+        "author": "Greaney, P. Alex and Grossman, Jeffrey C.",
+        "title": "Nanomechanical resonance spectroscopy: A novel route to ultrasensitive label-free detection",
+        "journal": "Nano Letters",
+        "year": "2008",
+        "volume": "8",
+        "number": "9",
+        "pages": "2648-2652",
+        "month": "Sep",
+        "abstract": "We propose a new chemical detection technique in which an analyte's vibrational frequencies are interrogated directly using an array of nanomechanical resonators. This ``nanomechanical resonance spectroscopy'' (NRS) could permit label-free chemical detection, combining the high sensitivity of nanomechanical approaches with the high selectivity of traditional spectroscopy. A computational proof of principle is presented, demonstrating the central concept: exploiting resonant exchange of vibrational energy for chemical identification. Guidelines for experimental realization of NRS are discussed.",
+        "doi": "10.1021/nl0808278",
+        "issn": "1530-6984",
+        "unique-id": "ISI:000259140200009"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Greaney_2007_PRL_NanomechanicalEnergyTransfer",
+      "Fields": {
+        "author": "Greaney, P. Alex and Grossman, Jeffrey C.",
+        "title": "Nanomechanical energy transfer and resonance effects in single-walled carbon nanotubes",
+        "journal": "Physical Review Letters",
+        "year": "2007",
+        "volume": "98",
+        "number": "12",
+        "month": "Mar 23",
+        "abstract": "Molecular dynamics simulations are employed to elucidate the important factors in mechanical energy transfer between carbon nanotubes. Our calculations show that sharp resonance effects allow for near complete and highly efficient energy transfer. In addition, the weak coupling between two nanotubes sets the time scale for the energy transfer. The simulations provide the mechanistic basis for a theoretical description of lattice vibration mediated heat flow in nanoscale materials.",
+        "doi": "10.1103/PhysRevLett.98.125503",
+        "article-number": "125503",
+        "issn": "0031-9007",
+        "unique-id": "ISI:000245135400036"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Robinson_2005_NanoLett_TruncatedPyramids",
+      "Fields": {
+        "author": "Robinson, JT and Liddle, JA and Minor, A and Radmilovic, V and Yi, DO and Greaney, PA and Long, KN and Chrzan, DC and Dubon, OD",
+        "title": "Metal-induced assembly of a semiconductor island lattice: Ge truncated pyramids on Au-patterned Si",
+        "journal": "Nano Letters",
+        "year": "2005",
+        "volume": "5",
+        "number": "10",
+        "pages": "2070-2073",
+        "month": "Oct",
+        "abstract": "We report the two-dimensional alignment of semiconductor islands using rudimentary metal patterning to control nucleation and growth. In the Ge on Si system, a square array of submicron Au dots on the Si (001) surface induces the assembly of deposited Ge adatoms into an extensive island lattice. Remarkably, these highly ordered Ge islands form between the patterned Au dots and are characterized by a unique truncated pyramidal shape. A model based on patterned diffusion barriers explains the observed ordering and establishes general criteria for the broader applicability of such a directed assembly process to quantum dot ordering.",
+        "doi": "10.1021/nl051719d",
+        "issn": "1530-6984",
+        "researcherid-numbers": "Robinson, Jeremy/F-2748-2010 Liddle, James/A-4867-2013",
+        "orcid-numbers": "Liddle, James/0000-0002-2508-7910",
+        "unique-id": "ISI:000232623700041"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Greaney_2005_PRB_AnisotropicDiffusionGrowth",
+      "Fields": {
+        "author": "Greaney, PA and Chrzan, DC",
+        "title": "Irreversible island growth in the presence of anisotropic surface diffusion with long jumps",
+        "journal": "Physical Review B",
+        "year": "2005",
+        "volume": "72",
+        "number": "11",
+        "month": "Sep",
+        "abstract": "Kinetic Monte Carlo (KMC) simulations are used to investigate the dynamics of island growth during submonolayer epitaxy in the presence of anisotropic surface diffusion, and the influence of a recently hypothesized crowdion diffusion mechanism. An existing rate equation mean-field analysis of island growth is extended to include anisotropic diffusion. The mean-field analysis is found to be at odds with results from KMC simulations indicating that the details of the surface diffusion mechanism influence the nucleation rate. It is found that anisotropy in adatom hopping reduces the density of stable islands. It is also found that although the shape of the island size distribution is sensitive to island relaxation processes, it is not discernibly affected by hopping anisotropy with ratios D-xx/D-yy up to 16.",
+        "doi": "10.1103/PhysRevB.72.115432",
+        "article-number": "115432",
+        "issn": "1098-0121",
+        "unique-id": "ISI:000232229100157"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Ertekin_2005_JAP_EquilibriumLimitsOfCoherency",
+      "Fields": {
+        "author": "Ertekin, E and Greaney, PA and Chrzan, DC and Sands, TD",
+        "title": "Equilibrium limits of coherency in strained nanowire heterostructures",
+        "journal": "Journal Of Applied Physics",
+        "year": "2005",
+        "volume": "97",
+        "number": "11",
+        "month": "Jun 1",
+        "abstract": "Due to their unique boundary conditions, nanowire heterostructures may exhibit defect-free interfaces even for systems with large lattice mismatch. Heteroepitaxial material integration is limited by lattice mismatches in planar systems, but we use a variational approach to show that nanowire heterostructures are more effective at relieving mismatch strain coherently. This is an equilibrium model based on the Matthews critical thickness in which the lattice mismatch strain is shared by the nanowire overlayer and underlayer, and could as well be partially accomodated by the introduction of a pair of misfit dislocations. The model is highly portable to other nanowire material systems and can be used to estimate critical feature sizes. We find that the critical radius of this system is roughly an order of magnitude larger than the critical thickness of the corresponding thin film/substrate material system. Finite element analysis is used to assess some aspects of the model; in particular, to show that the variational approach describes well the decay of the strain energy density away from the interface. (C) 2005 American Institute of Physics.",
+        "doi": "10.1063/1.1903106",
+        "article-number": "114325",
+        "issn": "0021-8979",
+        "researcherid-numbers": "Sands, Timothy/D-2133-2009 Ertekin, Elif/D-6764-2013",
+        "orcid-numbers": "Sands, Timothy/0000-0001-9718-6515 Ertekin, Elif/0000-0002-7816-1803",
+        "unique-id": "ISI:000229804700119"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "inproceedings",
+      "EntryKey": "Greaney_2004_MRS_IslandGrowth",
+      "Fields": {
+        "title": "Island Growth in the Presence of Anisotropic Diffusion with Long Atomic Jumps",
+        "author": "P. Alex Greaney and D. C. Chrzan",
+        "booktitle": "Materials Research Society Symposium Proceedings",
+        "volume": "859",
+        "pages": "130",
+        "year": "2004",
+        "organization": "Warrendale, Pa.; Materials Research Society; 1999",
+        "abstract": "Kinetic Monte Carlo (KMC) simulations have been conducted to study the influence of a recently predicted surface crowdion on the nucleation and growth of islands during the the early stages of thin film epitaxy. Comparisons are made between island populations grown in the the presence of the same anisotropic macroscopic diffusion tensor but with differing microscopic diffusion mechanisms. In one instance only anisotropic nearest neighbour hopping is permitted, and in other simulations nearest neighbour hopping is isotropic but long atomic jumps are permitted in one direction. The densities of stable islands are compared with the predictions of a mean field set of rate equations. It is found that long atomic jumps reduce the efficiency with which monomers search the bare substrate and subsequently increase the density of stable islands. The long atomic jumps also change the concentration of monomers around growing islands, and alter island-island correlations."
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Xiao_2004_PRB_PtSurfacedDiffusion",
+      "Fields": {
+        "author": "Xiao, W and Greaney, PA and Chrzan, DC",
+        "title": "Pt adatom diffusion on strained Pt(001)",
+        "journal": "Physical Review B",
+        "year": "2004",
+        "volume": "70",
+        "number": "3",
+        "month": "Jul",
+        "abstract": "The diffusion of Pt on unreconstructed, strained Pt(001) is considered. The strain dependence for the energy barrier to adatom diffusion is computed using the embedded atom method. The computations predict that for a broad range of accessible strain states, the dominant diffusion mechanism is mediated by the formation and motion of a surface crowdion. Further, the saddle-point configuration for ``simple'' hopping is predicted to extend over a number of lattice sites. The diffusion energy barriers for both exchange and hopping mechanisms depend on the size of the cell used in the calculation.",
+        "doi": "10.1103/PhysRevB.70.033402",
+        "article-number": "033402",
+        "issn": "2469-9950",
+        "eissn": "2469-9969",
+        "unique-id": "ISI:000222996700024"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "phdthesis",
+      "EntryKey": "Greaney_2003_Thesis",
+      "Fields": {
+        "author": "P. Alex Greaney",
+        "title": "Theoretical studies of nano self-assembly",
+        "school": "University of California, Berkeley",
+        "year": "2003",
+        "pages": "148",
+        "abstract": "The role of surface strain in the growth of self-assembling nanostructures is investigated theoretically. The magnitude of the strain at the surface of a film generated by a buried array of misfit dislocations is calculated. It is demonstrated that such a film provides a suitable substrate for wavelength controlled spinodal decomposition of a second film grown on top of it. The role of homogeneous substrate strain is discussed in the context of how it affects diffusion processes and how these, in turn, impact island growth. An existing mean-field analysis of island growth is extended to include anisotropic diffusion. The results of the mean field calculations are compared with kinetic Monte Carlo simulations. It is found that anisotropy in adatom hopping reduces the density of stable islands. It is also found that although the shape of island size distribution is sensitive to island relaxation processes, it is not discernibly affected by hopping anisotropy with ratios $fracD_xxD_yy$ up to 16. A diffusion mechanism involving the recently discovered surface crowdion is hypothesised and the implications of this mechanism on island growth are studied through KMC simulations."
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Greaney_2003_APL_Spinodal",
+      "Fields": {
+        "author": "Greaney, PA and Chrzan, DC and Clemens, BM and Nix, WD",
+        "title": "Self-assembled nanostructures through wavelength-controlled spinodal decomposition",
+        "journal": "Applied Physics Letters",
+        "year": "2003",
+        "volume": "83",
+        "number": "7",
+        "pages": "1364-1366",
+        "month": "Aug 18",
+        "abstract": "The self-assembly of nanostructured materials through controlled wavelength spinodal decomposition is explored using a simple model. The model assumes that a homogeneous alloy is deposited on a rigid, periodically strained substrate. A linear stability analysis establishes that the film will undergo spinodal decomposition with the dominant wavelength determined by the periodicity of the substrate strain. (C) 2003 American Institute of Physics.",
+        "doi": "10.1063/1.1602581",
+        "issn": "0003-6951",
+        "eissn": "1077-3118",
+        "unique-id": "ISI:000184748600028"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Xiao_2003_PRL_Crowdion",
+      "Fields": {
+        "author": "Xiao, W and Greaney, PA and Chrzan, DC",
+        "title": "Adatom transport on strained Cu(001): Surface crowdions",
+        "journal": "Physical Review Letters",
+        "year": "2003",
+        "volume": "90",
+        "number": "15",
+        "month": "Apr 18",
+        "abstract": "Surface strain is often suggested as a means to control the self-assembled growth of nanostructures. Strain affects both the kinetics of nucleation and the free energies of formation of the desired nanostructure. It is demonstrated here that diffusion on some strained surfaces may be mediated by newly identified adatom transport mechanism: the formation and motion of a surface crowdion.",
+        "doi": "10.1103/PhysRevLett.90.156102",
+        "article-number": "156102",
+        "issn": "0031-9007",
+        "eissn": "1079-7114",
+        "unique-id": "ISI:000182320200034"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "inproceedings",
+      "EntryKey": "Ertekin_2002_MRS_MismatchedHeterowires",
+      "Fields": {
+        "author": "Ertekin, E and Greaney, PA and Sands, TD and Chrzan, DC",
+        "editor": "Kilmov, VI and Buriak, JM and Wayner, DDM and Priolo, F and White, B and Tsybeskov, L",
+        "title": "Equilibrium analysis of lattice-mismatched nanowire heterostructures",
+        "booktitle": "Quantum Confined Semiconductor Nanostructures",
+        "series": "Materials Research Society Symposium Proceedings",
+        "year": "2003",
+        "volume": "737",
+        "pages": "769-774",
+        "note": "Symposium on Quantum Confined Semiconductor Nanostructures held at the 2002 MRS Fall Meeting, BOSTON, MA, DEC 02, 2001-DEC 05, 2002",
+        "organization": "Mat Res Soc; Evident Technol Inc; IBM TJ Watson Res Ctr; Los Alamos Natl Lab; Motorola Inc; Texas A&M Univ",
+        "abstract": "The quality of lattice-mismatched semiconductor heterojunctions is often limited by the presence of misfit dislocations. Nanowire geometries offer the promise of creating highly mismatched, yet dislocation free heterojunctions. A simple model, based upon the critical thickness model of Matthews and Blakeslee for misfit dislocation formation in planar heterostructures, illustrates that there exists a critical nanowire radius for which a coherent heterostructured nanowire system is unstable with respect to the formation of misfit dislocations. The model indicates that within the nanowire geometry, it should be possible to create perfect heterojunctions with large lattice-mismatch.",
+        "issn": "0272-9172",
+        "isbn": "1-55899-674-5",
+        "researcherid-numbers": "Sands, Timothy/D-2133-2009",
+        "orcid-numbers": "Sands, Timothy/0000-0001-9718-6515",
+        "unique-id": "ISI:000183136600114"
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Greaney_2002_CompMatSci_InternalFriction",
+      "Fields": {
+        "title": "Continuum simulation of dislocation dynamics: predictions for internal friction response",
+        "journal": "Computational Materials Science",
+        "volume": "25",
+        "number": "3",
+        "pages": "387 - 403",
+        "year": "2002",
+        "note": "",
+        "issn": "0927-0256",
+        "doi": "http://dx.doi.org/10.1016/S0927-0256(02)00242-2",
+        "url": "http://www.sciencedirect.com/science/article/pii/S0927025602002422",
+        "author": "P. Alex Greaney and Lawrence H. Friedman and D.C. Chrzan",
+        "abstract": "The amplitude dependent mechanical loss due to bowing of an idealized Frank–Read source is studied using both simulation and analytical techniques. Dislocations are modeled within isotropic elasticity theory, and are assumed to be in the over-damped limit. The dynamics incorporated in the model are tested directly, by comparison with the exact solution to the linearized isotropic elasticity theory of the mechanical losses. The model is then applied to the study of the mechanical losses from two coupled dislocations. It is concluded that the implemented dislocation dynamics method represents an accurate solution to the initially stated problem, that the elastic string model often employed to model losses is inadequate, and that dislocation interactions may alter substantially the dislocation component of the spectrum observed during internal friction experiments."
+      }
+    },
+    {
+      "ObjectType": "entry",
+      "EntryType": "article",
+      "EntryKey": "Greaney_1999_MRS_InternalFriction",
+      "Fields": {
+        "title": "Amplitude Dependent Internal Friction within a Continuum Simulation",
+        "volume": "578",
+        "journal": "Materials Research Society Symposium Proceedings",
+        "publisher": "Cambridge University Press",
+        "author": "Greaney, P. Alex and Chrzan, D. C.",
+        "year": "1999",
+        "abstract": "The mechanical losses due to the bowing of isolated Frank-Read sources under application of periodic loads is studied within a continuum simulation of dislocation dynamics. The dislocations are modelled within isotropic elasticity theory and assumed to be in the overdamped limit. Dislocation radiation effects are neglected. The mechanical losses are studied as a function of bias stress, amplitude of the periodic stress and frequency. The frequencies studied lie between 10 KHz and 1 MHz. Under high stresses applied at low frequencies, a deviation from the expected Lorentzian resonance shape is observed. The physical origins of this deviation are discussed.",
+        "doi": "10.1557/PROC-578-161"
+      }
+    }
+  ]
 }

@@ -128,10 +128,10 @@ function createDataModel() {
  * Define featured publications
  */
 var featuredPublications = [
-    'Li_2017_AdEnergyMat_DopedHardCarbonAnodes',
-    'Wang_2017_AngewChemi_Hydronium',
-    'Oliveira_2017_PRE_GreenKuboIntegrationError',
-    'Truszkowska_2016_CompChemEng_MultiscaleLBM',
+    'Wu_2019_NatEn_Grotthuss',
+    'Bommier_2018_ChemMat_Na_HardCarbon',
+    'Truszkowska_2018_JMPS_AnisotropicElasticityDEM',
+    'Harter_2017_JHT_BTEinUO2withXe',
     'Manion_2016_DaltonTrans_DesignOFlexibleLinkers'
 ];
 
@@ -201,7 +201,7 @@ function processPublicationEntries() {
 
                 // Separate featured publications
 
-                // console.log('pub', pub.EntryKey);
+                //console.info('pub', pub.EntryKey);
                 if (isFeaturedPublication(pub.EntryKey)) {
                     publications.featured.push(pub);
                 } else {

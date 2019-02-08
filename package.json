@@ -51,7 +51,7 @@
     "homepage": "http://alexgreaney.com",
     "devDependencies": {
         "autoprefixer": "^7.1.1",
-        "bib2json": "0.0.1",
+        "bib2json": "0.0.2",
         "cssmin": "^0.4.3",
         "eslint": "^3.19.0",
         "eslint-config-google": "^0.7.1",
