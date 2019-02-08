@@ -1,10 +1,15 @@
+# Language setting http://docs.shippable.com/ci/languages/node/
+language: node_js
+
 env:
   global:
+    - AWS_S3_BUCKET='s3://gin-n-tonic.alexgreaney.com'
+    - AWS_S3_REGION='us-west-2'
     #secure variable contains values for AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
     - secure: HKwYujx/qmsyQQdHvR2myu8HLUDtcLeDyYV149YJuxIV4J7Hk3SxeY8X3D6aTlR8mvMnd/ZFY+tGNUh4G0xtLLjjZcPsBgvFlB
 
 build:
-
   on_success:
-    - aws s3 sync $SHIPPABLE_BUILD_DIR "s3://gin-n-tonic.alexgreaney.com" --region "us-west-2"
+    - script: echo "SUCCESS"
+    - aws s3 sync $SHIPPABLE_BUILD_DIR "s3://gin-n-tonic.alexgreaney.com" --region $AWS_S3_REGION
 
