@@ -33,7 +33,8 @@
         "// TODO": "// Compress css",
         "build:css": "npm run scss & npm run autoprefixer",
         "build:js": "npm run lint & npm run uglify",
-        "build": "npm run pug-create-template-function & npm run create-data-model & npm run pug-compile & npm run build:css & npm run build:js"
+        "build:copyfiles": "cp -r media public",
+        "build": "npm run pug-create-template-function & npm run create-data-model & npm run pug-compile & npm run build:css & npm run build:js & npm run build:copyfiles"
     },
     "repository": {
         "type": "git",
