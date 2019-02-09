@@ -24,10 +24,6 @@
         "title": "Electrochemical Properties and Theoretical Capacity For Sodium Storage In Hard Carbon—Insights From First Principles Calculations",
         "author": "Bommier, Clement and Ji, Xiulei and Greaney, P Alex",
         "journal": "Chemistry of Materials",
-        "volume": "0",
-        "number": "0",
-        "pages": "null",
-        "year": "0",
         "doi": "10.1021/acs.chemmater.8b01390",
         "abstract": " This paper utilizes density functional theory calculations to explore amorphous carbon materials, and concludes that the theoretical capacity is between 300 and 400 mAh g–1, depending on the degree of defects. This conclusion arises from a comprehensive number of simulations used to validate the experimentally determined storage mechanism, with these results then being extrapolated to elucidate a theoretical capacity limit. Through investigating the breadth of structures, with multiple Na configurations, the studies lead to four major conclusions. First, we found that the nature of Na storage in carbon materials changes with increasing Na concentrations in a continuum from ionic storage to metallic plating. Second, we revealed the critical role of the intersheet spacing, stacking misalignment, and effects of spacing expansion on the feasibility of Na intercalation into graphitic structures. This leads to the third and fourth conclusion, which stipulates that the results provided here offer compelling support towards an earlier experimentally derived Na ion storage for hard carbon materials, along with the existence of a theoretical limit of sodium ion storage in hard carbon materials. Moreover, the techniques and scope of the work involved are highly relevant to future simulations exploring amorphous carbon as an active material, whether it should be for Li-ion battery anodes, supercapacitors, or catalysts.",
         "url": "https://doi.org/10.1021/acs.chemmater.8b01390"
