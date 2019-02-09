@@ -6,7 +6,7 @@ env:
     - AWS_S3_BUCKET='s3://gin-n-tonic.alexgreaney.com'
     - AWS_S3_REGION='us-west-2'
     #secure variable contains values for AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
-    - secure: HKwYujx/qmsyQQdHvR2myu8HLUDtcLeDyYV149YJuxIV4J7Hk3SxeY8X3D6aTlR8mvMnd/ZFY+tGNUh4G0xtLLjjZcPsBgvFlB
+    - secure: kQs613281vT5W/uP5AQpUsPbC8mtBnKi2+0djI3lRNLO5qgmKjmaqlLcDPmpKlw6E1z5zM/DVPCP/Cc3K30WfuEeFqkQ/K3v3U7n8Ii2G5gY6kO159F3pR+soNvJhB43Kl8dPvyPToYrRSRqaPRFJQX6xjigOoXpwJ96HdlvJzRxZxBO2uyQnjCEiPWwMsUWIVoMPJtRiERtneNiJ5Lf6IGovhU1sZuAOfadfBKS3ClGChNBHdI5e0+1DYg92sINOqYEfwBH0MCsDWCOAcuSSwGv0HQM2DEJk5Ggg5y4IXNg7NjXuUGlh222dB+4g412RNCXUB9cd/DmPgoaGTHhBA==
 
 build:
   ci: 
@@ -14,5 +14,5 @@ build:
     - npm run build
 
   on_success:
-    - aws s3 sync $SHIPPABLE_BUILD_DIR/public "s3://gin-n-tonic.alexgreaney.com" --region $AWS_S3_REGION
+    - aws s3 sync $SHIPPABLE_BUILD_DIR/public $AWS_S3_BUCKET --region $AWS_S3_REGION
 
