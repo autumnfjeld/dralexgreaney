@@ -47,7 +47,7 @@
         "academicBackground": "BS in Chemistry from Fort Lewis College",
         "funFacts": "Wesley has started a number of businesses including a t-shirt company and company booking and promoting concerts. That forced him to work a lot of different kinds of jobs to make ends meet, such as a hydraulic mechanic, carpenter, cook, and pizza boy. These jobs ultimately motivated him to go to graduate school and pursue his PhD, because he would rather work smarter than harder——little did he realize he would have to work smarter and harder.",
         "researchInterests": "Crystallography! He enjoys shooting X-rays at anything he can and neutrons are even better. ",
-        "imageUrl": "../media/group-members/wesley-surta-headshot.png"
+        "imageUrl": "../media/group-members/wesley-surta-headshot.jpg"
     }, {
         "name": "Agnieszka Truszkowska",
         "id": "agnieszka",
@@ -214,7 +214,7 @@
         "academicBackground": "BS in Materials Science & Engineering from University of Tehran",
         "funFacts": "",
         "researchInterests": "Mechanics of Materials, Lithium Ion Batteries, Thermal properties in Materials and Glasses,",
-        "imageUrl": "../media/group-members/tina-mirzaei-headshot.png"
+        "imageUrl": "../media/group-members/tina-mirzaei-headshot.jpg"
     }, {
         "name": "Weiyi Zhang",
         "groupAffiliate": false,
@@ -234,7 +234,7 @@
         "academicBackground": "BS in Applied Physics from the University of Science and Technology of China",
         "funFacts": "Love Arts and Musics while not working",
         "researchInterests": "Computational design of materials",
-        "imageUrl": "../media/group-members/weiyi-zhang-headshot.png"
+        "imageUrl": "../media/group-members/weiyi-zhang-headshot.jpg"
     }, {
         "name": "Pegah Mirabedini",
         "groupAffiliate": false,
@@ -254,7 +254,7 @@
         "academicBackground": "BSc in Materials Science & Engineering from Iran University of Science and Technology.",
         "funFacts": " Pegah loves painting, and participating in group activities. She enjoys discovering new things!",
         "researchInterests": "Pegah’s research interests include understanding the crystal structure of materials, thermal and mechanical properties of materials, biomimetics, energy storage and batteries.",
-        "imageUrl": "../media/group-members/pegah-mirabedini-headshot.png"
+        "imageUrl": "../media/group-members/pegah-mirabedini-headshot.jpg"
     }, {
         "name": "Jeremy Valdecanas",
         "role": ["Undergraduate Researcher"],
@@ -355,6 +355,6 @@
         "otherWebsite": "https://www.openbte.org/",
         "funFacts": "Giuseppe is from Italy, but has been living in Cambrighe MA since 2010. He loves to entertain friends playing the piano.",
         "researchInterests": "Boltzmann transport simulation",
-        "imageUrl": "../media/group-members/giuseppe-romano-headshot.png"
+        "imageUrl": "../media/group-members/giuseppe-romano-headshot.jpg"
     }
 ]

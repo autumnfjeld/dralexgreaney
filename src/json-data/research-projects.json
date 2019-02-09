@@ -50,7 +50,7 @@
         "teaser": {
             "shortTitle": "Thermal Properties of MOFs",
             "text": "We are studying methods for engineering smart or tunable thermal properties in metal-organic frameworks (MOFs). These materials have a molecular spacefame construction which enable a host of new and exotic vibrational behavior.",
-            "imgUrl": "research/MOFThermal_LederImage_1.png",
+            "imgUrl": "research/MOFThermal_LederImage_1.jpg",
             "imgCaption": "MOF-5 filled with hydrogen"
         }
     },
@@ -70,7 +70,7 @@
         "teaser": {
             "shortTitle": "Phonon Boltzmann Transport",
             "text": "We are adapting numerical methods for modeling neutron transport in nuclear reactors for modeling heat transport by phonons. Or goal is the creation of tools to predict thermal conductivity in irradiated materials with evolving microstructure.",
-            "imgUrl": "research/BTE_LederImage_1.png",
+            "imgUrl": "research/BTE_LederImage_1.jpg",
             "imgCaption": "Phonon flux in UO2 impinging on a Xe bubble"
         }
     },

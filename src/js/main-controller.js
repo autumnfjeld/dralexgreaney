@@ -51,7 +51,7 @@
                     'url': '../media/home_HardCarbon_Sized_1920x1280.jpg'
                 }, {
                     'width': 1200,
-                    'url': '../media/home_HardCarbon_Sized_1200x.jpg'
+                    'url': '../media/research/home_HardCarbon_Sized_1200x.jpg'
                 }, {
                     'width': 960,
                     'url': '../media/research/home_HardCarbon_Sized_960x640.jpg'
@@ -63,7 +63,7 @@
                     'url': '../media/home_hard-carbon-stormtroopers_1920x1080.jpg'
                 }, {
                     'width': 960,
-                    'url': '../media/home_hard-carbon-stormtroopers_960x540.jpg'
+                    'url': '../media/research/home_hard-carbon-stormtroopers_960x540.jpg'
                 }, {
                     'width': 576,
                     'deviceOrientation': 'portrait',
