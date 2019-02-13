@@ -52,6 +52,8 @@ This is a freelance project to create a website for a computational materials sc
 * A number of common npm modules are used to compile scss, lint, uglify, and watch all code files
 * A `watch:all` npm script command is executed to watch and compile the code during development.  Since .json files do not take comments, I had to be creative in include comments with keys starting with `// item`.  Messy, but functional, and a nice challenge to see if an npm-only build process was doable and easy to use.
 
+# Google Analytics
+ * [alexgreaney.com analytics](https://analytics.google.com/analytics/web/?authuser=0#/report/visitors-geo/a110811436w165296162p165891888/_u.date00=20171204&_u.date01=20171212&tabControl.tabId=geo&geo-segmentExplorer.segmentId=analytics.city&geo-table.plotKeys=%5B%5D/)  requires login
 
 # Background
 I am working with a computational group and thus could take great liberty in knowing the content I needed to collect could be directly entered into json format by my client and his group members.  As a result, I chose to create a static-ish site hosted from [Amazon's Simple Storage System (S3)](https://aws.amazon.com/s3/),  without a content management system or a database.  Any 'traditional' server needs will be handled through the myriad of Amazon Web Services (AWS).  These simplifications (of relying on the client's technical saviness) made this a very fun project, in which I could expand my knowledge into new technical spaces, including AWS, node scripting, build processes, customer communication, design concepts, and UI features.
