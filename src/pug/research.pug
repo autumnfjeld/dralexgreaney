@@ -1,3 +1,4 @@
+
 section#research
     .container
         .wow.fadeInUp.section-title(data-wow-delay='0.2s')
@@ -10,10 +11,18 @@ section#research
                             .work-box
                                 button.btn.btn-more-info
                                     i.fa.fa-info
-                                a.research-popup(data-project= project.nickname)
-                                    // RENAME to .research-teaser or .teaser
+                                a.research-popup(data-project= {'project-id': project.id, 'project': project, 'members': groupMembers})
+                                    // RENAME work-boxoverlay to .research-teaser or .teaser
                                     .work-box-overlay.d-flex.flex-column.justify-content-center
                                         p.text-dark.m-0.font-weight-normal= project.teaser.text
-                                    img.img-fluid.card-img-top.lazy(data-original= about.mediaUrl + project.teaser.imgUrl, alt= project.teaser.imgCaption)
+                                    img.img-fluid.card-img-top.lazy(
+                                        | data-original= about.mediaUrl + project.teaser.imgUrl, alt= project.teaser.imgCaption)
                         .card-footer.bg-secondary.text-center
                             p.d-inline-block.align-baseline-webkit.m-0.text-light.fw-400= project.title
+                          
+                                each member in groupMembers
+                                    if member.id == project.researchers[0]
+                                        a(href= '#'+member.id)= member.name    
+                                        p.researcher(data-id="woochul")   
+                            
+                            

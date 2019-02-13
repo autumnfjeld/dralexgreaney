@@ -1,5 +1,6 @@
-[
-    {
+{
+    "geckos": {
+        "id": "geckos",
         "title": "Understanding how geckos stick, and also unstick",
         "nickname": "GeckoAdhesion",
         "teaser": {
@@ -9,22 +10,37 @@
             "imgCaption": "The underside of a gecko's foot"
         },
         "researchers": [
-            "woochul", "wesley"
+            "woochul",
+            "wesley"
+        ],
+        "publications": [
+            "Wu_2019_NatEn_Grotthuss"
         ],
         "content": {
-            "imageUrls": [
-                "mozzie1.jpg",
-                "mozzie2.jpg",
-                "mozzie3.jpg"
+            "images": [
+                {
+                    "url": "../media/research/geckos-1.png",
+                    "caption": "Some fun geckos for you to have a gander at"
+                },
+                {
+                    "url": "../media/research/geckos-2.jpg",
+                    "caption": "Image caption number 2. What a story it tells!"
+                },
+                {
+                    "url": "../media/research/geckos-3.jpg",
+                    "caption": "Image caption number 3"
+                }
             ],
             "paragraphs": [
-                "paragraph 1 No trip is complete without a visit to Duke’s Waikiki for a sunset cocktail and pupus—Hawaiian tapas. The bar and restaurant is named after one of Hawaii’s most famous locals, dubbed the father of modern surfing. Duke Paoa Kahanamoku grew up in Waikiki with the ocean as his playground. A five-time Olympic medalist in swimming, Duke is also credited with spreading the popularity of surfing. Fittingly, Duke’s Waikiki is a lively, open-air restaurant located right on the sand, showcasing live music performances and local cuisine.",
-                "paragraph 2 No trip is complete without a visit to Duke’s Waikiki for a sunset cocktail and pupus—Hawaiian tapas. The bar and restaurant is named after one of Hawaii’s most famous locals, dubbed the father of modern surfing. Duke Paoa Kahanamoku grew up in Waikiki with the ocean as his playground. A five-time Olympic medalist in swimming, Duke is also credited with spreading the popularity of surfing. Fittingly, Duke’s Waikiki is a lively, open-air restaurant located right on the sand, showcasing live music performances and local cuisine.",
-                "paragraph 3 No trip is complete without a visit to Duke’s Waikiki for a sunset cocktail and pupus—Hawaiian tapas. The bar and restaurant is named after one of Hawaii’s most famous locals, dubbed the father of modern surfing. Duke Paoa Kahanamoku grew up in Waikiki with the ocean as his playground. A five-time Olympic medalist in swimming, Duke is also credited with spreading the popularity of surfing. Fittingly, Duke’s Waikiki is a lively, open-air restaurant located right on the sand, showcasing live music performances and local cuisine. "
+                "Geckos' amazing ability to walk upside down on the ceilings is due to the van der Waals attraction between the walls and millions of hairs on a gecko's foot. What is more remarkable, is that this dry adhesive is switchable — geckos don't stick to walls like fly on fly-paper but can easily unstick their feet as they walk or run. In our research we are applying methods used to study earthquakes to discover the role of two factors in the gecko's adhesion system: the geometry of the hairs, and the hair to toe hierarchy.",
+                "paragraph 2 No trip is complete without a visit to Duke’s Waikiki for a sunset cocktail and pupus—Hawaiian tapas. The bar and restaurant is named after one of Hawaii’s most famous locals, dubbed the father of modern surfing. Duke Paoa Kahanamoku grew up in Waikiki with the ocean as his playground. A five-time Olympic medalist in swimming, Duke is also credited with spreading the popularity of surfing. Fittingly, Duke’s Waikiki is a lively, open-air restaurant located right on the sand, showcasing live music performances and local cuisine. The development of new energy storage technologies is crucial to mitigating the global energy crisis and the climate issues associated with it. Due to the intermittent nature of energy generation from renewable energy technologies their implementation is contingent on the development of efficient and inexpensive ways to store the energy generated on site. This is the one of the primary motivations for the recent surge in Na-ion battery (NIB) research. NIBs use the same fundamental principles as Li-ion batteries (LIBs). While LIBs work very well to power cell phones and laptops, the global distribution of Li is limited. This makes Li very expensive and prohibitive for use in grid-scale energy storage.",
+                "paragraph 2 No trip is complete without a visit to Duke’s Waikiki for a sunset cocktail and pupus—Hawaiian tapas. The bar and restaurant is named after one of Hawaii’s most famous locals, dubbed the father of modern surfing. Duke Paoa Kahanamoku grew up in Waikiki with the ocean as his playground. A five-time Olympic medalist in swimming, Duke is also credited with spreading the popularity of surfing. Fittingly, Duke’s Waikiki is a lively, open-air restaurant located right on the sand, showcasing live music performances and local cuisine. The development of new energy storage technologies is crucial to mitigating the global energy crisis and the climate issues associated with it. Due to the intermittent nature of energy generation from renewable energy technologies their implementation is contingent on the development of efficient and inexpensive ways to store the energy generated on site. This is the one of the primary motivations for the recent surge in Na-ion battery (NIB) research. NIBs use the same fundamental principles as Li-ion batteries (LIBs). While LIBs work very well to power cell phones and laptops, the global distribution of Li is limited. This makes Li very expensive and prohibitive for use in grid-scale energy storage.",
+                "paragraph 2 No trip is complete without a visit to Duke’s Waikiki for a sunset cocktail and pupus—Hawaiian tapas. The bar and restaurant is named after one of Hawaii’s most famous locals, dubbed the father of modern surfing. Duke Paoa Kahanamoku grew up in Waikiki with the ocean as his playground. A five-time Olympic medalist in swimming, Duke is also credited with spreading the popularity of surfing. Fittingly, Duke’s Waikiki is a lively, open-air restaurant located right on the sand, showcasing live music performances and local cuisine. Babble babble.  The development of new energy storage technologies is crucial to mitigating the global energy crisis and the climate issues associated with it. Due to the intermittent nature of energy generation from renewable energy technologies their implementation is contingent on the development of efficient and inexpensive ways to store the energy generated on site. This is the one of the primary motivations for the recent surge in Na-ion battery (NIB) research. NIBs use the same fundamental principles as Li-ion batteries (LIBs). While LIBs work very well to power cell phones and laptops, the global distribution of Li is limited. This makes Li very expensive and prohibitive for use in grid-scale energy storage."
             ]
         }
     },
-    {
+    "sodium-ion": {
+        "id": "sodium-ion",
         "title": "Next generation sodium-ion batteries",
         "nickname": "HardCarbon",
         "teaser": {
@@ -32,9 +48,35 @@
             "text": "We seek to understand the structure, and corresponding electrochemical properties, of various forms of amorphous carbon for use as the anode material in low cost sodium-ion batteries that could be used for grid-scale energy storage.",
             "imgUrl": "research/HardCarbon_LederImage-1_350px.png",
             "imgCaption": "Hard carbon: nano-domains of crumpled and twisted graphene"
+        },
+        "researchers": [
+            "Woochul Shin",
+            "Luping Han"
+        ],
+        "content": {
+            "images": [
+                {
+                    "url": "../media/research/sodium-ion-1.png",
+                    "caption": "Some fun geckos"
+                },
+                {
+                    "url": "../media/research/sodium-ion-2.png",
+                    "caption": "Image caption number 2"
+                },
+                {
+                    "url": "../media/research/sodium-ion-3.png",
+                    "caption": "Image caption number 3"
+                }
+            ],
+            "paragraphs": [
+                "The development of new energy storage technologies is crucial to mitigating the global energy crisis and the climate issues associated with it. Due to the intermittent nature of energy generation from renewable energy technologies their implementation is contingent on the development of efficient and inexpensive ways to store the energy generated on site. This is the one of the primary motivations for the recent surge in Na-ion battery (NIB) research. NIBs use the same fundamental principles as Li-ion batteries (LIBs). While LIBs work very well to power cell phones and laptops, the global distribution of Li is limited. This makes Li very expensive and prohibitive for use in grid-scale energy storage.",
+                "In contrast to Li’s scarcity, Na is one of the most abundant elements on the planet with a relatively even global distribution. However, the performance of NIB is currently relatively poor, limited by the lack of a suitable material for the negative electrode, or anode. In LIBs, crystalline graphite is used as an anode, but this material does not work well in NIBs. To address this issue researchers use amorphous hard carbon. This material is very similar to graphite in that it is made of carbon atoms arranged in a honeycomb lattice, but instead of these honeycomb sheets being layered into a crystal they are randomly oriented, making an amorphous structure like a bath pouf. While this increases the performance of NIB anodes, the reason why is unclear. Amorphous materials are more difficult to study than crystals due to their inconsistent structure. This makes determining how they work and identifying how to improve them extremely challenging. In order to make NIBs commercially viable the structure must be better understood and linked to their ability to store energy. This will allow researchers to design a new anode and ultimately increase the performance of NIBs.",
+                "Our approach here is multifaceted. The structure of hard carbon has been studied a number of times, beginning in 1949 with Rosalind Franklin. Similar to Franklin, we will be using diffuse scattering data and its Pair Distribution Function (PDF) to identify structural aspects of hard carbon. PDF and electrochemical data was collected for hard carbon synthesized at increasing pyrolysis temperatures. Large box models containing ~10000 atoms will start as sheets of graphene sheets that are randomly oriented. Defects will be added to these starting models, representing some of the proposed Na-ion binding sites. Molecular dynamics will be used to perform simulated annealing on these starting models increasing their density to match the experimentally measured density, creating layered graphitic domains, forming strong bonds between sheets, and validating the energetics of these models. The models will then be subjected to Reverse Monte Carlo modeling against PDF data. This process moves atoms within a model until the model matches a particular data set. With this energetically reasonable, experimentally validated model we will analyze the defects and substructures to try and identify structural motifs and compare these to the electrochemical performance of these materials."
+            ]
         }
     },
-    {
+    "auto-design": {
+        "id": "auto-design",
         "title": "Automated design of materials by computer",
         "nickname": "Design",
         "teaser": {
@@ -42,76 +84,31 @@
             "text": "We are developing new methods to get computers to design new materials with emergent multifunctional properties. These methods are based on formalizing a molecular designe space as a decision tree and using advanced machine learning tree search methods such as those used in Googles's AlphaGo.",
             "imgUrl": "research/Design_LederImage_1.png",
             "imgCaption": "Decision tree for molecular design"
-        }
-    },
-    {
-        "title": "Smart thermal properties in metal-organic frameworks",
-        "nickname": "MOFThermal",
-        "teaser": {
-            "shortTitle": "Thermal Properties of MOFs",
-            "text": "We are studying methods for engineering smart or tunable thermal properties in metal-organic frameworks (MOFs). These materials have a molecular spacefame construction which enable a host of new and exotic vibrational behavior.",
-            "imgUrl": "research/MOFThermal_LederImage_1.jpg",
-            "imgCaption": "MOF-5 filled with hydrogen"
-        }
-    },
-    {
-        "title": "Fragility and packing in bulk metallic glasses.",
-        "nickname": "BMGs",
-        "teaser": {
-            "shortTitle": "Bulk Metallic Glasses",
-            "text": "We are studying the phenomenon of fragility in glass forming metal alloys. Fragility, non-Arrhenius temperature dependence in the liquid's viscosity, correlates with the alloys' ductility when cooled to form a bulk metallic glass.",
-            "imgUrl": "research/BMG_LederImage_1.png",
-            "imgCaption": "Atomic simulation of a 4 component metallic glass"
-        }
-    },
-    {
-        "title": "Boltzmann transport modeling of phonons",
-        "nickname": "BTE",
-        "teaser": {
-            "shortTitle": "Phonon Boltzmann Transport",
-            "text": "We are adapting numerical methods for modeling neutron transport in nuclear reactors for modeling heat transport by phonons. Or goal is the creation of tools to predict thermal conductivity in irradiated materials with evolving microstructure.",
-            "imgUrl": "research/BTE_LederImage_1.jpg",
-            "imgCaption": "Phonon flux in UO2 impinging on a Xe bubble"
-        }
-    },
-    {
-        "title": "Materials for advanced batteries",
-        "nickname": "AdvancedBatteries",
-        "teaser": {
-            "shortTitle": "Advanced Batteries",
-            "text": "We are working to understand ion storage and ion transport in materials for advanced batteries such as dual ion batteries. These batteries aim to low cost and high cycle-ability for bulk energy storage.",
-            "imgUrl": "research/AdvancedBatteries_LederImage_1.png",
-            "imgCaption": "The crystal structure of PTCDA"
-        }
-    },
-    {
-        "title": "Shape changing materials",
-        "nickname": "Azo",
-        "teaser": {
-            "shortTitle": "Shape-Shifting Materials",
-            "text": "We are working to design materials that change shape actuated by molecules that change shape in response to light.",
-            "imgUrl": "research/Azo_LederImage_1.png",
-            "imgCaption": "Force output from constrained azobenzene"
-        }
-    },
-    {
-        "title": "New methods for modeling creep",
-        "nickname": "DEM",
-        "teaser": {
-            "shortTitle": "New model for creep",
-            "text": "We are working to develop a new framework for modeling plasticity and creep in high temperature superalloys. Our approach is based on the discrete element method, a method for modeling granular materials such as sand and rock.",
-            "imgUrl": "research/DEM_LederImage_3.png",
-            "imgCaption": "DEM models of tensile test specimens"
-        }
-    },
-    {
-        "title": "High efficiency Si based thermoelectics",
-        "nickname": "SiThermoelectrics",
-        "teaser": {
-            "shortTitle": "Silicon Thermoelectics",
-            "text": "Thermoelectrics are materials that convert a temperature difference directly into an electrical current with no moving parts. We are working to create high efficiency thermoelectric silicon which is cheep and widely abundant.",
-            "imgUrl": "research/SiThermoelectrics_LederImage_1_350px.png",
-            "imgCaption": "Phonon collision with SiC dispersoid in Si"
+        },
+        "researchers": [
+            "jude",
+            "tina"
+        ],
+        "content": {
+            "images": [
+                {
+                    "url": "../media/research/auto-design-1.png",
+                    "caption": "Some fun geckos"
+                },
+                {
+                    "url": "../media/research/sodium-ion-2.png",
+                    "caption": "Image caption number 2"
+                },
+                {
+                    "url": "../media/research/sodium-ion-3.png",
+                    "caption": "Image caption number 3"
+                }
+            ],
+            "paragraphs": [
+                "The development of new energy storage technologies is crucial to mitigating the global energy crisis and the climate issues associated with it. Due to the intermittent nature of energy generation from renewable energy technologies their implementation is contingent on the development of efficient and inexpensive ways to store the energy generated on site. This is the one of the primary motivations for the recent surge in Na-ion battery (NIB) research. NIBs use the same fundamental principles as Li-ion batteries (LIBs). While LIBs work very well to power cell phones and laptops, the global distribution of Li is limited. This makes Li very expensive and prohibitive for use in grid-scale energy storage.",
+                "In contrast to Li’s scarcity, Na is one of the most abundant elements on the planet with a relatively even global distribution. However, the performance of NIB is currently relatively poor, limited by the lack of a suitable material for the negative electrode, or anode. In LIBs, crystalline graphite is used as an anode, but this material does not work well in NIBs. To address this issue researchers use amorphous hard carbon. This material is very similar to graphite in that it is made of carbon atoms arranged in a honeycomb lattice, but instead of these honeycomb sheets being layered into a crystal they are randomly oriented, making an amorphous structure like a bath pouf. While this increases the performance of NIB anodes, the reason why is unclear. Amorphous materials are more difficult to study than crystals due to their inconsistent structure. This makes determining how they work and identifying how to improve them extremely challenging. In order to make NIBs commercially viable the structure must be better understood and linked to their ability to store energy. This will allow researchers to design a new anode and ultimately increase the performance of NIBs.",
+                "Our approach here is multifaceted. The structure of hard carbon has been studied a number of times, beginning in 1949 with Rosalind Franklin. Similar to Franklin, we will be using diffuse scattering data and its Pair Distribution Function (PDF) to identify structural aspects of hard carbon. PDF and electrochemical data was collected for hard carbon synthesized at increasing pyrolysis temperatures. Large box models containing ~10000 atoms will start as sheets of graphene sheets that are randomly oriented. Defects will be added to these starting models, representing some of the proposed Na-ion binding sites. Molecular dynamics will be used to perform simulated annealing on these starting models increasing their density to match the experimentally measured density, creating layered graphitic domains, forming strong bonds between sheets, and validating the energetics of these models. The models will then be subjected to Reverse Monte Carlo modeling against PDF data. This process moves atoms within a model until the model matches a particular data set. With this energetically reasonable, experimentally validated model we will analyze the defects and substructures to try and identify structural motifs and compare these to the electrochemical performance of these materials."
+            ]
         }
     }
-]
+}

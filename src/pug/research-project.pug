@@ -1,31 +1,24 @@
 section#research-project
     .project-container
         .row
-            .mfp-close
-                i.fa.fa-times
-            .col-md-12.col-sm-12
-                //a.back.mb-4(href="#research")
-                //    i.fa.fa-arrow-left
-                //    span Back
-                .section-title
-                    h2 #{title}
+            .section-title
+                h2 #{title}
         .row
             .col-md-4
                 .researchers-box
                     h4 Researchers
-                    each person in researchers
-                        p= person
-
-                    //- ul.list-group.list-group-flush
-                    //-     li.list-group-item #{researchers[0]}
-                    //-     li.list-group-item #{researchers[1]}
-                    //-     li.list-group-item 1paper references
-                    //-     li.list-group-item Links to other places
-                each image in content.imageUrls
-                    figure.figure.mt-2
-                        img.figure-img.img-fluid.rounded(src=image, alt=imageTitle)
-                        //- figcaption.figure-caption  #{imageCaption}
-            .col-md-7
-                .text-columns
-                    each paragraph, index in content.paragraphs
-                        p.paragraph= paragraph
+                        //- each id in content.researchers
+                        //-     p= id
+        //-                 each member in groupMembers
+        //-                         //- if member.id == id
+        //-                         //-     a(href= id)= member.name       
+        //-                             //- each person in researchers
+        //-                             //-     p.researcher(data-id="woochul")
+        //-             each image in content.images
+        //-                 figure.figure.mb-4
+        //-                     img.figure-img.img-fluid.rounded(src=image.url, alt=imageTitle)
+        //-                     figcaption.figure-caption=  image.caption
+        //-     .col-md-7
+        //-         .text-columns
+        //-             each paragraph, index in content.paragraphs
+        //-                 p.paragraph= paragraph
