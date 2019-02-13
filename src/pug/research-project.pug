@@ -10,7 +10,7 @@ section#research-project
                 p.researcher
                     a(href= pub.url, target='_blank')= pub.title                                   
         .row
-            .col-md-4
+            .col-md-5
                 .researchers-box
                     h4 Researchers
                     each member in researchers
@@ -22,6 +22,6 @@ section#research-project
                             img.figure-img.img-fluid.rounded(src=image.url, alt=imageTitle)
                             figcaption.figure-caption=  image.caption
             .col-md-7
-                .text-columns
+                .paragraphs
                     each paragraph, index in expandedContent.paragraphs
                         p.paragraph= paragraph

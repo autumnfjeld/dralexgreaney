@@ -105,35 +105,19 @@
     display: flex
     position: relative
     .project-container
-        // display: flex
-        // min-height: 80vh    // must match mfp-content height percent
         max-height: 80vh
         position: relative
         overflow-y: scroll
         background: #FFF
         padding: 2rem
-        //height: 80%
-    //     min-height: 100%
-    //     max-height: 700px
-    //     margin: 20px auto
-    //     // Copy styles from .mfp-close b/c putting .fa as child of .mfp-close blocks click
-        .row
-            margin-right: 0
-            margin-left: 0
-        .mfp-close
-            // HIde the default magni
-            // display:none
         .fa
-             position: absolute
-             right: 10px
-             top: 8px
-             color: $gray-200
-     .text-columns
-         column-count: 2
-         column-gap: 2rem
-     @include media-breakpoint-down(xs)
-         .text-columns
-             column-count: 1
+            position: absolute
+            right: 10px
+            top: 8px
+            color: $gray-200
+    @include media-breakpoint-down(xs)
+        .text-columns
+            column-count: 1
     .researchers-box
         bottom-border: 2px solid #f0f0f0
         padding-bottom: 2rem
@@ -141,11 +125,13 @@
     .researcher
         color: #007bff
         margin: 0 0 0.5rem 0.5rem
+        font-size: 0.875rem
     .figure
         // margin-bottom: 1rem
+    .paragraphs
+        // padding: 0 1rem    
     .paragraph
-        color: #878787
-        font-size: 16px
+        font-size: 1rem
         font-weight: normal
         line-height: 25px
         letter-spacing: 0.2px

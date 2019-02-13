@@ -54,7 +54,7 @@ pug_html = pug_html + "\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 12;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
 pug_html = pug_html + "\u003Cdiv class=\"row\"\u003E";
 ;pug_debug_line = 13;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
-pug_html = pug_html + "\u003Cdiv class=\"col-md-4\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"col-md-5\"\u003E";
 ;pug_debug_line = 14;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
 pug_html = pug_html + "\u003Cdiv class=\"researchers-box\"\u003E";
 ;pug_debug_line = 15;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
@@ -126,7 +126,7 @@ pug_html = pug_html + "\u003C\u002Fdiv\u003E\u003C\u002Fdiv\u003E";
 ;pug_debug_line = 24;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
 pug_html = pug_html + "\u003Cdiv class=\"col-md-7\"\u003E";
 ;pug_debug_line = 25;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
-pug_html = pug_html + "\u003Cdiv class=\"text-columns\"\u003E";
+pug_html = pug_html + "\u003Cdiv class=\"paragraphs\"\u003E";
 ;pug_debug_line = 26;pug_debug_filename = "src\u002Fpug\u002Fresearch-project.pug";
 // iterate expandedContent.paragraphs
 ;(function(){
