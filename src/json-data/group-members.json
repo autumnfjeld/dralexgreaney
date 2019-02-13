@@ -103,5 +103,324 @@
     "funFacts": "Originally from Heilongjiang in China. When not running simulations Luping is out catching his dinner spearfishing and scuba diving.",
     "researchInterests": "Thermal transport in metal-organic frameworks.",
     "imageUrl": "../media/group-members/luping-han-headshot.jpg"
+  },
+  "wenxi": {
+    "name": "Wenxi Huang",
+    "id": "wenxi",
+    "groupAffiliate": false,
+    "affiliation": {
+      "type": "UCR",
+      "logo": "../media/logos/UCR_logo.png"
+    },
+    "alum": false,
+    "role": [
+      "PhD student",
+      "Materials Science & Engineering"
+    ],
+    "email": "wesleywong524@gmail.com",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "",
+    "googleScholar": "",
+    "researchGate": "",
+    "associatedWebsite": "",
+    "personalWebsite": "",
+    "academicBackground": "BS in Materials Science from Tongji University, MS in Materials Science & Engineering from Oregon State University",
+    "funFacts": "Originally from Houbei in central China.",
+    "researchInterests": "Thermal transport in metal-organic frameworks. Ion conduction in battery electrodes",
+    "imageUrl": "../media/group-members/wenxi-huang-headshot.jpg"
+  },
+  "jude": {
+    "name": "Jude Ighere",
+    "id": "jude",
+    "groupAffiliate": false,
+    "affiliation": {
+      "type": "OSU",
+      "logo": "../media/logos/OSU_logo.png"
+    },
+    "alum": false,
+    "role": [
+      "PhD student",
+      "Materals Science & Engineering"
+    ],
+    "email": "jude.ighere@gmail.com",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "",
+    "googleScholar": "",
+    "researchGate": "",
+    "associatedWebsite": "",
+    "personalWebsite": "",
+    "academicBackground": "BS in Chemical Engineering from Federal University of Benin, MS in Mechanical and Material Engineering from Howard University.",
+    "funFacts": "Originally from Nigeria, Jude works full time as a quality assurance engineer for Intel in Portland OR, and is studying for his PhD on the side.",
+    "researchInterests": "Engineering thermal properties of zirconium diboride.",
+    "imageUrl": "../media/group-members/jude-ighere-headshot.jpg"
+  },
+  "aria": {
+    "name": "Aria Hosseini",
+    "id": "aria",
+    "role": [
+      "PhD student",
+      "Mechanical Engineering"
+    ],
+    "affiliation": {
+      "type": "UCR",
+      "logo": "../media/logos/UCR_logo.png"
+    },
+    "email": "aria.hosseini73@gmail.com",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "",
+    "googleScholar": "",
+    "researchGate": "",
+    "associatedWebsite": "",
+    "personalWebsite": "",
+    "academicBackground": "",
+    "funFacts": "",
+    "researchInterests": "Transport theory, and high ZT silicon based thermoelectric materials",
+    "imageUrl": "../media/group-members/aria-hosseini-headshot.jpg"
+  },
+  "jackson": {
+    "name": "Jackson Harter",
+    "id": "jackson",
+    "role": [
+      "Group affiliate:",
+      "PhD student",
+      "Nuclear Engineering",
+      "Advised by Prof. Todd Palmer"
+    ],
+    "affiliation": {
+      "type": "OSU",
+      "logo": "../media/logos/OSU_logo.png"
+    },
+    "email": "harterj@oregonstate.edu",
+    "cvLink": "https://rtrp.github.io/osu-transport/users/harterj/files/jacksonResume.pdf",
+    "gitHub": "https://github.com/harterj",
+    "linkedIn": "",
+    "googleScholar": "",
+    "researchGate": "",
+    "associatedWebsite": "https://rtrp.github.io/osu-transport",
+    "personalWebsite": "https://rtrp.github.io/osu-transport/users/harterj/",
+    "academicBackground": "BS in Nuclear Engineering from Oregon State University in 2013; MS in Nuclear Engineering with a minor in Materials Science & Engineering from Oregon State University in 2015.",
+    "funFacts": "Worked for several years as a professional chef including teaching at the Portland Culinary Institue. Thinks that sometimes science is more art than an algorithm, a lot of people don't get that.",
+    "researchInterests": "Transport theory and simulating phonon transport with a modified form of the Boltzmann transport equation.",
+    "imageUrl": "../media/group-members/jackson-harter-headshot.jpg"
+  },
+  "alex": {
+    "name": "P. Alex Greaney",
+    "id": "alex",
+    "role": [
+      "Principal Investigator (The Boss)"
+    ],
+    "affiliation": {
+      "type": "UCR",
+      "logo": "../media/logos/UCR_logo.png"
+    },
+    "email": "greaney@ucr.edu",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "",
+    "googleScholar": "https://scholar.google.com/citations?user=5pVuDAEAAAAJ&hl=en",
+    "researchGate": "https://www.researchgate.net/profile/P_Greaney",
+    "associatedWebsite": "http://www.engr.ucr.edu/people/peteralexandergreaney.html",
+    "personalWebsite": "",
+    "academicBackground": "MEng in Metallurgy and the Science of Materials from Oxford, PhD in Materials Science & Engineering from the UC Berkeley; Postdoc at LBNL and MIT",
+    "funFacts": "Grew up in the UK. Likes to cook with xanthan gum. Once converted a motorcycle to run on wood.",
+    "researchInterests": "Theory and simulation of materials, particularly computational design of materials and elucidation of structure-property relationships relating to mechanical thermal and transport properties of materials.",
+    "imageUrl": "../media/group-members/alex-greaney-headshot.jpg"
+  },
+  "tina": {
+    "name": "Tina Mirzaei",
+    "id": "tina",
+    "groupAffiliate": false,
+    "affiliation": {
+      "type": "UCR",
+      "logo": "../media/logos/UCR_logo.png"
+    },
+    "role": [
+      "PhD Student",
+      "Materials Science"
+    ],
+    "email": "mirzaietina@gmail.com",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "",
+    "googleScholar": "",
+    "researchGate": "Tina Mirzaie",
+    "associatedWebsite": "",
+    "personalWebsite": "",
+    "academicBackground": "BS in Materials Science & Engineering from University of Tehran",
+    "funFacts": "",
+    "researchInterests": "Mechanics of Materials, Lithium Ion Batteries, Thermal properties in Materials and Glasses,",
+    "imageUrl": "../media/group-members/tina-mirzaei-headshot.jpg"
+  },
+  "weiyi": {
+    "name": "Weiyi Zhang",
+    "id": "weiyi",
+    "groupAffiliate": false,
+    "affiliation": {
+      "type": "UCR",
+      "logo": "../media/logos/UCR_logo.png"
+    },
+    "role": [
+      "PhD student",
+      "Materials Science & Engineering"
+    ],
+    "email": "wzhan097@ucr.edu",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "",
+    "googleScholar": "",
+    "researchGate": "",
+    "associatedWebsite": "",
+    "personalWebsite": "",
+    "academicBackground": "BS in Applied Physics from the University of Science and Technology of China",
+    "funFacts": "Love Arts and Musics while not working",
+    "researchInterests": "Computational design of materials",
+    "imageUrl": "../media/group-members/weiyi-zhang-headshot.jpg"
+  },
+  "pegah": {
+    "name": "Pegah Mirabedini",
+    "id": "pegah",
+    "groupAffiliate": false,
+    "affiliation": {
+      "type": "UCR",
+      "logo": "../media/logos/UCR_logo.png"
+    },
+    "role": [
+      "PhD Student",
+      "Materials Science & Engineering"
+    ],
+    "email": "pmira002@ucr.edu",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "https://www.linkedin.com/in/pegah-mirabedini-4b2856ab",
+    "googleScholar": "",
+    "researchGate": "",
+    "associatedWebsite": "",
+    "personalWebsite": "",
+    "academicBackground": "BSc in Materials Science & Engineering from Iran University of Science and Technology.",
+    "funFacts": " Pegah loves painting, and participating in group activities. She enjoys discovering new things!",
+    "researchInterests": "Pegah’s research interests include understanding the crystal structure of materials, thermal and mechanical properties of materials, biomimetics, energy storage and batteries.",
+    "imageUrl": "../media/group-members/pegah-mirabedini-headshot.jpg"
+  },
+  "jeremy": {
+    "name": "Jeremy Valdecanas",
+    "id": "jeremy",
+    "role": [
+      "Undergraduate Researcher"
+    ],
+    "affiliation": {
+      "type": "UCR",
+      "logo": "../media/logos/UCR_logo.png"
+    },
+    "email": "jvald022@ucr.edu",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "",
+    "googleScholar": "",
+    "researchGate": "",
+    "associatedWebsite": "",
+    "personalWebsite": "",
+    "academicBackground": "Pursuing an BS in Materials Science & Engineering",
+    "funFacts": "Part of the UCR bladesmithing team working to build a trip hammer.",
+    "researchInterests": "Discriminating molecules with fingerprints.",
+    "imageUrl": "../media/group-members/jeremy-valdecanas-heatshot.jpg"
+  },
+  "andres": {
+    "name": "Andres Sanchez Paredes",
+    "id": "andres",
+    "role": [
+      "Undergraduate Researcher"
+    ],
+    "affiliation": {
+      "type": "UCR",
+      "logo": "../media/logos/UCR_logo.png"
+    },
+    "email": "asanc056@ucr.edu",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "",
+    "googleScholar": "",
+    "researchGate": "",
+    "associatedWebsite": "",
+    "personalWebsite": "",
+    "academicBackground": "Pursuing an BS in Mechanical Engineering",
+    "funFacts": "Electronica aficionado.",
+    "researchInterests": "Machine learning and artificial neural networks applied to the behavior of molecules.",
+    "imageUrl": "../media/group-members/andres-sanchez-paredes-headshot.jpg"
+  },
+  "edward": {
+    "name": "Edward Koh",
+    "id": "edward",
+    "role": [
+      "Student at MLK Jr. High School in Riverside."
+    ],
+    "affiliation": {
+      "type": "HighSchool",
+      "logo": ""
+    },
+    "email": "",
+    "cvLink": "",
+    "gitHub": "",
+    "linkedIn": "",
+    "googleScholar": "",
+    "researchGate": "",
+    "associatedWebsite": "",
+    "personalWebsite": "",
+    "academicBackground": "",
+    "funFacts": "When Edward is not programming he loves to play tennis and is on the tennis team.",
+    "researchInterests": "Uncovering the structure-property relationships in Discriminating molecules with fingerprints.",
+    "imageUrl": "../media/group-members/mystery-student.jpg"
+  },
+  "henri": {
+    "name": "Henri",
+    "id": "henri",
+    "role": [
+      "Mouser"
+    ],
+    "affiliation": {
+      "type": "UCR",
+      "logo": "../media/logos/UCR_logo.png"
+    },
+    "email": "henri@ucr.edu",
+    "cvLink": "",
+    "linkedIn": "www.linkedin.com/in/henrithecat",
+    "googleScholar": "",
+    "gitHub": "https://github.com/henrithecat",
+    "researchGate": "https://www.researchgate.net/profile/Henri_The_Cat",
+    "associatedWebsite": "",
+    "academicBackground": "PhD in string theory (and other cat toys)",
+    "personalWebsite": "www.henrigetsthemouse.com",
+    "funFacts": "Grew up in the Bay Area. Informal science training in the backyard sheds. A 16 yr old veteran mouser and transcontinental traveler, Henri has lived with Dr. Greaney since his days in Berkeley, CA. Henri works from home, and can usually be found napping on Dr. Greaney's desk. ",
+    "researchInterests": "Thermal resistance of recumbent-feline guard-hairs, keyboard ergonomics",
+    "imageUrl": "../media/group-members/henri-newyear-2012-crop.jpg "
+  },
+  "giuseppe": {
+    "name": "Giuseppe Romano",
+    "id": "giuseppe",
+    "role": [
+      "Visiting Scholar",
+      "Research Scientist at MIT"
+    ],
+    "alum": false,
+    "groupAffiliate": true,
+    "affiliation": {
+      "type": "UCR",
+      "logo": "../media/logos/MIT_logo.png"
+    },
+    "email": "romanog@mit.edu",
+    "cvLink": "",
+    "linkedIn": "",
+    "googleScholar": "",
+    "gitHub": "",
+    "researchGate": "",
+    "associatedWebsite": "  http://kolpak.mit.edu/",
+    "academicBackground": "",
+    "personalWebsite": "http://giusepperomano.org",
+    "otherWebsite": "https://www.openbte.org/",
+    "funFacts": "Giuseppe is from Italy, but has been living in Cambrighe MA since 2010. He loves to entertain friends playing the piano.",
+    "researchInterests": "Boltzmann transport simulation",
+    "imageUrl": "../media/group-members/giuseppe-romano-headshot.jpg"
   }
 }
