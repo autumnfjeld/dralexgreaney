@@ -22,19 +22,19 @@
         "watch:pug-compile": "onchange 'src/pug/*.pug' 'src/json-data/*.json' -i -v -- npm run pug-compile",
         "// pug-create-template-function": "Custom script to compile pug templates into a js function for clientside use",
         "pug-create-template-function": "node build-scripts/create-pug-template-function.js",
-        "watch:pug-create-template-function": "onchange 'src/pug/research-project.pug' 'src/json-data/research-projects.json' -- npm run pug-create-template-function",
+        "watch:pug-create-template-function": "onchange 'src/pug/research-project.pug' 'src/json-data/research-projects.json' -i -v -- npm run pug-create-template-function",
         "// create-data-model": "build javascript data model from reasearch data, used for clientside dynmaic content",
         "create-data-model": "node build-scripts/custom-build-scripts.js createDataModel",
         "watch:create-data-model": "onchange 'src/pug/research-project.pug' 'src/json-data/research-projects.json' -- npm run create-data-model",
         "lint": "eslint src/app.js || true",
         "uglify": "uglifyjs src/vendor/jquery.js node_modules/jquery-lazyload/jquery.lazyload.js node_modules/jquery-backstretch/jquery.backstretch.min.js src/vendor/tether.js node_modules/bootstrap/dist/js/bootstrap.bundle.min.js src/vendor/*.js src/js/*.js src/pugTemplateFunctions.js src/app.js -m -o public/build.js",
         "watch:js": "onchange 'src/js/*.js' 'src/app.js' -i -v -- npm run uglify",
-        "watch:all": "npm run watch:pug-compile & npm run watch:pug-create-template-function & npm run watch:create-data-model & npm run watch:css & npm run watch:js",
+        "watch:all": "npm run watch:pug-create-template-function & npm run watch:create-data-model & npm run watch:pug-compile & npm run watch:css & npm run watch:js",
         "// TODO": "// Compress css",
         "build:css": "npm run scss & npm run autoprefixer",
         "build:js": "npm run lint & npm run uglify",
         "build:copyfiles": "cp -r media public",
-        "build": "npm run pug-create-template-function & npm run create-data-model & npm run pug-compile & npm run build:css & npm run build:js & npm run build:copyfiles"
+        "build":     "npm run pug-create-template-function & npm run create-data-model & npm run pug-compile & npm run build:css & npm run build:js & npm run build:copyfiles"
     },
     "repository": {
         "type": "git",

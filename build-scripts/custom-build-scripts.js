@@ -31,7 +31,7 @@ function getJsonContent() {
                         siteContent[sectionName] = JSON.parse(fs.readFileSync(jsonDataDir + fileName, 'utf8'));
                     }
                 });
-                console.info('Success combining json data.  siteContent sections:', Object.keys(siteContent), '\n');
+                console.info('getJsonContent():  Success combining json data.  siteContent sections:', Object.keys(siteContent), '\n');
                 resolve(siteContent);
                 // console.log('siteContent.about.summary', siteContent.about.summary);
             }
@@ -55,16 +55,17 @@ function compilePugWithContent() {
         .then(function (siteContent) {
             createIndexHtml(siteContent);
         }).catch(function (reason) {
-            console.info('getJsonContent() fail', reason);
+            console.info('getJsonContent(): fail', reason);
         });
 
     function createIndexHtml(siteContent) {
+        // console.info('createIndexHtml():  siteContent', siteContent.groupMembers);
         var pugTemplate = projectRootDir + '/src/pug/index.pug',
             indexBuildFile = projectRootDir + '/public/index.html';
-        // var html = pug.renderFile('../src/pug/index.pug', siteContent, null);
-        // Node.js-style callback receiving the rendered results. This callback is called synchronously.
+
+            // Node.js-style callback receiving the rendered results. This callback is called synchronously.
         pug.renderFile(pugTemplate, siteContent, function (err, html) {
-            // console.log(siteContent.about);
+            // console.info('pug.renderFile', siteContent.groupMembers);
             if (err) {
                 console.error('Pug file did not compile', err);
             } else {
@@ -82,7 +83,7 @@ function compilePugWithContent() {
 /***********************************************************************************************
  * Create a javascript data store that will supply data to the client-side pug functions
  * Produces a js module file
- * Needed models:
+ * Required models in the research-popup (aka research-page):
  *  - Research data models in research-project.pug for dynamic creation of research pop-up or other dynamic content
  *  - This should run with json file watchers
  *
