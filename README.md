@@ -1,6 +1,6 @@
 #  dralexgreaney   
 
-![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-**98ac**-90d674bb263b.png)
+![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
 ![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
 ![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
 ![matsci-tet_100x](https://user-images.githubusercontent.com/5665959/30366457-f2142aba-981f-11e7-98ac-90d674bb263b.png)
