@@ -1,24 +1,27 @@
 section#research-project
     .project-container
+        // TODO: redo with flexbox
         .row
             .section-title
                 h2 #{title}
+        .researchers-box
+            h4 Publications
+            each pub in publications
+                p.researcher
+                    a(href= pub.url, target='_blank')= pub.title                                   
         .row
             .col-md-4
                 .researchers-box
                     h4 Researchers
-                        //- each id in content.researchers
-                        //-     p= id
-        //-                 each member in groupMembers
-        //-                         //- if member.id == id
-        //-                         //-     a(href= id)= member.name       
-        //-                             //- each person in researchers
-        //-                             //-     p.researcher(data-id="woochul")
-        //-             each image in content.images
-        //-                 figure.figure.mb-4
-        //-                     img.figure-img.img-fluid.rounded(src=image.url, alt=imageTitle)
-        //-                     figcaption.figure-caption=  image.caption
-        //-     .col-md-7
-        //-         .text-columns
-        //-             each paragraph, index in content.paragraphs
-        //-                 p.paragraph= paragraph
+                    each member in researchers
+                        p.researcher(data-id= member.id)=  member.name
+                   
+                .images-box
+                    each image in expandedContent.images
+                        figure.figure.mb-4
+                            img.figure-img.img-fluid.rounded(src=image.url, alt=imageTitle)
+                            figcaption.figure-caption=  image.caption
+            .col-md-7
+                .text-columns
+                    each paragraph, index in expandedContent.paragraphs
+                        p.paragraph= paragraph

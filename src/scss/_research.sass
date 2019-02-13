@@ -64,8 +64,19 @@
 
 /* TODO sort out height & position for .mfp-container & its contents */
 // magnificPopup specific styling overrides, note these are children of body
+
+.mfp-wrap
+    display: flex
+
+.mfp-container
+    display: flex
+    align-items: center
+
 .mfp-content 
     background-color: white
+    display: flex
+    max-height: 80vh
+
 .mfp-inline-holder .mfp-content
     min-height: 80%
     width: 80%
@@ -91,19 +102,27 @@
 
 // Custom project styling
 #research-popup, #research-project
+    display: flex
     position: relative
     .project-container
-        min-height: 80vh    // must match mfp-content height percent
+        // display: flex
+        // min-height: 80vh    // must match mfp-content height percent
+        max-height: 80vh
         position: relative
         overflow-y: scroll
         background: #FFF
-        padding: 20px
+        padding: 2rem
         //height: 80%
     //     min-height: 100%
     //     max-height: 700px
     //     margin: 20px auto
     //     // Copy styles from .mfp-close b/c putting .fa as child of .mfp-close blocks click
+        .row
+            margin-right: 0
+            margin-left: 0
         .mfp-close
+            // HIde the default magni
+            // display:none
         .fa
              position: absolute
              right: 10px
@@ -117,12 +136,19 @@
              column-count: 1
     .researchers-box
         bottom-border: 2px solid #f0f0f0
-        padding-bottom: 18px
+        padding-bottom: 2rem
+    
+    .researcher
+        color: #007bff
+        margin: 0 0 0.5rem 0.5rem
+    .figure
+        // margin-bottom: 1rem
     .paragraph
         color: #878787
         font-size: 16px
         font-weight: normal
         line-height: 25px
         letter-spacing: 0.2px
+        margin-left: 1rem
         
 

@@ -14,9 +14,10 @@
             "wesley"
         ],
         "publications": [
-            "Wu_2019_NatEn_Grotthuss"
+            "Wu_2019_NatEn_Grotthuss",
+            "Bommier_2018_ChemMat_Na_HardCarbon"
         ],
-        "content": {
+        "expandedContent": {
             "images": [
                 {
                     "url": "../media/research/geckos-1.png",
@@ -50,10 +51,14 @@
             "imgCaption": "Hard carbon: nano-domains of crumpled and twisted graphene"
         },
         "researchers": [
-            "Woochul Shin",
-            "Luping Han"
+            "woochul",
+            "agnieszka"
         ],
-        "content": {
+        "publications": [
+            "Wu_2019_NatEn_Grotthuss",
+            "Bommier_2018_ChemMat_Na_HardCarbon"
+        ],        
+        "expandedContent": {
             "images": [
                 {
                     "url": "../media/research/sodium-ion-1.png",
@@ -86,10 +91,15 @@
             "imgCaption": "Decision tree for molecular design"
         },
         "researchers": [
-            "jude",
-            "tina"
+            "luping",
+            "agnieszka",
+            "woochul"
         ],
-        "content": {
+        "publications": [
+            "Wu_2019_NatEn_Grotthuss",
+            "Bommier_2018_ChemMat_Na_HardCarbon"
+        ],        
+        "expandedContent": {
             "images": [
                 {
                     "url": "../media/research/auto-design-1.png",

@@ -9,7 +9,8 @@
      */
     function ResearchController(data, templatePage) {
         console.info('ResearchController.templagePage()');
-        console.info('data', data, 'templatePage', templatePage);
+        console.info('data', data);
+        console.info('templatePage', templatePage);
         this.templatePage = templatePage;
         this.data = data;
     }
@@ -55,7 +56,6 @@
      * Bind magificPop to research items
      */
     ResearchController.prototype._initResearchPopup = function () {
-
         var self = this;
         $('.research-popup').magnificPopup({
             type: 'inline',
@@ -74,15 +74,13 @@
                  * @type {{}} item.src   - assigned within the function          
                  */
                 elementParse: function (item) {
-                    console.info('magificPopup callback elementParse()  item', item);
+                    // console.info('magificPopup callback elementParse()  item', item);
                     // Get the project data from the data-project attribute of initiator DOM element
                     var projectPageData = JSON.parse($(item.el).attr('data-project'));
-                    // var projectId = projectPageData.project.id;
-                    console.info('projectPageData=', projectPageData);
-                    
+
                     // Create the page with project data
-                    var dataForPopup = projectPageData.project;
-                    console.log('dataForPopup', dataForPopup);
+                    var dataForPopup = self._assembleProjectData(projectPageData);
+                    console.info('dataForPopup', dataForPopup);
                     item.src = self.templatePage(dataForPopup);
 
                     // Attach close action to click event on close elemnt
@@ -109,11 +107,38 @@
                         event.preventDefault();
                         $.magnificPopup.close();
                     });
-
-
                 }
             }
         });
+    };
+
+    ResearchController.prototype._assembleProjectData = function (projectData) {
+        // Add researchers to project
+        // console.info(projectData.project);
+        var researchers = [];
+        projectData.project.researchers.forEach(function (researcherId) {
+            researchers.push(projectData.members[researcherId]);
+            // projectData.project.researchers[researcherId] = projectData.members[researcherId];
+
+        });
+        projectData.project.researchers = researchers;
+        // Add publications to project
+        var pubs = [];
+        projectData.project.publications.forEach(function (researchId) {
+            projectData.publications.featured.forEach(function (publication) {
+                if (publication.EntryKey === researchId)
+                    pubs.push({title: publication.Fields.title, url: publication.Fields.url});
+            });
+            projectData.publications.theRest.forEach(function (publication) {
+                if (publication.EntryKey === researchId)
+                    pubs.push({title: publication.Fields.title, url: publication.Fields.url});
+            });
+        });
+        projectData.project.publications = pubs;
+
+        console.info('assembled projectData', projectData.project);
+
+        return projectData.project;
     };
 
     // Export to window
