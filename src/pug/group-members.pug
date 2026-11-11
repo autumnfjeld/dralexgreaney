@@ -13,7 +13,7 @@ mixin personContent(person)
                     i.fa.fa-info
             .expanded-info
                 .links.d-flex.justify-content-center.my-2
-                    a.btn-link(href="mailto:" + person.email, data-toggle="tooltip", data-placement="top", data-trigger"hover click", title=person.email)
+                    a.btn-link(href="mailto:" + person.email, data-toggle="tooltip", data-placement="top", data-trigger="hover click", title=person.email)
                         i.fa.fa-envelope-o.px-2
                     if person.gitHub
                         a.btn-link(href= person.gitHub, target="_blank", data-toggle="tooltip", data-placement="top", title="GitHub")
